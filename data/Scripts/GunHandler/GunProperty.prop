@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<property version="2.16.0.2" name="GunProperty" guid="5eede1fae7f7091154402f3cb35f416bafc8e7ce" parent="d99ebc8ef5769d70b1e46992309cc3e7d1aa2faa">
+	<parameter name="BulletPrefab" type="file"/>
+	<parameter name="BulletDamage">0</parameter>
+	<parameter name="RateofFire" type="float">0</parameter>
+	<parameter name="Current_Bullets">0</parameter>
+	<parameter name="Amount_per_shell">0</parameter>
+</property>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<property version="2.16.0.2" name="AnimationProperty" guid="84053991a4cba5bcee2b45eb6670224e7769c555" parent="d99ebc8ef5769d70b1e46992309cc3e7d1aa2faa">
+	<struct name="Animations">
+		<parameter name="STATE_NAME" type="string"/>
+		<parameter name="Idle" type="file"/>
+		<parameter name="Walk" type="file"/>
+		<parameter name="Reverse_Walk" type="file"/>
+		<parameter name="Side_L_Walk" type="file"/>
+		<parameter name="Side_R_Walk" type="file"/>
+		<parameter name="Run" type="file"/>
+	</struct>
+	<parameter name="STATES" type="array" array_type="Animations">
+		<value index="0">
+			<parameter name="STATE_NAME">UNEQUIPPED</parameter>
+			<parameter name="Idle">guid://6a54a12b1825448e018202955d9d72f0f2a9698f</parameter>
+			<parameter name="Walk">guid://e38ad91a508655b137aed35c5c82570b5dcec0ee</parameter>
+			<parameter name="Reverse_Walk">guid://68e3d5212724ec0cfc87b7fb1a244d1e8eeed1e5</parameter>
+			<parameter name="Side_L_Walk">guid://5032c1ce7558ded55d88223090a7cfcfbcf7fae2</parameter>
+			<parameter name="Side_R_Walk">guid://4b6ca887d1484c3a1d23ee514e1f537cd66598ab</parameter>
+			<parameter name="Run">guid://752b014c728e4c3b31cb545e048db0251f6ca340</parameter>
+		</value>
+		<value index="1">
+			<parameter name="STATE_NAME">NON_AIMED</parameter>
+			<parameter name="Idle">guid://8edc8bbc02aaf3eb4e3ff84ef23ba3553fd71cb0</parameter>
+			<parameter name="Walk">guid://848f0ff286af2ea96e6ca7f489b2b2c3e2c6b946</parameter>
+			<parameter name="Reverse_Walk">guid://1deac7b2cd4e03691401f5b4070225831c480d06</parameter>
+			<parameter name="Side_L_Walk">guid://96d29e974d102b0acb611ee146a42acc69be67bb</parameter>
+			<parameter name="Side_R_Walk">guid://41ef4d2576ef9c40011b629fd5a54f72b59d6829</parameter>
+			<parameter name="Run">guid://840d11d5e400b9302ff17acfe0d7a9e22c249fd9</parameter>
+		</value>
+		<value index="2">
+			<parameter name="STATE_NAME">AIMED</parameter>
+			<parameter name="Idle">guid://927a7bca90b3b8a138d8798c3e86e77bc486b69e</parameter>
+			<parameter name="Walk">guid://9d7a2a2d06d605a868f62ce70962451a9d7ed1b1</parameter>
+			<parameter name="Reverse_Walk">guid://f1216ebb9d8314de801576a5e0e8b7c05336c81f</parameter>
+			<parameter name="Side_L_Walk">guid://e122dd642e2e0973d8c44036b541ba1dcdc1f4d8</parameter>
+			<parameter name="Side_R_Walk">guid://a5c687a901122cf4ec1873c345d78646c4b6a8ed</parameter>
+			<parameter name="Run">guid://0bac4a8cc18e847bc977af9e4de9d265e6ffe080</parameter>
+		</value>
+	</parameter>
+</property>

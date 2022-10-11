@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<property version="2.16.0.2" name="ThirdPersonCameraProperty" guid="03847628bb24e367a4f8899a13eb4c31708657dc" parent="d99ebc8ef5769d70b1e46992309cc3e7d1aa2faa">
+	<struct name="ThirdPerson">
+		<parameter name="FocusRadius" type="float">0</parameter>
+		<parameter name="CameraRadius" type="float">0</parameter>
+		<parameter name="RotationSpeed_Horizontal" type="float">0</parameter>
+		<parameter name="RotationSpeed_Vertical" type="float">0</parameter>
+		<parameter name="Height" type="float">0</parameter>
+		<parameter name="Height_Constraints" type="vec2">0 0</parameter>
+	</struct>
+	<parameter name="Normal" type="ThirdPerson">
+		<parameter name="FocusRadius">2</parameter>
+		<parameter name="CameraRadius">3</parameter>
+		<parameter name="RotationSpeed_Horizontal">2</parameter>
+		<parameter name="RotationSpeed_Vertical">2</parameter>
+		<parameter name="Height">2</parameter>
+		<parameter name="Height_Constraints">-50 50</parameter>
+	</parameter>
+	<parameter name="Aiming" type="ThirdPerson">
+		<parameter name="FocusRadius">1</parameter>
+		<parameter name="CameraRadius">1</parameter>
+		<parameter name="RotationSpeed_Horizontal">1.5</parameter>
+		<parameter name="RotationSpeed_Vertical">1.5</parameter>
+		<parameter name="Height">2</parameter>
+		<parameter name="Height_Constraints">-50 50</parameter>
+	</parameter>
+</property>
