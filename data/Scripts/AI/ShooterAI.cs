@@ -65,7 +65,6 @@ public class ShooterAI : Component
 
     void AiSTATE()
     {
-
         if (CurrentHealth != Health.ShowHealth()) { Weight = 1; STATE = AISTATE.AGGRESSIVE; CurrentHealth = Health.ShowHealth(); }
 
         switch (STATE)

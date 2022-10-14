@@ -84,7 +84,7 @@ public class GunHandler : Component
             CurrentBullets -= reload;
             AmountInGun += reload;
         }
-        else if (CurrentBullets < reload)
+        else if (CurrentBullets <= reload)
         {
             AmountInGun += CurrentBullets;
             CurrentBullets = 0;

@@ -36,25 +36,25 @@ public class HUDMaker : Component
 
         int y = Canvas.AddPolygon(0);
         Canvas.SetPolygonColor(y, new vec4(0, 0, 0, 0.5));
-        Canvas.AddPolygonPoint(y, new vec3(0, 0, 0));
-        Canvas.AddPolygonPoint(y, new vec3(450, 0, 0));
-        Canvas.AddPolygonPoint(y, new vec3(450, 100, 0));
-        Canvas.AddPolygonPoint(y, new vec3(0, 100, 0));
+        Canvas.AddPolygonPoint(y, new vec3(0, 700, 0));
+        Canvas.AddPolygonPoint(y, new vec3(450, 700, 0));
+        Canvas.AddPolygonPoint(y, new vec3(450, 800, 0));
+        Canvas.AddPolygonPoint(y, new vec3(0, 800, 0));
 
         Sprite = new();
 
         int z = Sprite.AddLayer();
         Image _i = new(); _i.Load(_image.AbsolutePath);
         Sprite.SetImage(_i);
-        Sprite.Width = 50;
-        Sprite.Height = 50;
-        Sprite.SetPosition((Width / 2) - 25, (Height / 2) - 25);
+        Sprite.Width = 20;
+        Sprite.Height = 20;
+        Sprite.SetPosition((Width / 2) - 10, (Height / 2) - 10);
 
         //GRID for health
 
         HealthGrid = new WidgetGridBox(20, 1, 1);
         GainHealth(CurrentHealth);
-        HealthGrid.SetPosition(0, 0);
+        HealthGrid.SetPosition(0, 700);
 
         CurrentAmount = new(); MaxAmount = new();
 

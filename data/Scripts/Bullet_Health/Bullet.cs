@@ -22,17 +22,19 @@ public class Bullet : Component
 
         if (Body1 && Body1 != Rigid) { CapturedBody = Body1; }
         else if (Body2 && Body2 != Rigid) { CapturedBody = Body2; }
-
+        
         if (CapturedBody)
         {
             // WE hit a body
+            Log.Message($"{CapturedBody.Object.Name} {num}\n");
             HealthBar Health = GetComponent<HealthBar>(CapturedBody.Object);
-            if (Health) { Health.DropHealth(DamageAmount); Log.Message($"{Health.ShowHealth()} {1}\n"); }
-
+            if (Health) { Health.DropHealth(DamageAmount); Log.Message($"{Health.ShowHealth()}\n"); }
+           // Rigid.RemoveContactEnterCallback(OnEnter);
         }
 
         else
         {
+            Log.Message($"{Body.GetContactObject(num).Name} {num}\n");
             // We hit a collision
             HealthBar Health = GetComponent<HealthBar>(Body.GetContactObject(num));
             if (Health) { Health.DropHealth(DamageAmount); Log.Message($"{Health.ShowHealth()}\n"); }

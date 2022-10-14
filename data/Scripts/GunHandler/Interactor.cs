@@ -12,9 +12,9 @@ public class Interactor : Component
 
     private void Init()
     {
-        Ray = new WorldIntersection();
+        Ray = new ();
         // Hand Item Position
-        Hand = node.GetChild(0).GetChild(0).GetChild(0).GetChild(0);
+        Hand = node.GetChild(0).GetChild(0).GetChild(0);
     }
 
     private void Update()
@@ -30,7 +30,7 @@ public class Interactor : Component
                 Obj.Position = vec3.ZERO;
 
                 // Change State to Equipped
-                AnimationController _Shooter = GetComponent<AnimationController>(node.GetChild(0).GetChild(0));
+                AnimationController _Shooter = GetComponent<AnimationController>(node.GetChild(0));
                 _Shooter.ChangeStateToEquipped();
                 GunHandler _gun = GetComponent<GunHandler>(node);
                 _gun.GetGun(Obj);
