@@ -48,4 +48,11 @@ public class PhysicsController : Component
 		float Angle = MathLib.Angle(CameraView, PlayerView, node.GetWorldDirection(MathLib.AXIS.Z));
 		MainCharacter.AddAngularImpulse(node.GetWorldDirection() * Angle);
 	}
+
+	public double getSpeed()
+	{
+		double speed = MathLib.Pow2(MainCharacter.LinearVelocity.x) + MathLib.Pow2(MainCharacter.LinearVelocity.y) + MathLib.Pow2(MainCharacter.LinearVelocity.z);
+		speed = MathLib.Sqrt(speed);
+		return speed;
+	}
 }

@@ -110,6 +110,7 @@ public class ShooterAI : Component
             case AISTATE.SHOOT:
                 if (CurrentTime + 1 < Game.Time) { Shoot(); STATE = AISTATE.AGGRESSIVE; }
                 RotateTowards(MainCharacter.WorldPosition, node, 0.01f);
+                Visualizer.RenderLine3D(node.WorldPosition, node.WorldPosition + node.GetDirection(MathLib.AXIS.Y) * 50, vec4.BLUE);
                 break;
             default:
                 break;
@@ -119,14 +120,35 @@ public class ShooterAI : Component
     void Shoot()
     {
 
+        dvec3 futurePoint = MainCharacter.WorldPosition + MainCharacter.BodyLinearVelocity.Normalized;
+        futurePoint.z = 1;
+        dmat4 _dmat4 = new dmat4(MainCharacter.GetWorldRotation(),futurePoint);
+        Visualizer.RenderCapsule(0.5f, 1.4f, _dmat4, vec4.BLACK,2);
+        Visualizer.RenderPoint3D(futurePoint, 0.05f, vec4.YELLOW,false, 2);
+
+        double FutureDistance = MathLib.Distance(futurePoint, MainCharacter.WorldPosition),
+               Distance = MathLib.Distance(node.WorldPosition, MainCharacter.WorldPosition),
+               Speed = GetComponent<PhysicsController>(MainCharacter).getSpeed();
+
+
         Node _bullet = BulletPrefab.Load();
         _bullet.WorldPosition = node.GetChild(0).WorldPosition;
-        _bullet.WorldLookAt(node.GetChild(0).WorldPosition + node.GetChild(0).GetWorldDirection(MathLib.AXIS.Y));
 
         Bullet x = GetComponent<Bullet>(_bullet);
         x.DamageAmount = 1;
 
-        _bullet.ObjectBodyRigid.AddLinearImpulse(_bullet.GetWorldDirection(MathLib.AXIS.Y) * 50);
+        if (Speed <= 1 && Speed > 0)  {
+            _bullet.WorldLookAt(MathLib.Lerp(MainCharacter.WorldPosition, futurePoint, (float)Speed / FutureDistance));
+            _bullet.ObjectBodyRigid.AddLinearImpulse(_bullet.GetWorldDirection(MathLib.AXIS.Y) * (float)Distance);
+        }
+        else if (Speed > 1)  {
+            _bullet.WorldLookAt(futurePoint);
+            _bullet.ObjectBodyRigid.AddLinearImpulse(_bullet.GetWorldDirection(MathLib.AXIS.Y) * (float)Distance * (float)(Speed / FutureDistance));
+        }
+        else {
+            _bullet.WorldLookAt(node.GetChild(0).WorldPosition + node.GetChild(0).GetWorldDirection(MathLib.AXIS.Y));
+            _bullet.ObjectBodyRigid.AddLinearImpulse(_bullet.GetWorldDirection(MathLib.AXIS.Y) * (float)Distance);
+        }
     }
 
     void RotateTowards(dvec3 TowardsObject, Node Obj2Move, float Speed)
