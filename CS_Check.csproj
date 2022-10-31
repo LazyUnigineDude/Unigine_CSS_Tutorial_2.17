@@ -57,6 +57,7 @@
 		<Compile Include="data/Scripts/GunHandler/GunHandler.cs"/>
 		<Compile Include="data/Scripts/GunHandler/Interactor.cs"/>
 		<Compile Include="data/Scripts/GUI/HUDMaker.cs"/>
+		<Compile Include="data/StarMove.cs"/>
 	</ItemGroup>
 	<ItemGroup>
 		<Compile Include="source\AppEditorLogic.cs"/>
