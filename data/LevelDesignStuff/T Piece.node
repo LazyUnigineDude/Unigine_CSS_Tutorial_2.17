@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.16.0.2">
+	<node type="NodeDummy" id="284930539" name="T Piece">
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="1104890389" name="Normal">
+			<mesh_name>guid://d8664969262183b463305b837a24cb06ecc7a6ad</mesh_name>
+			<surface name="box" collision="1" physics_friction="1" physics_restitution="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<transform>3.57627783387e-07 0.999999701977 0 0.0 -4.99999952316 1.78813934326e-06 0 0.0 0 0 0.999999821186 0.0 -3.999999545 0 1.0000000596 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="804479590" name="Normal_1">
+			<mesh_name>guid://d8664969262183b463305b837a24cb06ecc7a6ad</mesh_name>
+			<surface name="box" collision="1" physics_friction="1" physics_restitution="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<transform>0.999999642372 0 0 0.0 0 5 0 0.0 0 0 0.999999821186 0.0 0 7.1054273576e-15 1.0000000596 1.0</transform>
+		</node>
+	</node>
+</nodes>

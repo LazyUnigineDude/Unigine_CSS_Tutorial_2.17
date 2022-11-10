@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.16.0.2" guid="1a9190f6bd9b53ddf15143987855f2173b80688a" base_material="4dfec30f491f753f6e89094db6d3d695e89f9d6f">
+	<parameter name="albedo_color" expression="0">0.690196097 0.580392182 0.184313729 1</parameter>
+	<parameter name="metalness" expression="0">1</parameter>
+	<parameter name="roughness" expression="0">0.5</parameter>
+</material>

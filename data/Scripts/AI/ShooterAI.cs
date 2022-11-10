@@ -11,17 +11,19 @@ public class ShooterAI : Component
     private double DistanceRatio, CurrentTime;
     private float Weight, ViewDistance;
     public AssetLinkNode BulletPrefab;
+    public Node PhysicalTriggerNode;
 
     BoundFrustum BF;
-    bool isInsideFrustum = false;
+    bool isVisible = false;
 
-    enum AISTATE { IDLE, ALERT, SEARCH, AGGRESSIVE, SHOOT }
+    enum AISTATE { IDLE, ALERT, SEARCH, AGGRESSIVE, SHOOT, DODGE }
     AISTATE STATE;
     quat HorReset = new quat(90, 0, 0);
     PathMaker Path;
     mat4 View;
     HealthBar Health;
     int CurrentHealth;
+    PhysicalTrigger DodgeArea;
 
     private void Init()
     {
@@ -29,7 +31,7 @@ public class ShooterAI : Component
 
         ViewDistance = 30;
         Weight = 0;
-        STATE = AISTATE.IDLE;
+        STATE = AISTATE.DODGE;
         Path = GetComponent<PathMaker>(PathMakerNode);
         BF = new();
         View = new();
@@ -37,6 +39,13 @@ public class ShooterAI : Component
 
         Health = node.GetComponent<HealthBar>();
         CurrentHealth = Health.ShowHealth();
+        DodgeArea = PhysicalTriggerNode as PhysicalTrigger;
+        DodgeArea.AddEnterCallback(EnterDodgeArea);
+    }
+
+    private void EnterDodgeArea(Body Body)
+    {
+
     }
 
     private void Update()
@@ -53,12 +62,17 @@ public class ShooterAI : Component
 
         if (BF.Inside((vec3)MainCharacter.WorldPosition))
         {
-            isInsideFrustum = true;
-            double distance = MathLib.Distance(node.WorldPosition, MainCharacter.WorldPosition);
-            DistanceRatio = distance / ViewDistance;
-        }
-        else isInsideFrustum = false;
+            Unigine.Object x = World.GetIntersection(node.GetChild(0).WorldPosition, MainCharacter.WorldPosition, 1);
+            Visualizer.RenderLine3D(node.GetChild(0).WorldPosition, MainCharacter.WorldPosition, vec4.RED);
 
+            if (x && x.Name == MainCharacter.GetChild(0).Name)
+            {
+                isVisible = true;
+                double distance = MathLib.Distance(node.WorldPosition, MainCharacter.WorldPosition);
+                DistanceRatio = distance / ViewDistance;
+            }
+            else isVisible = false;
+        }
         Path.RenderPath();
         AiSTATE();
     }
@@ -72,7 +86,7 @@ public class ShooterAI : Component
             case AISTATE.IDLE:
                 //Log.Message("IDLE\n");
                 Weight = MathLib.Clamp(Weight -= Game.IFps, 0f, 1f);
-                if (isInsideFrustum) STATE = AISTATE.ALERT;
+                if (isVisible) STATE = AISTATE.ALERT;
                 if (MathLib.Distance(node.WorldPosition, Path.GetCurrentPathPosition()) > 0.1f)
                 {
                     MoveTowards(Path.GetCurrentPathPosition(), node, 1);
@@ -87,7 +101,7 @@ public class ShooterAI : Component
             case AISTATE.ALERT:
                 //Log.Message("ALRT\n");
                 Weight = MathLib.Clamp(Weight += Game.IFps / (float)DistanceRatio, 0f, 1f);
-                if (!isInsideFrustum) STATE = AISTATE.IDLE;
+                if (!isVisible) STATE = AISTATE.IDLE;
                 if (Weight == 1f) STATE = AISTATE.AGGRESSIVE;
 
                 RotateTowards(MainCharacter.WorldPosition, node, 0.005f);
@@ -96,13 +110,13 @@ public class ShooterAI : Component
                 //Log.Message("SRCH\n");
                 Weight = MathLib.Clamp(Weight -= Game.IFps / 5, 0f, 1f);
                 if (Weight == 0f) STATE = AISTATE.IDLE;
-                if (isInsideFrustum) { STATE = AISTATE.AGGRESSIVE; Weight = 1; }
+                if (isVisible) { STATE = AISTATE.AGGRESSIVE; Weight = 1; }
                 MoveTowards(MainCharacter.WorldPosition, node, 3);
                 RotateTowards(MainCharacter.WorldPosition, node, 0.05f);
                 break;
             case AISTATE.AGGRESSIVE:
                 //Log.Message("AGRO\n");
-                if (!isInsideFrustum) STATE = AISTATE.SEARCH;
+                if (!isVisible) STATE = AISTATE.SEARCH;
                 MoveTowards(MainCharacter.WorldPosition, node, 5);
                 RotateTowards(MainCharacter.WorldPosition, node, 0.05f);
                 if (MathLib.Distance(node.WorldPosition, MainCharacter.WorldPosition) < 20.0f) { STATE = AISTATE.SHOOT; CurrentTime = Game.Time; }

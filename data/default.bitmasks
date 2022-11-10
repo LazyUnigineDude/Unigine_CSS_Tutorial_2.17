@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bit_mask_names>
+	<intersection>
+		<name index="1">Weapon</name>
+	</intersection>
+	<collision>
+		<name index="1">Collision Mask 1</name>
+	</collision>
+</bit_mask_names>

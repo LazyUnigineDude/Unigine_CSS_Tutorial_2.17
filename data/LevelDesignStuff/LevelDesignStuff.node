@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.16.0.2">
+	<node type="NodeDummy" id="1976724554" name="LevelDesignStuff">
+		<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+		<node type="NodeReference" id="575124842" name="Normal">
+			<reference>guid://7efbf52c0435ee9b3d60d33e8f9261855fb5e520</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -4.00000047684 -18.0000021458 -4.17232538297e-07 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1837914148" name="T Piece">
+			<reference>guid://3635e2ae987aca35a66956100fa2b22f4147b9c2</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -12.0000014305 -6.00000071526 -9.5367437325e-07 1.0</transform>
+		</node>
+		<node type="NodeReference" id="791320351" name="CornerPiece">
+			<reference>guid://0d4bcab3e7869076b7594d5daedfef18b069a797</reference>
+			<transform>5.96045808265e-08 -0.999998867512 0 0.0 0.999998986721 5.9604587932e-08 0 0.0 0 0 0.999999821186 0.0 -12.0000014305 2.00000023842 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="189482308" name="CornerPiece_1">
+			<reference>guid://0d4bcab3e7869076b7594d5daedfef18b069a797</reference>
+			<transform>0.999998569488 0 0 0.0 0 0.999998688698 0 0.0 0 0 0.999999701977 0.0 -12.0000014305 -14.0000016689 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="827356539" name="T Piece_2">
+			<reference>guid://3635e2ae987aca35a66956100fa2b22f4147b9c2</reference>
+			<transform>-1.19209246918e-07 0.999999582767 0 0.0 -0.999999582767 -1.19209246918e-07 0 0.0 0 0 0.999999940395 0.0 4.00000047684 -6.00000047684 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1688579628" name="Normal_1">
+			<reference>guid://7efbf52c0435ee9b3d60d33e8f9261855fb5e520</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 4.00000047684 -18.0000021458 -4.17232538297e-07 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1389676415" name="Normal_2">
+			<reference>guid://7efbf52c0435ee9b3d60d33e8f9261855fb5e520</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 12.000000596 -18.0000026226 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="2144435437" name="Normal_3">
+			<reference>guid://7efbf52c0435ee9b3d60d33e8f9261855fb5e520</reference>
+			<transform>-1.1920927534e-07 0.999999821186 0 0.0 -0.999999821186 -1.1920927534e-07 0 0.0 0 0 0.999999940395 0.0 16.0000008345 -14.0000023842 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1591481858" name="Normal_5">
+			<reference>guid://7efbf52c0435ee9b3d60d33e8f9261855fb5e520</reference>
+			<transform>-1.19209232707e-07 0.999999463558 0 0.0 -0.999999463558 -1.19209232707e-07 0 0.0 0 0 0.999999940395 0.0 16.0000008345 1.99999856949 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="2136894900" name="Normal_7">
+			<reference>guid://7efbf52c0435ee9b3d60d33e8f9261855fb5e520</reference>
+			<transform>-1.19209232707e-07 0.999999463558 0 0.0 -0.999999463558 -1.19209232707e-07 0 0.0 0 0 0.999999940395 0.0 16.0000008345 17.9999995232 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1028630221" name="Normal_8">
+			<reference>guid://7efbf52c0435ee9b3d60d33e8f9261855fb5e520</reference>
+			<transform>-1.19209261129e-07 0.999999701977 0 0.0 -0.999999701977 -1.19209261129e-07 0 0.0 0 0 0.999999940395 0.0 16.0000008345 9.99999904633 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1156161467" name="Normal_9">
+			<reference>guid://7efbf52c0435ee9b3d60d33e8f9261855fb5e520</reference>
+			<transform>-1.19209161653e-07 0.999998867512 0 0.0 -0.999998867512 -1.19209161653e-07 0 0.0 0 0 0.999999940395 0.0 4.00000011921 9.99999904633 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1499878483" name="Normal_11">
+			<reference>guid://7efbf52c0435ee9b3d60d33e8f9261855fb5e520</reference>
+			<transform>-1.19209218496e-07 0.999999344349 0 0.0 -0.999999344349 -1.19209218496e-07 0 0.0 0 0 0.999999940395 0.0 4.00000011921 1.99999856949 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="356361724" name="CornerPiece_2">
+			<reference>guid://0d4bcab3e7869076b7594d5daedfef18b069a797</reference>
+			<transform>5.96045595103e-08 -0.999998509884 0 0.0 0.999998629093 5.96045666157e-08 0 0.0 0 0 0.999999821186 0.0 -12.0000008345 17.9999995232 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="814655913" name="Normal_13">
+			<reference>guid://7efbf52c0435ee9b3d60d33e8f9261855fb5e520</reference>
+			<transform>0.999998688698 5.96045737211e-08 0 0.0 -5.96045737211e-08 0.999998688698 0 0.0 0 0 0.999999940395 0.0 -1.19209303762e-07 21.9999997616 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="341626401" name="Normal_12">
+			<reference>guid://7efbf52c0435ee9b3d60d33e8f9261855fb5e520</reference>
+			<transform>0.999998688698 5.96045737211e-08 0 0.0 -5.96045737211e-08 0.999998688698 0 0.0 0 0 0.999999940395 0.0 12.083452896 22.0000004818 0 1.0</transform>
+		</node>
+	</node>
+</nodes>

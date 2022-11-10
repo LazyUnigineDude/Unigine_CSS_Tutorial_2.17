@@ -10,10 +10,10 @@
 	</struct>
 	<parameter name="Normal" type="ThirdPerson">
 		<parameter name="FocusRadius">1</parameter>
-		<parameter name="CameraRadius">1</parameter>
+		<parameter name="CameraRadius">2</parameter>
 		<parameter name="RotationSpeed_Horizontal">1.5</parameter>
 		<parameter name="RotationSpeed_Vertical">1.5</parameter>
-		<parameter name="Height">2</parameter>
+		<parameter name="Height">1</parameter>
 		<parameter name="Height_Constraints">-50 50</parameter>
 	</parameter>
 	<parameter name="Aiming" type="ThirdPerson">
@@ -21,7 +21,7 @@
 		<parameter name="CameraRadius">0.5</parameter>
 		<parameter name="RotationSpeed_Horizontal">1</parameter>
 		<parameter name="RotationSpeed_Vertical">1</parameter>
-		<parameter name="Height">1.5</parameter>
+		<parameter name="Height">1</parameter>
 		<parameter name="Height_Constraints">-50 50</parameter>
 	</parameter>
 </property>

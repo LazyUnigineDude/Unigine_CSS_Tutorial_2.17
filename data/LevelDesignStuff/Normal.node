@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.16.0.2">
+	<node type="NodeDummy" id="1431288271" name="normalPiece">
+		<transform>0.999999880791 0 0 0.0 0 5.96046270118e-08 -0.999999642372 0.0 0 0.999999701977 5.96046305645e-08 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="2053950636" name="Normal">
+			<mesh_name>guid://d8664969262183b463305b837a24cb06ecc7a6ad</mesh_name>
+			<surface name="box" collision="1" physics_friction="1" physics_restitution="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<transform>0.999997735023 -0.00138092506677 0.00138121319469 0.0 -0.00690458575264 0.00107824802399 4.99999523163 0.0 -0.00138122192584 -0.999998986721 0.000213742241613 0.0 -0.00138121410793 -0.999999119445 0.000213742302137 1.0</transform>
+		</node>
+	</node>
+</nodes>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.16.0.2">
+	<node type="ObjectMeshStatic" id="972748221" name="Bullet">
+		<mesh_name>guid://c4c58c6ba6dcb6ce80984fd53fc6df30822568cf</mesh_name>
+		<surface name="Metal_Chrome" physics_friction="1" physics_restitution="1" material="dbab1640bb3c949f6540d972737f6a293c34ad74"/>
+		<surface name="Gold_1_faked ref" physics_friction="1" physics_restitution="1" material="1a9190f6bd9b53ddf15143987855f2173b80688a"/>
+		<body type="BodyRigid" id="136791770" frozen="0" gravity="0">
+			<high_priority_contacts>1</high_priority_contacts>
+			<shape type="ShapeCapsule" id="136791770" transform="5.96046412e-08 0 -0.999999881 0 0 0.999999821 0 0 0.99999994 0 5.96046448e-08 0 -0.0108632389 -1.25466642e-08 -0.00507220719 1">
+				<radius>0.00999999978</radius>
+				<height>0.0500000007</height>
+			</shape>
+		</body>
+		<properties>
+			<property parent="6cd6c2574f447bcaa2f5b8a17232798c0418e77b" guid="49afc8d8a17a36576fc95fca808d4ca18bdcfd8c">
+				<parameter name="LifeTime">1</parameter>
+			</property>
+		</properties>
+		<transform>-1.6292066546e-07 -0.999999880791 7.91667134661e-08 0.0 0.999999880791 -1.6292066546e-07 2.00454238252e-14 0.0 -7.14752958497e-15 7.91667108607e-08 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>
