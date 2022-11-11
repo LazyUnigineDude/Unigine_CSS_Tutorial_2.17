@@ -58,7 +58,7 @@ public class GunHandler : Component
         else if (AmountInGun > 0)
         {
             Node _bullet = BulletPrefab.Load();
-            _bullet.WorldPosition = Gun.GetChild(0).WorldPosition;
+            _bullet.WorldPosition = Game.Player.WorldPosition + Game.Player.GetWorldDirection();
             _bullet.WorldLookAt(Lookat);
 
             Bullet x = GetComponent<Bullet>(_bullet);
