@@ -25,6 +25,8 @@ public class ShooterAI : Component
     int CurrentHealth;
     PhysicalTrigger DodgeArea;
 
+    public Node NavNode;
+
     private void Init()
     {
         // write here code to be called on component initialization
@@ -45,7 +47,26 @@ public class ShooterAI : Component
 
     private void EnterDodgeArea(Body Body)
     {
+        if (Body.Object.Name != node.Name)
+        {
+            Log.Message($"{Body.Object.Name} Entered\n");
+            Unigine.Object MainObj = World.GetIntersection(Body.Position, Body.Position + Body.Object.BodyLinearVelocity, 4);
+            Visualizer.RenderLine3D(Body.Position, Body.Position + Body.Object.BodyLinearVelocity, vec4.YELLOW, 1);
 
+            if (MainObj && MainObj.Name == node.Name && STATE == AISTATE.DODGE) {
+
+                vec3 MainVector = Body.Object.BodyLinearVelocity.Normalized;
+                float Angle = MathLib.Angle(new vec3(node.WorldPosition) + node.GetWorldDirection(MathLib.AXIS.Y), MainVector, vec3.UP);
+                Angle = (Angle > 0) ? 90 : -90;
+                vec3 RotatingVector = new vec3(
+                    MainVector.x * Math.Cos(Angle) - MainVector.y * Math.Sin(Angle),
+                    MainVector.x * Math.Sin(Angle) + MainVector.y * Math.Cos(Angle),
+                    0);
+                Visualizer.RenderVector(Body.Position, Body.Position + MainVector, vec4.BLUE, 0.25f, true, 1);
+                Visualizer.RenderVector(Body.Position, Body.Position + RotatingVector, vec4.BLUE, 0.25f, true, 1);
+                node.WorldPosition += RotatingVector * 5;
+            }
+        }
     }
 
     private void Update()
