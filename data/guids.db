@@ -242,6 +242,7 @@
 	"42cf5f1389b359566988c0bde7a10af83c3351f7": "default.bitmasks.meta",
 	"38159f4e419f1e55ede65bb00dd9bb4ffbd5f062": "configs/default.controls.meta",
 	"fc8b69c4efcb6a53d83b6b9665f72dfd64041738": "core/materials/base/debug/debug_f0.mat.meta",
+	"7e600fd879b7d15719ac3eca4cec9fa102c6348c": "materials/material.001.mat.meta",
 	"0436f060d05f683f02f75892968a9ec99e5e1994": "core/materials/base/objects/clouds/presets/clouds_cumulonimbus1.mat.meta",
 	"44db37e389003be622c5a20d924e5c08dfdccfc7": "core/materials/base/objects/clouds/presets/clouds_cumulonimbus2.mat.meta",
 	"dfddca7abf48d791062eabbcea9693eb96f7184e": "core/materials/base/objects/clouds/presets/clouds_cumulonimbus3.mat.meta",
@@ -320,6 +321,7 @@
 	"9b6102c70ce6617a33e28291df1e5abc857c76eb": "configs/default.boot.meta",
 	"7dccc6d9a2408264e96d6a7314a22d3650f4c31d": "Shooter/Ch36_nonPBR.fbx.meta",
 	"1851198c4767077ba4a8569e20ec4d659e221f80": "Shotgun/projektil FBX.FBX.meta",
+	"6c5583efb1aee082dc7625f936e11704f46cb693": "meshthingy.fbx.meta",
 	"6da434f3669975b615e6719d42bc4658829d95d7": "core/gui/gui.rc",
 	"38aa5c8506efa420191f08ffc17f0252e4d0bd89": "editor2/upgrade/2.10.0.0/upgrade.usc",
 	"48bc545533e619b00f8a614fa9f25e62a6eaca59": "editor2/upgrade/2.11.0.0/upgrade.usc",
@@ -2072,6 +2074,7 @@
 	"1df42d5a79b11cf1cf7e719c3f5ae04b90bd392e": "core/systems/tracker/parameters/render.parameters",
 	"aab77843c035c0c63d4ea16d716393e81d13e627": "core/systems/tracker/parameters/property.parameters",
 	"0e7e317b9d33a9fda598b48190874861c85b12ef": "core/materials/base/debug/debug_f0.mat",
+	"010ec9cee3b546d5f1a96a30610877cf3cd082e2": "materials/material.001.mat",
 	"daef57d4eb8c9972a8ab978e86a00fda800ede55": "core/materials/base/objects/clouds/presets/clouds_cumulonimbus1.mat",
 	"19f23c6efb45437ae727364cdaba360dfbfa1794": "core/materials/base/objects/clouds/presets/clouds_cumulonimbus2.mat",
 	"b91d1f5e18e240e6cbecfc42f967b361b8e7975c": "core/materials/base/objects/clouds/presets/clouds_cumulonimbus3.mat",
@@ -2379,5 +2382,6 @@
 	"efccad31e09e44dc6d641a8b44aaae6ec357a2f5": "core/import/xatlas/description.txt",
 	"ba7119a6459b64cd8781bfc88af7608748a3a43a": "Shooter/Ch36_nonPBR.fbx",
 	"802b83d2f4ac51093b59a6d44328e42337d37b26": "Shotgun/projektil FBX.FBX",
+	"02c0639fc26c5c724fe711290902287480fd3943": "meshthingy.fbx",
 	"59ded52a66c882811735f9ec53ccac5bdf62f5fe": "editor2/resources/template_graphs/material_graph_empty"
 }

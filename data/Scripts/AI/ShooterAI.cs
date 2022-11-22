@@ -26,6 +26,9 @@ public class ShooterAI : Component
     PhysicalTrigger DodgeArea;
 
     public Node NavNode;
+    NavigationMesh NavMesh;
+    dvec3[] PathPoints = new dvec3[4];
+    PathRoute[] Pathing = new PathRoute[4];
 
     private void Init()
     {
@@ -43,6 +46,37 @@ public class ShooterAI : Component
         CurrentHealth = Health.ShowHealth();
         DodgeArea = PhysicalTriggerNode as PhysicalTrigger;
         DodgeArea.AddEnterCallback(EnterDodgeArea);
+        NavCreate();
+    }
+
+    void NavCreate()
+    {
+        NavMesh = NavNode as NavigationMesh;
+
+        for (int i = 0; i < PathPoints.Length; i++)
+        {
+            PathPoints[i] = NavNode.GetChild(i).WorldPosition;
+        }
+
+        for (int i = 0; i < Pathing.Length; i++)
+        {
+            Pathing[i] = new PathRoute();
+            Pathing[i].Create2D(PathPoints[i], PathPoints[(i + 1) % PathPoints.Length]);
+        }
+
+    }
+
+    void NavVisualize()
+    {
+        NavMesh.RenderVisualizer();
+
+        foreach (var Path in Pathing)
+        {
+            if (Path.IsReached)
+            {
+                Path.RenderVisualizer(vec4.WHITE);
+            }
+        }
     }
 
     private void EnterDodgeArea(Body Body)
@@ -78,7 +112,7 @@ public class ShooterAI : Component
         vec3 Pos = (vec3)node.GetChild(0).WorldPosition;
         View.Set(Rotation, Pos);
 
-        Visualizer.RenderFrustum(Frustum, View, vec4.BLACK);
+       // Visualizer.RenderFrustum(Frustum, View, vec4.BLACK);
         BF.Set(Frustum, MathLib.Inverse(View));
 
         if (BF.Inside((vec3)MainCharacter.WorldPosition))
@@ -94,8 +128,9 @@ public class ShooterAI : Component
             }
             else isVisible = false;
         }
-        Path.RenderPath();
-        AiSTATE();
+       // Path.RenderPath();
+      //  AiSTATE();
+        NavVisualize();
     }
 
     void AiSTATE()

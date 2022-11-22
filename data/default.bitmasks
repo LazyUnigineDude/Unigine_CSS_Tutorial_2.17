@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <bit_mask_names>
 	<intersection>
+		<name index="2">Enemy</name>
 		<name index="1">Weapon</name>
 	</intersection>
 	<collision>
