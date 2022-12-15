@@ -12,6 +12,7 @@ public class ShooterAI : Component
     private float Weight, ViewDistance;
     public AssetLinkNode BulletPrefab;
     public Node PhysicalTriggerNode;
+    public Node ObstacleNode;
 
     BoundFrustum BF;
     bool isVisible = false;
@@ -25,6 +26,7 @@ public class ShooterAI : Component
     int CurrentHealth;
     PhysicalTrigger DodgeArea;
 
+    ObstacleBox Obstacle;
     public Node NavNode;
     NavigationMesh NavMesh;
     dvec3[] PathPoints = new dvec3[4];
@@ -46,6 +48,7 @@ public class ShooterAI : Component
         CurrentHealth = Health.ShowHealth();
         DodgeArea = PhysicalTriggerNode as PhysicalTrigger;
         DodgeArea.AddEnterCallback(EnterDodgeArea);
+        Obstacle = ObstacleNode as ObstacleBox;
         NavCreate();
     }
 
@@ -69,6 +72,7 @@ public class ShooterAI : Component
     void NavVisualize()
     {
         NavMesh.RenderVisualizer();
+        Obstacle.RenderVisualizer();
 
         foreach (var Path in Pathing)
         {

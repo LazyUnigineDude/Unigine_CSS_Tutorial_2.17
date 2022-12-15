@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<boot version="2.16.0.2" autosave="1">
+<boot version="2.16.1.0" autosave="1">
 	<gui_path>core/gui/</gui_path>
 	<engine_log>log.txt</engine_log>
 	<system_script>core/unigine.usc</system_script>
@@ -51,6 +51,7 @@
 		<user_config>configs/default.user</user_config>
 		<video_adapter>0</video_adapter>
 		<video_debug>0</video_debug>
+		<video_debug_shader>0</video_debug_shader>
 		<video_offscreen>0</video_offscreen>
 		<vk_pso_log>0</vk_pso_log>
 		<world_manager_images_memory>128</world_manager_images_memory>

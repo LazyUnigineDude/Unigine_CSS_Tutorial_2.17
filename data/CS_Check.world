@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<world version="2.16.0.2">
+<world version="2.16.1.0">
 	<data>
 		<user/>
 		<unigine_editor/>
@@ -57,9 +57,9 @@
 		<albedo_convexity_texture_name>core/textures/common/white.texture</albedo_convexity_texture_name>
 		<shading_convexity_texture_name>core/textures/common/white.texture</shading_convexity_texture_name>
 		<environment_preset_0_intensity>1</environment_preset_0_intensity>
-		<environment_preset_0_scattering_base_lut_texture_name>core/textures/scattering_lut/preset_0/base.tga</environment_preset_0_scattering_base_lut_texture_name>
-		<environment_preset_0_scattering_mie_lut_texture_name>core/textures/scattering_lut/preset_0/mie.tga</environment_preset_0_scattering_mie_lut_texture_name>
-		<environment_preset_0_scattering_light_color_lut_texture_name>core/textures/scattering_lut/preset_0/light_color.tga</environment_preset_0_scattering_light_color_lut_texture_name>
+		<environment_preset_0_scattering_base_lut_texture_name>core/textures/scattering_lut/preset_0/base.tif</environment_preset_0_scattering_base_lut_texture_name>
+		<environment_preset_0_scattering_mie_lut_texture_name>core/textures/scattering_lut/preset_0/mie.tif</environment_preset_0_scattering_mie_lut_texture_name>
+		<environment_preset_0_scattering_light_color_lut_texture_name>core/textures/scattering_lut/preset_0/light_color.tif</environment_preset_0_scattering_light_color_lut_texture_name>
 		<environment_preset_0_sun_texture_name>core/textures/world_light/celestial_body_sun.png</environment_preset_0_sun_texture_name>
 		<environment_preset_0_sun_angular_size>0.5</environment_preset_0_sun_angular_size>
 		<environment_preset_0_sun_texture_color>1 1 1 1</environment_preset_0_sun_texture_color>
@@ -83,15 +83,15 @@
 		<environment_preset_0_haze_physical_sun_light_intensity>0.00999999978</environment_preset_0_haze_physical_sun_light_intensity>
 		<environment_preset_0_haze_physical_sun_color_saturation>0</environment_preset_0_haze_physical_sun_color_saturation>
 		<environment_preset_0_haze_scattering_mie_intensity>0</environment_preset_0_haze_scattering_mie_intensity>
-		<environment_preset_0_haze_scattering_mie_fresnel_intensity>1</environment_preset_0_haze_scattering_mie_fresnel_intensity>
+		<environment_preset_0_haze_scattering_mie_front_side_intensity>0</environment_preset_0_haze_scattering_mie_front_side_intensity>
 		<environment_preset_0_haze_scattering_mie_fresnel_power>10</environment_preset_0_haze_scattering_mie_fresnel_power>
 		<environment_preset_0_ambient_intensity>1</environment_preset_0_ambient_intensity>
 		<environment_preset_0_reflection_intensity>1</environment_preset_0_reflection_intensity>
 		<environment_preset_0_sky_intensity>1</environment_preset_0_sky_intensity>
 		<environment_preset_1_intensity>0</environment_preset_1_intensity>
-		<environment_preset_1_scattering_base_lut_texture_name>core/textures/scattering_lut/preset_1/base.tga</environment_preset_1_scattering_base_lut_texture_name>
-		<environment_preset_1_scattering_mie_lut_texture_name>core/textures/scattering_lut/preset_1/mie.tga</environment_preset_1_scattering_mie_lut_texture_name>
-		<environment_preset_1_scattering_light_color_lut_texture_name>core/textures/scattering_lut/preset_1/light_color.tga</environment_preset_1_scattering_light_color_lut_texture_name>
+		<environment_preset_1_scattering_base_lut_texture_name>core/textures/scattering_lut/preset_1/base.tif</environment_preset_1_scattering_base_lut_texture_name>
+		<environment_preset_1_scattering_mie_lut_texture_name>core/textures/scattering_lut/preset_1/mie.tif</environment_preset_1_scattering_mie_lut_texture_name>
+		<environment_preset_1_scattering_light_color_lut_texture_name>core/textures/scattering_lut/preset_1/light_color.tif</environment_preset_1_scattering_light_color_lut_texture_name>
 		<environment_preset_1_sun_texture_name>core/textures/world_light/celestial_body_sun.png</environment_preset_1_sun_texture_name>
 		<environment_preset_1_sun_angular_size>0.5</environment_preset_1_sun_angular_size>
 		<environment_preset_1_sun_texture_color>1 1 1 1</environment_preset_1_sun_texture_color>
@@ -115,15 +115,15 @@
 		<environment_preset_1_haze_physical_sun_light_intensity>0.00999999978</environment_preset_1_haze_physical_sun_light_intensity>
 		<environment_preset_1_haze_physical_sun_color_saturation>0</environment_preset_1_haze_physical_sun_color_saturation>
 		<environment_preset_1_haze_scattering_mie_intensity>0</environment_preset_1_haze_scattering_mie_intensity>
-		<environment_preset_1_haze_scattering_mie_fresnel_intensity>1</environment_preset_1_haze_scattering_mie_fresnel_intensity>
+		<environment_preset_1_haze_scattering_mie_front_side_intensity>0</environment_preset_1_haze_scattering_mie_front_side_intensity>
 		<environment_preset_1_haze_scattering_mie_fresnel_power>10</environment_preset_1_haze_scattering_mie_fresnel_power>
 		<environment_preset_1_ambient_intensity>1</environment_preset_1_ambient_intensity>
 		<environment_preset_1_reflection_intensity>1</environment_preset_1_reflection_intensity>
 		<environment_preset_1_sky_intensity>1</environment_preset_1_sky_intensity>
 		<environment_preset_2_intensity>0</environment_preset_2_intensity>
-		<environment_preset_2_scattering_base_lut_texture_name>core/textures/scattering_lut/preset_2/base.tga</environment_preset_2_scattering_base_lut_texture_name>
-		<environment_preset_2_scattering_mie_lut_texture_name>core/textures/scattering_lut/preset_2/mie.tga</environment_preset_2_scattering_mie_lut_texture_name>
-		<environment_preset_2_scattering_light_color_lut_texture_name>core/textures/scattering_lut/preset_2/light_color.tga</environment_preset_2_scattering_light_color_lut_texture_name>
+		<environment_preset_2_scattering_base_lut_texture_name>core/textures/scattering_lut/preset_2/base.tif</environment_preset_2_scattering_base_lut_texture_name>
+		<environment_preset_2_scattering_mie_lut_texture_name>core/textures/scattering_lut/preset_2/mie.tif</environment_preset_2_scattering_mie_lut_texture_name>
+		<environment_preset_2_scattering_light_color_lut_texture_name>core/textures/scattering_lut/preset_2/light_color.tif</environment_preset_2_scattering_light_color_lut_texture_name>
 		<environment_preset_2_sun_texture_name>core/textures/world_light/celestial_body_sun.png</environment_preset_2_sun_texture_name>
 		<environment_preset_2_sun_angular_size>0.5</environment_preset_2_sun_angular_size>
 		<environment_preset_2_sun_texture_color>1 1 1 1</environment_preset_2_sun_texture_color>
@@ -147,7 +147,7 @@
 		<environment_preset_2_haze_physical_sun_light_intensity>1</environment_preset_2_haze_physical_sun_light_intensity>
 		<environment_preset_2_haze_physical_sun_color_saturation>1</environment_preset_2_haze_physical_sun_color_saturation>
 		<environment_preset_2_haze_scattering_mie_intensity>0</environment_preset_2_haze_scattering_mie_intensity>
-		<environment_preset_2_haze_scattering_mie_fresnel_intensity>1</environment_preset_2_haze_scattering_mie_fresnel_intensity>
+		<environment_preset_2_haze_scattering_mie_front_side_intensity>0</environment_preset_2_haze_scattering_mie_front_side_intensity>
 		<environment_preset_2_haze_scattering_mie_fresnel_power>10</environment_preset_2_haze_scattering_mie_fresnel_power>
 		<environment_preset_2_ambient_intensity>1</environment_preset_2_ambient_intensity>
 		<environment_preset_2_reflection_intensity>1</environment_preset_2_reflection_intensity>
@@ -275,7 +275,11 @@
 		<render_environment_correct_roughness>2</render_environment_correct_roughness>
 		<render_environment_cubemap_blend>0</render_environment_cubemap_blend>
 		<render_environment_haze>2</render_environment_haze>
+		<render_environment_haze_colorization_intensity>0.949999988</render_environment_haze_colorization_intensity>
+		<render_environment_haze_colorization_threshold>0.5</render_environment_haze_colorization_threshold>
 		<render_environment_haze_gradient>2</render_environment_haze_gradient>
+		<render_environment_haze_screen_space_global_illumination>1</render_environment_haze_screen_space_global_illumination>
+		<render_environment_haze_temporal_filter>1</render_environment_haze_temporal_filter>
 		<render_environment_hemisphere>0</render_environment_hemisphere>
 		<render_exposure>0.600000024</render_exposure>
 		<render_exposure_adaptation>1</render_exposure_adaptation>
@@ -391,6 +395,7 @@
 		<render_pre_post_materials_enabled>1</render_pre_post_materials_enabled>
 		<render_reflection_distance>1e+09</render_reflection_distance>
 		<render_reflection_dynamic>1</render_reflection_dynamic>
+		<render_reflection_dynamic_roughness_offset>0</render_reflection_dynamic_roughness_offset>
 		<render_reflection_lods>1</render_reflection_lods>
 		<render_refraction>1</render_refraction>
 		<render_refraction_dispersion>1 1 1</render_refraction_dispersion>
@@ -414,6 +419,7 @@
 		<render_shadows_penumbra_noise>1</render_shadows_penumbra_noise>
 		<render_shadows_screen_space>1</render_shadows_screen_space>
 		<render_shadows_translucent_depth>0.25</render_shadows_translucent_depth>
+		<render_shadows_world_cascades_culling_clusters>1</render_shadows_world_cascades_culling_clusters>
 		<render_shadows_world_lerp_cascades>1</render_shadows_world_lerp_cascades>
 		<render_sharpen>1</render_sharpen>
 		<render_sharpen_intensity>0.5</render_sharpen_intensity>
@@ -554,6 +560,7 @@
 		<render_sssss_taa_pixel_offset>1</render_sssss_taa_pixel_offset>
 		<render_sssss_taa_preserve_details>0.5</render_sssss_taa_preserve_details>
 		<render_sssss_taa_samples>1</render_sssss_taa_samples>
+		<render_stereo_focus_supersampling>1</render_stereo_focus_supersampling>
 		<render_stereo_hidden_area>0</render_stereo_hidden_area>
 		<render_stereo_hidden_area_exposure_transform>0.600000024 0.600000024 0 0</render_stereo_hidden_area_exposure_transform>
 		<render_stereo_hidden_area_transform>1 1 0 0</render_stereo_hidden_area_transform>
@@ -1058,6 +1065,7 @@
 					<parameter name="MainCharacter">863538119</parameter>
 					<parameter name="BulletPrefab">guid://9148c77a1785b091f0bbb0bc80bdd4eb33db654e</parameter>
 					<parameter name="PhysicalTriggerNode">1161298927</parameter>
+					<parameter name="ObstacleNode">945215821</parameter>
 					<parameter name="NavNode">1224506493</parameter>
 				</property>
 				<property parent="14db8ba56855c8c05186a51f2616aff264524ea9" guid="7221e790277b15af6669c7420aa45db96b306bc4">
@@ -1085,7 +1093,7 @@
 			<is_main>1</is_main>
 			<is_listener>1</is_listener>
 			<controlled>1</controlled>
-			<transform>0.994154930115 -0.107962578535 9.41753387453e-06 0.0 0.0763412415981 0.703036904335 0.707043886185 0.0 -0.0763408988714 -0.702910423279 0.707169651985 0.0 -9.11258140496 -68.6489198843 46.0398408847 1.0</transform>
+			<transform>0.998029351234 -0.0627487748861 1.12783163786e-05 0.0 0.0306093357503 0.487003237009 0.872863590717 0.0 -0.0547766163945 -0.871143162251 0.487964242697 0.0 -9.38197553999 -82.5675685549 45.4512684483 1.0</transform>
 		</node>
 		<node type="NavigationMesh" id="1224506493" name="NavigationMesh">
 			<height>1</height>
@@ -1105,6 +1113,10 @@
 			<node type="NodeDummy" id="296929802" name="Path_3">
 				<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 1 0.0 -13.5188546832 30.8567766016 0 1.0</transform>
 			</node>
+		</node>
+		<node type="ObstacleBox" id="945215821" name="ObstacleBox">
+			<size>4 4 4</size>
+			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 -42.7496789011 -29.163031215 0 1.0</transform>
 		</node>
 	</editor>
 	<console>
