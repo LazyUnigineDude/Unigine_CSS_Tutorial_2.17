@@ -20,7 +20,7 @@ public class ShooterAI : Component
     enum AISTATE { IDLE, ALERT, SEARCH, AGGRESSIVE, SHOOT, DODGE }
     AISTATE STATE;
     quat HorReset = new quat(90, 0, 0);
-    PathMaker Path;
+    PathMaker Path, ObjPath;
     mat4 View;
     HealthBar Health;
     int CurrentHealth;
@@ -39,16 +39,20 @@ public class ShooterAI : Component
         ViewDistance = 30;
         Weight = 0;
         STATE = AISTATE.DODGE;
-        Path = GetComponent<PathMaker>(PathMakerNode);
+        //Path = GetComponent<PathMaker>(PathMakerNode);
+       // Path.InitPath();
+
+        ObjPath = GetComponent<PathMaker>(ObstacleNode);
+        ObjPath.InitPath();
+
         BF = new();
         View = new();
-        Path.InitPath();
 
         Health = node.GetComponent<HealthBar>();
         CurrentHealth = Health.ShowHealth();
         DodgeArea = PhysicalTriggerNode as PhysicalTrigger;
         DodgeArea.AddEnterCallback(EnterDodgeArea);
-        Obstacle = ObstacleNode as ObstacleBox;
+        Obstacle = ObstacleNode.GetChild(0) as ObstacleBox;
         NavCreate();
     }
 
@@ -59,14 +63,9 @@ public class ShooterAI : Component
         for (int i = 0; i < PathPoints.Length; i++)
         {
             PathPoints[i] = NavNode.GetChild(i).WorldPosition;
-        }
-
-        for (int i = 0; i < Pathing.Length; i++)
-        {
             Pathing[i] = new PathRoute();
-            Pathing[i].Create2D(PathPoints[i], PathPoints[(i + 1) % PathPoints.Length]);
+            Pathing[i].Radius = 1.25f;
         }
-
     }
 
     void NavVisualize()
@@ -135,6 +134,15 @@ public class ShooterAI : Component
        // Path.RenderPath();
       //  AiSTATE();
         NavVisualize();
+
+        ObjPath.MoveAlongPath();
+        ObjPath.MoveObject(ObstacleNode);
+
+        // move navroute
+        for (int i = 0; i < Pathing.Length; i++)
+        {
+            Pathing[i].Create2D(PathPoints[i], PathPoints[(i + 1) % PathPoints.Length]);
+        }
     }
 
     void AiSTATE()

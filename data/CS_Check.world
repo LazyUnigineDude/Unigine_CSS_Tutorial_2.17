@@ -1065,7 +1065,7 @@
 					<parameter name="MainCharacter">863538119</parameter>
 					<parameter name="BulletPrefab">guid://9148c77a1785b091f0bbb0bc80bdd4eb33db654e</parameter>
 					<parameter name="PhysicalTriggerNode">1161298927</parameter>
-					<parameter name="ObstacleNode">945215821</parameter>
+					<parameter name="ObstacleNode">1658871261</parameter>
 					<parameter name="NavNode">1224506493</parameter>
 				</property>
 				<property parent="14db8ba56855c8c05186a51f2616aff264524ea9" guid="7221e790277b15af6669c7420aa45db96b306bc4">
@@ -1114,9 +1114,26 @@
 				<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 1 0.0 -13.5188546832 30.8567766016 0 1.0</transform>
 			</node>
 		</node>
-		<node type="ObstacleBox" id="945215821" name="ObstacleBox">
-			<size>4 4 4</size>
-			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 -42.7496789011 -29.163031215 0 1.0</transform>
+		<node type="NodeDummy" id="1658871261" name="Object">
+			<properties>
+				<property parent="2d065d592ca426e4b487c4f3bb87c5b629e0819d" guid="3cb8e72890d4a067f933229aa4db1131923158dc">
+					<parameter name="PathPoints">
+						<value index="0">1370217455</value>
+						<value index="1">1442746928</value>
+					</parameter>
+				</property>
+			</properties>
+			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 -16.7181978456 -12.7697969203 0 1.0</transform>
+			<node type="ObstacleBox" id="945215821" name="ObstacleBox">
+				<size>4 4 4</size>
+				<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			</node>
+			<node type="NodeDummy" id="1370217455" name="1">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			</node>
+			<node type="NodeDummy" id="1442746928" name="2">
+				<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 1 0.0 0 25.458639489 0 1.0</transform>
+			</node>
 		</node>
 	</editor>
 	<console>
