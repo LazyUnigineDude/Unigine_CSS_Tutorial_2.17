@@ -946,12 +946,13 @@
 			<zfar>100000</zfar>
 			<oblique_frustum_plane>0 0 -1 0</oblique_frustum_plane>
 			<is_oblique_frustum>0</is_oblique_frustum>
-			<is_main>0</is_main>
+			<is_main>1</is_main>
 			<is_listener>1</is_listener>
 			<controlled>1</controlled>
 			<properties>
 				<property parent="fd977b057ba130a07c9e2b7fd532c2d250248409" guid="1634d5ad4825bb2835d36467003b169aff7a7531">
 					<parameter name="ThirdPersonCameraProperty">03847628bb24e367a4f8899a13eb4c31708657dc</parameter>
+					<parameter name="isAiming">0</parameter>
 					<parameter name="Following">863538119</parameter>
 					<parameter name="Camera">432164854</parameter>
 				</property>
@@ -1009,39 +1010,6 @@
 				</node>
 			</node>
 		</node>
-		<node type="NodeDummy" id="541330363" name="PathMaker">
-			<properties>
-				<property parent="2d065d592ca426e4b487c4f3bb87c5b629e0819d" guid="0a65c44b7b22cd2e6471b2b517162490cd302eaf">
-					<parameter name="PathPoints">
-						<value index="0">564713694</value>
-						<value index="1">1779033589</value>
-						<value index="2">1708456333</value>
-						<value index="3">576175389</value>
-						<value index="4">305849405</value>
-						<value index="5">1743062072</value>
-					</parameter>
-				</property>
-			</properties>
-			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 0 25 1 1.0</transform>
-			<node type="NodeDummy" id="564713694" name="PathMaker_1">
-				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -5 -14.0233637889 0 1.0</transform>
-			</node>
-			<node type="NodeDummy" id="1779033589" name="PathMaker_6">
-				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -5 -0.767232818986 0 1.0</transform>
-			</node>
-			<node type="NodeDummy" id="1708456333" name="PathMaker_2">
-				<transform>5.96046305645e-08 -0.999999701976 0 0.0 0.999999701976 5.96046305645e-08 0 0.0 0 0 0.999999701977 0.0 -5.00000062558 15.4955453258 0 1.0</transform>
-			</node>
-			<node type="NodeDummy" id="576175389" name="PathMaker_3">
-				<transform>-0.999999761581 -5.64259788879e-07 0 0.0 5.64259902565e-07 -0.99999988079 0 0.0 0 0 0.999999821186 0.0 11.2223402484 15.9499094088 0 1.0</transform>
-			</node>
-			<node type="NodeDummy" id="305849405" name="PathMaker_5">
-				<transform>-0.999999761581 -1.04109689024e-06 0 0.0 1.04109700393e-06 -0.99999988079 0 0.0 0 0 0.999999821186 0.0 11.2223521278 -2.82943446425 0 1.0</transform>
-			</node>
-			<node type="NodeDummy" id="1743062072" name="PathMaker_4">
-				<transform>3.57627797598e-07 0.999999701976 0 0.0 -0.999999701976 3.57627797598e-07 0 0.0 0 0 0.999999821186 0.0 11.7805771023 -14.2948692574 0 1.0</transform>
-			</node>
-		</node>
 		<node type="NodeDummy" id="18122052" name="GUI">
 			<properties>
 				<property parent="84a5f9797713d484f00156135ca6e456bc48cfbd" guid="0bc2da45c90886e0037b0cbfaf69b312bee83749">
@@ -1061,12 +1029,23 @@
 			<surface name="box" collision="1" intersection_mask="0x4" physics_friction="1" physics_restitution="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
 			<properties>
 				<property parent="98106011dd339a3c175db06bfaee8ace93f813d5" guid="52765af776cefbea572afa4139ac8eacd9d6ba1b">
-					<parameter name="PathMakerNode">541330363</parameter>
 					<parameter name="MainCharacter">863538119</parameter>
 					<parameter name="BulletPrefab">guid://9148c77a1785b091f0bbb0bc80bdd4eb33db654e</parameter>
 					<parameter name="PhysicalTriggerNode">1161298927</parameter>
-					<parameter name="ObstacleNode">1658871261</parameter>
-					<parameter name="NavNode">1224506493</parameter>
+					<parameter name="NavigationNode">1224506493</parameter>
+					<parameter name="Obstacles">
+						<value index="0">945215821</value>
+					</parameter>
+					<parameter name="Paths">
+						<value index="0">
+							<parameter name="List">
+								<value index="0">1370471978</value>
+								<value index="1">2046007136</value>
+								<value index="2">1149049269</value>
+								<value index="3">296929802</value>
+							</parameter>
+						</value>
+					</parameter>
 				</property>
 				<property parent="14db8ba56855c8c05186a51f2616aff264524ea9" guid="7221e790277b15af6669c7420aa45db96b306bc4">
 					<parameter name="Health">15</parameter>
@@ -1084,16 +1063,6 @@
 				<exclusion_mask>0x0</exclusion_mask>
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
 			</node>
-		</node>
-		<node type="PlayerDummy" id="1936068595" name="PlayerDummy_1">
-			<znear>0.300000012</znear>
-			<zfar>100000</zfar>
-			<oblique_frustum_plane>0 0 -1 0</oblique_frustum_plane>
-			<is_oblique_frustum>0</is_oblique_frustum>
-			<is_main>1</is_main>
-			<is_listener>1</is_listener>
-			<controlled>1</controlled>
-			<transform>0.998029351234 -0.0627487748861 1.12783163786e-05 0.0 0.0306093357503 0.487003237009 0.872863590717 0.0 -0.0547766163945 -0.871143162251 0.487964242697 0.0 -9.38197553999 -82.5675685549 45.4512684483 1.0</transform>
 		</node>
 		<node type="NavigationMesh" id="1224506493" name="NavigationMesh">
 			<height>1</height>
@@ -1115,24 +1084,15 @@
 			</node>
 		</node>
 		<node type="NodeDummy" id="1658871261" name="Object">
-			<properties>
-				<property parent="2d065d592ca426e4b487c4f3bb87c5b629e0819d" guid="3cb8e72890d4a067f933229aa4db1131923158dc">
-					<parameter name="PathPoints">
-						<value index="0">1370217455</value>
-						<value index="1">1442746928</value>
-					</parameter>
-				</property>
-			</properties>
 			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 -16.7181978456 -12.7697969203 0 1.0</transform>
 			<node type="ObstacleBox" id="945215821" name="ObstacleBox">
 				<size>4 4 4</size>
 				<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
 			</node>
-			<node type="NodeDummy" id="1370217455" name="1">
+			<node type="ObjectMeshStatic" id="681451786" name="Cuboid">
+				<mesh_name>guid://f5efd349e9ecc4149988e0637b74ca66cdf7de8d</mesh_name>
+				<surface name="box" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
-			</node>
-			<node type="NodeDummy" id="1442746928" name="2">
-				<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 1 0.0 0 25.458639489 0 1.0</transform>
 			</node>
 		</node>
 	</editor>

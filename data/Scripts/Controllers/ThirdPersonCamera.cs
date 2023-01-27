@@ -25,7 +25,7 @@ public class ThirdPersonCamera : Component
         Normal = ThirdPersonCameraProperty.GetParameterPtr(0).GetChild(0);
         Aiming = ThirdPersonCameraProperty.GetParameterPtr(0).GetChild(1);
 
-        PREV_STATE = CAMERASTATE.Normal;
+        PREV_STATE = CAMERASTATE.Aiming;
         STATE = CAMERASTATE.Normal;
         Invert();
     }

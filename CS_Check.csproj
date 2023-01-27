@@ -58,6 +58,9 @@
 		<Compile Include="data/Scripts/GunHandler/Interactor.cs"/>
 		<Compile Include="data/Scripts/GUI/HUDMaker.cs"/>
 		<Compile Include="data/StarMove.cs"/>
+		<Compile Include="data/Scripts/AI/NavigationMaker.cs"/>
+		<Compile Include="data\Scripts\AI\AIDetector.cs"/>
+		<Compile Include="data/Scripts/AI/AIDetector.cs"/>
 	</ItemGroup>
 	<ItemGroup>
 		<Compile Include="source\AppEditorLogic.cs"/>
