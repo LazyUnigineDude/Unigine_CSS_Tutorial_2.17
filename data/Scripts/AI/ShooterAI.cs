@@ -19,87 +19,62 @@ public class ShooterAI : Component
     bool isVisible = false; 
     int CurrentHealth;
     private double DistanceRatio, CurrentTime;
-    private float Weight, ViewDistance;
+    private float Weight, ViewDistance = 30;
     
     PathMaker MainPath;
     HealthBar Health;
     NavigationMaker NaviMesh;
-    PhysicalTrigger DodgeArea;
+    AIDetector Detection;
+    AIShoot Shooter;
 
     enum AISTATE { IDLE, ALERT, SEARCH, AGGRESSIVE, SHOOT, DODGE }
     
     AISTATE STATE;
-    BoundFrustum BF;
-    quat HorReset = new quat(90, 0, 0);
-    mat4 View;
 
     private void Init()
     {
         // write here code to be called on component initialization
-
-        ViewDistance = 30;
         Weight = 0;
-        STATE = AISTATE.DODGE;
-
-        BF = new();
-        View = new();
+        STATE = AISTATE.IDLE;
 
         Health = node.GetComponent<HealthBar>();
         CurrentHealth = Health.ShowHealth();
-        DodgeArea = PhysicalTriggerNode as PhysicalTrigger;
-        DodgeArea.AddEnterCallback(EnterDodgeArea);
-    }
 
+        FrustumSettings settings = new();
+        settings.FOV = 40;
+        settings.Aspect_Ratio = 1.5f;
+        settings.zNear = 0.05f;
+        settings.zFar = ViewDistance;
 
-    private void EnterDodgeArea(Body Body)
-    {
-        if (Body.Object.Name != node.Name)
-        {
-            Log.Message($"{Body.Object.Name} Entered\n");
-            Unigine.Object MainObj = World.GetIntersection(Body.Position, Body.Position + Body.Object.BodyLinearVelocity, 4);
-            Visualizer.RenderLine3D(Body.Position, Body.Position + Body.Object.BodyLinearVelocity, vec4.YELLOW, 1);
+        Detection = new AIDetector
+            (
+                settings,
+                node,
+                MainCharacter,
+                node.GetChild(0),
+                PhysicalTriggerNode,
+                4
+            );
 
-            if (MainObj && MainObj.Name == node.Name && STATE == AISTATE.DODGE)
-            {
-
-                vec3 MainVector = Body.Object.BodyLinearVelocity.Normalized;
-                float Angle = MathLib.Angle(new vec3(node.WorldPosition) + node.GetWorldDirection(MathLib.AXIS.Y), MainVector, vec3.UP);
-                Angle = (Angle > 0) ? 90 : -90;
-                vec3 RotatingVector = new vec3(
-                    MainVector.x * Math.Cos(Angle) - MainVector.y * Math.Sin(Angle),
-                    MainVector.x * Math.Sin(Angle) + MainVector.y * Math.Cos(Angle),
-                    0);
-                Visualizer.RenderVector(Body.Position, Body.Position + MainVector, vec4.BLUE, 0.25f, true, 1);
-                Visualizer.RenderVector(Body.Position, Body.Position + RotatingVector, vec4.BLUE, 0.25f, true, 1);
-                node.WorldPosition += RotatingVector * 5;
-            }
-        }
+        Shooter = new AIShoot
+            (
+                1,
+                BulletPrefab,
+                MainCharacter,
+                node.GetChild(0)
+            );
     }
 
     private void Update()
     {
         // write here code to be called before updating each render frame
 
-        mat4 Frustum = MathLib.Perspective(40, 1.5f, 0.05f, ViewDistance);
-        quat Rotation = node.GetWorldRotation() * HorReset;
-        vec3 Pos = (vec3)node.GetChild(0).WorldPosition;
-        View.Set(Rotation, Pos);
+        Detection.CalculateView();
 
-        // Visualizer.RenderFrustum(Frustum, View, vec4.BLACK);
-        BF.Set(Frustum, MathLib.Inverse(View));
-
-        if (BF.Inside((vec3)MainCharacter.WorldPosition))
+        if (Detection.TargetInsideView( 1, MainCharacter.Name))
         {
-            Unigine.Object x = World.GetIntersection(node.GetChild(0).WorldPosition, MainCharacter.WorldPosition, 1);
-            Visualizer.RenderLine3D(node.GetChild(0).WorldPosition, MainCharacter.WorldPosition, vec4.RED);
-
-            if (x && x.Name == MainCharacter.GetChild(0).Name)
-            {
-                isVisible = true;
-                double distance = MathLib.Distance(node.WorldPosition, MainCharacter.WorldPosition);
-                DistanceRatio = distance / ViewDistance;
-            }
-            else isVisible = false;
+          double distance = MathLib.Distance(node.WorldPosition, MainCharacter.WorldPosition);
+                 DistanceRatio = distance / ViewDistance;
         }
         //  AiSTATE();
     }
@@ -160,38 +135,11 @@ public class ShooterAI : Component
 
     void Shoot()
     {
-        dvec3 futurePoint = MainCharacter.WorldPosition + MainCharacter.BodyLinearVelocity.Normalized;
-        futurePoint.z = 1;
-        dmat4 _dmat4 = new dmat4(MainCharacter.GetWorldRotation(), futurePoint);
-        Visualizer.RenderCapsule(0.5f, 1.4f, _dmat4, vec4.BLACK, 2);
-        Visualizer.RenderPoint3D(futurePoint, 0.05f, vec4.YELLOW, false, 2);
+        Shooter.CalculatePositions();
+        Shooter.VisualizePrediction(2);
 
-        double FutureDistance = MathLib.Distance(futurePoint, MainCharacter.WorldPosition),
-               Distance = MathLib.Distance(node.WorldPosition, MainCharacter.WorldPosition),
-               Speed = GetComponent<PhysicsController>(MainCharacter).getSpeed();
-
-
-        Node _bullet = BulletPrefab.Load();
-        _bullet.WorldPosition = node.GetChild(0).WorldPosition;
-
-        Bullet x = GetComponent<Bullet>(_bullet);
-        x.DamageAmount = 1;
-
-        if (Speed <= 1 && Speed > 0)
-        {
-            _bullet.WorldLookAt(MathLib.Lerp(MainCharacter.WorldPosition, futurePoint, (float)Speed / FutureDistance));
-            _bullet.ObjectBodyRigid.AddLinearImpulse(_bullet.GetWorldDirection(MathLib.AXIS.Y) * (float)Distance);
-        }
-        else if (Speed > 1)
-        {
-            _bullet.WorldLookAt(futurePoint);
-            _bullet.ObjectBodyRigid.AddLinearImpulse(_bullet.GetWorldDirection(MathLib.AXIS.Y) * (float)Distance * (float)(Speed / FutureDistance));
-        }
-        else
-        {
-            _bullet.WorldLookAt(node.GetChild(0).WorldPosition + node.GetChild(0).GetWorldDirection(MathLib.AXIS.Y));
-            _bullet.ObjectBodyRigid.AddLinearImpulse(_bullet.GetWorldDirection(MathLib.AXIS.Y) * (float)Distance);
-        }
+        double Speed = GetComponent<PhysicsController>(MainCharacter).getSpeed();
+        Shooter.Shoot(Speed);
     }
 
 }

@@ -45,22 +45,23 @@
 		</Reference>
 	</ItemGroup>
 	<ItemGroup>
-		<Compile Include="data/Scripts/Controllers/PhysicsController.cs"/>
-		<Compile Include="data/Scripts/Controllers/ThirdPersonCamera.cs"/>
-		<Compile Include="data/Scripts/Controllers/InputController.cs"/>
-		<Compile Include="data/Scripts/Controllers/CameraController.cs"/>
-		<Compile Include="data/Scripts/Bullet_Health/Bullet.cs"/>
 		<Compile Include="data/Scripts/Bullet_Health/HealthBar.cs"/>
-		<Compile Include="data/Scripts/Animation/AnimationController.cs"/>
-		<Compile Include="data/Scripts/AI/PathMaker.cs"/>
-		<Compile Include="data/Scripts/AI/ShooterAI.cs"/>
+		<Compile Include="data/Scripts/Controllers/InputController.cs"/>
 		<Compile Include="data/Scripts/GunHandler/GunHandler.cs"/>
-		<Compile Include="data/Scripts/GunHandler/Interactor.cs"/>
-		<Compile Include="data/Scripts/GUI/HUDMaker.cs"/>
-		<Compile Include="data/StarMove.cs"/>
 		<Compile Include="data/Scripts/AI/NavigationMaker.cs"/>
-		<Compile Include="data\Scripts\AI\AIDetector.cs"/>
+		<Compile Include="data/Scripts/AI/ShooterAI.cs"/>
+		<Compile Include="data/StarMove.cs"/>
+		<Compile Include="data/Scripts/GUI/HUDMaker.cs"/>
+		<Compile Include="data/Scripts/Bullet_Health/Bullet.cs"/>
+		<Compile Include="data/Scripts/AI/PathMaker.cs"/>
 		<Compile Include="data/Scripts/AI/AIDetector.cs"/>
+		<Compile Include="data/Scripts/Animation/AnimationController.cs"/>
+		<Compile Include="data/Scripts/Controllers/ThirdPersonCamera.cs"/>
+		<Compile Include="data/Scripts/GunHandler/Interactor.cs"/>
+		<Compile Include="data/Scripts/Controllers/CameraController.cs"/>
+		<Compile Include="data/Scripts/Controllers/PhysicsController.cs"/>
+		<Compile Include="data\Scripts\AI\Shoot.cs"/>
+		<Compile Include="data/Scripts/AI/Shoot.cs"/>
 	</ItemGroup>
 	<ItemGroup>
 		<Compile Include="source\AppEditorLogic.cs"/>
