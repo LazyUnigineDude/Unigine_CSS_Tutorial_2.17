@@ -90,6 +90,12 @@ namespace UnigineApp.data.Scripts.AI
             }
         }
 
+        public void RenderView()
+        {
+            Visualizer.RenderSphere(DodgeArea.Size.x, MainObj.WorldTransform, vec4.RED);
+            Visualizer.RenderFrustum(Frustum, View, vec4.BLACK);
+        }
+
         public void CalculateView() 
         {
             Frustum = MathLib.Perspective(

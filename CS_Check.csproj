@@ -60,8 +60,7 @@
 		<Compile Include="data/Scripts/GunHandler/Interactor.cs"/>
 		<Compile Include="data/Scripts/Controllers/CameraController.cs"/>
 		<Compile Include="data/Scripts/Controllers/PhysicsController.cs"/>
-		<Compile Include="data\Scripts\AI\Shoot.cs"/>
-		<Compile Include="data/Scripts/AI/Shoot.cs"/>
+		<Compile Include="data/Scripts/AI/AIShootingLogic.cs"/>
 	</ItemGroup>
 	<ItemGroup>
 		<Compile Include="source\AppEditorLogic.cs"/>

@@ -6,7 +6,6 @@ using UnigineApp.data.Scripts.AI;
 [Component(PropertyGuid = "98106011dd339a3c175db06bfaee8ace93f813d5")]
 public class ShooterAI : Component
 {
-    public struct PathLists { public List<Node> List; }
 
     public Node MainCharacter;
     public AssetLinkNode BulletPrefab;
@@ -14,9 +13,9 @@ public class ShooterAI : Component
     public Node NavigationNode;
 
     public List<Node> Obstacles;
-    public List<PathLists> Paths;
+    public List<Node> Paths;
 
-    bool isVisible = false; 
+    bool isVisible = false, StartAI = false; 
     int CurrentHealth;
     private double DistanceRatio, CurrentTime;
     private float Weight, ViewDistance = 30;
@@ -25,7 +24,7 @@ public class ShooterAI : Component
     HealthBar Health;
     NavigationMaker NaviMesh;
     AIDetector Detection;
-    AIShoot Shooter;
+    AIShootingLogic Shooter;
 
     enum AISTATE { IDLE, ALERT, SEARCH, AGGRESSIVE, SHOOT, DODGE }
     
@@ -56,12 +55,26 @@ public class ShooterAI : Component
                 4
             );
 
-        Shooter = new AIShoot
+        Shooter = new AIShootingLogic
             (
                 1,
                 BulletPrefab,
                 MainCharacter,
                 node.GetChild(0)
+            );
+
+        NaviMesh = new NavigationMaker
+            (
+                1,
+                NavigationNode,
+                Obstacles,
+                Paths
+            );
+
+        MainPath = new PathMaker
+            (
+                4,
+                NaviMesh.GetModifiedPath(NaviMesh.GetPath())
             );
     }
 
@@ -71,66 +84,79 @@ public class ShooterAI : Component
 
         Detection.CalculateView();
 
+        Detection.RenderView();
+        NaviMesh.RenderNavigation();
+        NaviMesh.RenderObstacles();
+        MainPath.RenderPath();
+
+
         if (Detection.TargetInsideView( 1, MainCharacter.Name))
         {
-          double distance = MathLib.Distance(node.WorldPosition, MainCharacter.WorldPosition);
-                 DistanceRatio = distance / ViewDistance;
+            double distance = MathLib.Distance(node.WorldPosition, MainCharacter.WorldPosition);
+            DistanceRatio = distance / ViewDistance;
+            isVisible = true;
         }
-        //  AiSTATE();
+        else isVisible = false;
+
+        if (Unigine.Input.IsKeyDown(Input.KEY.C)) StartAI = true; // Event Start
+        
+        AiSTATE();
     }
 
     void AiSTATE()
     {
         //if (CurrentHealth != Health.ShowHealth()) { Weight = 1; STATE = AISTATE.AGGRESSIVE; CurrentHealth = Health.ShowHealth(); }
 
-        //switch (STATE)
-        //{
-        //    case AISTATE.IDLE:
-        //        //Log.Message("IDLE\n");
-        //        Weight = MathLib.Clamp(Weight -= Game.IFps, 0f, 1f);
-        //        if (isVisible) STATE = AISTATE.ALERT;
-        //        if (MathLib.Distance(node.WorldPosition, Path.GetCurrentPathPosition()) > 0.1f)
-        //        {
-        //          //  MoveTowards(Path.GetCurrentPathPosition(), node, 1);
-        //         //   RotateTowards(Path.GetCurrentPathPosition(), node, 0.05f);
-        //        }
-        //        else
-        //        {
-        //            Path.MoveAlongPath();
-        //            Path.MoveObject(node);
-        //        }
-        //        break;
-        //    case AISTATE.ALERT:
-        //        //Log.Message("ALRT\n");
-        //        Weight = MathLib.Clamp(Weight += Game.IFps / (float)DistanceRatio, 0f, 1f);
-        //        if (!isVisible) STATE = AISTATE.IDLE;
-        //        if (Weight == 1f) STATE = AISTATE.AGGRESSIVE;
+        switch (STATE)
+        {
+            case AISTATE.IDLE:
+                //Log.Message("IDLE\n");
+                if(StartAI) { 
+                    Weight = MathLib.Clamp(Weight -= Game.IFps, 0f, 1f);
+                    if (isVisible) STATE = AISTATE.ALERT;
+                    if (MathLib.Distance(node.WorldPosition, MainPath.GetCurrentPathPosition()) > 0.1f)
+                    {
+                        MainPath.MoveTowards(MainPath.GetCurrentPathPosition(), node, 5);
+                        MainPath.RotateTowards(MainPath.GetCurrentPathPosition(), node, 0.05f);
+                    }
+                    else
+                    {
+                        MainPath.MovePointAlongPath();
+                        MainPath.MoveObjectAlongPath(node);
+                    }
+                }
+                break;
+            case AISTATE.ALERT:
+                //Log.Message("ALRT\n");
+                Weight = MathLib.Clamp(Weight += Game.IFps / (float)DistanceRatio, 0f, 1f);
+                if (!isVisible) STATE = AISTATE.IDLE;
+                if (Weight == 1f) STATE = AISTATE.AGGRESSIVE;
 
-        //        RotateTowards(MainCharacter.WorldPosition, node, 0.005f);
-        //        break;
-        //    case AISTATE.SEARCH:
-        //        //Log.Message("SRCH\n");
-        //        Weight = MathLib.Clamp(Weight -= Game.IFps / 5, 0f, 1f);
-        //        if (Weight == 0f) STATE = AISTATE.IDLE;
-        //        if (isVisible) { STATE = AISTATE.AGGRESSIVE; Weight = 1; }
-        //        MoveTowards(MainCharacter.WorldPosition, node, 3);
-        //        RotateTowards(MainCharacter.WorldPosition, node, 0.05f);
-        //        break;
-        //    case AISTATE.AGGRESSIVE:
-        //        //Log.Message("AGRO\n");
-        //        if (!isVisible) STATE = AISTATE.SEARCH;
-        //        MoveTowards(MainCharacter.WorldPosition, node, 5);
-        //        RotateTowards(MainCharacter.WorldPosition, node, 0.05f);
-        //        if (MathLib.Distance(node.WorldPosition, MainCharacter.WorldPosition) < 20.0f) { STATE = AISTATE.SHOOT; CurrentTime = Game.Time; }
-        //        break;
-        //    case AISTATE.SHOOT:
-        //        if (CurrentTime + 1 < Game.Time) { Shoot(); STATE = AISTATE.AGGRESSIVE; }
-        //        RotateTowards(MainCharacter.WorldPosition, node, 0.01f);
-        //        Visualizer.RenderLine3D(node.WorldPosition, node.WorldPosition + node.GetDirection(MathLib.AXIS.Y) * 50, vec4.BLUE);
-        //        break;
-        //    default:
-        //        break;
-        //}
+                    MainPath.RotateTowards(MainCharacter.WorldPosition, node, 0.005f);
+                break;
+            case AISTATE.SEARCH:
+                //Log.Message("SRCH\n");
+                Weight = MathLib.Clamp(Weight -= Game.IFps / 5, 0f, 1f);
+                if (Weight == 0f) STATE = AISTATE.IDLE;
+                if (isVisible) { STATE = AISTATE.AGGRESSIVE; Weight = 1; }
+                    MainPath.MoveTowards(MainCharacter.WorldPosition, node, 3);
+                    MainPath.RotateTowards(MainCharacter.WorldPosition, node, 0.05f);
+                break;
+            case AISTATE.AGGRESSIVE:
+                //Log.Message("AGRO\n");
+                if (!isVisible) STATE = AISTATE.SEARCH;
+                    MainPath.MoveTowards(MainCharacter.WorldPosition, node, 5);
+                    MainPath.RotateTowards(MainCharacter.WorldPosition, node, 0.05f);
+                if (MathLib.Distance(node.WorldPosition, MainCharacter.WorldPosition) < 20.0f) { STATE = AISTATE.SHOOT; CurrentTime = Game.Time; }
+                break;
+            case AISTATE.SHOOT:
+                if (CurrentTime + 1 < Game.Time) { Shoot(); STATE = AISTATE.AGGRESSIVE; }
+                    MainPath.RotateTowards(MainCharacter.WorldPosition, node, 0.01f);
+                    Visualizer.RenderLine3D(node.WorldPosition, node.WorldPosition + node.GetDirection(MathLib.AXIS.Y) * 50, vec4.BLUE);
+                break;
+            default:
+                break;
+        }
     }
 
     void Shoot()

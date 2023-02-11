@@ -8,9 +8,9 @@ namespace UnigineApp.data.Scripts.AI
         private int Radius;
         private NavigationMesh NavMesh;
         private List<Obstacle> ObstaclesList;
-        private List<List<dvec3>> PathPoints;
+        private List<dvec3> PathPoints;
 
-        public NavigationMaker(int Radius, Node NavMesh, List<Node> Obstacles, List<List<Node>> Pathways) {
+        public NavigationMaker(int Radius, Node NavMesh, List<Node> Obstacles, List<Node> Pathways) {
 
             this.Radius = Radius;
             this.NavMesh = NavMesh as NavigationMesh;
@@ -20,9 +20,9 @@ namespace UnigineApp.data.Scripts.AI
         public void RenderNavigation() => NavMesh.RenderVisualizer();
         public void RenderObstacles() => ObstaclesList.ForEach(Obj => Obj.RenderVisualizer());
 
-        public List<List<dvec3>> GetAllPaths() => PathPoints;
-        public List<dvec3> GetPath(int Num) => PathPoints[Num];
-        public List<dvec3> GetPath(List<dvec3> list) {
+
+        public List<dvec3> GetPath() => PathPoints;
+        public List<dvec3> GetModifiedPath(List<dvec3> list) {
 
             List<dvec3> Paths = new();
             PathRoute Path = new();
@@ -31,20 +31,20 @@ namespace UnigineApp.data.Scripts.AI
             for (int i = 0; i < list.Count - 1; i++) {
                 Path.Create2D(list[i], list[i + 1]);
                 for (int j = 0; j < Path.NumPoints - 1; j++) {
-                    Paths.Add(Path.GetPoint(i));
+
+                    Paths.Add(Path.GetPoint(j));
                 }
             }
             return Paths;
         }
 
-        private void PathCreate(List<Node> Obstacles, List<List<Node>> Pathways) {
+        private void PathCreate(List<Node> Obstacles, List<Node> Pathways) {
+
+            PathPoints = new();
+            ObstaclesList = new();
 
             Obstacles.ForEach(Obj => ObstaclesList.Add(Obj as Obstacle));
-            foreach (var Paths in Pathways) {
-                List<dvec3> Pathing = new();
-                Paths.ForEach(Obj => Pathing.Add(Obj.WorldPosition));
-                PathPoints.Add(Pathing);
-            }    
+            Pathways.ForEach(Paths => PathPoints.Add(Paths.WorldPosition));
         }
     }
 }

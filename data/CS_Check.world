@@ -742,7 +742,7 @@
 		</node>
 		<node type="NodeDummy" id="295497021" enabled="0" name="NodeDummy">
 			<properties>
-				<property parent="0310fa99a115a324f80c94335119cbf68d0852dd" guid="1022e799946cac24e20e093334cabcf6260a8fdd">
+				<property enabled="0" parent="0310fa99a115a324f80c94335119cbf68d0852dd" guid="1022e799946cac24e20e093334cabcf6260a8fdd">
 					<parameter name="Sun">824505625</parameter>
 					<parameter name="Stars">668419035</parameter>
 					<parameter name="Moon">1389206525</parameter>
@@ -1037,14 +1037,10 @@
 						<value index="0">945215821</value>
 					</parameter>
 					<parameter name="Paths">
-						<value index="0">
-							<parameter name="List">
-								<value index="0">1370471978</value>
-								<value index="1">2046007136</value>
-								<value index="2">1149049269</value>
-								<value index="3">296929802</value>
-							</parameter>
-						</value>
+						<value index="0">1370471978</value>
+						<value index="1">2046007136</value>
+						<value index="2">1149049269</value>
+						<value index="3">296929802</value>
 					</parameter>
 				</property>
 				<property parent="14db8ba56855c8c05186a51f2616aff264524ea9" guid="7221e790277b15af6669c7420aa45db96b306bc4">

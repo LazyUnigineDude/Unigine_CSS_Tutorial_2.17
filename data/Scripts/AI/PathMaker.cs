@@ -22,7 +22,7 @@ namespace UnigineApp.data.Scripts.AI
 
         public dvec3 GetCurrentPathPosition() => Path.CalcSegmentPoint(num, Weight);
 
-        public void MoveAlongPath()
+        public void MovePointAlongPath()
         {
             Weight = MathLib.Clamp(Weight += (Game.IFps / TimeBetweenPoints), 0.0f, 1.0f);
             if (Weight == 1.0f) { Weight = 0; num++; }
@@ -30,7 +30,7 @@ namespace UnigineApp.data.Scripts.AI
         }
 
         
-        public void MoveObject(Node Obj2Move)
+        public void MoveObjectAlongPath(Node Obj2Move)
         {
             dvec3 Point = Path.CalcSegmentPoint(num, Weight);
             vec3 Direc = Path.CalcSegmentTangent(num, Weight),
@@ -51,8 +51,8 @@ namespace UnigineApp.data.Scripts.AI
                      EPoint = Path.GetSegmentEndPoint(i),
                      ETang = Path.GetSegmentEndTangent(i);
 
-                Visualizer.RenderVector(SPoint, SPoint + STang, vec4.GREEN);
-                Visualizer.RenderVector(EPoint, EPoint + ETang, vec4.RED);
+               //Visualizer.RenderVector(SPoint, SPoint + STang, vec4.GREEN);
+               //Visualizer.RenderVector(EPoint, EPoint + ETang, vec4.RED);
 
                 for (int j = 0; j < RENDER_SEGMENTS; j++)
                 {
@@ -63,7 +63,7 @@ namespace UnigineApp.data.Scripts.AI
             }
         }
 
-        void RotateTowards(dvec3 TowardsObject, Node Obj2Move, float Speed)
+        public void RotateTowards(dvec3 TowardsObject, Node Obj2Move, float Speed)
         {
             vec3 Vec1 = Obj2Move.GetWorldDirection(MathLib.AXIS.Y),
                  Vec2 = (vec3)(TowardsObject - Obj2Move.WorldPosition).Normalized;
@@ -71,7 +71,7 @@ namespace UnigineApp.data.Scripts.AI
             Obj2Move.Rotate(-Obj2Move.GetWorldRotation().x, -Obj2Move.GetWorldRotation().y, Angle * Speed);
         }
 
-        void MoveTowards(dvec3 TowardsObject, Node Obj2Move, int Speed)
+        public void MoveTowards(dvec3 TowardsObject, Node Obj2Move, int Speed)
         {
             dvec3 Pos = MathLib.Lerp(Obj2Move.WorldPosition,
                                     TowardsObject,
@@ -92,10 +92,10 @@ namespace UnigineApp.data.Scripts.AI
 
                 Path.AddSegment(
                     num,
-                    new vec3(PathPoints[num2] - PathPoints[num]),
+                    new vec3(PathPoints[num2] - PathPoints[num]).Normalized,
                     vec3.UP,
                     num2,
-                    new vec3(PathPoints[num] - PathPoints[num2]),
+                    new vec3(PathPoints[num] - PathPoints[num2]).Normalized,
                     vec3.UP);
             }
         }
