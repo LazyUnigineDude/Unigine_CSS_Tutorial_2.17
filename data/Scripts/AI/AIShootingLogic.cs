@@ -7,7 +7,7 @@ using Unigine;
 
 namespace UnigineApp.data.Scripts.AI
 {
-    internal class AIShoot
+    internal class AIShootingLogic
     {
         dvec3 FuturePoint;
         Node Target, GunPoint;
@@ -16,13 +16,12 @@ namespace UnigineApp.data.Scripts.AI
         double FutureDistance, Distance;
         int Damage;
 
-        public AIShoot
-            (
+        public AIShootingLogic(
                int Damage,
                AssetLinkNode BulletPrefab,
                Node Target,
                Node GunPoint
-            ) 
+            )
         {
             this.Damage = Damage;
             this.BulletPrefab = BulletPrefab;
@@ -43,7 +42,7 @@ namespace UnigineApp.data.Scripts.AI
         {
             dmat4 _dmat4 = new dmat4(Target.GetWorldRotation(), FuturePoint);
 
-            Visualizer.RenderCapsule( 0.5f, 1.4f, _dmat4, vec4.BLACK, Seconds);
+            Visualizer.RenderCapsule(0.5f, 1.4f, _dmat4, vec4.BLACK, Seconds);
             Visualizer.RenderPoint3D(FuturePoint, 0.05f, vec4.YELLOW, false, Seconds);
         }
 
@@ -71,6 +70,5 @@ namespace UnigineApp.data.Scripts.AI
                 _Bullet.ObjectBodyRigid.AddLinearImpulse(_Bullet.GetWorldDirection(MathLib.AXIS.Y) * (float)Distance);
             }
         }
-
     }
 }
