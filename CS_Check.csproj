@@ -61,6 +61,7 @@
 		<Compile Include="data/Scripts/Controllers/CameraController.cs"/>
 		<Compile Include="data/Scripts/Controllers/PhysicsController.cs"/>
 		<Compile Include="data/Scripts/AI/AIShootingLogic.cs"/>
+		<Compile Include="data/Scripts/AI/AIManager.cs"/>
 	</ItemGroup>
 	<ItemGroup>
 		<Compile Include="source\AppEditorLogic.cs"/>

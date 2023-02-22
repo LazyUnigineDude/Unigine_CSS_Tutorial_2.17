@@ -1024,42 +1024,6 @@
 			<reference>guid://70be240b3d8629eee931e875aa035f508564aa6f</reference>
 			<transform>0.999999880791 -5.23923264427e-26 -2.77556384814e-17 0.0 0 1 -1.88762827591e-09 0.0 2.77556417901e-17 1.88762827591e-09 1 0.0 0 3 1 1.0</transform>
 		</node>
-		<node type="ObjectMeshStatic" id="10002362" name="Enemy">
-			<mesh_name>guid://850cf0459c8fa4e0854b92bf72648112b1b8ad49</mesh_name>
-			<surface name="box" collision="1" intersection_mask="0x4" physics_friction="1" physics_restitution="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
-			<properties>
-				<property parent="98106011dd339a3c175db06bfaee8ace93f813d5" guid="52765af776cefbea572afa4139ac8eacd9d6ba1b">
-					<parameter name="MainCharacter">863538119</parameter>
-					<parameter name="BulletPrefab">guid://9148c77a1785b091f0bbb0bc80bdd4eb33db654e</parameter>
-					<parameter name="PhysicalTriggerNode">1161298927</parameter>
-					<parameter name="NavigationNode">1224506493</parameter>
-					<parameter name="Obstacles">
-						<value index="0">945215821</value>
-					</parameter>
-					<parameter name="Paths">
-						<value index="0">1370471978</value>
-						<value index="1">2046007136</value>
-						<value index="2">1149049269</value>
-						<value index="3">296929802</value>
-					</parameter>
-				</property>
-				<property parent="14db8ba56855c8c05186a51f2616aff264524ea9" guid="7221e790277b15af6669c7420aa45db96b306bc4">
-					<parameter name="Health">15</parameter>
-				</property>
-			</properties>
-			<transform>-0.999999821186 -8.74227623626e-08 0 0.0 8.7422769468e-08 -0.999999880791 0 0.0 0 0 0.999999880791 0.0 -0.0849155211163 22.2925734997 1 1.0</transform>
-			<node type="ObjectMeshStatic" id="1707354149" name="Eyes">
-				<mesh_name>guid://850cf0459c8fa4e0854b92bf72648112b1b8ad49</mesh_name>
-				<surface name="box" intersection_mask="0x4" physics_friction="1" physics_restitution="1" material="1a9190f6bd9b53ddf15143987855f2173b80688a"/>
-				<transform>0.0649844783526 0 0 0.0 0 0.0852340263407 0 0.0 0 0 0.0649845862379 0.0 1.38777878078e-17 2.00098393618 -3.33066907388e-16 1.0</transform>
-			</node>
-			<node type="PhysicalTrigger" id="1161298927" name="PhysicalTrigger">
-				<type>0</type>
-				<size>20 1 1</size>
-				<exclusion_mask>0x0</exclusion_mask>
-				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
-			</node>
-		</node>
 		<node type="NavigationMesh" id="1224506493" name="NavigationMesh">
 			<height>1</height>
 			<vertex num_vertex="29">-50.0000038 49.9999962 0 -49.9999962 -50.0000038 0 -41.6823273 -34.3431892 0 -41.6823273 -30.4367466 0 -39.1783066 18.8526154 0 -39.1783028 14.9461746 0 -6.05908775 1.22986555 0 -6.05908203 -34.3431816 0 -6.05908251 -30.436739 0 -6.05907965 -50 0 -2.15264511 1.22986579 0 -2.152637 -50 0 -1.95322466 39.1444321 0 -1.95322299 18.8526192 0 1.95321786 39.1444321 0 1.95321965 18.8526192 0 18.8165894 -0.343181401 0 18.8165894 3.56326127 0 26.4604969 14.9461803 0 26.5453262 -0.343179584 0 26.54533 -42.45578 0 30.4517708 -0.34317863 0 30.4517746 -42.45578 0 38.1805077 -0.343176812 0 38.1805077 3.56326556 0 39.1783028 14.9461813 0 39.1783028 18.852623 0 49.9999962 50.0000038 0 50.0000038 -49.9999962 0</vertex>
@@ -1094,6 +1058,33 @@
 		<node type="NodeReference" id="423982282" name="Bullet">
 			<reference>guid://9148c77a1785b091f0bbb0bc80bdd4eb33db654e</reference>
 			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 -4.98688094611 -28.7540618148 -2.99492683858 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="89884041" name="AIManager">
+			<properties>
+				<property parent="049f940b8298d9ee0d44d8757a998f50a4251a6f" guid="8661b6c7d7a7857af8095691018f1ebc574e6aeb">
+					<parameter name="NavNode">1224506493</parameter>
+					<parameter name="MainCharacter">863538119</parameter>
+					<parameter name="AINode">guid://e07141d830835b57f4fe40ca4ee2b9a1b4a1868c</parameter>
+					<parameter name="Obstacles">
+						<value index="0">945215821</value>
+					</parameter>
+					<parameter name="PathLists">
+						<value index="0">
+							<parameter name="Paths">
+								<value index="0">1370471978</value>
+								<value index="1">2046007136</value>
+							</parameter>
+						</value>
+						<value index="1">
+							<parameter name="Paths">
+								<value index="0">1149049269</value>
+								<value index="1">296929802</value>
+							</parameter>
+						</value>
+					</parameter>
+				</property>
+			</properties>
+			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
 		</node>
 	</editor>
 	<console>

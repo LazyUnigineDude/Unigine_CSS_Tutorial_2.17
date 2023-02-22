@@ -20,7 +20,6 @@ namespace UnigineApp.data.Scripts.AI
         public void RenderNavigation() => NavMesh.RenderVisualizer();
         public void RenderObstacles() => ObstaclesList.ForEach(Obj => Obj.RenderVisualizer());
 
-
         public List<dvec3> GetPath() => PathPoints;
         public List<dvec3> GetModifiedPath(List<dvec3> list) {
 
@@ -30,7 +29,7 @@ namespace UnigineApp.data.Scripts.AI
 
             for (int i = 0; i < list.Count - 1; i++) {
                 Path.Create2D(list[i], list[i + 1]);
-                for (int j = 0; j < Path.NumPoints - 1; j++) {
+                for (int j = 0; j < Path.NumPoints; j++) {
 
                     Paths.Add(Path.GetPoint(j));
                 }

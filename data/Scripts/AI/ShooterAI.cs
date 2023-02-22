@@ -7,35 +7,32 @@ using UnigineApp.data.Scripts.AI;
 public class ShooterAI : Component
 {
 
-    public Node MainCharacter;
+    Node MainCharacter;
     public AssetLinkNode BulletPrefab;
     public Node PhysicalTriggerNode;
-    public Node NavigationNode;
-
-    public List<Node> Obstacles;
-    public List<Node> Paths;
 
     bool isVisible = false, StartAI = false; 
     int CurrentHealth;
-    private double DistanceRatio, CurrentTime;
-    private float Weight, ViewDistance = 30;
+    double DistanceRatio, CurrentTime;
+    float Weight, ViewDistance = 30;
     
     PathMaker MainPath;
     HealthBar Health;
-    NavigationMaker NaviMesh;
     AIDetector Detection;
     AIShootingLogic Shooter;
 
     enum AISTATE { IDLE, ALERT, SEARCH, AGGRESSIVE, SHOOT, DODGE }
-    
     AISTATE STATE;
 
-    private void Init()
+    public void StartPathing() => StartAI = true;
+
+    public void SetAI(vec3 Position, List<dvec3> Paths, Node MainChar)
     {
         // write here code to be called on component initialization
         Weight = 0;
         STATE = AISTATE.IDLE;
 
+        MainCharacter = MainChar;
         Health = node.GetComponent<HealthBar>();
         CurrentHealth = Health.ShowHealth();
 
@@ -63,30 +60,20 @@ public class ShooterAI : Component
                 node.GetChild(0)
             );
 
-        NaviMesh = new NavigationMaker
-            (
-                1,
-                NavigationNode,
-                Obstacles,
-                Paths
-            );
-
         MainPath = new PathMaker
             (
                 4,
-                NaviMesh.GetModifiedPath(NaviMesh.GetPath())
+                Paths
             );
     }
 
-    private void Update()
+    public void UpdateMove()
     {
         // write here code to be called before updating each render frame
 
         Detection.CalculateView();
 
         Detection.RenderView();
-        NaviMesh.RenderNavigation();
-        NaviMesh.RenderObstacles();
         MainPath.RenderPath();
 
 
@@ -97,8 +84,6 @@ public class ShooterAI : Component
             isVisible = true;
         }
         else isVisible = false;
-
-        if (Unigine.Input.IsKeyDown(Input.KEY.C)) StartAI = true; // Event Start
         
         AiSTATE();
     }

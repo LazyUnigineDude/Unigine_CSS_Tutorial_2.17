@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.16.1.0">
+	<node type="ObjectMeshStatic" id="10002362" name="AI">
+		<mesh_name>guid://850cf0459c8fa4e0854b92bf72648112b1b8ad49</mesh_name>
+		<surface name="box" collision="1" intersection_mask="0x4" physics_friction="1" physics_restitution="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+		<properties>
+			<property parent="98106011dd339a3c175db06bfaee8ace93f813d5" guid="52765af776cefbea572afa4139ac8eacd9d6ba1b">
+				<parameter name="BulletPrefab">guid://9148c77a1785b091f0bbb0bc80bdd4eb33db654e</parameter>
+				<parameter name="PhysicalTriggerNode">1161298927</parameter>
+			</property>
+			<property parent="14db8ba56855c8c05186a51f2616aff264524ea9" guid="7221e790277b15af6669c7420aa45db96b306bc4">
+				<parameter name="Health">15</parameter>
+			</property>
+		</properties>
+		<transform>-0.999999821186 -8.74227623626e-08 0 0.0 8.7422769468e-08 -0.999999880791 0 0.0 0 0 0.999999880791 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="1707354149" name="Eyes">
+			<mesh_name>guid://850cf0459c8fa4e0854b92bf72648112b1b8ad49</mesh_name>
+			<surface name="box" intersection_mask="0x4" physics_friction="1" physics_restitution="1" material="1a9190f6bd9b53ddf15143987855f2173b80688a"/>
+			<transform>0.0649844783526 0 0 0.0 0 0.0852340263407 0 0.0 0 0 0.0649845862379 0.0 1.38777878078e-17 2.00098393618 -3.33066907388e-16 1.0</transform>
+		</node>
+		<node type="PhysicalTrigger" id="1161298927" name="PhysicalTrigger">
+			<type>0</type>
+			<size>20 1 1</size>
+			<exclusion_mask>0x0</exclusion_mask>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		</node>
+	</node>
+</nodes>
