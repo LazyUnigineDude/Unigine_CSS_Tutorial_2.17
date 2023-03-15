@@ -1063,7 +1063,7 @@
 			<properties>
 				<property parent="049f940b8298d9ee0d44d8757a998f50a4251a6f" guid="8661b6c7d7a7857af8095691018f1ebc574e6aeb">
 					<parameter name="NavNode">1224506493</parameter>
-					<parameter name="MainCharacter">1685128838</parameter>
+					<parameter name="MainCharacter">863538119</parameter>
 					<parameter name="AINode">guid://e07141d830835b57f4fe40ca4ee2b9a1b4a1868c</parameter>
 					<parameter name="Obstacles">
 						<value index="0">945215821</value>

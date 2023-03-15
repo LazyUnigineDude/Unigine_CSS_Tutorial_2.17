@@ -29,7 +29,7 @@ public class AIManager : Component
 				PathLists[0].Paths
 				);
 
-		for (int i = 0; i < PathLists.Length; i++)
+		for (int i = 0; i < 1; i++)
 		{
 			List<dvec3> Paths = new();
 			PathLists[i].Paths.ForEach(p => Paths.Add(p.WorldPosition));
@@ -50,7 +50,7 @@ public class AIManager : Component
 		MainNav.RenderNavigation();
 		MainNav.RenderObstacles();
 
-		if (Input.IsKeyDown(Input.KEY.C) && !StartAI) { StartAI = true; AIList.ForEach(p => p.StartPathing()); }
+		if (Input.IsKeyDown(Input.KEY.C) && !StartAI) { StartAI = true; }
 		if (StartAI) { AIList.ForEach(p => p.UpdateMove()); }
 	}
 }

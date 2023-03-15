@@ -10,9 +10,8 @@ public class ShooterAI : Component
     Node MainCharacter;
     public AssetLinkNode BulletPrefab;
     public Node PhysicalTriggerNode;
-    vec3 Displacement;
 
-    bool isVisible = false, StartAI = false; 
+    bool isVisible = false; 
     int CurrentHealth;
     double DistanceRatio, CurrentTime;
     float Weight, ViewDistance = 30;
@@ -24,8 +23,6 @@ public class ShooterAI : Component
 
     enum AISTATE { IDLE, ALERT, SEARCH, AGGRESSIVE, SHOOT, DODGE }
     AISTATE STATE;
-
-    public void StartPathing() => StartAI = true;
 
     public void SetAI(vec3 Position, List<dvec3> Paths, Node MainChar)
     {
@@ -73,20 +70,15 @@ public class ShooterAI : Component
         // write here code to be called before updating each render frame
 
         Detection.CalculateView();
-
         Detection.RenderView();
         MainPath.RenderPath();
 
-
-        if (Detection.TargetInsideView( 1, MainCharacter.Name))
+        if (Detection.TargetInsideView(1, MainCharacter.GetChild(0).Name))
         {
             double distance = MathLib.Distance(node.WorldPosition, MainCharacter.WorldPosition);
             DistanceRatio = distance / ViewDistance;
             isVisible = true;
-            Log.Message($"{distance}\n");
         }
-        else isVisible = false;
-        
         AiSTATE();
     }
 
@@ -97,8 +89,8 @@ public class ShooterAI : Component
         switch (STATE)
         {
             case AISTATE.IDLE:
-               //Log.Message("IDLE\n");
-                if(StartAI) { 
+               Log.Message("IDLE\n");
+               
                     Weight = MathLib.Clamp(Weight -= Game.IFps, 0f, 1f);
                     if (isVisible) STATE = AISTATE.ALERT;
                     if (MathLib.Distance(node.WorldPosition, MainPath.GetCurrentPathPosition()) > 0.1f)
@@ -111,18 +103,17 @@ public class ShooterAI : Component
                         MainPath.MovePointAlongPath();
                         MainPath.MoveObjectAlongPath(node);
                     }
-                }
                 break;
             case AISTATE.ALERT:
-                //Log.Message("ALRT\n");
+                Log.Message("ALRT\n");
                 Weight = MathLib.Clamp(Weight += Game.IFps / (float)DistanceRatio, 0f, 1f);
-                if (!isVisible) STATE = AISTATE.IDLE;
+                if (!Detection.TargetInsideView(1, MainCharacter.GetChild(0).Name)) { STATE = AISTATE.IDLE; }
                 if (Weight == 1f) STATE = AISTATE.AGGRESSIVE;
 
                     MainPath.RotateTowards(MainCharacter.WorldPosition, node, 0.005f);
                 break;
             case AISTATE.SEARCH:
-               //Log.Message("SRCH\n");
+               Log.Message("SRCH\n");
                 Weight = MathLib.Clamp(Weight -= Game.IFps / 5, 0f, 1f);
                 if (Weight == 0f) STATE = AISTATE.IDLE;
                 if (isVisible) { STATE = AISTATE.AGGRESSIVE; Weight = 1; }
@@ -130,7 +121,7 @@ public class ShooterAI : Component
                     MainPath.RotateTowards(MainCharacter.WorldPosition, node, 0.05f);
                 break;
             case AISTATE.AGGRESSIVE:
-                //Log.Message("AGRO\n");
+                Log.Message("AGRO\n");
                 if (!isVisible) STATE = AISTATE.SEARCH;
                     MainPath.MoveTowards(MainCharacter.WorldPosition, node, 5);
                     MainPath.RotateTowards(MainCharacter.WorldPosition, node, 0.05f);
