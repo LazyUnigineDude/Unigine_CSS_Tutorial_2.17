@@ -10,6 +10,7 @@ public class ShooterAI : Component
     Node MainCharacter;
     public AssetLinkNode BulletPrefab;
     public Node PhysicalTriggerNode;
+    vec3 Displacement;
 
     bool isVisible = false, StartAI = false; 
     int CurrentHealth;
@@ -82,6 +83,7 @@ public class ShooterAI : Component
             double distance = MathLib.Distance(node.WorldPosition, MainCharacter.WorldPosition);
             DistanceRatio = distance / ViewDistance;
             isVisible = true;
+            Log.Message($"{distance}\n");
         }
         else isVisible = false;
         
@@ -90,12 +92,12 @@ public class ShooterAI : Component
 
     void AiSTATE()
     {
-        //if (CurrentHealth != Health.ShowHealth()) { Weight = 1; STATE = AISTATE.AGGRESSIVE; CurrentHealth = Health.ShowHealth(); }
+        if (CurrentHealth != Health.ShowHealth()) { Weight = 1; STATE = AISTATE.AGGRESSIVE; CurrentHealth = Health.ShowHealth(); }
 
         switch (STATE)
         {
             case AISTATE.IDLE:
-                //Log.Message("IDLE\n");
+               //Log.Message("IDLE\n");
                 if(StartAI) { 
                     Weight = MathLib.Clamp(Weight -= Game.IFps, 0f, 1f);
                     if (isVisible) STATE = AISTATE.ALERT;
@@ -120,7 +122,7 @@ public class ShooterAI : Component
                     MainPath.RotateTowards(MainCharacter.WorldPosition, node, 0.005f);
                 break;
             case AISTATE.SEARCH:
-                //Log.Message("SRCH\n");
+               //Log.Message("SRCH\n");
                 Weight = MathLib.Clamp(Weight -= Game.IFps / 5, 0f, 1f);
                 if (Weight == 0f) STATE = AISTATE.IDLE;
                 if (isVisible) { STATE = AISTATE.AGGRESSIVE; Weight = 1; }
