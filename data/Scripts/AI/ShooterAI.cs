@@ -89,7 +89,7 @@ public class ShooterAI : Component
         switch (STATE)
         {
             case AISTATE.IDLE:
-               Log.Message("IDLE\n");
+               //Log.Message("IDLE\n");
                
                     Weight = MathLib.Clamp(Weight -= Game.IFps, 0f, 1f);
                     if (isVisible) STATE = AISTATE.ALERT;
@@ -105,7 +105,7 @@ public class ShooterAI : Component
                     }
                 break;
             case AISTATE.ALERT:
-                Log.Message("ALRT\n");
+                //Log.Message("ALRT\n");
                 Weight = MathLib.Clamp(Weight += Game.IFps / (float)DistanceRatio, 0f, 1f);
                 if (!Detection.TargetInsideView(1, MainCharacter.GetChild(0).Name)) { STATE = AISTATE.IDLE; }
                 if (Weight == 1f) STATE = AISTATE.AGGRESSIVE;
@@ -113,7 +113,7 @@ public class ShooterAI : Component
                     MainPath.RotateTowards(MainCharacter.WorldPosition, node, 0.005f);
                 break;
             case AISTATE.SEARCH:
-               Log.Message("SRCH\n");
+               //Log.Message("SRCH\n");
                 Weight = MathLib.Clamp(Weight -= Game.IFps / 5, 0f, 1f);
                 if (Weight == 0f) STATE = AISTATE.IDLE;
                 if (isVisible) { STATE = AISTATE.AGGRESSIVE; Weight = 1; }
@@ -121,7 +121,7 @@ public class ShooterAI : Component
                     MainPath.RotateTowards(MainCharacter.WorldPosition, node, 0.05f);
                 break;
             case AISTATE.AGGRESSIVE:
-                Log.Message("AGRO\n");
+                //Log.Message("AGRO\n");
                 if (!isVisible) STATE = AISTATE.SEARCH;
                     MainPath.MoveTowards(MainCharacter.WorldPosition, node, 5);
                     MainPath.RotateTowards(MainCharacter.WorldPosition, node, 0.05f);
@@ -135,13 +135,13 @@ public class ShooterAI : Component
             default:
                 break;
         }
+        if (Health.ShowHealth() == 0) node.DeleteLater();
     }
 
     void Shoot()
     {
         Shooter.CalculatePositions();
         Shooter.VisualizePrediction(2);
-
         double Speed = GetComponent<PhysicsController>(MainCharacter).getSpeed();
         Shooter.Shoot(Speed);
     }

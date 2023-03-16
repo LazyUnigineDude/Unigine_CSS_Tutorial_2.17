@@ -66,7 +66,7 @@ namespace UnigineApp.data.Scripts.AI
             }
             else
             {
-                _Bullet.WorldLookAt(GunPoint.GetChild(0).WorldPosition + GunPoint.GetChild(0).GetWorldDirection(MathLib.AXIS.Y));
+                _Bullet.WorldLookAt(GunPoint.WorldPosition + GunPoint.GetWorldDirection(MathLib.AXIS.Y));
                 _Bullet.ObjectBodyRigid.AddLinearImpulse(_Bullet.GetWorldDirection(MathLib.AXIS.Y) * (float)Distance);
             }
         }
