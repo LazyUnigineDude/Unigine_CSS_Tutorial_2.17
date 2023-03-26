@@ -79,6 +79,7 @@ public class ShooterAI : Component
             DistanceRatio = distance / ViewDistance;
             isVisible = true;
         }
+        else isVisible = false;
         AiSTATE();
     }
 

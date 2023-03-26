@@ -1086,6 +1086,10 @@
 			</properties>
 			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
 		</node>
+		<node type="NodeReference" id="538629041" enabled="0" name="AI">
+			<reference>guid://e07141d830835b57f4fe40ca4ee2b9a1b4a1868c</reference>
+			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 -16.7609875385 13.3131746579 -2.50472848263 1.0</transform>
+		</node>
 	</editor>
 	<console>
 		<bake_lighting_bounces>4</bake_lighting_bounces>
