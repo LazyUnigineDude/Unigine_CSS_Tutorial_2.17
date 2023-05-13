@@ -62,6 +62,7 @@
 		<Compile Include="data/Scripts/Controllers/PhysicsController.cs" />
 		<Compile Include="data/Scripts/AI/AIShootingLogic.cs" />
 		<Compile Include="data/Scripts/AI/AIManager.cs" />
+		<Compile Include="data\Scripts\Menu\Menu.cs" />
 		<Compile Include="data\Scripts\Sound\SoundManager.cs" />
 	</ItemGroup>
 	<ItemGroup>
