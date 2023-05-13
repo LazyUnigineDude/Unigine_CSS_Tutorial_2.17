@@ -63,6 +63,7 @@
 		<Compile Include="data/Scripts/AI/AIShootingLogic.cs"/>
 		<Compile Include="data/Scripts/AI/AIManager.cs"/>
 		<Compile Include="data/Scripts/Sound/SoundManager.cs"/>
+		<Compile Include="data/Scripts/Menu/MainMenu.cs"/>
 	</ItemGroup>
 	<ItemGroup>
 		<Compile Include="source\AppEditorLogic.cs"/>
