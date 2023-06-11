@@ -62,6 +62,10 @@
 		<Compile Include="data/Scripts/Controllers/PhysicsController.cs" />
 		<Compile Include="data/Scripts/AI/AIShootingLogic.cs" />
 		<Compile Include="data/Scripts/AI/AIManager.cs" />
+		<Compile Include="data\Scripts\Database_Inventory\InventoryGUI.cs" />
+		<Compile Include="data\Scripts\Database_Inventory\InventoryMaker.cs" />
+		<Compile Include="data\Scripts\Database_Inventory\DatabaseController.cs" />
+		<Compile Include="data\Scripts\Database_Inventory\InventoryController.cs" />
 		<Compile Include="data\Scripts\Menu\Menu.cs" />
 		<Compile Include="data\Scripts\Sound\SoundManager.cs" />
 		<Compile Include="data\ViewportClip.cs" />
@@ -71,6 +75,11 @@
 		<Compile Include="source\AppSystemLogic.cs" />
 		<Compile Include="source\AppWorldLogic.cs" />
 		<Compile Include="source\main.cs" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Include="data\Scripts\Database_Inventory\DatabaseProperty.prop" />
+	  <None Include="data\Scripts\Database_Inventory\DatabaseProperty.prop.meta" />
+	  <None Include="data\Scripts\Database_Inventory\InventoryProperty.prop" />
 	</ItemGroup>
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
 		<Exec Command="&quot;$(DOTNET_HOST_PATH)&quot; &quot;$(OutputPath)cspropgen_double_x64d.dll&quot; -p &quot;$(OutputPath)$(AssemblyName).dll&quot; -data_path ../data/" Condition="'$(Configuration)'=='Debug' And $(SkipPostBuild)=='false'" />

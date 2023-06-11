@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<property version="2.16.1.0" name="InventoryProperty" guid="36a8670a2c042ae151b3c6cc6db153bba30fb5de" parent="d99ebc8ef5769d70b1e46992309cc3e7d1aa2faa">
+	<parameter name="List" type="array" array_type="ivec2"/>
+</property>

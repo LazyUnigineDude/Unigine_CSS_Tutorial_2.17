@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<property version="2.16.1.0" name="DatabaseProperty" guid="a194c6bd20a158f8de4b47f78c0d04ea03e76f41" parent="d99ebc8ef5769d70b1e46992309cc3e7d1aa2faa">
+	<struct name="Database">
+		<parameter name="Name" type="string"/>
+		<parameter name="Value">0</parameter>
+		<parameter name="Image" type="file"/>
+	</struct>
+	<parameter name="List" type="array" array_type="Database"/>
+</property>

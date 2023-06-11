@@ -65,6 +65,10 @@
 		<Compile Include="data/Scripts/Sound/SoundManager.cs"/>
 		<Compile Include="data/Scripts/Menu/Menu.cs"/>
 		<Compile Include="data/ViewportClip.cs"/>
+		<Compile Include="data/Scripts/Database_Inventory/DatabaseController.cs"/>
+		<Compile Include="data/Scripts/Database_Inventory/InventoryController.cs"/>
+		<Compile Include="data/Scripts/Database_Inventory/InventoryMaker.cs"/>
+		<Compile Include="data/Scripts/Database_Inventory/InventoryGUI.cs"/>
 	</ItemGroup>
 	<ItemGroup>
 		<Compile Include="source\AppEditorLogic.cs"/>

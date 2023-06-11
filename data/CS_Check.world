@@ -761,29 +761,68 @@
 					<parameter name="WorldName">Play</parameter>
 					<parameter name="WorldAsset">guid://768397a77ed930dafc374a7157efc11c1648e9cb</parameter>
 				</property>
-				<property parent="9f8d63f96fc33d04a90ca493ee00e0d6a0f5a23d" guid="96b1b998d33ff017e2964e8a4cd5ec6174f39a4c">
-					<parameter name="mainPlayer">1347199802</parameter>
-					<parameter name="objectPlayer">1916959234</parameter>
-					<parameter name="objectClip">1887504941</parameter>
-				</property>
 			</properties>
 			<transform>0.999999880791 0 0 0.0 0 0.999999880791 -9.32450450186e-10 0.0 0 9.32450450186e-10 0.999999940395 0.0 0 0 2 1.0</transform>
 		</node>
-		<node type="PlayerDummy" id="1916959234" name="PlayerDummy_1">
-			<znear>0.300000012</znear>
-			<zfar>100000</zfar>
-			<oblique_frustum_plane>0 0 -1 0</oblique_frustum_plane>
-			<is_oblique_frustum>0</is_oblique_frustum>
-			<viewport_mask>0x2</viewport_mask>
-			<is_main>0</is_main>
-			<is_listener>1</is_listener>
-			<controlled>1</controlled>
-			<transform>0.999999880791 0 0 0.0 0 0.999999880791 -9.32450450186e-10 0.0 0 9.32450450186e-10 0.999999940395 0.0 0 0 2 1.0</transform>
+		<node type="NodeDummy" id="842575985" name="Database">
+			<properties>
+				<property parent="081d46c939c0a194b30c1fe345ec03e6346eca0d" guid="dfd06b6d2276d5e8395a40275f62bf5a1c7a86f1">
+					<parameter name="Property">443335321</parameter>
+				</property>
+			</properties>
+			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 -1.86490111771e-15 1.999998 1.0</transform>
+			<node type="NodeDummy" id="443335321" name="Property">
+				<properties>
+					<property parent="a194c6bd20a158f8de4b47f78c0d04ea03e76f41" guid="d2bf834e1117b255f5fddfb0b9a36f4fa6cc1462">
+						<parameter name="List">
+							<value index="0">
+								<parameter name="Name">Empty</parameter>
+								<parameter name="Image">guid://962da391051507bca0f13febc619d44e51f3cf55</parameter>
+							</value>
+							<value index="1">
+								<parameter name="Name">Apple</parameter>
+								<parameter name="Value">8</parameter>
+								<parameter name="Image">guid://a7f068dacab522711063b91ce0fc81cbf1cb6cae</parameter>
+							</value>
+							<value index="2">
+								<parameter name="Name">Bucket</parameter>
+								<parameter name="Value">12</parameter>
+								<parameter name="Image">guid://e6d66ca0003a377fdce75ed2e6787009de1139d4</parameter>
+							</value>
+							<value index="3">
+								<parameter name="Name">Hammer</parameter>
+								<parameter name="Value">20</parameter>
+								<parameter name="Image">guid://8735084109c344ac3d81f81b5f864ebe4a2ea705</parameter>
+							</value>
+						</parameter>
+					</property>
+				</properties>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			</node>
 		</node>
-		<node type="ObjectMeshStatic" id="1887504941" name="box">
-			<mesh_name>guid://850cf0459c8fa4e0854b92bf72648112b1b8ad49</mesh_name>
-			<surface name="box" viewport_mask="0x2" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
-			<transform>0.141348570585 0 -0.111053258181 0.0 0 0.179756000638 0 0.0 0.501424074173 0 0.638212502003 0.0 0.569665710178 -0.011898471059 0.594674671272 1.0</transform>
+		<node type="NodeDummy" id="1784968527" name="Inventory">
+			<properties>
+				<property parent="185a98fa82665411d6c8fe3c0dcbc46b4e7d8ece" guid="5306000ed9208815835b3a70f6498b0fa009fd22">
+					<parameter name="Property">516436288</parameter>
+				</property>
+			</properties>
+			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 -1.86490111771e-15 1.999998 1.0</transform>
+			<node type="NodeDummy" id="516436288" name="Property">
+				<properties>
+					<property parent="36a8670a2c042ae151b3c6cc6db153bba30fb5de" guid="5d66efa965a774f48a5d1bc312440e46ac6990ed">
+						<parameter name="List">
+							<value index="0">1 10</value>
+							<value index="2">2 20</value>
+							<value index="5">3 12</value>
+							<value index="8">1 12</value>
+							<value index="10">1 18</value>
+							<value index="12">2 15</value>
+							<value index="23"/>
+						</parameter>
+					</property>
+				</properties>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			</node>
 		</node>
 	</editor>
 	<console>
