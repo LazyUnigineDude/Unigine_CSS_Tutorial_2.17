@@ -1,0 +1,1102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<world version="2.16.1.0">
+	<data>
+		<user/>
+		<unigine_editor/>
+	</data>
+	<sound>
+		<enabled>1</enabled>
+		<sound_manager_load_samples>0</sound_manager_load_samples>
+		<sound_manager_sample_static_memory>64</sound_manager_sample_static_memory>
+		<sound_manager_sample_stream_memory>16</sound_manager_sample_stream_memory>
+		<sound_reverb>2</sound_reverb>
+		<sound_occlusion>1</sound_occlusion>
+		<al_sound_skip_errors>0</al_sound_skip_errors>
+		<attenuation>3</attenuation>
+	</sound>
+	<render>
+		<data/>
+		<shader_defines/>
+		<stereo_distance>4</stereo_distance>
+		<stereo_radius>0.0320000015</stereo_radius>
+		<stereo_offset>0</stereo_offset>
+		<dirt_texture_name/>
+		<exposure_min_luminance>0.5</exposure_min_luminance>
+		<exposure_max_luminance>10</exposure_max_luminance>
+		<color_correction>
+			<curve>
+				<keys>
+					<key point="0 0" left_tangent="0 0" right_tangent="0 0"/>
+					<key point="1 1" left_tangent="0 0" right_tangent="0 0"/>
+				</keys>
+			</curve>
+			<curve>
+				<keys>
+					<key point="0 0" left_tangent="0 0" right_tangent="0 0"/>
+					<key point="1 1" left_tangent="0 0" right_tangent="0 0"/>
+				</keys>
+			</curve>
+			<curve>
+				<keys>
+					<key point="0 0" left_tangent="0 0" right_tangent="0 0"/>
+					<key point="1 1" left_tangent="0 0" right_tangent="0 0"/>
+				</keys>
+			</curve>
+			<curve>
+				<keys>
+					<key point="0 1" left_tangent="0 0" right_tangent="0 0"/>
+					<key point="1 1" left_tangent="0 0" right_tangent="0 0"/>
+				</keys>
+			</curve>
+		</color_correction>
+		<color_correction_lut/>
+		<vignette_mask_texture_path>core/textures/vignette_default.texture</vignette_mask_texture_path>
+		<sky_rotation>0 0 0 1</sky_rotation>
+		<albedo_cavity_texture_name>core/textures/common/white.texture</albedo_cavity_texture_name>
+		<shading_cavity_texture_name>core/textures/common/white.texture</shading_cavity_texture_name>
+		<albedo_convexity_texture_name>core/textures/common/white.texture</albedo_convexity_texture_name>
+		<shading_convexity_texture_name>core/textures/common/white.texture</shading_convexity_texture_name>
+		<environment_preset_0_intensity>1</environment_preset_0_intensity>
+		<environment_preset_0_scattering_base_lut_texture_name>core/textures/scattering_lut/preset_0/base.tif</environment_preset_0_scattering_base_lut_texture_name>
+		<environment_preset_0_scattering_mie_lut_texture_name>core/textures/scattering_lut/preset_0/mie.tif</environment_preset_0_scattering_mie_lut_texture_name>
+		<environment_preset_0_scattering_light_color_lut_texture_name>core/textures/scattering_lut/preset_0/light_color.tif</environment_preset_0_scattering_light_color_lut_texture_name>
+		<environment_preset_0_sun_texture_name>core/textures/world_light/celestial_body_sun.png</environment_preset_0_sun_texture_name>
+		<environment_preset_0_sun_angular_size>0.5</environment_preset_0_sun_angular_size>
+		<environment_preset_0_sun_texture_color>1 1 1 1</environment_preset_0_sun_texture_color>
+		<environment_preset_0_sun_texture_intensity>1000</environment_preset_0_sun_texture_intensity>
+		<environment_preset_0_moon_texture_name>core/textures/world_light/celestial_body_moon.png</environment_preset_0_moon_texture_name>
+		<environment_preset_0_moon_angular_size>0.5</environment_preset_0_moon_angular_size>
+		<environment_preset_0_moon_texture_color>1 1 1 1</environment_preset_0_moon_texture_color>
+		<environment_preset_0_moon_texture_intensity>50</environment_preset_0_moon_texture_intensity>
+		<environment_preset_0_texture_name>core/textures/common/environment_default.texture</environment_preset_0_texture_name>
+		<environment_preset_0_texture_color>1 1 1 1</environment_preset_0_texture_color>
+		<environment_preset_0_texture_rotation>0 0 0</environment_preset_0_texture_rotation>
+		<environment_preset_0_texture_blur>0</environment_preset_0_texture_blur>
+		<environment_preset_0_haze_color>1 1 1 1</environment_preset_0_haze_color>
+		<environment_preset_0_haze_max_distance>10000</environment_preset_0_haze_max_distance>
+		<environment_preset_0_haze_density>1</environment_preset_0_haze_density>
+		<environment_preset_0_haze_physical_start_height>-2000</environment_preset_0_haze_physical_start_height>
+		<environment_preset_0_haze_physical_half_visibility_distance>5</environment_preset_0_haze_physical_half_visibility_distance>
+		<environment_preset_0_haze_physical_half_falloff_height>225</environment_preset_0_haze_physical_half_falloff_height>
+		<environment_preset_0_haze_physical_ambient_light_intensity>1.35000002</environment_preset_0_haze_physical_ambient_light_intensity>
+		<environment_preset_0_haze_physical_ambient_color_saturation>0.800000012</environment_preset_0_haze_physical_ambient_color_saturation>
+		<environment_preset_0_haze_physical_sun_light_intensity>0.00999999978</environment_preset_0_haze_physical_sun_light_intensity>
+		<environment_preset_0_haze_physical_sun_color_saturation>0</environment_preset_0_haze_physical_sun_color_saturation>
+		<environment_preset_0_haze_scattering_mie_intensity>0</environment_preset_0_haze_scattering_mie_intensity>
+		<environment_preset_0_haze_scattering_mie_front_side_intensity>0</environment_preset_0_haze_scattering_mie_front_side_intensity>
+		<environment_preset_0_haze_scattering_mie_fresnel_power>10</environment_preset_0_haze_scattering_mie_fresnel_power>
+		<environment_preset_0_ambient_intensity>1</environment_preset_0_ambient_intensity>
+		<environment_preset_0_reflection_intensity>1</environment_preset_0_reflection_intensity>
+		<environment_preset_0_sky_intensity>1</environment_preset_0_sky_intensity>
+		<environment_preset_1_intensity>0</environment_preset_1_intensity>
+		<environment_preset_1_scattering_base_lut_texture_name>core/textures/scattering_lut/preset_1/base.tif</environment_preset_1_scattering_base_lut_texture_name>
+		<environment_preset_1_scattering_mie_lut_texture_name>core/textures/scattering_lut/preset_1/mie.tif</environment_preset_1_scattering_mie_lut_texture_name>
+		<environment_preset_1_scattering_light_color_lut_texture_name>core/textures/scattering_lut/preset_1/light_color.tif</environment_preset_1_scattering_light_color_lut_texture_name>
+		<environment_preset_1_sun_texture_name>core/textures/world_light/celestial_body_sun.png</environment_preset_1_sun_texture_name>
+		<environment_preset_1_sun_angular_size>0.5</environment_preset_1_sun_angular_size>
+		<environment_preset_1_sun_texture_color>1 1 1 1</environment_preset_1_sun_texture_color>
+		<environment_preset_1_sun_texture_intensity>1000</environment_preset_1_sun_texture_intensity>
+		<environment_preset_1_moon_texture_name>core/textures/world_light/celestial_body_moon.png</environment_preset_1_moon_texture_name>
+		<environment_preset_1_moon_angular_size>0.5</environment_preset_1_moon_angular_size>
+		<environment_preset_1_moon_texture_color>1 1 1 1</environment_preset_1_moon_texture_color>
+		<environment_preset_1_moon_texture_intensity>50</environment_preset_1_moon_texture_intensity>
+		<environment_preset_1_texture_name>core/textures/common/environment_default.texture</environment_preset_1_texture_name>
+		<environment_preset_1_texture_color>1 1 1 1</environment_preset_1_texture_color>
+		<environment_preset_1_texture_rotation>0 0 0</environment_preset_1_texture_rotation>
+		<environment_preset_1_texture_blur>0</environment_preset_1_texture_blur>
+		<environment_preset_1_haze_color>1 1 1 1</environment_preset_1_haze_color>
+		<environment_preset_1_haze_max_distance>10000</environment_preset_1_haze_max_distance>
+		<environment_preset_1_haze_density>5</environment_preset_1_haze_density>
+		<environment_preset_1_haze_physical_start_height>-2000</environment_preset_1_haze_physical_start_height>
+		<environment_preset_1_haze_physical_half_visibility_distance>0.5</environment_preset_1_haze_physical_half_visibility_distance>
+		<environment_preset_1_haze_physical_half_falloff_height>225</environment_preset_1_haze_physical_half_falloff_height>
+		<environment_preset_1_haze_physical_ambient_light_intensity>0.800000012</environment_preset_1_haze_physical_ambient_light_intensity>
+		<environment_preset_1_haze_physical_ambient_color_saturation>0.800000012</environment_preset_1_haze_physical_ambient_color_saturation>
+		<environment_preset_1_haze_physical_sun_light_intensity>0.00999999978</environment_preset_1_haze_physical_sun_light_intensity>
+		<environment_preset_1_haze_physical_sun_color_saturation>0</environment_preset_1_haze_physical_sun_color_saturation>
+		<environment_preset_1_haze_scattering_mie_intensity>0</environment_preset_1_haze_scattering_mie_intensity>
+		<environment_preset_1_haze_scattering_mie_front_side_intensity>0</environment_preset_1_haze_scattering_mie_front_side_intensity>
+		<environment_preset_1_haze_scattering_mie_fresnel_power>10</environment_preset_1_haze_scattering_mie_fresnel_power>
+		<environment_preset_1_ambient_intensity>1</environment_preset_1_ambient_intensity>
+		<environment_preset_1_reflection_intensity>1</environment_preset_1_reflection_intensity>
+		<environment_preset_1_sky_intensity>1</environment_preset_1_sky_intensity>
+		<environment_preset_2_intensity>0</environment_preset_2_intensity>
+		<environment_preset_2_scattering_base_lut_texture_name>core/textures/scattering_lut/preset_2/base.tif</environment_preset_2_scattering_base_lut_texture_name>
+		<environment_preset_2_scattering_mie_lut_texture_name>core/textures/scattering_lut/preset_2/mie.tif</environment_preset_2_scattering_mie_lut_texture_name>
+		<environment_preset_2_scattering_light_color_lut_texture_name>core/textures/scattering_lut/preset_2/light_color.tif</environment_preset_2_scattering_light_color_lut_texture_name>
+		<environment_preset_2_sun_texture_name>core/textures/world_light/celestial_body_sun.png</environment_preset_2_sun_texture_name>
+		<environment_preset_2_sun_angular_size>0.5</environment_preset_2_sun_angular_size>
+		<environment_preset_2_sun_texture_color>1 1 1 1</environment_preset_2_sun_texture_color>
+		<environment_preset_2_sun_texture_intensity>1</environment_preset_2_sun_texture_intensity>
+		<environment_preset_2_moon_texture_name>core/textures/world_light/celestial_body_moon.png</environment_preset_2_moon_texture_name>
+		<environment_preset_2_moon_angular_size>0.5</environment_preset_2_moon_angular_size>
+		<environment_preset_2_moon_texture_color>1 1 1 1</environment_preset_2_moon_texture_color>
+		<environment_preset_2_moon_texture_intensity>1</environment_preset_2_moon_texture_intensity>
+		<environment_preset_2_texture_name>core/textures/common/environment_default.texture</environment_preset_2_texture_name>
+		<environment_preset_2_texture_color>1 1 1 1</environment_preset_2_texture_color>
+		<environment_preset_2_texture_rotation>0 0 0</environment_preset_2_texture_rotation>
+		<environment_preset_2_texture_blur>0</environment_preset_2_texture_blur>
+		<environment_preset_2_haze_color>1 1 1 1</environment_preset_2_haze_color>
+		<environment_preset_2_haze_max_distance>10000</environment_preset_2_haze_max_distance>
+		<environment_preset_2_haze_density>5</environment_preset_2_haze_density>
+		<environment_preset_2_haze_physical_start_height>0</environment_preset_2_haze_physical_start_height>
+		<environment_preset_2_haze_physical_half_visibility_distance>10000</environment_preset_2_haze_physical_half_visibility_distance>
+		<environment_preset_2_haze_physical_half_falloff_height>100</environment_preset_2_haze_physical_half_falloff_height>
+		<environment_preset_2_haze_physical_ambient_light_intensity>1</environment_preset_2_haze_physical_ambient_light_intensity>
+		<environment_preset_2_haze_physical_ambient_color_saturation>1</environment_preset_2_haze_physical_ambient_color_saturation>
+		<environment_preset_2_haze_physical_sun_light_intensity>1</environment_preset_2_haze_physical_sun_light_intensity>
+		<environment_preset_2_haze_physical_sun_color_saturation>1</environment_preset_2_haze_physical_sun_color_saturation>
+		<environment_preset_2_haze_scattering_mie_intensity>0</environment_preset_2_haze_scattering_mie_intensity>
+		<environment_preset_2_haze_scattering_mie_front_side_intensity>0</environment_preset_2_haze_scattering_mie_front_side_intensity>
+		<environment_preset_2_haze_scattering_mie_fresnel_power>10</environment_preset_2_haze_scattering_mie_fresnel_power>
+		<environment_preset_2_ambient_intensity>1</environment_preset_2_ambient_intensity>
+		<environment_preset_2_reflection_intensity>1</environment_preset_2_reflection_intensity>
+		<environment_preset_2_sky_intensity>1</environment_preset_2_sky_intensity>
+		<color_correction_brightness>0</color_correction_brightness>
+		<color_correction_by_curves>0</color_correction_by_curves>
+		<color_correction_contrast>0</color_correction_contrast>
+		<color_correction_gamma>1</color_correction_gamma>
+		<color_correction_hue_per_color>0</color_correction_hue_per_color>
+		<color_correction_hue_shift>0 0 0 0 0 0 0 0 0 0 0 0</color_correction_hue_shift>
+		<color_correction_preserve_saturation>0</color_correction_preserve_saturation>
+		<color_correction_saturation>1 1 1 1 1 1 1 1 1 1 1 1</color_correction_saturation>
+		<color_correction_saturation_per_color>0</color_correction_saturation_per_color>
+		<color_correction_white>1 1 1 1</color_correction_white>
+		<gl_terrain_use_async>1</gl_terrain_use_async>
+		<gl_terrain_waiting_frames>4</gl_terrain_waiting_frames>
+		<gpu_thread_priority>7</gpu_thread_priority>
+		<render_aa_preset>smooth</render_aa_preset>
+		<render_aces_shoulder_angle>2.43000007</render_aces_shoulder_angle>
+		<render_aces_shoulder_length>0.140000001</render_aces_shoulder_length>
+		<render_aces_shoulder_strength>0.589999974</render_aces_shoulder_strength>
+		<render_aces_toe>0.0299999993</render_aces_toe>
+		<render_aces_white_clip>2.50999999</render_aces_white_clip>
+		<render_aces_with_reinhard_mix>0.5</render_aces_with_reinhard_mix>
+		<render_aces_with_reinhard_shoulder_angle>2.43000007</render_aces_with_reinhard_shoulder_angle>
+		<render_aces_with_reinhard_shoulder_length>0.140000001</render_aces_with_reinhard_shoulder_length>
+		<render_aces_with_reinhard_shoulder_strength>0.589999974</render_aces_with_reinhard_shoulder_strength>
+		<render_aces_with_reinhard_toe>0.0299999993</render_aces_with_reinhard_toe>
+		<render_aces_with_reinhard_white_clip>2.50999999</render_aces_with_reinhard_white_clip>
+		<render_alpha_fade>1</render_alpha_fade>
+		<render_animation_leaf>1</render_animation_leaf>
+		<render_animation_scale>1</render_animation_scale>
+		<render_animation_stem>1</render_animation_stem>
+		<render_animation_wind>0 0 0</render_animation_wind>
+		<render_auxiliary>1</render_auxiliary>
+		<render_background_color>0 0 0 0</render_background_color>
+		<render_bent_normal_color_clamping_intensity>1</render_bent_normal_color_clamping_intensity>
+		<render_bent_normal_color_clamping_velocity_threshold>0</render_bent_normal_color_clamping_velocity_threshold>
+		<render_bent_normal_denoise_gaussian_sigma>10</render_bent_normal_denoise_gaussian_sigma>
+		<render_bent_normal_denoise_intensity>0.200000003</render_bent_normal_denoise_intensity>
+		<render_bent_normal_denoise_quality>1</render_bent_normal_denoise_quality>
+		<render_bent_normal_denoise_radius>1</render_bent_normal_denoise_radius>
+		<render_bent_normal_denoise_threshold>0.100000001</render_bent_normal_denoise_threshold>
+		<render_bent_normal_fix_overlit_areas>0</render_bent_normal_fix_overlit_areas>
+		<render_bent_normal_preset>raytracing medium</render_bent_normal_preset>
+		<render_bent_normal_ray_tracing>1</render_bent_normal_ray_tracing>
+		<render_bent_normal_ray_tracing_denoise>0</render_bent_normal_ray_tracing_denoise>
+		<render_bent_normal_ray_tracing_threshold>1</render_bent_normal_ray_tracing_threshold>
+		<render_bloom>1</render_bloom>
+		<render_bloom_passes>6</render_bloom_passes>
+		<render_bloom_power>1</render_bloom_power>
+		<render_bloom_resolution>1</render_bloom_resolution>
+		<render_bloom_scale>0.100000001</render_bloom_scale>
+		<render_border>0 0</render_border>
+		<render_budget>0.0160000008</render_budget>
+		<render_camera_effects_temporal_filtering>0</render_camera_effects_temporal_filtering>
+		<render_camera_effects_temporal_filtering_color_clamping_intensity>3</render_camera_effects_temporal_filtering_color_clamping_intensity>
+		<render_camera_effects_temporal_filtering_max_velocity_clamping>0.100000001</render_camera_effects_temporal_filtering_max_velocity_clamping>
+		<render_camera_effects_temporal_filtering_min_velocity_clamping>0.0500000007</render_camera_effects_temporal_filtering_min_velocity_clamping>
+		<render_camera_effects_threshold>0</render_camera_effects_threshold>
+		<render_camera_mode>0</render_camera_mode>
+		<render_chromatic_aberration>0</render_chromatic_aberration>
+		<render_chromatic_aberration_intensity>0.5</render_chromatic_aberration_intensity>
+		<render_chromatic_aberration_noise_intensity>0.300000012</render_chromatic_aberration_noise_intensity>
+		<render_chromatic_aberration_samples>1</render_chromatic_aberration_samples>
+		<render_clouds_3d_texture_horizontal_resolution>2</render_clouds_3d_texture_horizontal_resolution>
+		<render_clouds_3d_texture_vertical_resolution>3</render_clouds_3d_texture_vertical_resolution>
+		<render_clouds_accurate_layers_sorting>0</render_clouds_accurate_layers_sorting>
+		<render_clouds_depth_based_reconstruction>1</render_clouds_depth_based_reconstruction>
+		<render_clouds_depth_based_reconstruction_threshold>25</render_clouds_depth_based_reconstruction_threshold>
+		<render_clouds_distortion_texture>1</render_clouds_distortion_texture>
+		<render_clouds_downsampling_rendering>1</render_clouds_downsampling_rendering>
+		<render_clouds_dynamic_coverage_area>10000</render_clouds_dynamic_coverage_area>
+		<render_clouds_dynamic_coverage_resolution>256</render_clouds_dynamic_coverage_resolution>
+		<render_clouds_enabled>1</render_clouds_enabled>
+		<render_clouds_far_clipping>0</render_clouds_far_clipping>
+		<render_clouds_ground_shadows>1</render_clouds_ground_shadows>
+		<render_clouds_interleaved_rendering>1</render_clouds_interleaved_rendering>
+		<render_clouds_interleaved_rendering_temporal>1</render_clouds_interleaved_rendering_temporal>
+		<render_clouds_lighting_cone_radius>0.300000012</render_clouds_lighting_cone_radius>
+		<render_clouds_lighting_quality>2</render_clouds_lighting_quality>
+		<render_clouds_lighting_samples_distribution>1.5</render_clouds_lighting_samples_distribution>
+		<render_clouds_lighting_tracelength>600</render_clouds_lighting_tracelength>
+		<render_clouds_noise_iterations>0.100000001</render_clouds_noise_iterations>
+		<render_clouds_noise_lighting>0.300000012</render_clouds_noise_lighting>
+		<render_clouds_noise_step>0.300000012</render_clouds_noise_step>
+		<render_clouds_noise_step_skip>0.300000012</render_clouds_noise_step_skip>
+		<render_clouds_quality_preset>high</render_clouds_quality_preset>
+		<render_clouds_rounded>1</render_clouds_rounded>
+		<render_clouds_rounded_planet_radius>200000</render_clouds_rounded_planet_radius>
+		<render_clouds_samples_count>2</render_clouds_samples_count>
+		<render_clouds_sampling_quality>2</render_clouds_sampling_quality>
+		<render_clouds_soft_intersection>100</render_clouds_soft_intersection>
+		<render_clouds_step_accuracy>0.75</render_clouds_step_accuracy>
+		<render_clouds_transparent_order>0</render_clouds_transparent_order>
+		<render_cross>0</render_cross>
+		<render_cross_angle>45</render_cross_angle>
+		<render_cross_color>1 1 1 1</render_cross_color>
+		<render_cross_length>0.200000003</render_cross_length>
+		<render_cross_scale>0.400000006</render_cross_scale>
+		<render_cross_shafts>6</render_cross_shafts>
+		<render_cross_threshold>0</render_cross_threshold>
+		<render_debug>1</render_debug>
+		<render_decal_distance>1e+09</render_decal_distance>
+		<render_decals>1</render_decals>
+		<render_depth_pre_pass>0</render_depth_pre_pass>
+		<render_dirt_scale>0.5</render_dirt_scale>
+		<render_distance_offset>0</render_distance_offset>
+		<render_distance_scale>1</render_distance_scale>
+		<render_dof>0</render_dof>
+		<render_dof_blur>1</render_dof_blur>
+		<render_dof_bokeh_mode>0</render_dof_bokeh_mode>
+		<render_dof_chromatic_aberration>0</render_dof_chromatic_aberration>
+		<render_dof_far_distance>10</render_dof_far_distance>
+		<render_dof_far_focal_offset>9.99999997e-07</render_dof_far_focal_offset>
+		<render_dof_focal_distance>1</render_dof_focal_distance>
+		<render_dof_focus_improvement>0</render_dof_focus_improvement>
+		<render_dof_increased_accuracy>0</render_dof_increased_accuracy>
+		<render_dof_near_distance>10</render_dof_near_distance>
+		<render_dof_near_focal_offset>9.99999997e-07</render_dof_near_focal_offset>
+		<render_dof_preset>medium</render_dof_preset>
+		<render_dof_quality>1</render_dof_quality>
+		<render_dof_resolution>2</render_dof_resolution>
+		<render_environment>1</render_environment>
+		<render_environment_correct_roughness>2</render_environment_correct_roughness>
+		<render_environment_cubemap_blend>0</render_environment_cubemap_blend>
+		<render_environment_haze>2</render_environment_haze>
+		<render_environment_haze_colorization_intensity>0.949999988</render_environment_haze_colorization_intensity>
+		<render_environment_haze_colorization_threshold>0.5</render_environment_haze_colorization_threshold>
+		<render_environment_haze_gradient>2</render_environment_haze_gradient>
+		<render_environment_haze_screen_space_global_illumination>1</render_environment_haze_screen_space_global_illumination>
+		<render_environment_haze_temporal_filter>1</render_environment_haze_temporal_filter>
+		<render_environment_hemisphere>0</render_environment_hemisphere>
+		<render_exposure>0.600000024</render_exposure>
+		<render_exposure_adaptation>1</render_exposure_adaptation>
+		<render_exposure_mode>2</render_exposure_mode>
+		<render_f_stop>11</render_f_stop>
+		<render_fade_color>0 0 0 0</render_fade_color>
+		<render_ffp_antialiasing_lines>1</render_ffp_antialiasing_lines>
+		<render_field_distance>1e+09</render_field_distance>
+		<render_field_height_resolution>2</render_field_height_resolution>
+		<render_field_precision>0</render_field_precision>
+		<render_field_shoreline_resolution>0</render_field_shoreline_resolution>
+		<render_filmic_linear_angle>0.100000001</render_filmic_linear_angle>
+		<render_filmic_linear_scale>0.300000012</render_filmic_linear_scale>
+		<render_filmic_saturation_recovery>0.600000024</render_filmic_saturation_recovery>
+		<render_filmic_shoulder_scale>1</render_filmic_shoulder_scale>
+		<render_filmic_toe_denominator>0.300000012</render_filmic_toe_denominator>
+		<render_filmic_toe_numerator>0.00999999978</render_filmic_toe_numerator>
+		<render_filmic_toe_scale>0.200000003</render_filmic_toe_scale>
+		<render_filmic_white_level>1.5</render_filmic_white_level>
+		<render_fxaa>1</render_fxaa>
+		<render_fxaa_intensity>0</render_fxaa_intensity>
+		<render_gbuffer_lightmap>1</render_gbuffer_lightmap>
+		<render_gi_preset>custom</render_gi_preset>
+		<render_iso>100</render_iso>
+		<render_landscape_cache_cpu_size>10</render_landscape_cache_cpu_size>
+		<render_landscape_cache_gpu_life_time>4</render_landscape_cache_gpu_life_time>
+		<render_landscape_cache_gpu_size>5</render_landscape_cache_gpu_size>
+		<render_landscape_operations_per_frame>10</render_landscape_operations_per_frame>
+		<render_landscape_terrain_culling_by_depth>1</render_landscape_terrain_culling_by_depth>
+		<render_landscape_terrain_culling_depth_resolution>64</render_landscape_terrain_culling_depth_resolution>
+		<render_landscape_terrain_culling_frustum_aggressive>1</render_landscape_terrain_culling_frustum_aggressive>
+		<render_landscape_terrain_culling_map>0.300000012</render_landscape_terrain_culling_map>
+		<render_landscape_terrain_culling_oblique_frustum>0.899999976</render_landscape_terrain_culling_oblique_frustum>
+		<render_landscape_terrain_culling_padding_patch_cpu>1</render_landscape_terrain_culling_padding_patch_cpu>
+		<render_landscape_terrain_culling_padding_patch_gpu>1</render_landscape_terrain_culling_padding_patch_gpu>
+		<render_landscape_terrain_culling_padding_triangles>1</render_landscape_terrain_culling_padding_triangles>
+		<render_landscape_terrain_culling_patch_batching>16</render_landscape_terrain_culling_patch_batching>
+		<render_landscape_terrain_culling_patch_resolution_cpu>2</render_landscape_terrain_culling_patch_resolution_cpu>
+		<render_landscape_terrain_culling_patch_resolution_gpu>32</render_landscape_terrain_culling_patch_resolution_gpu>
+		<render_landscape_terrain_detail_compression>1</render_landscape_terrain_detail_compression>
+		<render_landscape_terrain_detail_resolution_additional_mask>4</render_landscape_terrain_detail_resolution_additional_mask>
+		<render_landscape_terrain_detail_resolution_albedo>4</render_landscape_terrain_detail_resolution_albedo>
+		<render_landscape_terrain_detail_resolution_height>5</render_landscape_terrain_detail_resolution_height>
+		<render_landscape_terrain_geometry_detail_max_height>0.5</render_landscape_terrain_geometry_detail_max_height>
+		<render_landscape_terrain_geometry_holes>1</render_landscape_terrain_geometry_holes>
+		<render_landscape_terrain_geometry_polygon_size>0.00999999978</render_landscape_terrain_geometry_polygon_size>
+		<render_landscape_terrain_geometry_preset>high</render_landscape_terrain_geometry_preset>
+		<render_landscape_terrain_geometry_progression>0.899999976</render_landscape_terrain_geometry_progression>
+		<render_landscape_terrain_geometry_subpixel_reduction>6</render_landscape_terrain_geometry_subpixel_reduction>
+		<render_landscape_terrain_mask_dithering>1</render_landscape_terrain_mask_dithering>
+		<render_landscape_terrain_streaming_per_lods>1</render_landscape_terrain_streaming_per_lods>
+		<render_landscape_terrain_streaming_preset>high</render_landscape_terrain_streaming_preset>
+		<render_landscape_terrain_streaming_threads>1</render_landscape_terrain_streaming_threads>
+		<render_landscape_terrain_texel_size>0.00200000009</render_landscape_terrain_texel_size>
+		<render_landscape_terrain_visible_distance>30000</render_landscape_terrain_visible_distance>
+		<render_landscape_terrain_vt_detail_level_by_angle>0.899999976</render_landscape_terrain_vt_detail_level_by_angle>
+		<render_landscape_terrain_vt_filtering>1</render_landscape_terrain_vt_filtering>
+		<render_landscape_terrain_vt_hash_number_mistakes>2</render_landscape_terrain_vt_hash_number_mistakes>
+		<render_landscape_terrain_vt_hash_size>1000000</render_landscape_terrain_vt_hash_size>
+		<render_landscape_terrain_vt_memory_size>0.400000006</render_landscape_terrain_vt_memory_size>
+		<render_landscape_terrain_vt_sampler_feedback_buffer_resolution>80 60</render_landscape_terrain_vt_sampler_feedback_buffer_resolution>
+		<render_landscape_terrain_vt_sampler_feedback_screen_resolution>1</render_landscape_terrain_vt_sampler_feedback_screen_resolution>
+		<render_landscape_terrain_vt_target_resolution>1920 1080</render_landscape_terrain_vt_target_resolution>
+		<render_landscape_terrain_vt_tiles_load_per_frame>8</render_landscape_terrain_vt_tiles_load_per_frame>
+		<render_landscape_terrain_vt_tiles_reload_per_frame>4</render_landscape_terrain_vt_tiles_reload_per_frame>
+		<render_landscape_terrain_vt_tiles_update_per_frame>16</render_landscape_terrain_vt_tiles_update_per_frame>
+		<render_latency>1</render_latency>
+		<render_lens>0</render_lens>
+		<render_lens_color>1 1 1 1</render_lens_color>
+		<render_lens_dispersion>1 1 1</render_lens_dispersion>
+		<render_lens_length>0.153999999</render_lens_length>
+		<render_lens_radius>0.270999998</render_lens_radius>
+		<render_lens_scale>0.0350000001</render_lens_scale>
+		<render_lens_threshold>1</render_lens_threshold>
+		<render_light_distance>1e+09</render_light_distance>
+		<render_lightmap_color>1 1 1 1</render_lightmap_color>
+		<render_lights_enabled>1</render_lights_enabled>
+		<render_lights_forward_per_object_env>4</render_lights_forward_per_object_env>
+		<render_lights_forward_per_object_omni>4</render_lights_forward_per_object_omni>
+		<render_lights_forward_per_object_planar>4</render_lights_forward_per_object_planar>
+		<render_lights_forward_per_object_proj>4</render_lights_forward_per_object_proj>
+		<render_lights_forward_per_object_voxel>4</render_lights_forward_per_object_voxel>
+		<render_lights_forward_per_object_world>4</render_lights_forward_per_object_world>
+		<render_lights_interleaved>0</render_lights_interleaved>
+		<render_lights_interleaved_catmull_resampling>0</render_lights_interleaved_catmull_resampling>
+		<render_lights_interleaved_color_clamping>1</render_lights_interleaved_color_clamping>
+		<render_lights_interleaved_samples>0</render_lights_interleaved_samples>
+		<render_lights_lens_flares>1</render_lights_lens_flares>
+		<render_lights_max_per_batch>1024</render_lights_max_per_batch>
+		<render_lights_tile_grid_size>8</render_lights_tile_grid_size>
+		<render_max_fps>0</render_max_fps>
+		<render_motion_blur>0</render_motion_blur>
+		<render_motion_blur_camera_velocity>1</render_motion_blur_camera_velocity>
+		<render_motion_blur_depth_threshold_far>0.5</render_motion_blur_depth_threshold_far>
+		<render_motion_blur_depth_threshold_near>0</render_motion_blur_depth_threshold_near>
+		<render_motion_blur_max_velocity>1</render_motion_blur_max_velocity>
+		<render_motion_blur_noise_intensity>0.5</render_motion_blur_noise_intensity>
+		<render_motion_blur_num_steps>8</render_motion_blur_num_steps>
+		<render_motion_blur_preset>medium</render_motion_blur_preset>
+		<render_motion_blur_velocity_blur_radius>0.200000003</render_motion_blur_velocity_blur_radius>
+		<render_motion_blur_velocity_blur_samples>8</render_motion_blur_velocity_blur_samples>
+		<render_motion_blur_velocity_scale>0.75</render_motion_blur_velocity_scale>
+		<render_noise>0</render_noise>
+		<render_noise_intensity>0.0299999993</render_noise_intensity>
+		<render_object_distance>1e+09</render_object_distance>
+		<render_occluders>1</render_occluders>
+		<render_occluders_resolution>128 64</render_occluders_resolution>
+		<render_occluders_shadows>0</render_occluders_shadows>
+		<render_occluders_shadows_resolution>512 512</render_occluders_shadows_resolution>
+		<render_occlusion_queries>1</render_occlusion_queries>
+		<render_occlusion_queries_num_frames>5</render_occlusion_queries_num_frames>
+		<render_panorama_fisheye_fov>180</render_panorama_fisheye_fov>
+		<render_pre_post_materials_enabled>1</render_pre_post_materials_enabled>
+		<render_reflection_distance>1e+09</render_reflection_distance>
+		<render_reflection_dynamic>1</render_reflection_dynamic>
+		<render_reflection_dynamic_roughness_offset>0</render_reflection_dynamic_roughness_offset>
+		<render_reflection_lods>1</render_reflection_lods>
+		<render_refraction>1</render_refraction>
+		<render_refraction_dispersion>1 1 1</render_refraction_dispersion>
+		<render_refraction_warp_background_transparent_surfaces>1</render_refraction_warp_background_transparent_surfaces>
+		<render_reinhard_contribution>1</render_reinhard_contribution>
+		<render_reinhard_luma_based_contribution>1</render_reinhard_luma_based_contribution>
+		<render_screen_precision>1</render_screen_precision>
+		<render_screen_space_effects>1</render_screen_space_effects>
+		<render_screen_space_shadow_shafts_length>1.5</render_screen_space_shadow_shafts_length>
+		<render_screen_space_shadow_shafts_mode>0</render_screen_space_shadow_shafts_mode>
+		<render_screen_space_shadow_shafts_quality>1</render_screen_space_shadow_shafts_quality>
+		<render_screen_space_shadow_shafts_resolution>1</render_screen_space_shadow_shafts_resolution>
+		<render_shaders_preload>0</render_shaders_preload>
+		<render_shadow_distance>100</render_shadow_distance>
+		<render_shadow_distance_scale>1</render_shadow_distance_scale>
+		<render_shadows>1</render_shadows>
+		<render_shadows_alpha_test>1</render_shadows_alpha_test>
+		<render_shadows_filter_mode>4</render_shadows_filter_mode>
+		<render_shadows_filter_noise>0</render_shadows_filter_noise>
+		<render_shadows_penumbra_mode>0</render_shadows_penumbra_mode>
+		<render_shadows_penumbra_noise>1</render_shadows_penumbra_noise>
+		<render_shadows_screen_space>1</render_shadows_screen_space>
+		<render_shadows_translucent_depth>0.25</render_shadows_translucent_depth>
+		<render_shadows_world_cascades_culling_clusters>1</render_shadows_world_cascades_culling_clusters>
+		<render_shadows_world_lerp_cascades>1</render_shadows_world_lerp_cascades>
+		<render_sharpen>1</render_sharpen>
+		<render_sharpen_intensity>0.5</render_sharpen_intensity>
+		<render_show_voxel_probe_visualizer_grid_size>15</render_show_voxel_probe_visualizer_grid_size>
+		<render_show_voxel_probe_visualizer_sphere_scale>0.25</render_show_voxel_probe_visualizer_sphere_scale>
+		<render_shutter_speed>250</render_shutter_speed>
+		<render_sraa>0</render_sraa>
+		<render_sraa_debug>0</render_sraa_debug>
+		<render_sraa_depth_threshold>0.100000001</render_sraa_depth_threshold>
+		<render_sraa_samples>1</render_sraa_samples>
+		<render_sraa_temporal>1</render_sraa_temporal>
+		<render_ssao>1</render_ssao>
+		<render_ssao_cavity>1</render_ssao_cavity>
+		<render_ssao_cavity_intensity>0.200000003</render_ssao_cavity_intensity>
+		<render_ssao_cavity_radius>2</render_ssao_cavity_radius>
+		<render_ssao_color_clamping_intensity>1</render_ssao_color_clamping_intensity>
+		<render_ssao_color_clamping_velocity_threshold>0</render_ssao_color_clamping_velocity_threshold>
+		<render_ssao_denoise_gaussian_sigma>10</render_ssao_denoise_gaussian_sigma>
+		<render_ssao_denoise_intensity>0.200000003</render_ssao_denoise_intensity>
+		<render_ssao_denoise_quality>1</render_ssao_denoise_quality>
+		<render_ssao_denoise_radius>1</render_ssao_denoise_radius>
+		<render_ssao_denoise_threshold>0.100000001</render_ssao_denoise_threshold>
+		<render_ssao_intensity>1</render_ssao_intensity>
+		<render_ssao_intensity_lighted_side>0</render_ssao_intensity_lighted_side>
+		<render_ssao_intensity_reflection>1</render_ssao_intensity_reflection>
+		<render_ssao_noise>1</render_ssao_noise>
+		<render_ssao_preset>raytracing + denoise</render_ssao_preset>
+		<render_ssao_quality>1</render_ssao_quality>
+		<render_ssao_radius>1</render_ssao_radius>
+		<render_ssao_ray_tracing>1</render_ssao_ray_tracing>
+		<render_ssao_ray_tracing_denoise>1</render_ssao_ray_tracing_denoise>
+		<render_ssao_ray_tracing_threshold>0.349999994</render_ssao_ray_tracing_threshold>
+		<render_ssao_resolution>1</render_ssao_resolution>
+		<render_ssao_threshold>0.300000012</render_ssao_threshold>
+		<render_ssbevel>0</render_ssbevel>
+		<render_ssbevel_noise>0</render_ssbevel_noise>
+		<render_ssbevel_quality>1</render_ssbevel_quality>
+		<render_ssbevel_radius>0.00999999978</render_ssbevel_radius>
+		<render_ssbevel_vertex_normal>0</render_ssbevel_vertex_normal>
+		<render_ssdirt>0</render_ssdirt>
+		<render_ssdirt_angle_bias>0.349999994</render_ssdirt_angle_bias>
+		<render_ssdirt_cavity_color>0.25999999 0.239999995 0.209999993 1</render_ssdirt_cavity_color>
+		<render_ssdirt_cavity_exponent>1</render_ssdirt_cavity_exponent>
+		<render_ssdirt_cavity_metalness>0</render_ssdirt_cavity_metalness>
+		<render_ssdirt_cavity_metalness_visibility>0</render_ssdirt_cavity_metalness_visibility>
+		<render_ssdirt_cavity_texture_size>1</render_ssdirt_cavity_texture_size>
+		<render_ssdirt_convexity_color>0.479999989 0.439999998 0.389999986 1</render_ssdirt_convexity_color>
+		<render_ssdirt_convexity_exponent>1</render_ssdirt_convexity_exponent>
+		<render_ssdirt_convexity_metalness>0</render_ssdirt_convexity_metalness>
+		<render_ssdirt_convexity_metalness_visibility>0</render_ssdirt_convexity_metalness_visibility>
+		<render_ssdirt_convexity_texture_size>1</render_ssdirt_convexity_texture_size>
+		<render_ssdirt_increase_accuracy>0</render_ssdirt_increase_accuracy>
+		<render_ssdirt_intensity>1</render_ssdirt_intensity>
+		<render_ssdirt_perspective>0.0199999996</render_ssdirt_perspective>
+		<render_ssdirt_quality>1</render_ssdirt_quality>
+		<render_ssdirt_radius>1</render_ssdirt_radius>
+		<render_ssdirt_resolution>1</render_ssdirt_resolution>
+		<render_ssdirt_threshold>1</render_ssdirt_threshold>
+		<render_ssgi>0</render_ssgi>
+		<render_ssgi_color_clamping_intensity>0.100000001</render_ssgi_color_clamping_intensity>
+		<render_ssgi_color_clamping_velocity_threshold>100</render_ssgi_color_clamping_velocity_threshold>
+		<render_ssgi_denoise>1</render_ssgi_denoise>
+		<render_ssgi_denoise_gaussian_sigma>10</render_ssgi_denoise_gaussian_sigma>
+		<render_ssgi_denoise_intensity>0.200000003</render_ssgi_denoise_intensity>
+		<render_ssgi_denoise_quality>1</render_ssgi_denoise_quality>
+		<render_ssgi_denoise_radius>1</render_ssgi_denoise_radius>
+		<render_ssgi_denoise_threshold>0.100000001</render_ssgi_denoise_threshold>
+		<render_ssgi_intensity>1</render_ssgi_intensity>
+		<render_ssgi_intensity_boost>1</render_ssgi_intensity_boost>
+		<render_ssgi_preset>raytracing</render_ssgi_preset>
+		<render_ssgi_radius>1</render_ssgi_radius>
+		<render_ssgi_resolution_color>1</render_ssgi_resolution_color>
+		<render_ssgi_threshold>1</render_ssgi_threshold>
+		<render_ssr>1</render_ssr>
+		<render_ssr_alpha_accumulation_mode>0</render_ssr_alpha_accumulation_mode>
+		<render_ssr_color_clamping_intensity>0.100000001</render_ssr_color_clamping_intensity>
+		<render_ssr_color_clamping_velocity_threshold>100</render_ssr_color_clamping_velocity_threshold>
+		<render_ssr_denoise>1</render_ssr_denoise>
+		<render_ssr_denoise_gaussian_sigma>10</render_ssr_denoise_gaussian_sigma>
+		<render_ssr_denoise_intensity>1</render_ssr_denoise_intensity>
+		<render_ssr_denoise_quality>1</render_ssr_denoise_quality>
+		<render_ssr_denoise_radius>1</render_ssr_denoise_radius>
+		<render_ssr_denoise_threshold>0.100000001</render_ssr_denoise_threshold>
+		<render_ssr_increased_accuracy>0</render_ssr_increased_accuracy>
+		<render_ssr_non_linear_step_size>1</render_ssr_non_linear_step_size>
+		<render_ssr_normal_bias>1</render_ssr_normal_bias>
+		<render_ssr_num_rays>4</render_ssr_num_rays>
+		<render_ssr_num_steps>8</render_ssr_num_steps>
+		<render_ssr_perspective_compensation>1</render_ssr_perspective_compensation>
+		<render_ssr_preset>high</render_ssr_preset>
+		<render_ssr_resolution>2</render_ssr_resolution>
+		<render_ssr_resolution_color>0</render_ssr_resolution_color>
+		<render_ssr_resolution_depth>0</render_ssr_resolution_depth>
+		<render_ssr_roughness_mip_offset>4</render_ssr_roughness_mip_offset>
+		<render_ssr_step_size>0.300000012</render_ssr_step_size>
+		<render_ssr_threshold>1.5</render_ssr_threshold>
+		<render_ssr_threshold_occlusion>1.5</render_ssr_threshold_occlusion>
+		<render_ssr_tonemapping_gamma>2</render_ssr_tonemapping_gamma>
+		<render_ssr_view_bias>1</render_ssr_view_bias>
+		<render_ssr_visibility_roughness_max>0.449999988</render_ssr_visibility_roughness_max>
+		<render_ssr_visibility_roughness_min>0.349999994</render_ssr_visibility_roughness_min>
+		<render_ssrtgi>1</render_ssrtgi>
+		<render_ssrtgi_fast_tracing>1</render_ssrtgi_fast_tracing>
+		<render_ssrtgi_increased_accuracy>1</render_ssrtgi_increased_accuracy>
+		<render_ssrtgi_noise_ray>0.300000012</render_ssrtgi_noise_ray>
+		<render_ssrtgi_noise_step>0.300000012</render_ssrtgi_noise_step>
+		<render_ssrtgi_num_rays>12</render_ssrtgi_num_rays>
+		<render_ssrtgi_num_steps>3</render_ssrtgi_num_steps>
+		<render_ssrtgi_preset>medium</render_ssrtgi_preset>
+		<render_ssrtgi_resolution>1</render_ssrtgi_resolution>
+		<render_ssrtgi_resolution_depth>0</render_ssrtgi_resolution_depth>
+		<render_ssrtgi_step_size>3</render_ssrtgi_step_size>
+		<render_ssrtgi_upscaling>1</render_ssrtgi_upscaling>
+		<render_sssss>0</render_sssss>
+		<render_sssss_ambient>1</render_sssss_ambient>
+		<render_sssss_color>1 0.400000006 0.200000003 1</render_sssss_color>
+		<render_sssss_diffuse>1</render_sssss_diffuse>
+		<render_sssss_interleaved>0</render_sssss_interleaved>
+		<render_sssss_interleaved_color_clamping>1</render_sssss_interleaved_color_clamping>
+		<render_sssss_interleaved_samples>0</render_sssss_interleaved_samples>
+		<render_sssss_max_threshold>10</render_sssss_max_threshold>
+		<render_sssss_min_threshold>4</render_sssss_min_threshold>
+		<render_sssss_noise_ray>0.5</render_sssss_noise_ray>
+		<render_sssss_noise_step>0.5</render_sssss_noise_step>
+		<render_sssss_preset>high</render_sssss_preset>
+		<render_sssss_quality>2</render_sssss_quality>
+		<render_sssss_radius>0.0199999996</render_sssss_radius>
+		<render_sssss_resolution>1</render_sssss_resolution>
+		<render_sssss_taa_antialiasing_in_motion>0</render_sssss_taa_antialiasing_in_motion>
+		<render_sssss_taa_catmull_resampling>1</render_sssss_taa_catmull_resampling>
+		<render_sssss_taa_fix_flicker>1</render_sssss_taa_fix_flicker>
+		<render_sssss_taa_frame_count>30</render_sssss_taa_frame_count>
+		<render_sssss_taa_frames_by_color>0</render_sssss_taa_frames_by_color>
+		<render_sssss_taa_frames_by_velocity>1</render_sssss_taa_frames_by_velocity>
+		<render_sssss_taa_frames_velocity_threshold>1</render_sssss_taa_frames_velocity_threshold>
+		<render_sssss_taa_max_frames_by_velocity>60</render_sssss_taa_max_frames_by_velocity>
+		<render_sssss_taa_min_frames_by_velocity>4</render_sssss_taa_min_frames_by_velocity>
+		<render_sssss_taa_pixel_offset>1</render_sssss_taa_pixel_offset>
+		<render_sssss_taa_preserve_details>0.5</render_sssss_taa_preserve_details>
+		<render_sssss_taa_samples>1</render_sssss_taa_samples>
+		<render_stereo_focus_supersampling>1</render_stereo_focus_supersampling>
+		<render_stereo_hidden_area>0</render_stereo_hidden_area>
+		<render_stereo_hidden_area_exposure_transform>0.600000024 0.600000024 0 0</render_stereo_hidden_area_exposure_transform>
+		<render_stereo_hidden_area_transform>1 1 0 0</render_stereo_hidden_area_transform>
+		<render_stereo_planar_reflections_per_eye>0</render_stereo_planar_reflections_per_eye>
+		<render_streaming_destroy_duration>30</render_streaming_destroy_duration>
+		<render_streaming_max_threads>1</render_streaming_max_threads>
+		<render_streaming_meshes_memory_limit>15</render_streaming_meshes_memory_limit>
+		<render_streaming_mode>0</render_streaming_mode>
+		<render_streaming_particles_memory_limit>3</render_streaming_particles_memory_limit>
+		<render_streaming_textures_cache_resolution>1</render_streaming_textures_cache_resolution>
+		<render_streaming_textures_memory_limit>65</render_streaming_textures_memory_limit>
+		<render_streaming_update_limit>1.5</render_streaming_update_limit>
+		<render_streaming_use_memory_limit>1</render_streaming_use_memory_limit>
+		<render_supersampling>1</render_supersampling>
+		<render_taa>1</render_taa>
+		<render_taa_antialiasing_in_motion>0</render_taa_antialiasing_in_motion>
+		<render_taa_catmull_resampling>1</render_taa_catmull_resampling>
+		<render_taa_diagonal_neighbors>0</render_taa_diagonal_neighbors>
+		<render_taa_fix_flicker>1</render_taa_fix_flicker>
+		<render_taa_frame_count>30</render_taa_frame_count>
+		<render_taa_frames_by_color>1</render_taa_frames_by_color>
+		<render_taa_frames_by_velocity>1</render_taa_frames_by_velocity>
+		<render_taa_frames_velocity_threshold>1</render_taa_frames_velocity_threshold>
+		<render_taa_max_frames_by_velocity>60</render_taa_max_frames_by_velocity>
+		<render_taa_min_frames_by_velocity>4</render_taa_min_frames_by_velocity>
+		<render_taa_pixel_offset>1</render_taa_pixel_offset>
+		<render_taa_preserve_details>1</render_taa_preserve_details>
+		<render_taa_preset>taa_smooth</render_taa_preset>
+		<render_taa_samples>2</render_taa_samples>
+		<render_terrain_global_anisotropy>2</render_terrain_global_anisotropy>
+		<render_terrain_global_displacement>0</render_terrain_global_displacement>
+		<render_terrain_global_displacement_normal>0</render_terrain_global_displacement_normal>
+		<render_terrain_global_holes>1</render_terrain_global_holes>
+		<render_terrain_global_triplanar>1</render_terrain_global_triplanar>
+		<render_tessellation_density_multiplier>1</render_tessellation_density_multiplier>
+		<render_tessellation_distance_multiplier>1</render_tessellation_distance_multiplier>
+		<render_tessellation_shadow_density_multiplier>1</render_tessellation_shadow_density_multiplier>
+		<render_textures_anisotropy>4</render_textures_anisotropy>
+		<render_textures_filter>1</render_textures_filter>
+		<render_textures_max_resolution>6</render_textures_max_resolution>
+		<render_textures_min_resolution>0</render_textures_min_resolution>
+		<render_textures_quality>2</render_textures_quality>
+		<render_tonemapper>1</render_tonemapper>
+		<render_tonemapper_mode>2</render_tonemapper_mode>
+		<render_translucent_color>1 1 1 1</render_translucent_color>
+		<render_transparent_ambient>1</render_transparent_ambient>
+		<render_transparent_blur>1</render_transparent_blur>
+		<render_transparent_deferred>1</render_transparent_deferred>
+		<render_transparent_enabled>1</render_transparent_enabled>
+		<render_transparent_light>1</render_transparent_light>
+		<render_transparent_multiple_env_probes>1</render_transparent_multiple_env_probes>
+		<render_viewport_mode>0</render_viewport_mode>
+		<render_vignette_mask>0</render_vignette_mask>
+		<render_vignette_mask_intensity>1</render_vignette_mask_intensity>
+		<render_vignette_mask_power>1</render_vignette_mask_power>
+		<render_virtual_resolution>-1 -1</render_virtual_resolution>
+		<render_vr_emulation>0</render_vr_emulation>
+		<render_vsync>0</render_vsync>
+		<render_water_anisotropy>1</render_water_anisotropy>
+		<render_water_culling_aggressive>1</render_water_culling_aggressive>
+		<render_water_culling_frustum_padding>0.100000001</render_water_culling_frustum_padding>
+		<render_water_culling_oblique_frustum>0.899999976</render_water_culling_oblique_frustum>
+		<render_water_enabled>1</render_water_enabled>
+		<render_water_environment_probes>1</render_water_environment_probes>
+		<render_water_geometry_fade_lods>0.5</render_water_geometry_fade_lods>
+		<render_water_geometry_polygon_size>0.100000001</render_water_geometry_polygon_size>
+		<render_water_geometry_preset>low</render_water_geometry_preset>
+		<render_water_geometry_progression>1.5</render_water_geometry_progression>
+		<render_water_geometry_subpixel_reduction>2</render_water_geometry_subpixel_reduction>
+		<render_water_lights>1</render_water_lights>
+		<render_water_opacity_depth>1</render_water_opacity_depth>
+		<render_water_planar_probes>1</render_water_planar_probes>
+		<render_water_refraction_quality>2</render_water_refraction_quality>
+		<render_water_shafts>1</render_water_shafts>
+		<render_water_shoreline_wetness>1</render_water_shoreline_wetness>
+		<render_water_ssr>1</render_water_ssr>
+		<render_water_ssr_increased_accuracy>0</render_water_ssr_increased_accuracy>
+		<render_water_ssr_quality>1</render_water_ssr_quality>
+		<render_water_visible_distance>30000</render_water_visible_distance>
+		<render_water_voxel_probes>1</render_water_voxel_probes>
+		<render_water_waterline_accuracy>0</render_water_waterline_accuracy>
+		<render_white_balance>1</render_white_balance>
+		<render_white_balance_adaptation_time>1</render_white_balance_adaptation_time>
+		<render_white_balance_intensity>0.300000012</render_white_balance_intensity>
+		<render_wireframe_antialiasing>1</render_wireframe_antialiasing>
+		<render_wireframe_color>1 1 1 1</render_wireframe_color>
+		<composite_material_guid>guid://</composite_material_guid>
+		<composite_deferred_material_guid>guid://</composite_deferred_material_guid>
+		<debug_materials/>
+		<scriptable_materials/>
+	</render>
+	<physics>
+		<frozen_linear_velocity>0.0199999996</frozen_linear_velocity>
+		<frozen_angular_velocity>0.0199999996</frozen_angular_velocity>
+	</physics>
+	<game>
+		<enabled>1</enabled>
+	</game>
+	<editor>
+		<data>
+			<user/>
+			<unigine_editor/>
+		</data>
+		<node type="LightWorld" id="414503029" name="LightWorld">
+			<scattering>1</scattering>
+			<disable_angle>100</disable_angle>
+			<shadow_height>10</shadow_height>
+			<shadow_width>10</shadow_width>
+			<shadow_zfar>100</shadow_zfar>
+			<shadow_cascade_mode>0</shadow_cascade_mode>
+			<num_shadow_cascades>4</num_shadow_cascades>
+			<shadow_cascade_borders>0.0149999997 0.0500000007 0.200000003</shadow_cascade_borders>
+			<color_mode>1</color_mode>
+			<shadow_resolution>5</shadow_resolution>
+			<shadow_bias>1</shadow_bias>
+			<mode>1</mode>
+			<shadow_filter_mode>-1</shadow_filter_mode>
+			<shadow_filter>1</shadow_filter>
+			<shadow_penumbra_mode>-1</shadow_penumbra_mode>
+			<shadow_penumbra>0</shadow_penumbra>
+			<shadow_screen_space>0</shadow_screen_space>
+			<shadow_screen_space_num_rays>3</shadow_screen_space_num_rays>
+			<shadow_screen_space_num_steps>6</shadow_screen_space_num_steps>
+			<shadow_screen_space_noise_ray>0.150000006</shadow_screen_space_noise_ray>
+			<shadow_screen_space_noise_step>1</shadow_screen_space_noise_step>
+			<shadow_screen_space_step_size_near_distance>0</shadow_screen_space_step_size_near_distance>
+			<shadow_screen_space_step_size_far_distance>500</shadow_screen_space_step_size_far_distance>
+			<shadow_screen_space_step_size_near>2</shadow_screen_space_step_size_near>
+			<shadow_screen_space_step_size_far>30</shadow_screen_space_step_size_far>
+			<shadow_screen_space_threshold_near_distance>0</shadow_screen_space_threshold_near_distance>
+			<shadow_screen_space_threshold_far_distance>200</shadow_screen_space_threshold_far_distance>
+			<shadow_screen_space_threshold_near>3</shadow_screen_space_threshold_near>
+			<shadow_screen_space_threshold_far>0.5</shadow_screen_space_threshold_far>
+			<shadow_color_texture_mode>1</shadow_color_texture_mode>
+			<shadow_screen_space_softness>0</shadow_screen_space_softness>
+			<shadow_screen_space_translucent_depth_perspective_compensation>0.200000003</shadow_screen_space_translucent_depth_perspective_compensation>
+			<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
+			<lens_flare_enabled>0</lens_flare_enabled>
+			<lens_flare_texture>core/textures/lens_flares_default.texture</lens_flare_texture>
+			<lens_flare_intensity>1</lens_flare_intensity>
+			<lens_flare_occlusion_fade>1</lens_flare_occlusion_fade>
+			<lens_flare_occlusion_fade_border>0.200000003</lens_flare_occlusion_fade_border>
+			<lens_flare_position_offset>0 0 0</lens_flare_position_offset>
+			<lens_flare_use_light_color>1</lens_flare_use_light_color>
+			<lens_flare_billboards num="31">
+				<billboard name="flare_0" offset="0" size="10" rotate="0" uv_lower_left="0 0" uv_upper_right="0.5 0.5" color="1 1 1 1" offset_scale="1" intensity="0.800000012"/>
+				<billboard name="flare_1" offset="0" size="0.289999992" rotate="1" uv_lower_left="0.5 0.75" uv_upper_right="0.75 1" color="1 1 1 1" offset_scale="1" intensity="0.0299999993"/>
+				<billboard name="flare_2" offset="0.0529999994" size="0.860000014" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.941176534 0.788235366 1 1" offset_scale="1" intensity="0.5"/>
+				<billboard name="flare_3" offset="0.0900000036" size="0.49000001" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.772549093 0.796078503 1 1" offset_scale="1" intensity="0.75999999"/>
+				<billboard name="flare_4" offset="0.122000001" size="0.409999996" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.792156935 1 0.82745105 1" offset_scale="1" intensity="0.200000003"/>
+				<billboard name="flare_5" offset="0.203999996" size="0.330000013" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.80392164 0.894117713 1 1" offset_scale="1" intensity="0.300000012"/>
+				<billboard name="flare_6" offset="0.432999998" size="0.649999976" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.929411829 1 0.768627524 1" offset_scale="1" intensity="0.200000003"/>
+				<billboard name="flare_7" offset="0.477999985" size="1.5" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.807843208 1 0.886274576 1" offset_scale="1" intensity="0.349999994"/>
+				<billboard name="flare_8" offset="0.52700001" size="0.810000002" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="1 0.90196085 0.788235366 1" offset_scale="1" intensity="0.200000003"/>
+				<billboard name="flare_9" offset="0.600000024" size="0.409999996" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.768627524 1 0.894117713 1" offset_scale="1" intensity="0.200000003"/>
+				<billboard name="flare_10" offset="0.615999997" size="0.569999993" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.796078503 1 0.921568692 1" offset_scale="1" intensity="0.400000006"/>
+				<billboard name="flare_11" offset="0.652999997" size="0.779999971" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.831372619 0.933333397 1 1" offset_scale="1" intensity="0.349999994"/>
+				<billboard name="flare_12" offset="0.717999995" size="1.71000004" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.878431439 1 0.796078503 1" offset_scale="1" intensity="0.150000006"/>
+				<billboard name="flare_13" offset="0.754999995" size="1.13999999" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.760784388 1 0.843137324 1" offset_scale="1" intensity="0.0500000007"/>
+				<billboard name="flare_14" offset="0.967000008" size="0.540000021" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="1 0.878431439 0.772549093 1" offset_scale="1" intensity="0.100000001"/>
+				<billboard name="flare_15" offset="0.338999987" size="0.289999992" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.674509823 1 0.698039234 1" offset_scale="1" intensity="0.300000012"/>
+				<billboard name="flare_16" offset="0.00499999989" size="2" rotate="1" uv_lower_left="0 0.75" uv_upper_right="0.25 1" color="1 1 1 1" offset_scale="0" intensity="0.0799999982"/>
+				<billboard name="flare_17" offset="-0.75" size="1" rotate="1" uv_lower_left="0.5 0.5" uv_upper_right="0.75 0.75" color="1 1 1 1" offset_scale="12.2399998" intensity="0.289999992"/>
+				<billboard name="flare_18" offset="0.75" size="1" rotate="1" uv_lower_left="0.5 0.5" uv_upper_right="0.75 0.75" color="1 1 1 1" offset_scale="12.2399998" intensity="0.289999992"/>
+				<billboard name="flare_19" offset="0" size="10" rotate="0" uv_lower_left="0.5 0" uv_upper_right="1 0.5" color="1 1 1 1" offset_scale="1" intensity="0.140000001"/>
+				<billboard name="flare_20" offset="0.245199993" size="0.610000014" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.289999992"/>
+				<billboard name="flare_21" offset="-0.1184" size="0.800000012" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.270000011"/>
+				<billboard name="flare_22" offset="-0.170000002" size="0.435000002" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.239999995"/>
+				<billboard name="flare_23" offset="-0.223599985" size="0.660000026" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.200000003"/>
+				<billboard name="flare_24" offset="-0.340499997" size="1.39499998" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.654901981 1 0.847058892 1" offset_scale="1" intensity="0.209999993"/>
+				<billboard name="flare_25" offset="-0.474399984" size="0.944999993" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="1 0.917647123 0.811764777 1" offset_scale="1" intensity="0.349999994"/>
+				<billboard name="flare_26" offset="-0.899999976" size="2.2650001" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.94901967 1 0.80392164 1" offset_scale="1" intensity="0.300000012"/>
+				<billboard name="flare_27" offset="0.845000029" size="3.19000006" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.180000007"/>
+				<billboard name="flare_28" offset="1" size="7.78999996" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.200000003"/>
+				<billboard name="flare_29" offset="0.936999977" size="0.449999988" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.180000007"/>
+				<billboard name="flare_30" offset="1" size="1.03999996" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.150000006"/>
+			</lens_flare_billboards>
+			<transform>0.866025269032 -0.353553384542 -0.353553295135 0.0 1.49011611938e-08 0.70710670948 -0.70710682869 0.0 0.499999850988 0.612372398376 0.612372279167 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="295497021" enabled="0" name="NodeDummy">
+			<properties>
+				<property enabled="0" parent="0310fa99a115a324f80c94335119cbf68d0852dd" guid="1022e799946cac24e20e093334cabcf6260a8fdd">
+					<parameter name="Sun">824505625</parameter>
+					<parameter name="Stars">668419035</parameter>
+					<parameter name="Moon">1389206525</parameter>
+				</property>
+			</properties>
+			<transform>0.999956488609 0 0 0.0 0 0.999947786331 0 0.0 0 0 0.999940752983 0.0 0 0 0 1.0</transform>
+			<node type="LightWorld" id="824505625" name="sun">
+				<scattering>1</scattering>
+				<disable_angle>100</disable_angle>
+				<shadow_height>60</shadow_height>
+				<shadow_width>80</shadow_width>
+				<shadow_zfar>100</shadow_zfar>
+				<shadow_cascade_mode>0</shadow_cascade_mode>
+				<num_shadow_cascades>3</num_shadow_cascades>
+				<shadow_cascade_borders>0.0200000014 0.0800000057 0.200000003</shadow_cascade_borders>
+				<color_mode>1</color_mode>
+				<color_temperature>27050.4004</color_temperature>
+				<shadow_resolution>5</shadow_resolution>
+				<shadow_bias>1</shadow_bias>
+				<shadow_normal_bias>0.75</shadow_normal_bias>
+				<mode>1</mode>
+				<shadow_filter_mode>-1</shadow_filter_mode>
+				<shadow_filter>1</shadow_filter>
+				<shadow_penumbra_mode>-1</shadow_penumbra_mode>
+				<shadow_penumbra>0.200000003</shadow_penumbra>
+				<shadow_screen_space>1</shadow_screen_space>
+				<shadow_screen_space_num_rays>3</shadow_screen_space_num_rays>
+				<shadow_screen_space_num_steps>6</shadow_screen_space_num_steps>
+				<shadow_screen_space_noise_ray>0.150000006</shadow_screen_space_noise_ray>
+				<shadow_screen_space_noise_step>1</shadow_screen_space_noise_step>
+				<shadow_screen_space_step_size_near_distance>0</shadow_screen_space_step_size_near_distance>
+				<shadow_screen_space_step_size_far_distance>500</shadow_screen_space_step_size_far_distance>
+				<shadow_screen_space_step_size_near>2</shadow_screen_space_step_size_near>
+				<shadow_screen_space_step_size_far>30</shadow_screen_space_step_size_far>
+				<shadow_screen_space_threshold_near_distance>0</shadow_screen_space_threshold_near_distance>
+				<shadow_screen_space_threshold_far_distance>200</shadow_screen_space_threshold_far_distance>
+				<shadow_screen_space_threshold_near>3</shadow_screen_space_threshold_near>
+				<shadow_screen_space_threshold_far>0.5</shadow_screen_space_threshold_far>
+				<shadow_color_texture_mode>1</shadow_color_texture_mode>
+				<shadow_screen_space_softness>0</shadow_screen_space_softness>
+				<shadow_screen_space_translucent_depth_perspective_compensation>0.200000003</shadow_screen_space_translucent_depth_perspective_compensation>
+				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
+				<lens_flare_enabled>1</lens_flare_enabled>
+				<lens_flare_texture>core/textures/lens_flares_default.texture</lens_flare_texture>
+				<lens_flare_intensity>1</lens_flare_intensity>
+				<lens_flare_occlusion_fade>1</lens_flare_occlusion_fade>
+				<lens_flare_occlusion_fade_border>0.200000003</lens_flare_occlusion_fade_border>
+				<lens_flare_position_offset>0 0 0</lens_flare_position_offset>
+				<lens_flare_use_light_color>1</lens_flare_use_light_color>
+				<lens_flare_billboards num="31">
+					<billboard name="flare_0" offset="0" size="10" rotate="0" uv_lower_left="0 0" uv_upper_right="0.5 0.5" color="1 1 1 1" offset_scale="1" intensity="0.800000012"/>
+					<billboard name="flare_1" offset="0" size="0.289999992" rotate="1" uv_lower_left="0.5 0.75" uv_upper_right="0.75 1" color="1 1 1 1" offset_scale="1" intensity="0.0299999993"/>
+					<billboard name="flare_2" offset="0.0529999994" size="0.860000014" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.941176534 0.788235366 1 1" offset_scale="1" intensity="0.5"/>
+					<billboard name="flare_3" offset="0.0900000036" size="0.49000001" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.772549093 0.796078503 1 1" offset_scale="1" intensity="0.75999999"/>
+					<billboard name="flare_4" offset="0.122000001" size="0.409999996" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.792156935 1 0.82745105 1" offset_scale="1" intensity="0.200000003"/>
+					<billboard name="flare_5" offset="0.203999996" size="0.330000013" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.80392164 0.894117713 1 1" offset_scale="1" intensity="0.300000012"/>
+					<billboard name="flare_6" offset="0.432999998" size="0.649999976" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.929411829 1 0.768627524 1" offset_scale="1" intensity="0.200000003"/>
+					<billboard name="flare_7" offset="0.477999985" size="1.5" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.807843208 1 0.886274576 1" offset_scale="1" intensity="0.349999994"/>
+					<billboard name="flare_8" offset="0.52700001" size="0.810000002" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="1 0.90196085 0.788235366 1" offset_scale="1" intensity="0.200000003"/>
+					<billboard name="flare_9" offset="0.600000024" size="0.409999996" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.768627524 1 0.894117713 1" offset_scale="1" intensity="0.200000003"/>
+					<billboard name="flare_10" offset="0.615999997" size="0.569999993" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.796078503 1 0.921568692 1" offset_scale="1" intensity="0.400000006"/>
+					<billboard name="flare_11" offset="0.652999997" size="0.779999971" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.831372619 0.933333397 1 1" offset_scale="1" intensity="0.349999994"/>
+					<billboard name="flare_12" offset="0.717999995" size="1.71000004" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.878431439 1 0.796078503 1" offset_scale="1" intensity="0.150000006"/>
+					<billboard name="flare_13" offset="0.754999995" size="1.13999999" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.760784388 1 0.843137324 1" offset_scale="1" intensity="0.0500000007"/>
+					<billboard name="flare_14" offset="0.967000008" size="0.540000021" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="1 0.878431439 0.772549093 1" offset_scale="1" intensity="0.100000001"/>
+					<billboard name="flare_15" offset="0.338999987" size="0.289999992" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.674509823 1 0.698039234 1" offset_scale="1" intensity="0.300000012"/>
+					<billboard name="flare_16" offset="0.00499999989" size="2" rotate="1" uv_lower_left="0 0.75" uv_upper_right="0.25 1" color="1 1 1 1" offset_scale="0" intensity="0.0799999982"/>
+					<billboard name="flare_17" offset="-0.75" size="1" rotate="1" uv_lower_left="0.5 0.5" uv_upper_right="0.75 0.75" color="1 1 1 1" offset_scale="12.2399998" intensity="0.289999992"/>
+					<billboard name="flare_18" offset="0.75" size="1" rotate="1" uv_lower_left="0.5 0.5" uv_upper_right="0.75 0.75" color="1 1 1 1" offset_scale="12.2399998" intensity="0.289999992"/>
+					<billboard name="flare_19" offset="0" size="10" rotate="0" uv_lower_left="0.5 0" uv_upper_right="1 0.5" color="1 1 1 1" offset_scale="1" intensity="0.140000001"/>
+					<billboard name="flare_20" offset="0.245199993" size="0.610000014" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.289999992"/>
+					<billboard name="flare_21" offset="-0.1184" size="0.800000012" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.270000011"/>
+					<billboard name="flare_22" offset="-0.170000002" size="0.435000002" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.239999995"/>
+					<billboard name="flare_23" offset="-0.223599985" size="0.660000026" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.200000003"/>
+					<billboard name="flare_24" offset="-0.340499997" size="1.39499998" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.654901981 1 0.847058892 1" offset_scale="1" intensity="0.209999993"/>
+					<billboard name="flare_25" offset="-0.474399984" size="0.944999993" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="1 0.917647123 0.811764777 1" offset_scale="1" intensity="0.349999994"/>
+					<billboard name="flare_26" offset="-0.899999976" size="2.2650001" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.94901967 1 0.80392164 1" offset_scale="1" intensity="0.300000012"/>
+					<billboard name="flare_27" offset="0.845000029" size="3.19000006" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.180000007"/>
+					<billboard name="flare_28" offset="1" size="7.78999996" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.200000003"/>
+					<billboard name="flare_29" offset="0.936999977" size="0.449999988" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.180000007"/>
+					<billboard name="flare_30" offset="1" size="1.03999996" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.150000006"/>
+				</lens_flare_billboards>
+				<transform>0.567072093487 -0.753911197186 0.33167976141 0.0 0.251005887985 -0.225351944566 -0.941371262074 0.0 0.78445404768 0.617078185081 0.0614452622831 0.0 5.53108549781 -2.95444079883 4.20456499834 1.0</transform>
+			</node>
+			<node id="668419035" type="ObjectBillboards" name="stars">
+				<depth_sort>1</depth_sort>
+				<billboards num_billboards="799">-495.605072 1574.19702 1129.72522 0.0625 0.125 0.9375 0 0 0 120.499763 416.808167 -382.261505 -1918.37097 0.0625 0.125 0.9375 0 5.15303509e-06 5.15303509e-06 100.869896 -1019.06476 1601.11682 630.818726 0.0625 0.125 0.9375 0 5.15303509e-06 5.15303509e-06 20.3423023 894.095093 -1404.76843 -1107.79944 0.0625 0.125 0.9375 0 5.15303509e-06 5.15303509e-06 62.8219261 707.90387 222.869751 1857.20251 0.0625 0.125 0.9375 0 4.12242807e-05 4.12242807e-05 140.205978 453.502197 -712.525513 -1812.91003 0.0625 0.125 0.9375 0 4.12242807e-05 4.12242807e-05 181.884628 -1064.71375 -677.65979 1551.50305 0.0625 0.125 0.9375 0 4.12242807e-05 4.12242807e-05 101.375572 -1043.29895 1639.19189 -473.895477 0.0625 0.125 0.9375 0 4.12242807e-05 4.12242807e-05 43.1977692 -291.955811 927.344788 -1747.79675 0.0625 0.125 0.9375 0 0.000139132782 0.000139132782 200.355606 1325.06995 -690.505493 1329.43298 0.0625 0.125 0.9375 0 0.000139132782 0.000139132782 67.2575684 -403.562958 370.114471 1923.578 0.0625 0.125 0.9375 0 0.000329795701 0.000329795701 140.784393 -432.448212 -1946.71497 -152.609619 0.0625 0.125 0.9375 0 0.000644131738 0.000644131738 324.7995 1673.66382 1065.23938 253.20726 0.0625 0.125 0.9375 0 0.000644131738 0.000644131738 6.91057205 168.146469 52.9375229 -1992.21594 0.0625 0.125 0.9375 0 0.000644131738 0.000644131738 51.9936142 750.319214 -1178.87341 1430.83142 0.0625 0.125 0.875 0 0.00176749565 0.00176749565 261.132233 1604.42798 -356.410614 -1139.64124 0.0625 0.125 0.875 0 0.00263835979 0.00263835979 318.452332 -134.148544 210.769104 -1984.33374 0.0625 0.125 0.875 0 0.00263835979 0.00263835979 248.098419 843.956909 36.4878235 -1812.84448 0.0625 0.125 0.875 0 0.00263835979 0.00263835979 240.550766 102.366623 -160.834564 1990.8927 0.0625 0.125 0.875 0 0.00375657808 0.00375657808 267.873199 -1904.2627 -82.3277359 605.810364 0.0625 0.125 0.875 0 0.00890447013 0.00890447013 352.55954 -1072.66833 1685.33582 -95.0049973 0.0625 0.125 0.75 0 0.0548696965 0.0548696965 220.662292 -49.9008064 78.4022598 1997.8396 0.0625 0.125 0.625 0 0.20253554 0.20253554 288.090149 -948.422607 -603.644043 1654.11865 0.0625 0.125 0.5625 0 0.282758147 0.282758147 245.60202 9.84935665 -15.4749355 -1999.91589 0.0625 0.125 0.5625 0 0.282758147 0.282758147 64.3526306 302.766998 1362.93823 1432.03735 0.0625 0.125 0.5625 0 0.282758147 0.282758147 316.110992 883.056824 1694.57288 -590.452026 0.0625 0.125 0.5625 0 0.282758147 0.282758147 41.7260323 -1403.78064 -893.465698 1109.55798 0.0625 0.125 0.5625 0 0.305673718 0.305673718 254.304062 -428.920624 -1930.82935 -296.521149 0.0625 0.125 0.5625 0 0.305673718 0.305673718 211.141129 -1059.26611 1664.27869 -328.83371 0.0625 0.125 0.5625 0 0.305673718 0.305673718 6.96893692 -81.7147751 1890.14099 -648.605896 0.0625 0.125 0.5625 0 0.305673718 0.305673718 1.77579403 -1344.03601 -855.440613 -1209.04443 0.0625 0.125 0.5625 0 0.305673718 0.305673718 205.60527 -273.475372 -298.190826 1958.64587 0.0625 0.125 0.5625 0 0.329795301 0.329795301 341.562744 1925.53101 -427.742371 330.706421 0.0625 0.125 0.5625 0 0.329795301 0.329795301 333.026154 1559.55847 -346.443451 -1203.22644 0.0625 0.125 0.5625 0 0.329795301 0.329795301 163.009949 287.061188 1292.24341 1499.23413 0.0625 0.125 0.5625 0 0.355153412 0.355153412 279.022278 -429.952576 394.316376 -1913.02258 0.0625 0.125 0.5625 0 0.355153412 0.355153412 246.833313 -18.6605511 431.623383 -1952.78088 0.0625 0.125 0.5625 0 0.355153412 0.355153412 87.5883331 410.985474 -645.724854 -1847.73657 0.0625 0.125 0.5625 0 0.355153412 0.355153412 115.902115 -450.148163 707.255798 -1815.80725 0.0625 0.125 0.5625 0 0.355153412 0.355153412 78.2122726 593 -931.699158 -1667.41943 0.0625 0.125 0.5625 0 0.381779194 0.381779194 151.99675 349.714417 1574.28503 1182.93115 0.0625 0.125 0.5625 0 0.381779194 0.381779194 103.72673 1069.7533 -1680.75586 -175.180084 0.0625 0.125 0.5625 0 0.381779194 0.381779194 47.8790627 1024.98572 -1610.4187 -596.620605 0.0625 0.125 0.5625 0 0.381779194 0.381779194 127.223137 1452.88379 -322.746765 -1336.02527 0.0625 0.125 0.5625 0 0.409703583 0.409703583 7.17514515 496.268738 952.331177 -1687.24109 0.0625 0.125 0.5625 0 0.409703583 0.409703583 160.528275 -375.169098 -1688.87195 -1003.47388 0.0625 0.125 0.5625 0 0.409703583 0.409703583 124.570671 -959.336914 1507.27393 898.775757 0.0625 0.125 0.5625 0 0.409703583 0.409703583 306.743347 625.283203 -982.421326 -1625.99792 0.0625 0.125 0.5625 0 0.409703583 0.409703583 38.8186874 -931.582092 485.455566 -1701.9071 0.0625 0.125 0.5625 0 0.409703583 0.409703583 29.3455124 -175.603058 161.048416 1985.75598 0.0625 0.125 0.5625 0 0.409703583 0.409703583 51.059948 -1653.38379 -520.532104 -997.681763 0.0625 0.125 0.5625 0 0.409703583 0.409703583 270.35199 1090.67883 694.185974 1525.95068 0.0625 0.125 0.5 0 0.438957393 0.438957393 40.9556999 -896.449158 -1720.27197 486.871277 0.0625 0.125 0.5 0 0.438957393 0.438957393 340.0466 -593.721436 932.832642 -1666.52869 0.0625 0.125 0.5 0 0.438957393 0.438957393 253.133026 -254.13504 399.287354 -1943.18933 0.0625 0.125 0.5 0 0.438957393 0.438957393 40.7688065 -1853.06372 -583.399048 475.184967 0.0625 0.125 0.5 0 0.438957393 0.438957393 286.442627 -506.013458 795.029236 1764.05176 0.0625 0.125 0.5 0 0.438957393 0.438957393 27.2653198 -408.056915 -128.468689 -1953.71069 0.0625 0.125 0.5 0 0.438957393 0.438957393 358.529175 736.668457 -1157.42566 1455.22693 0.0625 0.125 0.5 0 0.46957162 0.46957162 66.1041336 -786.889465 1236.33093 1360.98889 0.0625 0.125 0.5 0 0.46957162 0.46957162 98.2140427 -898.094666 1411.05237 1096.52039 0.0625 0.125 0.5 0 0.46957162 0.46957162 76.6510925 1047.48828 -1645.77393 440.677246 0.0625 0.125 0.5 0 0.46957162 0.46957162 18.1907425 85.2626495 -1972.14722 321.505493 0.0625 0.125 0.5 0 0.46957162 0.46957162 16.1089611 1905.70825 -423.33847 -434.811218 0.0625 0.125 0.5 0 0.46957162 0.46957162 200.532639 -1425.12122 1307.00122 -510.663574 0.0625 0.125 0.5 0 0.46957162 0.46957162 251.118958 1060.94812 1156.83191 -1239.40674 0.0625 0.125 0.5 0 0.46957162 0.46957162 267.513275 13.312871 -6.93745136 1999.9436 0.0625 0.125 0.5 0 0.46957162 0.46957162 278.424896 -692.127197 -754.677002 -1717.97046 0.0625 0.125 0.5 0 0.46957162 0.46957162 210.239227 -430.943298 -1939.93787 225.674622 0.0625 0.125 0.5 0 0.46957162 0.46957162 317.099579 -176.788818 277.764252 -1972.71204 0.0625 0.125 0.5 0 0.46957162 0.46957162 27.5953827 -786.890869 1236.33313 1360.98608 0.0625 0.125 0.5 0 0.46957162 0.46957162 34.8341293 -1194.96533 622.70813 -1477.93518 0.0625 0.125 0.5 0 0.46957162 0.46957162 268.002777 -520.604248 1653.60437 -997.278015 0.0625 0.125 0.5 0 0.501577437 0.501577437 10.7892609 944.135681 -1483.39026 -952.974854 0.0625 0.125 0.5 0 0.501577437 0.501577437 346.488831 -468.397583 735.928589 -1799.72583 0.0625 0.125 0.5 0 0.501577437 0.501577437 197.509552 -1166.30762 259.085754 1603.93311 0.0625 0.125 0.5 0 0.501577437 0.501577437 329.570313 -541.612 1720.32935 864.363098 0.0625 0.125 0.5 0 0.501577437 0.501577437 264.399902 1722.56165 -897.643677 -476.463379 0.0625 0.125 0.5 0 0.501577437 0.501577437 180.448502 -416.425537 1322.70337 -1441.1958 0.0625 0.125 0.5 0 0.501577437 0.501577437 45.2646179 -1053.55811 1655.31091 -387.248566 0.0625 0.125 0.5 0 0.501577437 0.501577437 357.01709 546.237305 -858.227356 -1721.93799 0.0625 0.125 0.5 0 0.501577437 0.501577437 292.409027 25.9026299 -40.6972275 -1999.41809 0.0625 0.125 0.5 0 0.501577437 0.501577437 275.182404 701.474976 -1102.13086 -1514.34485 0.0625 0.125 0.5 0 0.501577437 0.501577437 159.803436 458.290649 499.708862 -1881.55811 0.0625 0.125 0.5 0 0.501577437 0.501577437 329.996368 -1035.82788 1627.45349 527.689087 0.0625 0.125 0.5 0 0.501577437 0.501577437 257.809814 -38.9818649 -175.482025 -1991.90527 0.0625 0.125 0.5 0 0.501577437 0.501577437 27.1016846 40.7027016 183.228577 -1991.1731 0.0625 0.125 0.5 0 0.501577437 0.501577437 141.970734 931.01123 -1462.76965 -996.756226 0.0625 0.125 0.5 0 0.535005212 0.535005212 76.9896545 -1928.96423 428.503967 309.000092 0.0625 0.125 0.5 0 0.535005212 0.535005212 158.361053 -1089.05774 -1187.48181 1184.83777 0.0625 0.125 0.5 0 0.535005212 0.535005212 284.570587 -992.291321 1559.05066 764.669373 0.0625 0.125 0.5 0 0.535005212 0.535005212 108.001869 1072.92236 -1685.73499 84.4691544 0.0625 0.125 0.5 0 0.535005212 0.535005212 6.55647755 698.490234 -1097.44141 -1519.12268 0.0625 0.125 0.5 0 0.535005212 0.535005212 332.837158 -972.145386 1527.39795 -849.699219 0.0625 0.125 0.5 0 0.535005212 0.535005212 209.156464 -1996.84619 -86.3321075 -71.7772827 0.0625 0.125 0.5 0 0.535005212 0.535005212 205.772812 -973.811523 1530.01587 843.055664 0.0625 0.125 0.5 0 0.535005212 0.535005212 218.584549 -707.918213 1112.25439 -1503.90881 0.0625 0.125 0.5 0 0.535005212 0.535005212 347.278168 329.713562 -1047.27368 -1671.67798 0.0625 0.125 0.5 0 0.535005212 0.535005212 76.8798752 41.5569038 -38.112545 -1999.20496 0.0625 0.125 0.5 0 0.535005212 0.535005212 311.050171 49.1833611 -1137.60669 -1644.21167 0.0625 0.125 0.5 0 0.535005212 0.535005212 155.539673 923.94104 -1451.66113 1019.31976 0.0625 0.125 0.5 0 0.535005212 0.535005212 221.239761 -43.0764084 -46.9694595 -1998.98438 0.0625 0.125 0.5 0 0.569886088 0.569886088 299.464417 -435.615692 684.422913 -1828.0603 0.0625 0.125 0.5 0 0.569886088 0.569886088 263.74115 -1738.91858 906.165405 393.734283 0.0625 0.125 0.5 0 0.569886088 0.569886088 233.715805 -870.235168 1367.28064 1171.85095 0.0625 0.125 0.5 0 0.569886088 0.569886088 34.0431976 563.088318 -884.703064 -1703.00684 0.0625 0.125 0.5 0 0.569886088 0.569886088 265.586884 1073.86804 -1687.22083 -9.65621662 0.0625 0.125 0.5 0 0.569886088 0.569886088 284.143616 572.496216 24.7512474 1916.15112 0.0625 0.125 0.5 0 0.569886088 0.569886088 54.4850197 -924.231506 -1773.58716 -13.5953331 0.0625 0.125 0.5 0 0.569886088 0.569886088 71.0254059 -858.379272 -1647.21741 741.52533 0.0625 0.125 0.5 0 0.60625124 0.60625124 242.127121 -79.8270721 1846.39063 764.50592 0.0625 0.125 0.5 0 0.60625124 0.60625124 129.196045 1039.78455 -1633.67004 -499.970367 0.0625 0.125 0.5 0 0.60625124 0.60625124 35.5475082 899.968445 1727.02515 -455.456757 0.0625 0.125 0.5 0 0.60625124 0.60625124 69.7889328 -1251.97021 -796.841248 -1340.75159 0.0625 0.125 0.5 0 0.60625124 0.60625124 215.418167 -353.235107 184.074432 1959.93408 0.0625 0.125 0.5 0 0.60625124 0.60625124 228.727539 432.2005 1945.60754 166.77507 0.0625 0.125 0.5 0 0.60625124 0.60625124 342.18158 -1302.76086 -1420.49548 -533.860229 0.0625 0.125 0.5 0 0.60625124 0.60625124 86.4519348 -512.621704 470.133362 -1875.15161 0.0625 0.125 0.5 0 0.60625124 0.60625124 352.496124 1010.01837 -926.304199 -1456.64795 0.0625 0.125 0.5 0 0.60625124 0.60625124 121.707832 1369.49817 -304.223511 -1425.4552 0.0625 0.125 0.5 0 0.60625124 0.60625124 358.493713 -922.516174 1449.42249 -1023.78619 0.0625 0.125 0.5 0 0.60625124 0.60625124 101.898193 -1069.27686 1680.0072 184.994568 0.0625 0.125 0.4375 0 0.644131243 0.644131243 202.350266 -276.133484 -1243.05078 -1542.26294 0.0625 0.125 0.4375 0 0.644131243 0.644131243 312.497253 -807.394348 740.475098 -1673.26367 0.0625 0.125 0.4375 0 0.644131243 0.644131243 138.668442 1037.99451 -1630.85754 -512.709229 0.0625 0.125 0.4375 0 0.644131243 0.644131243 168.02713 -84.7338257 133.130585 -1993.7644 0.0625 0.125 0.4375 0 0.644131243 0.644131243 237.172974 -743.925598 1168.82764 -1442.36499 0.0625 0.125 0.4375 0 0.644131243 0.644131243 347.096802 330.73877 -519.644287 1902.78259 0.0625 0.125 0.4375 0 0.683557272 0.683557272 238.218491 610.497986 -959.193848 1645.36902 0.0625 0.125 0.4375 0 0.683557272 0.683557272 14.0037918 91.6557693 -144.006073 -1992.70203 0.0625 0.125 0.4375 0 0.683557272 0.683557272 333.609772 866.214966 551.319702 -1716.30945 0.0625 0.125 0.4375 0 0.683557272 0.683557272 309.398102 887.167053 1702.45691 -560.869507 0.0625 0.125 0.4375 0 0.683557272 0.683557272 285.23465 -480.354858 -523.766479 1869.47266 0.0625 0.125 0.4375 0 0.683557272 0.683557272 272.50882 -69.9750748 1618.51526 1172.82227 0.0625 0.125 0.4375 0 0.724559903 0.724559903 234.009262 -1467.28259 -933.882507 -987.393311 0.0625 0.125 0.4375 0 0.724559903 0.724559903 337.433319 -551.33551 1751.21753 -793.263123 0.0625 0.125 0.4375 0 0.724559903 0.724559903 251.63588 -1333.90662 -1454.45435 -324.430511 0.0625 0.125 0.4375 0 0.724559903 0.724559903 285.988525 -1421.18079 1303.38721 530.496826 0.0625 0.125 0.4375 0 0.724559903 0.724559903 187.673218 1380.16907 434.519348 1380.69788 0.0625 0.125 0.4375 0 0.767170489 0.767170489 319.625336 -986.565369 1550.05408 789.950134 0.0625 0.125 0.4375 0 0.767170489 0.767170489 104.419258 1061.26001 -1667.41162 -305.721832 0.0625 0.125 0.4375 0 0.767170489 0.767170489 52.9048347 228.449142 145.401321 -1981.58252 0.0625 0.125 0.4375 0 0.767170489 0.767170489 332.106537 1744.89697 -909.284302 358.520203 0.0625 0.125 0.4375 0 0.767170489 0.767170489 131.037628 -779.035583 -245.264023 1825.6366 0.0625 0.125 0.4375 0 0.811420083 0.811420083 356.909973 -1045.06396 1641.96509 -460.208496 0.0625 0.125 0.4375 0 0.811420083 0.811420083 193.98526 -824.647583 -1582.48645 -903.157288 0.0625 0.125 0.4375 0 0.811420083 0.811420083 254.267197 1773.47937 -924.175659 -25.8890247 0.0625 0.125 0.4375 0 0.811420083 0.811420083 49.6242981 423.696045 1907.32373 427.31488 0.0625 0.125 0.4375 0 0.857338667 0.857338667 280.011322 -787.7229 410.489471 -1791.92383 0.0625 0.125 0.375 0 0.90495801 0.90495801 298.472961 505.508911 970.06427 -1674.34644 0.0625 0.125 0.375 0 1.005422 1.005422 171.816345 -393.77771 1250.76367 1510.14221 0.0625 0.125 0.375 0 1.005422 1.005422 272.480072 1110.62317 -1018.57019 -1314.92627 0.0625 0.125 0.375 0 1.05832839 1.05832839 253.454803 699.19397 -1098.54712 -1517.99939 0.0625 0.125 0.375 0 1.11305904 1.11305904 330.37674 1072.71973 -1685.4165 -92.971962 0.0625 0.125 0.375 0 1.11305904 1.11305904 134.36824 1354.78015 862.278076 -1192.07678 0.0625 0.125 0.375 0 1.11305904 1.11305904 252.090317 353.505005 -324.205322 1941.62952 0.0625 0.125 0.375 0 1.16964447 1.16964447 337.049957 -1073.32214 1686.36316 64.4888382 0.0625 0.125 0.3125 0 1.22811615 1.22811615 54.7210121 1393.15552 -1277.68567 653.174316 0.0625 0.125 0.3125 0 1.22811615 1.22811615 124.740273 -1071.88 1684.09729 -122.020561 0.0625 0.125 0.3125 0 1.28850472 1.28850472 12.5809765 -1386.44092 1271.52722 678.970337 0.0625 0.125 0.3125 0 1.28850472 1.28850472 101.934456 126.561867 -198.849197 1986.06165 0.0625 0.125 0.3125 0 1.28850472 1.28850472 83.7958145 -1896.14417 421.212708 -476.673065 0.0625 0.125 0.3125 0 1.28850472 1.28850472 340.202942 -545.107117 856.452759 -1723.17932 0.0625 0.125 0.3125 0 1.35084093 1.35084093 205.968674 -1610.79468 -507.127655 1071.52332 0.0625 0.125 0.3125 0 1.35084093 1.35084093 81.8241577 1917.80249 82.9143448 -561.390076 0.0625 0.125 0.3125 0 1.35084093 1.35084093 223.406815 640.424622 -1006.21094 1605.427 0.0625 0.125 0.3125 0 1.41515625 1.41515625 213.729874 -825.683167 -900.302856 -1583.57263 0.0625 0.125 0.3125 0 1.41515625 1.41515625 188.410629 -673.806519 1058.65955 -1557.31335 0.0625 0.125 0.3125 0 1.48148119 1.48148119 164.262985 64.5394287 290.531677 -1977.73254 0.0625 0.125 0.3125 0 1.48148119 1.48148119 159.12529 188.35907 847.923218 -1801.54016 0.0625 0.125 0.3125 0 1.54984689 1.54984689 135.247833 210.65332 948.283081 -1748.25183 0.0625 0.125 0.3125 0 1.54984689 1.54984689 236.454712 203.491623 390.497253 1950.92371 0.0625 0.125 0.3125 0 1.54984689 1.54984689 321.873016 -1745.07471 -75.4466248 -974.17749 0.0625 0.125 0.3125 0 1.62028384 1.62028384 322.538177 1351.94702 860.474854 -1196.58777 0.0625 0.125 0.3125 0 1.62028384 1.62028384 112.886711 1752.77588 75.7795792 -960.226196 0.0625 0.125 0.25 0 1.76749647 1.76749647 343.289368 -1773.61353 924.245239 8.10686111 0.0625 0.125 0.25 0 1.76749647 1.76749647 83.604454 -1066.12524 1675.05579 239.92659 0.0625 0.125 0.25 0 1.76749647 1.76749647 57.4979782 898.010681 571.558044 1693.19165 0.0625 0.125 0.25 0 1.84433365 1.84433365 54.2295036 -84.19487 1947.41724 447.746552 0.0625 0.125 0.25 0 1.84433365 1.84433365 274.993713 -915.228333 -1756.30994 -278.80603 0.0625 0.125 0.25 0 1.92336607 1.92336607 345.985596 966.576538 -1518.64856 871.456604 0.0625 0.125 0.25 0 2.00462413 2.00462413 286.372894 1069.03589 -1679.62878 189.762039 0.0625 0.125 0.25 0 2.00462413 2.00462413 227.562347 -1018.65698 1600.47534 633.101013 0.0625 0.125 0.25 0 2.08813953 2.08813953 166.787476 836.497131 -767.164551 1646.73352 0.0625 0.125 0.25 0 2.08813953 2.08813953 324.372925 -989.227112 1554.23621 -778.31842 0.0625 0.125 0.1875 0 2.26206517 2.26206517 236.296692 -909.613525 1429.15063 1063.07654 0.0625 0.125 0.1875 0 2.26206517 2.26206517 103.124496 -913.603455 1435.41919 -1051.14246 0.0625 0.125 0.1875 0 2.26206517 2.26206517 219.281021 -1071.63013 1683.70471 -129.410965 0.0625 0.125 0.1875 0 2.35253739 2.35253739 84.2009811 -245.566467 385.824738 1947.00708 0.0625 0.125 0.1875 0 2.35253739 2.35253739 105.418793 1342.02173 -1230.78906 827.125366 0.0625 0.125 0.1875 0 2.44539022 2.44539022 254.358337 -1287.34204 -1403.6842 610.262695 0.0625 0.125 0.1875 0 2.44539022 2.44539022 214.725296 86.0074539 -1989.34216 -187.404739 0.0625 0.125 0.1875 0 2.44539022 2.44539022 12.232461 -18.136446 419.492859 1955.42749 0.0625 0.125 0.1875 0 2.5406549 2.5406549 309.154236 -496.903107 110.382904 1934.14136 0.0625 0.125 0.1875 0 2.5406549 2.5406549 119.159386 -1288.05994 -1404.46716 606.937805 0.0625 0.125 0.1875 0 2.5406549 2.5406549 293.261932 -1073.86169 1687.21094 11.8470774 0.0625 0.125 0.1875 0 2.5406549 2.5406549 107.808197 42.5399513 -983.94574 -1740.70129 0.0625 0.125 0.1875 0 2.63836169 2.63836169 186.433701 -1348.87 -1470.7738 -131.811676 0.0625 0.125 0.1875 0 2.63836169 2.63836169 261.126251 -242.542404 -1091.83557 1658.03149 0.0625 0.125 0.1875 0 2.63836169 2.63836169 109.173119 586.499939 -921.486633 1675.37476 0.0625 0.125 0.1875 0 2.63836169 2.63836169 174.097122 -905.893127 -1738.39465 -396.663391 0.0625 0.125 0.1875 0 2.63836169 2.63836169 125.953445 -1981.5188 -85.6690369 -257.378998 0.0625 0.125 0.1875 0 2.63836169 2.63836169 130.81073 960.685364 -1509.39246 -893.766113 0.0625 0.125 0.125 0 2.7385416 2.7385416 327.131744 -765.977234 -487.522552 -1782.02148 0.0625 0.125 0.125 0 2.7385416 2.7385416 189.346313 1411.02332 -1294.07141 -578.266968 0.0625 0.125 0.125 0 2.7385416 2.7385416 272.425415 -1749.97852 -75.6586227 -965.32428 0.0625 0.125 0.125 0 2.7385416 2.7385416 326.967682 340.169373 -75.5659561 -1969.40967 0.0625 0.125 0.125 0 2.7385416 2.7385416 338.451263 1285.55432 1401.73413 -618.459351 0.0625 0.125 0.125 0 2.7385416 2.7385416 138.130981 566.33313 -1798.85376 665.876831 0.0625 0.125 0.125 0 2.84122682 2.84122682 132.827118 -1736.38135 904.845276 407.719818 0.0625 0.125 0.125 0 2.84122682 2.84122682 357.805084 1041.92102 -1637.02673 -484.297485 0.0625 0.125 0.125 0 2.84122682 2.84122682 117.335785 401.262573 770.016907 1801.68323 0.0625 0.125 0.125 0 2.84122682 2.84122682 22.6044121 -835.204956 1312.24255 -1257.1604 0.0625 0.125 0.125 0 2.94644785 2.94644785 162.651733 1831.77771 576.699219 558.577332 0.0625 0.125 0.125 0 2.94644785 2.94644785 182.234131 -1180.38953 -51.0328445 1613.71497 0.0625 0.125 0.125 0 2.94644785 2.94644785 97.130043 1328.53882 1448.60315 369.504272 0.0625 0.125 0.125 0 2.94644785 2.94644785 53.7480774 -1795.33093 398.817871 785.958862 0.0625 0.125 0.125 0 2.94644785 2.94644785 292.158051 -433.673676 -1952.22876 27.0130062 0.0625 0.125 0.125 0 2.94644785 2.94644785 131.119034 -1701.27136 377.924744 -981.248291 0.0625 0.125 0.125 0 2.94644785 2.94644785 146.569382 1447.95581 -1327.94287 374.154022 0.0625 0.125 0.125 0 3.05423355 3.05423355 302.621552 -65.3634415 1511.85583 -1307.67712 0.0625 0.125 0.125 0 3.05423355 3.05423355 72.6204834 1420.26672 -1302.5509 -534.980103 0.0625 0.125 0.125 0 3.05423355 3.05423355 288.527191 80.1952438 -1854.93665 743.49115 0.0625 0.125 0.125 0 3.05423355 3.05423355 166.02977 405.609009 778.356079 1797.12085 0.0625 0.125 0.125 0 3.16461706 3.16461706 171.612503 -1893.57153 420.64209 487.285645 0.0625 0.125 0.125 0 3.16461706 3.16461706 82.5790787 468.023743 -735.341187 -1800.06299 0.0625 0.125 0.125 0 3.16461706 3.16461706 52.9791222 -40.8431206 -78.3773117 -1998.04626 0.0625 0.125 0.125 0 3.16461706 3.16461706 143.777817 871.028137 -1368.52637 1169.80579 0.0625 0.125 0.125 0 3.16461706 3.16461706 205.686768 1424.5752 906.700928 1071.67102 0.0625 0.125 0.125 0 3.16461706 3.16461706 274.089478 361.70639 -568.299377 -1883.13684 0.0625 0.125 0.125 0 3.16461706 3.16461706 38.6984406 897.127991 -1409.53345 1099.26184 0.0625 0.125 0.125 0 3.16461706 3.16461706 32.2207565 -1467.54407 1345.9082 -186.670914 0.0625 0.125 0.125 0 3.16461706 3.16461706 123.63829 491.110535 312.577057 -1913.40173 0.0625 0.125 0.125 0 3.16461706 3.16461706 298.973022 976.081238 -1533.58191 833.901733 0.0625 0.125 0.125 0 3.27762866 3.27762866 196.861908 309.73172 97.5126801 -1973.46326 0.0625 0.125 0.125 0 3.27762866 3.27762866 164.156433 175.497223 -275.734589 1973.11206 0.0625 0.125 0.125 0 3.27762866 3.27762866 269.339142 -9.64171314 15.1486959 -1999.91943 0.0625 0.125 0.125 0 3.27762866 3.27762866 15.0665474 -657.592773 -207.030151 -1877.42114 0.0625 0.125 0.125 0 3.27762866 3.27762866 276.849426 -1728.71387 900.848267 447.237183 0.0625 0.125 0.0625 0 3.39329863 3.39329863 49.0233154 -1575.89465 821.214844 -917.693726 0.0625 0.125 0.0625 0 3.39329863 3.39329863 2.98952579 310.901947 -69.0644302 -1974.47974 0.0625 0.125 0.0625 0 3.39329863 3.39329863 172.472656 1073.57703 -1686.76367 47.5445595 0.0625 0.125 0.0625 0 3.39329863 3.39329863 107.493965 1947.36523 84.1924591 447.973328 0.0625 0.125 0.0625 0 3.39329863 3.39329863 229.150513 549.370667 -1744.9729 -808.245911 0.0625 0.125 0.0625 0 3.51165915 3.51165915 232.367752 -286.894745 -1291.48975 -1499.91528 0.0625 0.125 0.0625 0 3.51165915 3.51165915 39.8094749 -526.77948 1673.21655 960.650513 0.0625 0.125 0.0625 0 3.51165915 3.51165915 58.3316956 1155.93518 1260.40344 -1036.91724 0.0625 0.125 0.0625 0 3.51165915 3.51165915 356.007751 -43.6542664 1009.71808 -1725.85168 0.0625 0.125 0.0625 0 3.51165915 3.51165915 4.08026218 -209.924103 666.787415 -1873.85327 0.0625 0.125 0.0625 0 3.51165915 3.51165915 250.460815 -507.614319 -159.811768 -1927.89722 0.0625 0.125 0.0625 0 3.51165915 3.51165915 240.851852 256.026642 1152.53699 -1614.34473 0.0625 0.125 0.0625 0 3.51165915 3.51165915 326.455383 -566.678955 -178.407425 1909.724 0.0625 0.125 0.0625 0 3.6327405 3.6327405 114.811638 1364.54077 -711.074463 -1277.65479 0.0625 0.125 0.0625 0 3.6327405 3.6327405 68.8260803 -103.692764 162.918152 1990.65454 0.0625 0.125 0.0625 0 3.6327405 3.6327405 249.746826 1825.32898 78.9146194 -813.601257 0.0625 0.125 0.0625 0 3.6327405 3.6327405 158.9944 523.591492 22.6364822 -1930.11377 0.0625 0.125 0.0625 0 3.75657296 3.75657296 62.5745621 1050.61877 -1650.6925 414.02243 0.0625 0.125 0.0625 0 3.75657296 3.75657296 236.570313 -605.426636 951.223877 1651.85706 0.0625 0.125 0.0625 0 3.75657296 3.75657296 164.16214 -1036.96497 1629.24023 519.884033 0.0625 0.125 0.0625 0 3.75657296 3.75657296 50.0163727 154.080444 693.613525 -1869.53467 0.0625 0.125 0.0625 0 3.8831892 3.8831892 217.959869 -67.6406555 1564.52771 -1244.05688 0.0625 0.125 0.0625 0 3.8831892 3.8831892 238.874191 -682.997375 -744.723572 1725.94946 0.0625 0.125 0.0625 0 4.01261854 4.01261854 288.946381 883.187683 -1387.6311 1137.74316 0.0625 0.125 0.0625 0 4.01261854 4.01261854 250.053543 727.936646 229.176804 -1848.67151 0.0625 0.125 0.0625 0 4.01261854 4.01261854 215.38649 517.117859 -1642.52783 -1017.19775 0.0625 0.125 0.0625 0 4.01261854 4.01261854 70.6839752 503.672791 -461.926147 -1879.61108 0.0625 0.125 0.0625 0 4.01261854 4.01261854 355.901367 -600.499146 1907.38562 35.7958107 0.0625 0.125 0.0625 0 4.01261854 4.01261854 40.0287704 -836.55011 1314.35583 1254.05444 0.0625 0.125 0 0 4.14489174 4.14489174 44.3515053 -274.678528 -1236.5011 -1547.77783 0.0625 0.125 0 0 4.14489174 4.14489174 22.9615974 360.625122 -1145.45972 -1599.33472 0.0625 0.125 0 0 4.14489174 4.14489174 345.031952 -909.275574 1428.61963 1064.07886 0.0625 0.125 0 0 4.14489174 4.14489174 127.505524 -678.861145 1066.60095 1549.68054 0.0625 0.125 0 0 4.28004074 4.28004074 240.680115 -339.538239 -1528.4751 1244.37842 0.0625 0.125 0 0 4.28004074 4.28004074 288.934601 1012.30585 -1590.49658 667.500793 0.0625 0.125 0 0 4.28004074 4.28004074 45.7961235 -173.910568 552.39447 -1914.3186 0.0625 0.125 0 0 4.28004074 4.28004074 182.937897 560.659546 24.2395 -1919.65454 0.0625 0.125 0 0 4.28004074 4.28004074 97.7756195 -586.692871 921.789673 1675.14038 0.0625 0.125 0 0 4.28004074 4.28004074 30.3461266 433.243103 1950.30017 -92.895195 0.0625 0.125 0 0 4.28004074 4.28004074 238.355042 312.33432 1406.00879 1387.65503 0.0625 0.125 0 0 4.41809607 4.41809607 155.920624 -1121.44983 -1222.80066 -1116.74036 0.0625 0.125 0 0 4.41809607 4.41809607 17.8694763 -590.197205 1874.65088 370.609589 0.0625 0.125 0 0 4.41809607 4.41809607 223.704987 965.537903 -1517.01953 875.436035 0.0625 0.125 0 0 4.41809607 4.41809607 94.8229523 -446.164551 99.112114 1947.07837 0.0625 0.125 0 0 4.41809607 4.41809607 331.439056 -1185.19897 -51.2411652 -1610.17944 0.0625 0.125 0 0 4.41809607 4.41809607 83.2712631 -1253.38477 1149.49976 1052.46228 0.0625 0.125 0 0 4.41809607 4.41809607 206.535583 1391.44141 -725.09436 1240.21301 0.0625 0.125 0 0 4.41809607 4.41809607 160.517242 1229.14575 1340.23035 -832.456177 0.0625 0.125 0 0 4.41809607 4.41809607 126.119186 -618.197937 137.327637 -1897.09583 0.0625 0.125 0 0 4.41809607 4.41809607 247.618668 -402.949646 633.099182 1853.86536 0.0625 0.125 0 0 4.55908871 4.55908871 163.62796 1818.48901 78.6206207 -828.804382 0.0625 0.125 0 0 4.55908871 4.55908871 115.208427 -792.148193 -1520.11755 -1030.40942 0.0625 0.125 0 0 4.55908871 4.55908871 304.4776 -297.924194 66.1813889 -1976.57813 0.0625 0.125 0 0 4.55908871 4.55908871 347.127502 559.630798 176.188873 -1912.00696 0.0625 0.125 0 0 4.55908871 4.55908871 193.287796 -1180.57483 -1287.2655 974.263977 0.0625 0.125 0 0 4.55908871 4.55908871 314.370117 574.919556 -1826.12463 -578.563477 0.0625 0.125 0 0 4.55908871 4.55908871 335.171509 -1258.21558 -396.12442 1503.32275 0.0625 0.125 0 0 4.55908871 4.55908871 291.841736 -453.531219 712.571045 -1812.88489 0.0625 0.125 0 0 4.55908871 4.55908871 273.586365 369.61261 1663.85925 1046.40271 0.0625 0.125 0 0 4.55908871 4.55908871 270.429108 334.71344 213.0354 1960.25073 0.0625 0.125 0 0 4.70305014 4.70305014 247.248779 -1669.87878 -1062.82947 -286.178375 0.0625 0.125 0 0 4.70305014 4.70305014 76.8834 1414.5802 -1297.3335 -562.039856 0.0625 0.125 0 0 4.70305014 4.70305014 48.6105537 841.54187 -1322.19873 -1242.41602 0.0625 0.125 0 0 4.70305014 4.70305014 194.015244 405.596161 442.252106 1907.85352 0.0625 0.125 0 0 4.70305014 4.70305014 146.397888 -681.819519 355.302277 1846.31592 0.0625 0.125 0 0 4.70305014 4.70305014 333.702728 1109.2511 -1017.31183 -1317.05664 0.0625 0.125 0 0 4.70305014 4.70305014 234.712952 -364.861176 573.256104 -1881.02466 0.0625 0.125 0 0 4.70305014 4.70305014 195.211563 -1729.80005 384.260742 927.434692 0.0625 0.125 0 0 4.70305014 4.70305014 271.197937 277.338867 1248.47668 1537.6571 0.0625 0.125 0 0 4.70305014 4.70305014 181.328018 163.479492 -149.929596 1987.66089 0.0625 0.125 0 0 4.70305014 4.70305014 246.761688 -1350.65393 -1472.71985 82.6480255 0.0625 0.125 0 0 4.70305014 4.70305014 24.8041687 1013.87299 -1592.95898 659.198975 0.0625 0.125 0 0 4.70305014 4.70305014 149.368652 465.060333 -730.685181 -1802.72522 0.0625 0.125 0 0 4.70305014 4.70305014 297.615723 -498.046173 259.536316 -1919.52881 0.0625 0.125 0 0 4.70305014 4.70305014 324.390564 1064.23462 -1672.08594 267.456726 0.0625 0.125 0 0 4.85000992 4.85000992 75.5323334 -1327.92407 691.992554 1325.80701 0.0625 0.125 0 0 4.85000992 4.85000992 94.0203934 960.769409 -1509.52454 -893.452698 0.0625 0.125 0 0 4.85000992 4.85000992 50.5004158 197.63472 -310.516205 -1965.83826 0.0625 0.125 0 0 4.85000992 4.85000992 238.248993 45.8425522 -72.0260849 1998.17676 0.0625 0.125 0 0 4.85000992 4.85000992 43.3384476 -559.759399 879.472717 -1706.80908 0.0625 0.125 0 0 4.85000992 4.85000992 359.904114 959.262085 -1507.15625 -899.052795 0.0625 0.125 0 0 4.85000992 4.85000992 209.244797 -967.396118 1519.93616 868.296448 0.0625 0.125 0 0 4.99999905 4.99999905 336.252014 -603.231079 947.773804 -1654.64099 0.0625 0.125 0 0 4.99999905 4.99999905 288.618011 -989.51825 1554.6936 -777.033813 0.0625 0.125 0 0 4.99999905 4.99999905 119.661453 962.137329 -1511.67383 -888.332031 0.0625 0.125 0 0 4.99999905 4.99999905 75.6896667 1001.13678 -1572.94824 -723.573792 0.0625 0.125 0 0 4.99999905 4.99999905 249.830307 -1024.6969 1609.96509 -598.337952 0.0625 0.125 0 0 4.99999905 4.99999905 137.46965 -1025.12549 1610.63831 595.786804 0.0625 0.125 0 0 4.99999905 4.99999905 220.0746 -726.010742 1140.68054 -1473.68799 0.0625 0.125 0 0 4.99999905 4.99999905 195.503983 550.775818 -1749.43628 -797.570557 0.0625 0.125 0 0 4.99999905 4.99999905 300.180115 -420.503021 -1892.94263 -489.842529 0.0625 0.125 0 0 4.99999905 4.99999905 322.945129 -1022.11938 1605.91528 -613.439514 0.0625 0.125 0 0 4.99999905 4.99999905 358.316437 1250.76648 1363.8042 758.697021 0.0625 0.125 0 0 4.99999905 4.99999905 209.434814 319.474426 -501.946136 -1909.44666 0.0625 0.125 0 0 4.99999905 4.99999905 204.513412 254.385239 -399.68045 -1943.07581 0.0625 0.125 0 0 4.99999905 4.99999905 206.299332 271.125092 -425.981476 -1935.20825 0.0625 0.125 0 0 4.99999905 4.99999905 38.2004089 924.937866 -1453.22742 -1016.1792 0.0625 0.125 0 0 4.99999905 4.99999905 124.557365 380.679626 -598.109436 -1870.11975 0.0625 0.125 0 0 4.99999905 4.99999905 122.307701 936.391663 -1471.22314 -979.118591 0.0625 0.125 0 0 4.99999905 4.99999905 218.24028 316.897369 -497.897125 -1910.93555 0.0625 0.125 0 0 4.99999905 4.99999905 66.4306335 -1054.85486 1657.34814 374.803894 0.0625 0.125 0 0 4.99999905 4.99999905 325.524933 643.512756 -1011.06287 -1601.13806 0.0625 0.125 0 0 4.99999905 4.99999905 81.5561523 -1156.21375 -364.011627 -1590.80652 0.0625 0.125 0 0 4.99999905 4.99999905 160.179077 -1068.23352 1678.36792 204.836472 0.0625 0.125 0 0 4.99999905 4.99999905 268.851837 -385.991943 606.455933 1866.33911 0.0625 0.125 0 0 4.99999905 4.99999905 325.819 1032.77271 -1622.65332 -548.065979 0.0625 0.125 0 0 4.99999905 4.99999905 305.017548 -992.040955 1558.65723 -765.79541 0.0625 0.125 0 0 4.99999905 4.99999905 205.479996 -1029.26672 1617.1449 570.484009 0.0625 0.125 0 0 4.99999905 4.99999905 266.699371 -1015.14337 1594.95496 652.382324 0.0625 0.125 0 0 4.99999905 4.99999905 218.9991 1072.25293 -1684.68335 -110.07476 0.0625 0.125 0 0 4.99999905 4.99999905 276.466309 960.931274 -1509.77881 -892.848572 0.0625 0.125 0 0 4.99999905 4.99999905 280.710419 -1073.14746 1686.08862 -73.8892212 0.0625 0.125 0 0 4.99999905 4.99999905 72.8492279 633.348999 -995.093994 -1615.13367 0.0625 0.125 0 0 4.99999905 4.99999905 149.952957 -787.711182 1237.62207 -1359.33899 0.0625 0.125 0 0 4.99999905 4.99999905 146.942474 567.284485 -891.295898 -1698.16956 0.0625 0.125 0 0 4.99999905 4.99999905 346.890869 -1067.15198 1676.66882 -223.534897 0.0625 0.125 0 0 4.99999905 4.99999905 148.067978 -893.627197 1404.0332 -1109.10828 0.0625 0.125 0 0 4.99999905 4.99999905 326.146362 -1033.97351 1624.54004 -540.155762 0.0625 0.125 0 0 4.99999905 4.99999905 161.001724 603.988953 -948.964539 -1653.68176 0.0625 0.125 0 0 4.99999905 4.99999905 140.744949 -933.538025 1466.7395 -988.524963 0.0625 0.125 0 0 4.99999905 4.99999905 197.262863 -1070.87195 1682.51331 -149.606171 0.0625 0.125 0 0 4.99999905 4.99999905 128.873276 -46.369957 1072.53345 -1687.46008 0.0625 0.125 0 0 4.99999905 4.99999905 262.965332 -443.027588 696.068237 1821.87146 0.0625 0.125 0 0 4.99999905 4.99999905 175.949432 -1052.85254 1654.20215 393.848816 0.0625 0.125 0 0 4.99999905 4.99999905 305.73175 -188.28273 295.822693 -1969.01965 0.0625 0.125 0 0 4.99999905 4.99999905 284.505768 -658.091492 1033.96851 -1580.45081 0.0625 0.125 0 0 4.99999905 4.99999905 243.170181 736.2146 -1156.71252 -1456.02344 0.0625 0.125 0 0 4.99999905 4.99999905 44.3842087 430.920044 -677.045227 -1831.9165 0.0625 0.125 0 0 4.99999905 4.99999905 95.4130859 -677.424744 1064.34399 -1551.85925 0.0625 0.125 0 0 4.99999905 4.99999905 175.744049 -87.4839478 137.451477 -1993.35242 0.0625 0.125 0 0 4.99999905 4.99999905 64.2188644 -1037.12183 1629.48645 518.798828 0.0625 0.125 0 0 4.99999905 4.99999905 137.382278 -168.177399 264.233948 -1975.3219 0.0625 0.125 0 0 4.99999905 4.99999905 221.135986 653.795471 -1027.21875 -1586.62305 0.0625 0.125 0 0 4.99999905 4.99999905 12.8664064 608.261292 -955.677124 -1648.24133 0.0625 0.125 0 0 4.99999905 4.99999905 7.22951889 -295.65271 464.518372 -1922.70959 0.0625 0.125 0 0 4.99999905 4.99999905 306.979767 -296.583984 465.981506 -1922.21204 0.0625 0.125 0 0 4.99999905 4.99999905 86.8701859 -1064.10388 1671.87976 269.259766 0.0625 0.125 0 0 4.99999905 4.99999905 304.979309 -1066.16418 1675.1167 239.328812 0.0625 0.125 0 0 4.99999905 4.99999905 278.085938 -561.323303 881.929871 -1705.02661 0.0625 0.125 0 0 4.99999905 4.99999905 147.165939 1858.64636 585.158264 450.580963 0.0625 0.125 0 0 4.99999905 4.99999905 61.9760208 219.032593 -344.135712 -1957.95691 0.0625 0.125 0 0 4.99999905 4.99999905 71.2673264 1415.11682 -1297.82568 -559.547119 0.0625 0.125 0 0 4.99999905 4.99999905 73.6875305 -631.405762 992.040894 1617.77051 0.0625 0.125 0 0 4.99999905 4.99999905 175.133179 -941.018616 1478.4928 963.60907 0.0625 0.125 0 0 4.99999905 4.99999905 277.454468 -855.58667 1344.26538 -1208.68616 0.0625 0.125 0 0 4.99999905 4.99999905 272.243134 1039.76355 -1633.63721 -500.121002 0.0625 0.125 0 0 4.99999905 4.99999905 68.1993484 -917.646545 1441.77148 -1038.85486 0.0625 0.125 0 0 4.99999905 4.99999905 312.527008 -36.0716248 834.358643 -1817.29041 0.0625 0.125 0 0 4.99999905 4.99999905 322.197174 -790.431091 1241.89539 -1353.85168 0.0625 0.125 0 0 4.99999905 4.99999905 220.997589 -1054.26538 1656.42188 -380.513702 0.0625 0.125 0 0 4.99999905 4.99999905 39.3020439 736.439941 -1157.06653 -1455.62805 0.0625 0.125 0 0 4.99999905 4.99999905 346.696014 762.859985 -1198.57678 -1407.64282 0.0625 0.125 0 0 4.99999905 4.99999905 199.236282 1.09460342 -25.318079 -1999.83948 0.0625 0.125 0 0 4.99999905 4.99999905 294.449615 -257.385254 817.541443 -1807.03589 0.0625 0.125 0 0 4.99999905 4.99999905 274.441895 981.427979 -1541.98254 -811.842834 0.0625 0.125 0 0 4.99999905 4.99999905 211.942017 -984.310181 1546.51086 799.648499 0.0625 0.125 0 0 4.99999905 4.99999905 21.9947147 333.050049 1499.26282 -1281.12793 0.0625 0.125 0 0 4.99999905 4.99999905 144.596252 831.3349 -1306.16199 -1266.02649 0.0625 0.125 0 0 4.99999905 4.99999905 277.080872 -176.655716 -338.999542 1963.12805 0.0625 0.125 0 0 4.99999905 4.99999905 90.7698593 834.509583 -1311.1499 -1258.76111 0.0625 0.125 0 0 4.99999905 4.99999905 250.535919 738.727966 -1160.6615 1451.60107 0.0625 0.125 0 0 4.99999905 4.99999905 329.762756 -663.147278 1041.91211 -1573.10352 0.0625 0.125 0 0 4.99999905 4.99999905 172.946442 881.524597 -1385.01807 1142.20801 0.0625 0.125 0 0 4.99999905 4.99999905 335.137543 171.652008 -269.693146 1974.28503 0.0625 0.125 0 0 4.99999905 4.99999905 307.813995 411.754913 -646.933716 -1847.14221 0.0625 0.125 0 0 4.99999905 4.99999905 165.852402 40.8897705 -945.790955 -1761.76257 0.0625 0.125 0 0 4.99999905 4.99999905 136.281799 1011.0625 -1588.54309 674.005493 0.0625 0.125 0 0 4.99999905 4.99999905 127.706238 1013.15405 -1591.82935 663.021912 0.0625 0.125 0 0 4.99999905 4.99999905 255.923676 1023.97168 -1608.82556 602.62915 0.0625 0.125 0 0 4.99999905 4.99999905 77.5966492 364.979065 -573.441284 -1880.94531 0.0625 0.125 0 0 4.99999905 4.99999905 356.095734 1020.10132 -1602.74451 624.982605 0.0625 0.125 0 0 4.99999905 4.99999905 283.090179 355.021637 -557.796509 -1887.54407 0.0625 0.125 0 0 4.99999905 4.99999905 132.350327 283.157867 -444.886932 -1929.22192 0.0625 0.125 0 0 4.99999905 4.99999905 169.805069 154.824875 -243.254974 1979.10486 0.0625 0.125 0 0 4.99999905 4.99999905 102.412659 -216.6866 340.449768 1958.86218 0.0625 0.125 0 0 4.99999905 4.99999905 109.106728 406.874603 -639.265991 1850.88953 0.0625 0.125 0 0 4.99999905 4.99999905 186.219894 430.939026 -677.075073 1831.90088 0.0625 0.125 0 0 4.99999905 4.99999905 58.6153641 160.717331 -252.512955 -1977.47498 0.0625 0.125 0 0 4.99999905 4.99999905 212.522614 -1676.01648 -527.659363 955.272095 0.0625 0.125 0 0 4.99999905 4.99999905 208.026428 125.24897 -196.786438 1986.35046 0.0625 0.125 0 0 4.99999905 4.99999905 214.548996 976.463013 -1534.18176 832.349792 0.0625 0.125 0 0 4.99999905 4.99999905 322.743347 176.450287 -277.231995 1972.81714 0.0625 0.125 0 0 4.99999905 4.99999905 357.231262 -448.247437 704.269409 -1817.43738 0.0625 0.125 0 0 4.99999905 4.99999905 57.8228912 -16.4913425 25.910574 1999.76416 0.0625 0.125 0 0 4.99999905 4.99999905 158.494858 948.409973 -494.224609 -1690.04749 0.0625 0.125 0 0 4.99999905 4.99999905 174.732956 -70.5044327 110.773895 -1995.68481 0.0625 0.125 0 0 4.99999905 4.99999905 87.1099091 944.186646 -1483.47034 -952.799927 0.0625 0.125 0 0 4.99999905 4.99999905 93.4228821 1060.52222 -1666.2522 314.477234 0.0625 0.125 0 0 4.99999905 4.99999905 159.605347 672.800476 -1057.07861 -1558.82141 0.0625 0.125 0 0 4.99999905 4.99999905 352.206268 515.391541 -809.763611 1754.6095 0.0625 0.125 0 0 4.99999905 4.99999905 58.7454414 981.440796 -1542.00256 -811.789368 0.0625 0.125 0 0 4.99999905 4.99999905 7.95629025 1007.99475 -1583.72327 -689.758606 0.0625 0.125 0 0 4.99999905 4.99999905 76.0689087 1049.15027 -1648.38501 -426.744141 0.0625 0.125 0 0 4.99999905 4.99999905 69.1134872 897.997559 -1410.89978 -1096.79639 0.0625 0.125 0 0 4.99999905 4.99999905 200.990417 531.058289 -834.378784 1738.32947 0.0625 0.125 0 0 4.99999905 4.99999905 114.006111 1073.68188 -1686.92822 38.4721069 0.0625 0.125 0 0 4.99999905 4.99999905 258.964661 2.79004478 -4.38361263 1999.99316 0.0625 0.125 0 0 4.99999905 4.99999905 266.98291 -1656.99341 -71.6385193 -1117.69434 0.0625 0.125 0 0 4.99999905 4.99999905 221.212982 1071.67896 -1683.78149 -127.999115 0.0625 0.125 0 0 4.99999905 4.99999905 4.85848904 577.487976 -907.327209 -1686.19836 0.0625 0.125 0 0 4.99999905 4.99999905 348.512329 533.021729 -837.463562 1736.2439 0.0625 0.125 0 0 4.99999905 4.99999905 206.171021 1044.04846 -1640.36926 -468.135834 0.0625 0.125 0 0 4.99999905 4.99999905 291.546936 1037.88245 -1630.68176 -513.494812 0.0625 0.125 0 0 4.99999905 4.99999905 275.752686 1032.0907 -1621.58191 -552.504211 0.0625 0.125 0 0 4.99999905 4.99999905 50.3222733 795.997681 -1250.64148 1342.49158 0.0625 0.125 0 0 4.99999905 4.99999905 357.112366 1335.66626 1456.37769 -308.155304 0.0625 0.125 0 0 4.99999905 4.99999905 115.141693 -42.9082832 992.464722 -1735.84924 0.0625 0.125 0 0 4.99999905 4.99999905 105.13105 -969.733948 1523.60925 859.20343 0.0625 0.125 0 0 4.99999905 4.99999905 91.645462 -527.407959 828.643433 -1742.17993 0.0625 0.125 0 0 4.99999905 4.99999905 71.5696182 -684.98999 1076.23035 -1540.29761 0.0625 0.125 0 0 4.99999905 4.99999905 332.412292 1063.82568 -1671.44275 273.045654 0.0625 0.125 0 0 4.99999905 4.99999905 55.8891258 1016.01611 1107.83838 1319.24426 0.0625 0.125 0 0 4.99999905 4.99999905 117.623489 -429.220215 674.374512 -1833.30005 0.0625 0.125 0 0 4.99999905 4.99999905 113.883636 -599.66864 942.177124 1659.12622 0.0625 0.125 0 0 4.99999905 4.99999905 147.289413 -549.638245 863.570862 1718.18018 0.0625 0.125 0 0 4.99999905 4.99999905 16.6255341 -482.44165 757.99408 1786.8114 0.0625 0.125 0 0 4.99999905 4.99999905 7.5385952 -158.12323 248.437225 1978.2002 0.0625 0.125 0 0 4.99999905 4.99999905 332.223358 -847.79071 1332.01672 1227.59216 0.0625 0.125 0 0 4.99999905 4.99999905 173.469315 -161.561432 253.839188 1977.23645 0.0625 0.125 0 0 4.99999905 4.99999905 202.892029 -502.50058 789.509888 -1767.53137 0.0625 0.125 0 0 4.99999905 4.99999905 291.063629 1070.00537 -1681.15198 169.753693 0.0625 0.125 0 0 4.99999905 4.99999905 29.8358192 -847.52887 1331.60535 -1228.21899 0.0625 0.125 0 0 4.99999905 4.99999905 60.663929 -953.339905 1497.85156 920.642883 0.0625 0.125 0 0 4.99999905 4.99999905 178.443497 -486.287567 764.036621 -1783.19165 0.0625 0.125 0 0 4.99999905 4.99999905 224.512054 -1073.54248 1686.70923 50.1846085 0.0625 0.125 0 0 4.99999905 4.99999905 316.296265 -857.977112 1348.02112 -1202.79443 0.0625 0.125 0 0 4.99999905 4.99999905 260.8508 -530.162476 832.971191 -1739.27759 0.0625 0.125 0 0 4.99999905 4.99999905 216.487961 1059.64026 -1664.86682 324.624481 0.0625 0.125 0 0 4.99999905 4.99999905 7.08798409 -633.382629 995.14679 -1615.08801 0.0625 0.125 0 0 4.99999905 4.99999905 158.75798 -670.354187 1053.23523 -1562.47266 0.0625 0.125 0 0 4.99999905 4.99999905 14.5230675 -355.561584 558.644897 1887.19153 0.0625 0.125 0 0 4.99999905 4.99999905 320.936523 -1055.25891 1657.98279 -370.838867 0.0625 0.125 0 0 4.99999905 4.99999905 297.136139 -906.963928 1424.98743 1070.90002 0.0625 0.125 0 0 4.99999905 4.99999905 173.202423 -775.299744 1218.12158 -1383.86792 0.0625 0.125 0 0 4.99999905 4.99999905 196.939545 125.973137 -197.924225 1986.19153 0.0625 0.125 0 0 4.99999905 4.99999905 147.653458 10.8193865 -16.9990101 1999.89844 0.0625 0.125 0 0 4.99999905 4.99999905 108.391884 -26.3410759 41.3861008 -1999.39819 0.0625 0.125 0 0 4.99999905 4.99999905 115.689171 -841.049438 1321.42505 -1243.57214 0.0625 0.125 0 0 4.99999905 4.99999905 224.374634 -708.57489 1113.28601 -1502.83594 0.0625 0.125 0 0 4.99999905 4.99999905 185.706146 -96.9549026 152.331879 1991.83203 0.0625 0.125 0 0 4.99999905 4.99999905 286.231171 -358.036041 562.532654 1885.56812 0.0625 0.125 0 0 4.99999905 4.99999905 153.605911 -397.624664 624.732849 1857.84912 0.0625 0.125 0 0 4.99999905 4.99999905 180.368378 1068.19409 -1678.30627 205.546204 0.0625 0.125 0 0 4.99999905 4.99999905 238.615112 70.3335571 -1626.83423 -1161.23352 0.0625 0.125 0 0 4.99999905 4.99999905 323.920654 1067.55542 -1677.30261 216.751831 0.0625 0.125 0 0 4.99999905 4.99999905 156.918457 -471.767487 741.223206 1796.67017 0.0625 0.125 0 0 4.99999905 4.99999905 241.976456 1090.32983 1188.86658 1182.27612 0.0625 0.125 0 0 4.99999905 4.99999905 245.603958 -63.5110435 99.7861404 1996.49915 0.0625 0.125 0 0 4.99999905 4.99999905 38.867485 1050.18127 -1650.00513 417.854462 0.0625 0.125 0 0 4.99999905 4.99999905 249.420761 -39.1947136 61.5812531 -1998.66748 0.0625 0.125 0 0 4.99999905 4.99999905 286.020142 -328.993683 516.902405 1903.83167 0.0625 0.125 0 0 4.99999905 4.99999905 202.849457 -278.695251 437.875458 1931.47461 0.0625 0.125 0 0 4.99999905 4.99999905 348.869568 -283.407715 445.27948 -1929.09473 0.0625 0.125 0 0 4.99999905 4.99999905 99.9849014 711.558655 -1117.97388 -1497.93799 0.0625 0.125 0 0 4.99999905 4.99999905 35.3363228 353.891663 -556.02124 -1888.27991 0.0625 0.125 0 0 4.99999905 4.99999905 264.731506 -57.907402 90.9819183 -1997.09009 0.0625 0.125 0 0 4.99999905 4.99999905 268.365356 -76.228653 119.767578 -1994.95483 0.0625 0.125 0 0 4.99999905 4.99999905 193.811066 -223.516327 351.180389 -1956.19861 0.0625 0.125 0 0 4.99999905 4.99999905 105.02758 -234.574295 368.55423 -1951.70251 0.0625 0.125 0 0 4.99999905 4.99999905 305.083069 416.952087 -655.099304 -1843.09412 0.0625 0.125 0 0 4.99999905 4.99999905 204.68396 265.369141 -416.937958 -1937.97363 0.0625 0.125 0 0 4.99999905 4.99999905 43.6775627 -995.231689 1563.67065 -751.297546 0.0625 0.125 0 0 4.99999905 4.99999905 348.712067 402.302551 -632.082581 -1854.35278 0.0625 0.125 0 0 4.99999905 4.99999905 18.4403381 317.734833 -499.212952 -1910.45313 0.0625 0.125 0 0 4.99999905 4.99999905 34.2951126 792.057678 -1244.45105 -1350.55029 0.0625 0.125 0 0 4.99999905 4.99999905 181.190857 856.71106 -1346.03198 -1205.92029 0.0625 0.125 0 0 4.99999905 4.99999905 184.77356 179.572891 7.76349211 -1991.90698 0.0625 0.125 0 0 4.99999905 4.99999905 281.292542 -118.706657 -129.434402 -1992.27393 0.0625 0.125 0 0 4.99999905 4.99999905 239.059158 812.67749 -1276.84814 -1307.36902 0.0625 0.125 0 0 4.99999905 4.99999905 8.03551197 -241.740097 -76.1069794 -1983.87744 0.0625 0.125 0 0 4.99999905 4.99999905 182.611481 -270.07724 424.335114 -1935.71643 0.0625 0.125 0 0 4.99999905 4.99999905 13.3320379 -774.918091 1217.52197 -1384.60901 0.0625 0.125 0 0 4.99999905 4.99999905 342.477051 -733.563904 1152.54785 -1460.65649 0.0625 0.125 0 0 4.99999905 4.99999905 147.224228 -1379.62244 306.471924 -1415.17383 0.0625 0.125 0 0 4.99999905 4.99999905 228.890869 -762.103882 1197.38867 -1409.06274 0.0625 0.125 0 0 4.99999905 4.99999905 58.7043724 -1396.92261 -439.793915 -1362.0531 0.0625 0.125 0 0 4.99999905 4.99999905 45.9404449 -881.922791 1385.64368 -1141.14136 0.0625 0.125 0 0 4.99999905 4.99999905 294.347809 -852.764404 1339.83118 -1215.58423 0.0625 0.125 0 0 4.99999905 4.99999905 33.7924004 -886.731384 1393.19885 -1128.14197 0.0625 0.125 0 0 4.99999905 4.99999905 47.2581635 1526.38855 -339.0755 -1247.06274 0.0625 0.125 0 0 4.99999905 4.99999905 184.981522 -1478.96277 -63.9418144 -1344.83472 0.0625 0.125 0 0 4.99999905 4.99999905 128.825211 844.849731 921.20343 -1561.28577 0.0625 0.125 0 0 4.99999905 4.99999905 177.262344 -386.010101 606.484497 -1866.32593 0.0625 0.125 0 0 4.99999905 4.99999905 115.795166 -568.769226 893.628662 -1696.44604 0.0625 0.125 0 0 4.99999905 4.99999905 265.523163 -583.880981 917.371643 -1678.5448 0.0625 0.125 0 0 4.99999905 4.99999905 45.1535072 -515.117615 809.333252 -1754.88855 0.0625 0.125 0 0 4.99999905 4.99999905 95.262619 1034.92432 -1626.03381 -533.803223 0.0625 0.125 0 0 4.99999905 4.99999905 289.320282 1053.24036 -1654.81128 -390.236725 0.0625 0.125 0 0 4.99999905 4.99999905 140.128815 1016.65887 -1597.33594 -644.144836 0.0625 0.125 0 0 4.99999905 4.99999905 264.157898 1072.67908 -1685.35266 94.5817719 0.0625 0.125 0 0 4.99999905 4.99999905 206.020782 1071.96301 -1684.22778 119.465416 0.0625 0.125 0 0 4.99999905 4.99999905 42.2914848 1351.67273 1473.82874 28.4487514 0.0625 0.125 0 0 4.99999905 4.99999905 64.252594 1069.59949 -1680.51416 -178.405594 0.0625 0.125 0 0 4.99999905 4.99999905 124.241684 1069.60791 -1680.52747 -178.231781 0.0625 0.125 0 0 4.99999905 4.99999905 256.279968 1069.02319 -1679.60864 -190.011368 0.0625 0.125 0 0 4.99999905 4.99999905 199.869934 1071.85083 -1684.05139 -122.909119 0.0625 0.125 0 0 4.99999905 4.99999905 212.489227 664.604248 -1044.20105 -1570.96948 0.0625 0.125 0 0 4.99999905 4.99999905 72.636322 705.746643 -1108.84253 -1507.44482 0.0625 0.125 0 0 4.99999905 4.99999905 7.54898071 750.35022 -1178.922 -1430.77515 0.0625 0.125 0 0 4.99999905 4.99999905 339.169891 705.86438 -1109.02734 -1507.25366 0.0625 0.125 0 0 4.99999905 4.99999905 14.8240757 533.573608 -838.330627 -1735.65576 0.0625 0.125 0 0 4.99999905 4.99999905 236.651382 462.947601 -727.365784 -1804.61035 0.0625 0.125 0 0 4.99999905 4.99999905 102.352234 518.605103 -814.812805 -1751.32202 0.0625 0.125 0 0 4.99999905 4.99999905 330.508698 -1510.09412 -961.131287 -892.099731 0.0625 0.125 0 0 4.99999905 4.99999905 192.883102 964.982971 -1516.14478 -877.56073 0.0625 0.125 0 0 4.99999905 4.99999905 254.924576 947.411926 -1488.53784 -941.629395 0.0625 0.125 0 0 4.99999905 4.99999905 230.479767 896.091248 -1407.90466 -1102.19092 0.0625 0.125 0 0 4.99999905 4.99999905 258.656921 829.248474 -1302.88391 -1270.76379 0.0625 0.125 0 0 4.99999905 4.99999905 296.182922 1066.86609 -1676.21948 228.221039 0.0625 0.125 0 0 4.99999905 4.99999905 8.67168903 850.584595 -1336.40625 -1220.87012 0.0625 0.125 0 0 4.99999905 4.99999905 355.237244 760.436951 -1194.76978 -1412.18311 0.0625 0.125 0 0 4.99999905 4.99999905 164.08815 825.657104 -1297.24121 -1278.84924 0.0625 0.125 0 0 4.99999905 4.99999905 18.3807278 992.1698 -1558.85962 -765.216064 0.0625 0.125 0 0 4.99999905 4.99999905 172.936691 1060.5354 -1666.27319 -314.321869 0.0625 0.125 0 0 4.99999905 4.99999905 319.695984 853.126343 -1340.3999 -1214.70313 0.0625 0.125 0 0 4.99999905 4.99999905 324.229156 -750.774719 -1440.72485 -1166.46875 0.0625 0.125 0 0 4.99999905 4.99999905 333.524414 1565.39783 492.835083 -1143.08484 0.0625 0.125 0 0 4.99999905 4.99999905 67.8416519 1348.00916 1469.83606 149.843369 0.0625 0.125 0 0 4.99999905 4.99999905 352.942841 246.034622 -386.560303 -1946.802 0.0625 0.125 0 0 4.99999905 4.99999905 274.709839 18.3979645 -425.556122 -1954.1145 0.0625 0.125 0 0 4.99999905 4.99999905 132.302429 465.081268 -730.718079 -1802.70642 0.0625 0.125 0 0 4.99999905 4.99999905 9.8367548 83.5196762 -131.222961 -1993.94202 0.0625 0.125 0 0 4.99999905 4.99999905 316.330383 87.8889771 -138.087845 -1993.29053 0.0625 0.125 0 0 4.99999905 4.99999905 170.613174 210.498688 -330.72757 -1961.20105 0.0625 0.125 0 0 4.99999905 4.99999905 238.293884 627.010071 -985.134399 -1623.68982 0.0625 0.125 0 0 4.99999905 4.99999905 242.950333 -375.717346 1193.39575 -1560.33435 0.0625 0.125 0 0 4.99999905 4.99999905 209.726776 1337.44812 1458.32056 -290.746979 0.0625 0.125 0 0 4.99999905 4.99999905 167.725311 857.979004 -1348.02417 -1202.78967 0.0625 0.125 0 0 4.99999905 4.99999905 44.2185135 -1029.53931 1617.57324 -568.77533 0.0625 0.125 0 0 4.99999905 4.99999905 50.0388184 -1073.83582 1687.17029 -18.2491035 0.0625 0.125 0 0 4.99999905 4.99999905 137.765808 -1066.24353 1675.24133 -238.099045 0.0625 0.125 0 0 4.99999905 4.99999905 343.785522 -1063.03308 1670.19751 -283.550446 0.0625 0.125 0 0 4.99999905 4.99999905 88.1866531 -599.722351 -653.922485 -1792.40588 0.0625 0.125 0 0 4.99999905 4.99999905 284.036804 -960.806519 1509.58276 893.314453 0.0625 0.125 0 0 4.99999905 4.99999905 96.0968933 998.465332 -1568.75098 -736.265808 0.0625 0.125 0 0 4.99999905 4.99999905 79.7361526 -877.240112 1378.2865 1153.59265 0.0625 0.125 0 0 4.99999905 4.99999905 129.949295 -1072.83667 1685.60034 88.1677322 0.0625 0.125 0 0 4.99999905 4.99999905 319.20694 -1073.7373 1687.01526 -32.6759224 0.0625 0.125 0 0 4.99999905 4.99999905 297.635071 -995.341248 1563.84253 750.794373 0.0625 0.125 0 0 4.99999905 4.99999905 140.972748 -582.452881 1850.0531 487.906158 0.0625 0.125 0 0 4.99999905 4.99999905 287.148041 -1068.03479 1678.05579 208.400146 0.0625 0.125 0 0 4.99999905 4.99999905 222.390106 -997.237671 1566.82214 742.014526 0.0625 0.125 0 0 4.99999905 4.99999905 238.81102 -1005.07703 1579.13904 704.372192 0.0625 0.125 0 0 4.99999905 4.99999905 258.593903 -1045.974 1643.39478 452.980652 0.0625 0.125 0 0 4.99999905 4.99999905 191.565079 -881.613647 1385.15808 -1141.9696 0.0625 0.125 0 0 4.99999905 4.99999905 224.255203 -985.265198 1548.01147 795.558411 0.0625 0.125 0 0 4.99999905 4.99999905 105.820999 -1070.82959 1682.4469 150.652664 0.0625 0.125 0 0 4.99999905 4.99999905 130.651428 -967.06543 1519.41675 -869.572937 0.0625 0.125 0 0 4.99999905 4.99999905 125.373314 -1822.19226 404.785187 -718.167358 0.0625 0.125 0 0 4.99999905 4.99999905 10.5493212 -1025.08801 1610.57959 -596.009949 0.0625 0.125 0 0 4.99999905 4.99999905 200.876938 -1038.89099 1632.26624 -506.371857 0.0625 0.125 0 0 4.99999905 4.99999905 243.400162 -808.681885 1270.57043 -1315.93494 0.0625 0.125 0 0 4.99999905 4.99999905 177.3862 -343.751984 1091.87085 -1640.01599 0.0625 0.125 0 0 4.99999905 4.99999905 353.347656 -883.067871 1387.44287 -1138.06567 0.0625 0.125 0 0 4.99999905 4.99999905 188.45639 -962.395996 1512.08008 -887.359924 0.0625 0.125 0 0 4.99999905 4.99999905 352.548126 74.6318512 -1726.23401 -1007.24695 0.0625 0.125 0 0 4.99999905 4.99999905 299.307831 -1059.97473 1665.39233 320.814178 0.0625 0.125 0 0 4.99999905 4.99999905 242.303513 -1054.68726 1657.08472 376.437286 0.0625 0.125 0 0 4.99999905 4.99999905 321.55249 -970.761108 1525.22314 855.170776 0.0625 0.125 0 0 4.99999905 4.99999905 304.50647 -995.532715 1564.14331 749.913513 0.0625 0.125 0 0 4.99999905 4.99999905 181.982941 -1063.56824 1671.03821 -276.503296 0.0625 0.125 0 0 4.99999905 4.99999905 315.898346 1473.06665 -1350.97241 -70.3422089 0.0625 0.125 0 0 4.99999905 4.99999905 327.924042 -432.509369 -1946.9845 -148.953064 0.0625 0.125 0 0 4.99999905 4.99999905 317.639435 1700.96033 -886.38501 -566.617737 0.0625 0.125 0 0 4.99999905 4.99999905 31.6468906 -1064.37402 1672.30408 -265.532349 0.0625 0.125 0 0 4.99999905 4.99999905 352.691742 -1069.22388 1679.92407 186.053406 0.0625 0.125 0 0 4.99999905 4.99999905 276.345459 -1071.47388 1683.45911 133.824081 0.0625 0.125 0 0 4.99999905 4.99999905 3.51438046 -1072.84387 1685.61169 87.8572235 0.0625 0.125 0 0 4.99999905 4.99999905 86.1756439 -1066.9469 1676.34668 226.906052 0.0625 0.125 0 0 4.99999905 4.99999905 182.571365 -1195.55554 1096.46582 -1169.79028 0.0625 0.125 0 0 4.99999905 4.99999905 182.856781 -1071.38379 1683.31775 136.300812 0.0625 0.125 0 0 4.99999905 4.99999905 88.1518478 -734.612854 1154.19592 -1458.82678 0.0625 0.125 0 0 4.99999905 4.99999905 311.335815 333.936768 -1060.68774 -1662.35608 0.0625 0.125 0 0 4.99999905 4.99999905 58.0030479 74.2562027 -116.668533 -1995.21289 0.0625 0.125 0 0 4.99999905 4.99999905 157.013687 -46.0090294 72.2876511 -1998.16357 0.0625 0.125 0 0 4.99999905 4.99999905 353.275452 -103.610466 162.788834 -1990.66931 0.0625 0.125 0 0 4.99999905 4.99999905 277.034607 151.806274 -238.512299 -1979.91589 0.0625 0.125 0 0 4.99999905 4.99999905 125.280746 360.549194 -566.481262 -1883.90637 0.0625 0.125 0 0 4.99999905 4.99999905 8.13743591 -1743.40186 -75.3740692 -977.173767 0.0625 0.125 0 0 4.99999905 4.99999905 277.561981 120.915657 -189.978104 -1987.28149 0.0625 0.125 0 0 4.99999905 4.99999905 293.569885 120.294891 -189.002777 -1987.41223 0.0625 0.125 0 0 4.99999905 4.99999905 75.7765274 166.037796 -260.872314 -1975.94958 0.0625 0.125 0 0 4.99999905 4.99999905 111.564957 -51.7890663 1197.87488 -1600.75403 0.0625 0.125 0 0 4.99999905 4.99999905 217.891281 -243.679901 382.860626 -1947.82898 0.0625 0.125 0 0 4.99999905 4.99999905 207.880127 -338.030823 531.101196 -1898.33264 0.0625 0.125 0 0 4.99999905 4.99999905 57.1905746 -385.1651 605.156799 -1866.9314 0.0625 0.125 0 0 4.99999905 4.99999905 294.898804 488.208252 -767.054321 1781.37036 0.0625 0.125 0 0 4.99999905 4.99999905 250.59639 408.665161 -642.079224 1849.52075 0.0625 0.125 0 0 4.99999905 4.99999905 179.794434 491.43277 -772.120544 1778.29236 0.0625 0.125 0 0 4.99999905 4.99999905 324.801208 -186.211105 292.567841 1969.70288 0.0625 0.125 0 0 4.99999905 4.99999905 344.257111 55.7445602 -87.5837326 1997.30359 0.0625 0.125 0 0 4.99999905 4.99999905 272.713409 166.109283 -260.984619 1975.92883 0.0625 0.125 0 0 4.99999905 4.99999905 198.282532 149.475235 -234.849823 1980.53101 0.0625 0.125 0 0 4.99999905 4.99999905 352.714905 66.7012634 -104.798492 1996.13831 0.0625 0.125 0 0 4.99999905 4.99999905 330.523682 124.658867 -195.859283 1986.47913 0.0625 0.125 0 0 4.99999905 4.99999905 283.231628 252.746429 -397.105621 1943.8175 0.0625 0.125 0 0 4.99999905 4.99999905 137.704788 259.906067 -408.354553 1940.53992 0.0625 0.125 0 0 4.99999905 4.99999905 285.116211 741.254272 -1164.63062 1447.12732 0.0625 0.125 0 0 4.99999905 4.99999905 35.5979347 1062.38306 -1669.17615 291.879395 0.0625 0.125 0 0 4.99999905 4.99999905 124.343391 1654.16418 1052.82568 394.080139 0.0625 0.125 0 0 4.99999905 4.99999905 354.062134 455.142792 -715.103149 1811.48352 0.0625 0.125 0 0 4.99999905 4.99999905 47.5177994 63.2972946 -1464.06079 1361.07275 0.0625 0.125 0 0 4.99999905 4.99999905 358.644897 -355.402344 -1599.88196 1146.32739 0.0625 0.125 0 0 4.99999905 4.99999905 122.694237 802.741211 -1261.23657 1328.49121 0.0625 0.125 0 0 4.99999905 4.99999905 301.246246 219.787247 -345.321381 1957.66357 0.0625 0.125 0 0 4.99999905 4.99999905 78.0105286 -957.272339 -301.377197 1729.97156 0.0625 0.125 0 0 4.99999905 4.99999905 222.345261 -783.481079 1230.97571 1367.79248 0.0625 0.125 0 0 4.99999905 4.99999905 110.632797 -663.573303 1042.5813 1572.48035 0.0625 0.125 0 0 4.99999905 4.99999905 207.289261 -692.150208 1087.48022 1529.15491 0.0625 0.125 0 0 4.99999905 4.99999905 78.5133209 -800.031677 1256.97949 1334.14832 0.0625 0.125 0 0 4.99999905 4.99999905 139.145279 -959.336914 1507.27393 898.775757 0.0625 0.125 0 0 4.99999905 4.99999905 67.4608154 -819.68811 1287.86292 1292.09937 0.0625 0.125 0 0 4.99999905 4.99999905 50.6140976 -1013.63959 1592.59229 660.44281 0.0625 0.125 0 0 4.99999905 4.99999905 106.023262 -1065.995 1674.85095 241.927979 0.0625 0.125 0 0 4.99999905 4.99999905 197.506882 -148.032974 232.583817 1980.90662 0.0625 0.125 0 0 4.99999905 4.99999905 220.683182 -379.578278 84.3202286 1961.8385 0.0625 0.125 0 0 4.99999905 4.99999905 156.28421 -358.32193 562.981873 1885.37976 0.0625 0.125 0 0 4.99999905 4.99999905 43.8655319 -282.565094 443.955566 1929.52332 0.0625 0.125 0 0 4.99999905 4.99999905 28.1576157 -106.129883 166.747253 1990.20898 0.0625 0.125 0 0 4.99999905 4.99999905 247.257919 -3.97159123 12.615015 1999.9563 0.0625 0.125 0 0 4.99999905 4.99999905 172.253693 -267.810211 420.773285 1936.80859 0.0625 0.125 0 0 4.99999905 4.99999905 332.943451 -694.114807 1090.56702 1526.06299 0.0625 0.125 0 0 4.99999905 4.99999905 30.3406334 -467.499207 734.517029 1800.53577 0.0625 0.125 0 0 4.99999905 4.99999905 94.8461304 -576.723572 906.126282 1687.10559 0.0625 0.125 0 0 4.99999905 4.99999905 25.6172848 -387.681824 609.111023 1865.12378 0.0625 0.125 0 0 4.99999905 4.99999905 2.98849583 -360.235748 565.98877 1884.11438 0.0625 0.125 0 0 4.99999905 4.99999905 258.064728 -414.647949 651.479126 1844.89624 0.0625 0.125 0 0 4.99999905 4.99999905 263.062103 -147.061035 -662.01416 1881.51807 0.0625 0.125 0 0 4.99999905 4.99999905 338.860321 80.9502792 -257.125122 -1981.75012 0.0625 0.125 0 0 4.99999905 4.99999905 283.810211 1345.58618 1467.19421 191.674789 0.0625 0.125 0 0 4.99999905 4.99999905 206.354309 1907.12268 600.420105 48.768486 0.0625 0.125 0 0 4.99999905 4.99999905 104.723183 -1059.05493 1663.94714 331.18396 0.0625 0.125 0 0 4.99999905 4.99999905 146.10881 -1065.71777 1674.41553 246.12677 0.0625 0.125 0 0 4.99999905 4.99999905 116.546272 -1033.20239 1623.32861 -545.249207 0.0625 0.125 0 0 4.99999905 4.99999905 217.49942 -1029.12732 1616.9259 -571.355591 0.0625 0.125 0 0 4.99999905 4.99999905 267.099915 -863.62323 1356.89209 1188.69629 0.0625 0.125 0 0 4.99999905 4.99999905 189.379318 -790.761536 1242.41455 1353.18225 0.0625 0.125 0 0 4.99999905 4.99999905 124.912537 -669.866089 1052.46814 1563.19873 0.0625 0.125 0 0 4.99999905 4.99999905 187.30574 -761.502014 1196.44324 1410.19092 0.0625 0.125 0 0 4.99999905 4.99999905 273.165894 -1004.46692 1578.1803 -707.384827 0.0625 0.125 0 0 4.99999905 4.99999905 274.829102 -997.649597 1567.46924 740.091248 0.0625 0.125 0 0 4.99999905 4.99999905 286.452942 -1002.15698 1574.55103 718.658813 0.0625 0.125 0 0 4.99999905 4.99999905 251.344528 -1009.13824 1585.51978 683.934875 0.0625 0.125 0 0 4.99999905 4.99999905 242.847931 -1010.70282 1587.97815 675.873779 0.0625 0.125 0 0 4.99999905 4.99999905 49.0059738 -1066.02246 1674.89417 -241.506546 0.0625 0.125 0 0 4.99999905 4.99999905 303.78952 -988.13739 1552.52405 783.105103 0.0625 0.125 0 0 4.99999905 4.99999905 211.202713 -920.998596 1447.03821 1028.51453 0.0625 0.125 0 0 4.99999905 4.99999905 274.275879 -492.349609 773.561035 -1777.41248 0.0625 0.125 0 0 4.99999905 4.99999905 315.09845 -468.660217 736.341187 -1799.48865 0.0625 0.125 0 0 4.99999905 4.99999905 155.872528 -554.518188 871.237915 -1712.73291 0.0625 0.125 0 0 4.99999905 4.99999905 220.732849 -572.599976 899.647339 -1691.97046 0.0625 0.125 0 0 4.99999905 4.99999905 5.03272533 -72.8648529 114.482498 -1995.39075 0.0625 0.125 0 0 4.99999905 4.99999905 209.185608 -33.9920273 53.4069862 -1998.9978 0.0625 0.125 0 0 4.99999905 4.99999905 109.23024 603.886169 -948.803101 -1653.81189 0.0625 0.125 0 0 4.99999905 4.99999905 212.30307 20.9684544 94.3917542 -1997.66125 0.0625 0.125 0 0 4.99999905 4.99999905 153.404633 -261.836945 411.388306 -1939.6394 0.0625 0.125 0 0 4.99999905 4.99999905 316.487183 616.582275 -968.750732 -1637.4823 0.0625 0.125 0 0 4.99999905 4.99999905 189.219116 458.121429 -719.783081 -1808.87732 0.0625 0.125 0 0 4.99999905 4.99999905 223.04718 -232.907547 -253.95668 -1970.09131 0.0625 0.125 0 0 4.99999905 4.99999905 279.630859 -899.684692 1413.55054 -1091.99011 0.0625 0.125 0 0 4.99999905 4.99999905 207.613541 -873.809692 1372.89685 -1162.58813 0.0625 0.125 0 0 4.99999905 4.99999905 191.273727 -884.872314 1390.27783 -1133.19385 0.0625 0.125 0 0 4.99999905 4.99999905 181.114594 -970.332947 1524.55029 -856.854797 0.0625 0.125 0 0 4.99999905 4.99999905 327.153748 813.338501 -1277.88684 -1305.94238 0.0625 0.125 0 0 4.99999905 4.99999905 114.815628 -815.028137 1280.54126 -1302.28394 0.0625 0.125 0 0 4.99999905 4.99999905 232.156784 -654.207581 1027.86621 -1586.03394 0.0625 0.125 0 0 4.99999905 4.99999905 231.920349 1156.00769 -602.405518 -1516.82361 0.0625 0.125 0 0 4.99999905 4.99999905 183.868866 -581.494385 913.621948 -1681.41577 0.0625 0.125 0 0 4.99999905 4.99999905 268.235077 -783.980225 1231.76013 -1366.7998 0.0625 0.125 0 0 4.99999905 4.99999905 41.2090721 -817.754639 1284.82507 -1296.34167 0.0625 0.125 0 0 4.99999905 4.99999905 164.395126 1065.60083 -1674.23181 247.875916 0.0625 0.125 0 0 4.99999905 4.99999905 143.374802 1065.13538 -1673.50037 254.722 0.0625 0.125 0 0 4.99999905 4.99999905 52.1540756 1052.30762 -1653.34595 398.868011 0.0625 0.125 0 0 4.99999905 4.99999905 231.599564 890.322876 -1398.84167 1118.2876 0.0625 0.125 0 0 4.99999905 4.99999905 97.2351837 1073.88049 -1687.24023 0.967772782 0.0625 0.125 0 0 4.99999905 4.99999905 106.223328 1073.64001 -1686.86255 42.3311882 0.0625 0.125 0 0 4.99999905 4.99999905 221.245514 915.459961 -1438.33606 1045.5249 0.0625 0.125 0 0 4.99999905 4.99999905 151.575317 700.560669 -1100.69446 1515.81201 0.0625 0.125 0 0 4.99999905 4.99999905 265.152466 944.563477 -1484.06226 951.50354 0.0625 0.125 0 0 4.99999905 4.99999905 41.1693344 1034.27136 -1625.00793 538.174316 0.0625 0.125 0 0 4.99999905 4.99999905 256.822845 1021.2345 -1604.52502 618.530151 0.0625 0.125 0 0 4.99999905 4.99999905 235.711548 1018.99268 -1601.00281 631.22406 0.0625 0.125 0 0 4.99999905 4.99999905 265.124481 814.837402 -1280.2417 -1302.69763 0.0625 0.125 0 0 4.99999905 4.99999905 266.420807 893.441345 -1403.74109 -1109.62756 0.0625 0.125 0 0 4.99999905 4.99999905 223.090179 849.997009 -1335.48303 -1222.28882 0.0625 0.125 0 0 4.99999905 4.99999905 216.161545 878.558655 -1380.35815 -1150.10706 0.0625 0.125 0 0 4.99999905 4.99999905 282.644409 1032.89197 -1622.84082 -547.285706 0.0625 0.125 0 0 4.99999905 4.99999905 110.888916 1051.59119 -1652.22021 -405.368561 0.0625 0.125 0 0 4.99999905 4.99999905 283.392242 1068.64917 -1679.02124 -197.171066 0.0625 0.125 0 0 4.99999905 4.99999905 33.9067688 985.496704 -1548.37512 -794.563232 0.0625 0.125 0 0 4.99999905 4.99999905 337.971039 973.789795 -1529.98169 -843.142639 0.0625 0.125 0 0 4.99999905 4.99999905 355.437897 -1204.80042 1104.94128 1152.19836 0.0625 0.125 0 0 4.99999905 4.99999905 36.4643936 -183.605331 288.473755 1970.55115 0.0625 0.125 0 0 4.99999905 4.99999905 210.00679 -703.301514 1105.00061 1511.40356 0.0625 0.125 0 0 4.99999905 4.99999905 72.3787842 30.6091518 -48.0919418 1999.18738 0.0625 0.125 0 0 4.99999905 4.99999905 94.1351089 77.5687256 49.370285 1997.88538 0.0625 0.125 0 0 4.99999905 4.99999905 192.682602 13.1085033 -20.5955849 1999.85095 0.0625 0.125 0 0 4.99999905 4.99999905 236.849319 -753.09375 1183.2323 1425.76685 0.0625 0.125 0 0 4.99999905 4.99999905 154.407684 8.65375996 -13.5964603 1999.93506 0.0625 0.125 0 0 4.99999905 4.99999905 255.501099 -130.47905 205.003738 1985.18225 0.0625 0.125 0 0 4.99999905 4.99999905 110.313461 -517.62793 813.277405 1752.32446 0.0625 0.125 0 0 4.99999905 4.99999905 29.4001427 -456.151855 716.688538 1810.60291 0.0625 0.125 0 0 4.99999905 4.99999905 266.113403 -589.157959 925.66272 1672.13684 0.0625 0.125 0 0 4.99999905 4.99999905 103.759476 -555.20166 872.311829 1711.96472 0.0625 0.125 0 0 4.99999905 4.99999905 191.764206 -404.414337 635.400452 1852.75891 0.0625 0.125 0 0 4.99999905 4.99999905 116.453232 582.036072 -914.473083 1680.7655 0.0625 0.125 0 0 4.99999905 4.99999905 149.317245 676.558716 -1062.98352 1553.16919 0.0625 0.125 0 0 4.99999905 4.99999905 40.0870094 543.474976 -853.887268 1724.96716 0.0625 0.125 0 0 4.99999905 4.99999905 139.832703 654.843567 -1028.86548 1585.12329 0.0625 0.125 0 0 4.99999905 4.99999905 211.880646 850.507019 -1336.28442 1221.05762 0.0625 0.125 0 0 4.99999905 4.99999905 111.856094 271.555298 1222.44104 1559.45349 0.0625 0.125 0 0 4.99999905 4.99999905 263.863586 483.483124 -759.630371 1785.83484 0.0625 0.125 0 0 4.99999905 4.99999905 273.957397 167.828064 -263.68512 1975.42505 0.0625 0.125 0 0 4.99999905 4.99999905 125.882591 482.098145 -757.454346 1787.13293 0.0625 0.125 0 0 4.99999905 4.99999905 273.83252 90.5234528 -142.22702 -1992.88159 0.0625 0.125 0 0 4.99999905 4.99999905 333.92218 -433.68866 -1952.29333 -21.5591393 0.0625 0.125 0 0 4.99999905 4.99999905 146.467407 -884.469421 1389.64502 1134.28418 0.0625 0.125 0 0 4.99999905 4.99999905 136.237381 60.7505112 -1405.15881 1421.91357 0.0625 0.125 0 0 4.99999905 4.99999905 353.864655 -997.608582 1567.40491 -740.282898 0.0625 0.125 0 0 4.99999905 4.99999905 349.798981 -994.679382 1562.80261 753.830627 0.0625 0.125 0 0 4.99999905 4.99999905 218.832458 -1014.05121 1593.23889 658.247375 0.0625 0.125 0 0 4.99999905 4.99999905 99.5514526 -336.171753 528.180298 1899.47742 0.0625 0.125 0 0 4.99999905 4.99999905 355.336304 -424.365112 666.746399 1837.21631 0.0625 0.125 0 0 4.99999905 4.99999905 152.9832 -206.858643 325.008484 1962.54395 0.0625 0.125 0 0 4.99999905 4.99999905 117.91291 -277.54718 436.071625 1932.04785 0.0625 0.125 0 0 4.99999905 4.99999905 182.509384 -264.126831 414.986084 1938.56226 0.0625 0.125 0 0 4.99999905 4.99999905 352.646881 640.424011 -333.731506 1865.06848 0.0625 0.125 0 0 4.99999905 4.99999905 148.167236 -688.024963 1080.99878 1535.59863 0.0625 0.125 0 0 4.99999905 4.99999905 312.209717 -1073.02112 1685.89026 79.9968567 0.0625 0.125 0 0 4.99999905 4.99999905 333.123871 -474.899841 746.144592 1793.80554 0.0625 0.125 0 0 4.99999905 4.99999905 97.4614334 -462.327301 726.391174 1805.16187 0.0625 0.125 0 0 4.99999905 4.99999905 144.496613 -450.338593 707.554932 1815.64343 0.0625 0.125 0 0 4.99999905 4.99999905 8.11451912 -600.527344 1907.46301 30.853159 0.0625 0.125 0 0 4.99999905 4.99999905 291.985748 -719.019714 -226.368851 -1852.50317 0.0625 0.125 0 0 4.99999905 4.99999905 244.960617 -454.849579 714.642456 -1811.73901 0.0625 0.125 0 0 4.99999905 4.99999905 176.819931 15.5561161 -24.4411812 -1999.79016 0.0625 0.125 0 0 4.99999905 4.99999905 266.159515 -542.511841 852.374023 -1726.01831 0.0625 0.125 0 0 4.99999905 4.99999905 143.513931 -3.57002902 5.60909414 -1999.98889 0.0625 0.125 0 0 4.99999905 4.99999905 160.090714 -97.3165054 152.899994 -1991.77087 0.0625 0.125 0 0 4.99999905 4.99999905 66.9389648 97.5777817 -153.310516 -1991.72656 0.0625 0.125 0 0 4.99999905 4.99999905 97.26754 -244.570755 384.260315 -1947.44165 0.0625 0.125 0 0 4.99999905 4.99999905 327.205505 -177.271149 278.521729 -1972.56201 0.0625 0.125 0 0 4.99999905 4.99999905 223.813644 -191.907974 301.518555 -1967.80542 0.0625 0.125 0 0 4.99999905 4.99999905 244.858597 -1022.11084 1605.90186 -613.489136 0.0625 0.125 0 0 4.99999905 4.99999905 299.002106 -996.688599 1565.95947 -744.568909 0.0625 0.125 0 0 4.99999905 4.99999905 28.8856735 287.12677 550.992188 -1901.04333 0.0625 0.125 0 0 4.99999905 4.99999905 359.356964 -1035.89392 1627.55725 -527.239258 0.0625 0.125 0 0 4.99999905 4.99999905 230.03685 -1072.42517 1684.95374 -104.093071 0.0625 0.125 0 0 4.99999905 4.99999905 271.817291 -548.672424 862.053345 -1719.25061 0.0625 0.125 0 0 4.99999905 4.99999905 71.9577484 -667.927002 1049.42163 -1566.07385 0.0625 0.125 0 0 4.99999905 4.99999905 178.463806 -696.066711 1093.63379 -1522.97607 0.0625 0.125 0 0 4.99999905 4.99999905 172.634827 -419.557587 659.193054 -1841.04211 0.0625 0.125 0 0 4.99999905 4.99999905 55.3078384 -825.829834 1297.5127 -1278.46228 0.0625 0.125 0 0 4.99999905 4.99999905 228.653168 -893.897339 1404.45764 -1108.35278 0.0625 0.125 0 0 4.99999905 4.99999905 27.6429749 -903.355896 1419.3186 -1081.42639 0.0625 0.125 0 0 4.99999905 4.99999905 54.7668037 -902.037781 1417.24768 -1085.23584 0.0625 0.125 0 0 4.99999905 4.99999905 24.4590855 1045.46228 -1642.5907 -457.060791 0.0625 0.125 0 0 4.99999905 4.99999905 311.281525 1060.25879 -1665.83838 -317.543762 0.0625 0.125 0 0 4.99999905 4.99999905 54.4188881 971.276367 -1526.03259 -853.139282 0.0625 0.125 0 0 4.99999905 4.99999905 151.750153 940.888672 -1478.2887 964.049316 0.0625 0.125 0 0 4.99999905 4.99999905 45.8970184</billboards>
+				<surface name="billboards" physics_friction="1" physics_restitution="1" material="ee4cbd68892b61a53e7ded930b825d0f53ac250e"/>
+				<data>
+					<unigine_editor>
+						<generator>
+							<count>16</count>
+							<atlas_width>1</atlas_width>
+							<atlas_height>1</atlas_height>
+							<radius_mean>1</radius_mean>
+							<radius_spread>0</radius_spread>
+							<aspect_mean>1</aspect_mean>
+							<aspect_spread>0</aspect_spread>
+							<angle_mean>0</angle_mean>
+							<angle_spread>0</angle_spread>
+							<mesh/>
+						</generator>
+					</unigine_editor>
+				</data>
+				<transform>0.490902155095 -0.20101543969 -0.847661307315 0.0 -0.00342717228396 0.972515939028 -0.2326084216 0.0 0.871193460893 0.11710268957 0.476760356233 0.0 0 0 -7.10000042319 1.0</transform>
+			</node>
+			<node type="LightWorld" id="1389206525" name="Moon">
+				<scattering>2</scattering>
+				<disable_angle>100</disable_angle>
+				<shadow_height>60</shadow_height>
+				<shadow_width>80</shadow_width>
+				<shadow_zfar>100</shadow_zfar>
+				<shadow_cascade_mode>0</shadow_cascade_mode>
+				<num_shadow_cascades>3</num_shadow_cascades>
+				<shadow_cascade_borders>0.0200000014 0.0800000057 0.200000003</shadow_cascade_borders>
+				<color_mode>1</color_mode>
+				<color_temperature>27050.4004</color_temperature>
+				<shadow_resolution>5</shadow_resolution>
+				<shadow_bias>1</shadow_bias>
+				<shadow_normal_bias>0.75</shadow_normal_bias>
+				<mode>1</mode>
+				<shadow_filter_mode>-1</shadow_filter_mode>
+				<shadow_filter>1</shadow_filter>
+				<shadow_penumbra_mode>-1</shadow_penumbra_mode>
+				<shadow_penumbra>0.200000003</shadow_penumbra>
+				<shadow_screen_space>1</shadow_screen_space>
+				<shadow_screen_space_num_rays>3</shadow_screen_space_num_rays>
+				<shadow_screen_space_num_steps>6</shadow_screen_space_num_steps>
+				<shadow_screen_space_noise_ray>0.150000006</shadow_screen_space_noise_ray>
+				<shadow_screen_space_noise_step>1</shadow_screen_space_noise_step>
+				<shadow_screen_space_step_size_near_distance>0</shadow_screen_space_step_size_near_distance>
+				<shadow_screen_space_step_size_far_distance>500</shadow_screen_space_step_size_far_distance>
+				<shadow_screen_space_step_size_near>2</shadow_screen_space_step_size_near>
+				<shadow_screen_space_step_size_far>30</shadow_screen_space_step_size_far>
+				<shadow_screen_space_threshold_near_distance>0</shadow_screen_space_threshold_near_distance>
+				<shadow_screen_space_threshold_far_distance>200</shadow_screen_space_threshold_far_distance>
+				<shadow_screen_space_threshold_near>3</shadow_screen_space_threshold_near>
+				<shadow_screen_space_threshold_far>0.5</shadow_screen_space_threshold_far>
+				<shadow_color_texture_mode>1</shadow_color_texture_mode>
+				<shadow_screen_space_softness>0</shadow_screen_space_softness>
+				<shadow_screen_space_translucent_depth_perspective_compensation>0.200000003</shadow_screen_space_translucent_depth_perspective_compensation>
+				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
+				<lens_flare_enabled>1</lens_flare_enabled>
+				<lens_flare_texture>core/textures/lens_flares_default.texture</lens_flare_texture>
+				<lens_flare_intensity>1</lens_flare_intensity>
+				<lens_flare_occlusion_fade>1</lens_flare_occlusion_fade>
+				<lens_flare_occlusion_fade_border>0.200000003</lens_flare_occlusion_fade_border>
+				<lens_flare_position_offset>0 0 0</lens_flare_position_offset>
+				<lens_flare_use_light_color>1</lens_flare_use_light_color>
+				<lens_flare_billboards num="31">
+					<billboard name="flare_0" offset="0" size="10" rotate="0" uv_lower_left="0 0" uv_upper_right="0.5 0.5" color="1 1 1 1" offset_scale="1" intensity="0.800000012"/>
+					<billboard name="flare_1" offset="0" size="0.289999992" rotate="1" uv_lower_left="0.5 0.75" uv_upper_right="0.75 1" color="1 1 1 1" offset_scale="1" intensity="0.0299999993"/>
+					<billboard name="flare_2" offset="0.0529999994" size="0.860000014" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.941176534 0.788235366 1 1" offset_scale="1" intensity="0.5"/>
+					<billboard name="flare_3" offset="0.0900000036" size="0.49000001" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.772549093 0.796078503 1 1" offset_scale="1" intensity="0.75999999"/>
+					<billboard name="flare_4" offset="0.122000001" size="0.409999996" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.792156935 1 0.82745105 1" offset_scale="1" intensity="0.200000003"/>
+					<billboard name="flare_5" offset="0.203999996" size="0.330000013" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.80392164 0.894117713 1 1" offset_scale="1" intensity="0.300000012"/>
+					<billboard name="flare_6" offset="0.432999998" size="0.649999976" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.929411829 1 0.768627524 1" offset_scale="1" intensity="0.200000003"/>
+					<billboard name="flare_7" offset="0.477999985" size="1.5" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.807843208 1 0.886274576 1" offset_scale="1" intensity="0.349999994"/>
+					<billboard name="flare_8" offset="0.52700001" size="0.810000002" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="1 0.90196085 0.788235366 1" offset_scale="1" intensity="0.200000003"/>
+					<billboard name="flare_9" offset="0.600000024" size="0.409999996" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.768627524 1 0.894117713 1" offset_scale="1" intensity="0.200000003"/>
+					<billboard name="flare_10" offset="0.615999997" size="0.569999993" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.796078503 1 0.921568692 1" offset_scale="1" intensity="0.400000006"/>
+					<billboard name="flare_11" offset="0.652999997" size="0.779999971" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.831372619 0.933333397 1 1" offset_scale="1" intensity="0.349999994"/>
+					<billboard name="flare_12" offset="0.717999995" size="1.71000004" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.878431439 1 0.796078503 1" offset_scale="1" intensity="0.150000006"/>
+					<billboard name="flare_13" offset="0.754999995" size="1.13999999" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.760784388 1 0.843137324 1" offset_scale="1" intensity="0.0500000007"/>
+					<billboard name="flare_14" offset="0.967000008" size="0.540000021" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="1 0.878431439 0.772549093 1" offset_scale="1" intensity="0.100000001"/>
+					<billboard name="flare_15" offset="0.338999987" size="0.289999992" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.674509823 1 0.698039234 1" offset_scale="1" intensity="0.300000012"/>
+					<billboard name="flare_16" offset="0.00499999989" size="2" rotate="1" uv_lower_left="0 0.75" uv_upper_right="0.25 1" color="1 1 1 1" offset_scale="0" intensity="0.0799999982"/>
+					<billboard name="flare_17" offset="-0.75" size="1" rotate="1" uv_lower_left="0.5 0.5" uv_upper_right="0.75 0.75" color="1 1 1 1" offset_scale="12.2399998" intensity="0.289999992"/>
+					<billboard name="flare_18" offset="0.75" size="1" rotate="1" uv_lower_left="0.5 0.5" uv_upper_right="0.75 0.75" color="1 1 1 1" offset_scale="12.2399998" intensity="0.289999992"/>
+					<billboard name="flare_19" offset="0" size="10" rotate="0" uv_lower_left="0.5 0" uv_upper_right="1 0.5" color="1 1 1 1" offset_scale="1" intensity="0.140000001"/>
+					<billboard name="flare_20" offset="0.245199993" size="0.610000014" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.289999992"/>
+					<billboard name="flare_21" offset="-0.1184" size="0.800000012" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.270000011"/>
+					<billboard name="flare_22" offset="-0.170000002" size="0.435000002" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.239999995"/>
+					<billboard name="flare_23" offset="-0.223599985" size="0.660000026" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.200000003"/>
+					<billboard name="flare_24" offset="-0.340499997" size="1.39499998" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.654901981 1 0.847058892 1" offset_scale="1" intensity="0.209999993"/>
+					<billboard name="flare_25" offset="-0.474399984" size="0.944999993" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="1 0.917647123 0.811764777 1" offset_scale="1" intensity="0.349999994"/>
+					<billboard name="flare_26" offset="-0.899999976" size="2.2650001" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.94901967 1 0.80392164 1" offset_scale="1" intensity="0.300000012"/>
+					<billboard name="flare_27" offset="0.845000029" size="3.19000006" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.180000007"/>
+					<billboard name="flare_28" offset="1" size="7.78999996" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.200000003"/>
+					<billboard name="flare_29" offset="0.936999977" size="0.449999988" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.180000007"/>
+					<billboard name="flare_30" offset="1" size="1.03999996" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.150000006"/>
+				</lens_flare_billboards>
+				<transform>-0.441314041615 -0.894195377827 0.0747599080205 0.0 0.0575048960745 0.0549557171762 0.996775984764 0.0 -0.895424842834 0.444192200899 0.0271679963917 0.0 5.53108549781 -2.95444079883 4.20456499834 1.0</transform>
+			</node>
+		</node>
+		<node id="784603924" type="ObjectMeshDynamic" name="ground_plane">
+			<fps_visible_camera>-1</fps_visible_camera>
+			<fps_visible_shadow>30</fps_visible_shadow>
+			<fps_invisible>0</fps_invisible>
+			<object_surface name="grid_for_world_creation" begin="0" end="600"/>
+			<vertex type="float" num_vertex="121" offset="0" size="3">-500.000061 199.999893 -8.74227499e-06 -500.000061 299.999939 -1.31134148e-05 -500.000061 399.999969 -1.74845554e-05 -500.000061 499.999939 -2.18556925e-05 -500 -100.000084 4.37114068e-06 -500 -8.74227771e-05 1.91068559e-12 -500 99.9999313 -4.37113795e-06 -499.999939 -500.000061 2.18556961e-05 -499.999939 -400.000061 1.74845572e-05 -499.999939 -300.000061 1.31134193e-05 -499.999939 -200.000076 8.74227953e-06 -400.000061 199.999924 -8.7422759e-06 -400.000061 299.999939 -1.31134157e-05 -400.000061 399.999969 -1.74845554e-05 -400.000061 499.999939 -2.18556943e-05 -400 -100.000069 4.37114022e-06 -400 -6.99382217e-05 1.52854845e-12 -400 99.9999466 -4.3711384e-06 -399.999939 -500.000061 2.18556961e-05 -399.999939 -400.000061 1.74845572e-05 -399.999939 -300.000061 1.31134184e-05 -399.999939 -200.000046 8.74227862e-06 -300.000061 199.999924 -8.7422759e-06 -300.000061 299.999939 -1.31134157e-05 -300.000061 399.999969 -1.74845554e-05 -300.000061 499.999939 -2.18556943e-05 -300 -100.000038 4.37113977e-06 -300 -5.24536663e-05 1.14641142e-12 -300 99.9999771 -4.37113886e-06 -299.999939 -500.000061 2.18556961e-05 -299.999939 -400.000061 1.74845572e-05 -299.999939 -300.000061 1.31134184e-05 -299.999939 -200.000046 8.74227862e-06 -200.000076 499.999939 -2.18556943e-05 -200.000046 299.999939 -1.31134166e-05 -200.000046 399.999969 -1.74845572e-05 -200.000015 99.9999924 -4.37113931e-06 -200.000015 199.999954 -8.7422768e-06 -199.999985 -3.49691109e-05 7.64274169e-13 -199.999954 -200.000015 8.74227771e-06 -199.999954 -100.000023 4.37113931e-06 -199.999924 -400.000061 1.74845572e-05 -199.999924 -300.000061 1.31134175e-05 -199.999893 -500.000061 2.18556961e-05 -100.000084 500 -2.18556943e-05 -100.000069 400.000031 -1.74845572e-05 -100.000038 300 -1.31134166e-05 -100.000023 199.999954 -8.7422768e-06 -100.000008 100.000008 -4.37113977e-06 -99.9999924 -1.74845554e-05 3.82137085e-13 -99.9999771 -100.000008 4.37113886e-06 -99.9999619 -200.000015 8.74227771e-06 -99.9999466 -300 1.31134175e-05 -99.9999161 -400 1.74845572e-05 -99.9999008 -500 2.18556961e-05 -8.74227771e-05 500 -2.18556943e-05 -6.9938229e-05 400.000031 -1.74845572e-05 -5.24536663e-05 300 -1.31134166e-05 -3.49691109e-05 199.999985 -8.74227771e-06 -1.74845609e-05 100.000023 -4.37114022e-06 0 0 0 1.74845554e-05 -99.9999924 4.37113886e-06 3.49691109e-05 -199.999985 8.74227771e-06 5.24536663e-05 -300 1.31134166e-05 6.99382217e-05 -400 1.74845554e-05 8.74227771e-05 -500 2.18556943e-05 99.9999313 500 -2.18556961e-05 99.9999466 400.000031 -1.74845572e-05 99.9999771 300 -1.31134175e-05 99.9999924 200.000015 -8.74227771e-06 100.000008 100.000038 -4.37114022e-06 100.000023 1.74845609e-05 -3.8213722e-13 100.000038 -99.9999771 4.3711384e-06 100.000053 -199.999954 8.7422768e-06 100.000069 -300 1.31134166e-05 100.000099 -400 1.74845554e-05 100.000114 -500 2.18556943e-05 199.999893 500.000061 -2.18556961e-05 199.999924 300.000061 -1.31134175e-05 199.999924 400.000092 -1.74845572e-05 199.999954 100.000053 -4.37114068e-06 199.999954 200.000015 -8.74227771e-06 199.999985 3.49691109e-05 -7.64274169e-13 200.000015 -199.999954 8.7422768e-06 200.000015 -99.9999619 4.37113795e-06 200.000046 -399.999939 1.74845554e-05 200.000046 -299.999939 1.31134166e-05 200.000076 -499.999939 2.18556943e-05 299.999939 200.000046 -8.74227862e-06 299.999939 300.000061 -1.31134184e-05 299.999939 400.000092 -1.74845591e-05 299.999939 500.000061 -2.18556961e-05 300 -99.9999466 4.37113749e-06 300 5.24536663e-05 -1.14641142e-12 300 100.000069 -4.37114113e-06 300.000061 -499.999939 2.18556943e-05 300.000061 -399.999939 1.74845554e-05 300.000061 -299.999939 1.31134157e-05 300.000061 -199.999924 8.7422759e-06 399.999969 200.000046 -8.74227862e-06 399.999969 300.000061 -1.31134184e-05 399.999969 400.000092 -1.74845591e-05 399.999969 500.000061 -2.18556961e-05 400.000031 -99.9999161 4.37113704e-06 400.000031 6.9938229e-05 -1.52854866e-12 400.000031 100.000099 -4.37114159e-06 400.000092 -499.999939 2.18556943e-05 400.000092 -399.999939 1.74845536e-05 400.000092 -299.999939 1.31134157e-05 400.000092 -199.999924 8.7422759e-06 499.999939 200.000076 -8.74227953e-06 499.999939 300.000061 -1.31134193e-05 499.999939 400.000092 -1.74845591e-05 499.999939 500.000061 -2.18556961e-05 500 -99.9999008 4.37113658e-06 500 8.74227771e-05 -1.91068559e-12 500 100.000114 -4.37114204e-06 500.000061 -499.999939 2.18556925e-05 500.000061 -399.999939 1.74845536e-05 500.000061 -299.999939 1.31134148e-05 500.000061 -199.999893 8.74227499e-06</vertex>
+			<vertex type="float" num_vertex="121" offset="16" size="4">-249.5 -99.4999924 0 0 -249.5 -149.5 0 0 -249.5 -199.500015 0 0 -249.5 -249.5 0 0 -249.5 50.4999962 0 0 -249.5 0.5 0 0 -249.5 -49.5000114 0 0 -249.5 250.5 0 0 -249.5 200.5 0 0 -249.5 150.5 0 0 -249.5 100.499992 0 0 -199.5 -99.4999924 0 0 -199.5 -149.5 0 0 -199.5 -199.500015 0 0 -199.5 -249.5 0 0 -199.5 50.4999962 0 0 -199.5 0.5 0 0 -199.5 -49.5000114 0 0 -199.5 250.5 0 0 -199.5 200.5 0 0 -199.5 150.5 0 0 -199.5 100.499992 0 0 -149.5 -99.4999924 0 0 -149.5 -149.5 0 0 -149.5 -199.500015 0 0 -149.5 -249.5 0 0 -149.5 50.4999962 0 0 -149.5 0.5 0 0 -149.5 -49.5000114 0 0 -149.5 250.5 0 0 -149.5 200.5 0 0 -149.5 150.5 0 0 -149.5 100.499992 0 0 -99.4999924 -249.5 0 0 -99.4999924 -149.5 0 0 -99.4999924 -199.500015 0 0 -99.4999924 -49.5000114 0 0 -99.4999924 -99.4999924 0 0 -99.4999924 0.5 0 0 -99.4999924 100.499992 0 0 -99.4999924 50.4999962 0 0 -99.4999924 200.5 0 0 -99.4999924 150.5 0 0 -99.4999924 250.5 0 0 -49.4999962 -249.5 0 0 -49.4999962 -199.500015 0 0 -49.4999962 -149.5 0 0 -49.4999962 -99.4999924 0 0 -49.4999962 -49.5000114 0 0 -49.4999962 0.5 0 0 -49.4999962 50.4999962 0 0 -49.4999962 100.499992 0 0 -49.4999962 150.5 0 0 -49.4999962 200.5 0 0 -49.4999962 250.5 0 0 0.5 -249.5 0 0 0.5 -199.500015 0 0 0.5 -149.5 0 0 0.5 -99.4999924 0 0 0.5 -49.5000114 0 0 0.5 0.5 0 0 0.5 50.4999962 0 0 0.5 100.499992 0 0 0.5 150.5 0 0 0.5 200.5 0 0 0.5 250.5 0 0 50.5000114 -249.5 0 0 50.5000114 -199.500015 0 0 50.5000114 -149.5 0 0 50.5000114 -99.4999924 0 0 50.5000114 -49.5000114 0 0 50.5000114 0.5 0 0 50.5000114 50.4999962 0 0 50.5000114 100.499992 0 0 50.5000114 150.5 0 0 50.5000114 200.5 0 0 50.5000114 250.5 0 0 100.499992 -249.5 0 0 100.499992 -149.5 0 0 100.499992 -199.500015 0 0 100.499992 -49.5000114 0 0 100.499992 -99.4999924 0 0 100.499992 0.5 0 0 100.499992 100.499992 0 0 100.499992 50.4999962 0 0 100.499992 200.5 0 0 100.499992 150.5 0 0 100.499992 250.5 0 0 150.5 -99.4999924 0 0 150.5 -149.5 0 0 150.5 -199.500015 0 0 150.5 -249.5 0 0 150.5 50.4999962 0 0 150.5 0.5 0 0 150.5 -49.5000114 0 0 150.5 250.5 0 0 150.5 200.5 0 0 150.5 150.5 0 0 150.5 100.499992 0 0 200.500015 -99.4999924 0 0 200.500015 -149.5 0 0 200.500015 -199.500015 0 0 200.500015 -249.5 0 0 200.500015 50.4999962 0 0 200.500015 0.5 0 0 200.500015 -49.5000114 0 0 200.500015 250.5 0 0 200.500015 200.5 0 0 200.500015 150.5 0 0 200.500015 100.499992 0 0 250.5 -99.4999924 0 0 250.5 -149.5 0 0 250.5 -199.500015 0 0 250.5 -249.5 0 0 250.5 50.4999962 0 0 250.5 0.5 0 0 250.5 -49.5000114 0 0 250.5 250.5 0 0 250.5 200.5 0 0 250.5 150.5 0 0 250.5 100.499992 0 0</vertex>
+			<vertex type="float" num_vertex="121" offset="32" size="4">0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1</vertex>
+			<vertex type="float" num_vertex="121" offset="48" size="4">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</vertex>
+			<indices num_indices="600">107 106 117 118 119 107 107 119 108 118 107 117 18 19 7 7 19 8 19 18 29 30 19 29 9 8 19 30 31 19 20 9 19 19 31 20 43 41 29 29 41 30 31 30 41 110 111 99 99 111 100 99 105 116 110 99 116 112 101 111 101 100 111 104 116 105 115 116 104 112 113 101 101 113 102 115 104 114 3 2 13 14 3 13 24 13 23 24 25 13 13 25 14 24 35 25 23 35 24 23 22 37 34 23 37 34 35 23 35 33 25 45 35 46 45 44 35 35 44 33 35 34 46 0 11 1 6 11 0 11 12 1 11 17 28 17 11 6 22 11 28 22 23 11 11 23 12 12 13 1 1 13 2 6 5 16 17 6 16 13 12 23 77 66 79 79 91 77 79 78 89 90 91 79 90 79 89 79 68 78 91 90 101 102 91 101 81 78 68 81 89 78 101 89 100 89 101 90 89 88 99 100 89 99 88 89 81 4 10 21 15 4 21 16 4 15 4 16 5 9 21 10 21 20 31 32 21 31 20 21 9 26 21 32 21 26 15 16 15 26 54 64 53 64 54 65 75 64 76 64 65 76 76 85 75 87 85 76 85 87 95 96 85 95 96 97 85 85 97 86 107 95 106 95 107 96 97 96 107 108 97 107 108 109 97 97 109 98 98 83 97 83 86 97 82 84 92 93 82 92 83 92 84 92 98 109 103 92 109 103 104 92 92 104 93 98 92 83 120 109 119 114 109 120 109 114 103 109 108 119 104 103 114 45 56 44 56 55 44 46 56 45 67 56 68 67 66 56 56 46 57 56 66 55 56 57 68 46 47 58 57 46 58 66 67 79 68 79 67 42 31 41 42 39 31 31 39 32 39 42 52 41 52 42 41 43 54 53 41 54 52 41 53 51 39 52 51 50 39 39 50 40 63 52 64 63 62 52 52 53 64 52 62 51 69 81 68 70 81 69 81 80 94 88 81 94 80 81 70 70 71 82 80 70 82 82 94 80 94 93 104 105 94 104 105 99 94 94 99 88 93 94 82 16 28 17 27 16 26 27 28 16 28 37 22 28 27 38 36 28 38 37 28 36 26 38 27 40 38 26 26 32 39 40 26 39 37 46 34 37 36 48 47 37 48 47 46 37 38 48 36 38 40 50 49 38 50 49 48 38 61 50 62 50 51 62 62 72 61 62 63 74 73 62 74 72 62 73 84 72 83 82 72 84 72 73 83 72 82 71 64 74 63 74 75 85 86 74 85 74 64 75 86 83 74 74 83 73 48 58 47 59 48 60 59 58 48 48 49 60 69 68 58 58 68 57 58 59 70 69 58 70 60 70 59 60 61 72 71 60 72 61 60 50 70 60 71 50 60 49</indices>
+			<surface name="grid_for_world_creation" collision="1" physics_friction="1" physics_restitution="1" material="001dc611e2ca7385e50593ebc1c181e2e370240c"/>
+			<transform>0.99999994 0 0 0.0 0 0.99999994 0 0.0 0 0 0.99999994 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="PlayerDummy" id="432164854" name="PlayerDummy">
+			<znear>0.300000012</znear>
+			<zfar>100000</zfar>
+			<oblique_frustum_plane>0 0 -1 0</oblique_frustum_plane>
+			<is_oblique_frustum>0</is_oblique_frustum>
+			<is_main>1</is_main>
+			<is_listener>1</is_listener>
+			<controlled>1</controlled>
+			<properties>
+				<property parent="fd977b057ba130a07c9e2b7fd532c2d250248409" guid="1634d5ad4825bb2835d36467003b169aff7a7531">
+					<parameter name="ThirdPersonCameraProperty">03847628bb24e367a4f8899a13eb4c31708657dc</parameter>
+					<parameter name="isAiming">0</parameter>
+					<parameter name="Following">863538119</parameter>
+					<parameter name="Camera">432164854</parameter>
+				</property>
+			</properties>
+			<transform>0.994164347649 0.107875935733 -2.39685177803e-05 0.0 -0.031903155148 0.294225692749 0.955203354359 0.0 0.103050507605 -0.949628412724 0.295950293541 0.0 0.28611654959 -3.37323037904 2.766163744 1.0</transform>
+		</node>
+		<node type="ObjectDummy" id="863538119" name="MainCharacterObject">
+			<body type="BodyRigid" id="201562145" frozen="0">
+				<angular_scale>0 0 1</angular_scale>
+				<shape type="ShapeCapsule" id="1792435751" transform="1 1.12847458e-34 9.95542462e-28 0 -1.34194435e-34 1 0 0 -6.27933281e-28 2.72374032e-20 1 0 1.57090656e-22 4.68722781e-16 -0.124679931 1">
+					<radius>0.200000003</radius>
+					<height>1.39338326</height>
+					<mass>25</mass>
+					<friction>4</friction>
+				</shape>
+			</body>
+			<properties>
+				<property parent="dbcc504aa5068321043bc20c35f495fb131f931e" guid="58a01701c4d3846c707bb4dbe629647e3ae141c5">
+					<parameter name="Speed">8</parameter>
+					<parameter name="MaxSpeed">10</parameter>
+					<parameter name="SideSpeed">4</parameter>
+				</property>
+				<property parent="14db8ba56855c8c05186a51f2616aff264524ea9" guid="87a91dc86a6b26871868b23a986d1c51372aa97c">
+					<parameter name="Health">50</parameter>
+				</property>
+				<property parent="f4adf9bc5e2189ebd909964ec16ca955e3b86ab0" guid="ce98c310a4793b2fabc2aec297e51f394a133f44">
+					<parameter name="Camera">432164854</parameter>
+				</property>
+				<property parent="ac40d1b1498f1f5c0f2e330b6630ecee0e8fcf75" guid="ba8a1e39b10e3244cad298d35e9fc8163e6ae07d">
+					<parameter name="HUD">18122052</parameter>
+				</property>
+			</properties>
+			<transform>1 -4.10963159648e-22 3.55271410232e-15 0.0 0 0.999999582767 1.15675781842e-07 0.0 -3.55271452583e-15 -1.15675845791e-07 1.00000011921 0.0 0 0 1 1.0</transform>
+			<node type="ObjectMeshSkinned" id="1685128838" name="CharacterSkinned">
+				<mesh_name>guid://97f47f90d3bccdaf4d101f42a026d5b9b6a083c4</mesh_name>
+				<fps_visible_camera>-1</fps_visible_camera>
+				<fps_visible_shadow>30</fps_visible_shadow>
+				<fps_invisible>0</fps_invisible>
+				<anim_name>guid://a13f672ac2dbec81da6e5bec46b5a65b72d3a7fe</anim_name>
+				<speed>30</speed>
+				<surface name="Ch36_Body" physics_friction="1" physics_restitution="1" material="b6e061a2758c74998df6d5249b681e338fbbcdf6"/>
+				<properties>
+					<property parent="eead75effc922a82737ce7f98584f104859ac893" guid="95cfa8ff16372252aeea5d89a1fb4954be9d24a3">
+						<parameter name="AnimationScripts">84053991a4cba5bcee2b45eb6670224e7769c555</parameter>
+						<parameter name="MainCamera">432164854</parameter>
+					</property>
+				</properties>
+				<transform>0.999999880791 9.51314991064e-22 1.81845857483e-15 0.0 -5.40781234484e-22 1.00000029802 -2.38553888458e-07 0.0 -1.81845845796e-15 2.38554020008e-07 0.999999821186 0.0 0 0 -1 1.0</transform>
+				<node type="WorldTransformBone" id="1517943865" name="WorldTransformBone">
+					<bone>mixamorig1:RightHand</bone>
+					<transform>0.102503672242 -0.989508271217 0.10181555897 0.0 -0.061476059258 -0.108460746706 -0.992198109627 0.0 0.992831170559 0.0954448878765 -0.0719486922026 0.0 0.674999952316 -0.0356104150414 1.42209017277 1.0</transform>
+					<node type="NodeDummy" id="274735602" name="TriggerPoint">
+						<transform>-5.4056822069e-08 -0.223666387057 0.974660907901 0.0 -1.00000287995 1.79599291952e-07 -1.84129854466e-07 0.0 -1.1409334659e-07 -0.974656154754 -0.223665346874 0.0 0.0869999743652 -0.0297452587422 0.261779711791 1.0</transform>
+					</node>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="18122052" enabled="0" name="GUI">
+			<properties>
+				<property parent="84a5f9797713d484f00156135ca6e456bc48cfbd" guid="0bc2da45c90886e0037b0cbfaf69b312bee83749">
+					<parameter name="MainChar">863538119</parameter>
+					<parameter name="_image">guid://b9a583f07ed8468fbd7e82a205ba2199f8369e24</parameter>
+					<parameter name="HealthImage">guid://2c72af434da18bc631a9f06df28096e885bf0d27</parameter>
+				</property>
+			</properties>
+			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1070401934" name="Shotgun">
+			<reference>guid://70be240b3d8629eee931e875aa035f508564aa6f</reference>
+			<transform>0.999999880791 -5.23923264427e-26 -2.77556384814e-17 0.0 0 1 -1.88762827591e-09 0.0 2.77556417901e-17 1.88762827591e-09 1 0.0 0 3 1 1.0</transform>
+		</node>
+		<node type="NavigationMesh" id="1224506493" enabled="0" name="NavigationMesh">
+			<height>1</height>
+			<vertex num_vertex="29">-50.0000038 49.9999962 0 -49.9999962 -50.0000038 0 -41.6823273 -34.3431892 0 -41.6823273 -30.4367466 0 -39.1783066 18.8526154 0 -39.1783028 14.9461746 0 -6.05908775 1.22986555 0 -6.05908203 -34.3431816 0 -6.05908251 -30.436739 0 -6.05907965 -50 0 -2.15264511 1.22986579 0 -2.152637 -50 0 -1.95322466 39.1444321 0 -1.95322299 18.8526192 0 1.95321786 39.1444321 0 1.95321965 18.8526192 0 18.8165894 -0.343181401 0 18.8165894 3.56326127 0 26.4604969 14.9461803 0 26.5453262 -0.343179584 0 26.54533 -42.45578 0 30.4517708 -0.34317863 0 30.4517746 -42.45578 0 38.1805077 -0.343176812 0 38.1805077 3.56326556 0 39.1783028 14.9461813 0 39.1783028 18.852623 0 49.9999962 50.0000038 0 50.0000038 -49.9999962 0</vertex>
+			<indices num_indices="93">10 16 17 20 10 11 10 20 16 16 20 19 27 0 12 1 5 0 12 0 4 0 5 4 27 23 28 23 27 25 14 26 27 27 12 14 25 27 26 4 13 12 9 2 1 3 1 2 5 1 3 3 6 5 6 18 5 23 22 28 22 23 21 23 25 24 11 28 20 20 28 22 18 24 25 15 26 14 2 9 7 8 6 3 10 18 6 17 24 18 18 10 17</indices>
+			<polygons num_polygons="16">3 10 1 16 -1 17 12 4 20 2 16 0 10 -1 11 14 3 16 1 20 -1 19 -1 4 27 -1 0 5 12 -1 14 7 5 1 10 3 11 5 -1 4 5 0 -1 4 12 3 0 4 4 -1 13 -1 5 27 8 25 15 24 -1 23 13 28 -1 4 14 -1 15 -1 26 8 27 3 3 25 6 27 7 26 -1 4 9 -1 7 -1 2 10 1 -1 3 3 4 1 9 2 -1 4 3 -1 8 -1 6 12 5 4 5 6 -1 10 0 17 15 18 -1 5 11 4 23 -1 21 -1 22 14 28 6 4 11 -1 28 13 22 -1 20 1 4 18 12 17 -1 24 6 25 -1</polygons>
+			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 1 1.0</transform>
+			<node type="NodeDummy" id="1370471978" name="Path">
+				<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 1 0.0 -14.0125642511 -42.0936995336 1 1.0</transform>
+			</node>
+			<node type="NodeDummy" id="2046007136" name="Path_1">
+				<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 1 0.0 -14.0125642511 -21.5217273291 1 1.0</transform>
+			</node>
+			<node type="NodeDummy" id="1149049269" name="Path_2">
+				<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 1 0.0 24.8725104727 -4.29598968477 1 1.0</transform>
+			</node>
+			<node type="NodeDummy" id="296929802" name="Path_3">
+				<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 1 0.0 -13.5188546832 30.8567766016 1 1.0</transform>
+			</node>
+		</node>
+		<node type="NodeDummy" id="1658871261" enabled="0" name="Object">
+			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 -16.7181978456 -12.7697969203 0 1.0</transform>
+			<node type="ObstacleBox" id="945215821" name="ObstacleBox">
+				<size>4 4 4</size>
+				<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="681451786" name="Cuboid">
+				<mesh_name>guid://f5efd349e9ecc4149988e0637b74ca66cdf7de8d</mesh_name>
+				<surface name="box" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			</node>
+		</node>
+		<node type="NodeDummy" id="89884041" enabled="0" name="AIManager">
+			<properties>
+				<property parent="049f940b8298d9ee0d44d8757a998f50a4251a6f" guid="8661b6c7d7a7857af8095691018f1ebc574e6aeb">
+					<parameter name="NavNode">1224506493</parameter>
+					<parameter name="MainCharacter">863538119</parameter>
+					<parameter name="AINode">guid://e07141d830835b57f4fe40ca4ee2b9a1b4a1868c</parameter>
+					<parameter name="Obstacles">
+						<value index="0">945215821</value>
+					</parameter>
+					<parameter name="PathLists">
+						<value index="0">
+							<parameter name="Paths">
+								<value index="0">1370471978</value>
+								<value index="1">2046007136</value>
+							</parameter>
+						</value>
+						<value index="1">
+							<parameter name="Paths">
+								<value index="0">1149049269</value>
+								<value index="1">296929802</value>
+							</parameter>
+						</value>
+					</parameter>
+				</property>
+			</properties>
+			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="1043747898" name="MainMenu">
+			<properties>
+				<property parent="364df5f913b6a70452a50693d3c9dad6c9c6543d" guid="dadc9f13c9df99568d4800bd2bd74af8907491f7">
+					<parameter name="WorldName">Menu</parameter>
+					<parameter name="WorldAsset">guid://9df34d7ec3f816c5425799607c5dfd3fbb42e992</parameter>
+				</property>
+			</properties>
+			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+		</node>
+	</editor>
+	<console>
+		<bake_lighting_bounces>4</bake_lighting_bounces>
+		<bake_lighting_voxel_size_multiplier>1</bake_lighting_voxel_size_multiplier>
+		<bake_lightmap_quality>0</bake_lightmap_quality>
+		<bake_lightmap_viewport_mask>-1</bake_lightmap_viewport_mask>
+		<bake_lightmap_zfar>1000</bake_lightmap_zfar>
+	</console>
+</world>

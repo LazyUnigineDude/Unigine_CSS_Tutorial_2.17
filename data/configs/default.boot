@@ -40,7 +40,7 @@
 		<main_window_fullscreen_display>0</main_window_fullscreen_display>
 		<main_window_fullscreen_display_mode>0</main_window_fullscreen_display_mode>
 		<main_window_resizable>1</main_window_resizable>
-		<main_window_size>1600 900</main_window_size>
+		<main_window_size>1280 800</main_window_size>
 		<materials_loading_mode>1</materials_loading_mode>
 		<process_priority>1</process_priority>
 		<profiler_font>core/gui/font.ttf</profiler_font>
