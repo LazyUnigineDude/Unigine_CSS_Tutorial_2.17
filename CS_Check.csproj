@@ -63,6 +63,7 @@
 		<Compile Include="data/Scripts/AI/AIShootingLogic.cs" />
 		<Compile Include="data/Scripts/AI/AIManager.cs" />
 		<Compile Include="data\Scripts\Database_Inventory\InventoryGUI.cs" />
+		<Compile Include="data\Scripts\Database_Inventory\InventoryInteractor.cs" />
 		<Compile Include="data\Scripts\Database_Inventory\InventoryMaker.cs" />
 		<Compile Include="data\Scripts\Database_Inventory\DatabaseController.cs" />
 		<Compile Include="data\Scripts\Database_Inventory\InventoryController.cs" />
@@ -80,6 +81,7 @@
 	  <None Include="data\Scripts\Database_Inventory\DatabaseProperty.prop" />
 	  <None Include="data\Scripts\Database_Inventory\DatabaseProperty.prop.meta" />
 	  <None Include="data\Scripts\Database_Inventory\InventoryProperty.prop" />
+	  <None Include="data\Scripts\Database_Inventory\ItemProperty.prop" />
 	</ItemGroup>
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
 		<Exec Command="&quot;$(DOTNET_HOST_PATH)&quot; &quot;$(OutputPath)cspropgen_double_x64d.dll&quot; -p &quot;$(OutputPath)$(AssemblyName).dll&quot; -data_path ../data/" Condition="'$(Configuration)'=='Debug' And $(SkipPostBuild)=='false'" />

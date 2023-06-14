@@ -746,24 +746,6 @@
 			</lens_flare_billboards>
 			<transform>-0.43301237 0.43559623 -0.78914917 0.0 -0.75000048 -0.6597392 0.047366858 0.0 -0.49999967 0.61237252 0.6123724 0.0 0 0 0 1.0</transform>
 		</node>
-		<node type="PlayerDummy" id="1347199802" name="PlayerDummy">
-			<znear>0.300000012</znear>
-			<zfar>100000</zfar>
-			<oblique_frustum_plane>0 0 -1 0</oblique_frustum_plane>
-			<is_oblique_frustum>0</is_oblique_frustum>
-			<viewport_mask>0x1</viewport_mask>
-			<is_main>1</is_main>
-			<is_listener>1</is_listener>
-			<controlled>1</controlled>
-			<properties>
-				<property enabled="0" parent="364df5f913b6a70452a50693d3c9dad6c9c6543d" guid="5d8d17f78b4494ea2d19bf41764a8facfb42c71b">
-					<parameter name="isMainMenu">1</parameter>
-					<parameter name="WorldName">Play</parameter>
-					<parameter name="WorldAsset">guid://768397a77ed930dafc374a7157efc11c1648e9cb</parameter>
-				</property>
-			</properties>
-			<transform>0.999999880791 0 0 0.0 0 0.999999880791 -9.32450450186e-10 0.0 0 9.32450450186e-10 0.999999940395 0.0 0 0 2 1.0</transform>
-		</node>
 		<node type="NodeDummy" id="842575985" name="Database">
 			<properties>
 				<property parent="081d46c939c0a194b30c1fe345ec03e6346eca0d" guid="dfd06b6d2276d5e8395a40275f62bf5a1c7a86f1">
@@ -817,12 +799,44 @@
 							<value index="8">1 12</value>
 							<value index="10">1 18</value>
 							<value index="12">2 15</value>
-							<value index="23"/>
+							<value index="23">0 0</value>
 						</parameter>
 					</property>
 				</properties>
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
 			</node>
+		</node>
+		<node type="PlayerSpectator" id="1266584972" name="PlayerSpectator">
+			<collision>1</collision>
+			<collision_mask>0x1</collision_mask>
+			<collision_radius>0.5</collision_radius>
+			<min_velocity>2</min_velocity>
+			<max_velocity>4</max_velocity>
+			<min_theta_angle>-89.9000015</min_theta_angle>
+			<max_theta_angle>89.9000015</max_theta_angle>
+			<acceleration>4</acceleration>
+			<damping>8</damping>
+			<turning>90</turning>
+			<znear>0.300000012</znear>
+			<zfar>100000</zfar>
+			<oblique_frustum_plane>0 0 -1 0</oblique_frustum_plane>
+			<is_oblique_frustum>0</is_oblique_frustum>
+			<is_main>1</is_main>
+			<is_listener>1</is_listener>
+			<controlled>1</controlled>
+			<transform>0.999902546406 0.0139620853588 -0 0.0 0.00170150224585 -0.121854037046 0.992546617985 0.0 0.0138580203056 -0.992449879646 -0.121865913272 0.0 -0.0136272051541 -1.9864200103 1.0017321209 1.0</transform>
+		</node>
+		<node type="NodeReference" id="54864929" name="Apple">
+			<reference>guid://4ec12d51a135867ce1d82fab7f1a810eda911515</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 5 1 1.0</transform>
+		</node>
+		<node type="NodeReference" id="2143385746" name="bucket">
+			<reference>guid://701414aef2af5435a4105810ade9cc2f29400bc2</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -2 5 1 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1403012973" name="Sledge hammer">
+			<reference>guid://e60a084fb9f7d962a9340959797de2e4b87e50f3</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2 5 1 1.0</transform>
 		</node>
 	</editor>
 	<console>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.16.1.0">
+	<node type="ObjectMeshStatic" id="1398799288" name="Apple">
+		<mesh_name>guid://5b2e4f6612619f8da5bb3b8810f12947370f55fa</mesh_name>
+		<surface name="Apple" material="07cbdb29421c6a744f9e9343d7b41fc60f93746d"/>
+		<properties>
+			<property parent="eb7f0c3401d34a03bdf1e786e00d192d4a8628a8" guid="1578718466ab4f136d7e89569ffa30bdce03baf8">
+				<parameter name="ID">1</parameter>
+				<parameter name="Amount">25</parameter>
+			</property>
+		</properties>
+		<transform>0.999999880791 1.35475096978e-22 1.04216045448e-14 0.0 6.51334353371e-22 1 -7.54979154749e-08 0.0 -1.04216053918e-14 7.54979154749e-08 1 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

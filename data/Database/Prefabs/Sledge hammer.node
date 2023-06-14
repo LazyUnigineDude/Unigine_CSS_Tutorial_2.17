@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.16.1.0">
+	<node type="ObjectMeshStatic" id="747091262" name="Sledge hammer">
+		<mesh_name>guid://770583a254fb2e992eb247249658e833f8720ff6</mesh_name>
+		<surface name="hammer" material="3a6de884b38c5a13124e1856a87e73bd7a6d21f8"/>
+		<properties>
+			<property parent="eb7f0c3401d34a03bdf1e786e00d192d4a8628a8" guid="2be4a1d45d39a323ddc72e265da56f4dc6b34848">
+				<parameter name="ID">3</parameter>
+				<parameter name="Amount">5</parameter>
+			</property>
+		</properties>
+		<transform>150 -2.24721443374e-05 -6.69395238624e-19 0.0 2.24721370614e-05 149.999954224 4.46816411995e-12 0.0 1.81753552563e-25 -4.46816542099e-12 150 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

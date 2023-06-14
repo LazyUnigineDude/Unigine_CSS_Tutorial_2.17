@@ -3,7 +3,8 @@
 	<struct name="Database">
 		<parameter name="Name" type="string"/>
 		<parameter name="Value">0</parameter>
-		<parameter name="Image" type="file"/>
+    <parameter name="Image" type="file"/>
+    <parameter name="Prefab" type="file"/>
 	</struct>
 	<parameter name="List" type="array" array_type="Database"/>
 </property>

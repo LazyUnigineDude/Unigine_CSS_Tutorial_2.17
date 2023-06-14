@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.16.1.0">
+	<node type="ObjectMeshStatic" id="37618503" name="bucket">
+		<mesh_name>guid://4bf30fb3788311764891da5d5bed1818b96abc97</mesh_name>
+		<surface name="Bucket" material="9b90ff82dc4bb8f9a84b8e04c13ec193f51a59d6"/>
+		<properties>
+			<property parent="eb7f0c3401d34a03bdf1e786e00d192d4a8628a8" guid="209bf17c9bad9eabd02b240e845b5c1559cffe70">
+				<parameter name="ID">2</parameter>
+				<parameter name="Amount">10</parameter>
+			</property>
+		</properties>
+		<transform>150 0 0 0.0 0 149.999954224 0 0.0 0 0 150 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

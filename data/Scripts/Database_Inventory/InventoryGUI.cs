@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Numerics;
 using Unigine;
 
@@ -20,23 +21,25 @@ namespace UnigineApp.data.Scripts.Database_Inventory
             CreateBackground();
             CreateGrid();
         }
+
         public void Hide()
         {
-            Gui GUI = Gui.GetCurrent();
-            if (GUI.IsChild(BackGround) == 1) { GUI.RemoveChild(BackGround); }
-            if (GUI.IsChild(ImageGrid) == 1) { GUI.RemoveChild(ImageGrid); }
-            if (GUI.IsChild(TextGrid) == 1) { GUI.RemoveChild(TextGrid); DeleteGrid(); }
+                Gui GUI = Gui.GetCurrent();
+                if (GUI.IsChild(BackGround) == 1) { GUI.RemoveChild(BackGround); }
+                if (GUI.IsChild(ImageGrid) == 1) { GUI.RemoveChild(ImageGrid); }
+                if (GUI.IsChild(TextGrid) == 1) { GUI.RemoveChild(TextGrid); DeleteGrid(); }
         }
         public void Show()
         {
             Gui GUI = Gui.GetCurrent();
+            DeleteGrid();
             CreateGrid();
-            if (GUI.IsChild(BackGround) == 0) { GUI.AddChild(BackGround, Gui.ALIGN_EXPAND | Gui.ALIGN_OVERLAP); }
-            if (GUI.IsChild(ImageGrid) == 0) { GUI.AddChild(ImageGrid, Gui.ALIGN_EXPAND | Gui.ALIGN_OVERLAP); }
-            if (GUI.IsChild(TextGrid) == 0) { GUI.AddChild(TextGrid, Gui.ALIGN_EXPAND | Gui.ALIGN_OVERLAP); }
+                if (GUI.IsChild(BackGround) == 0) { GUI.AddChild(BackGround, Gui.ALIGN_EXPAND | Gui.ALIGN_OVERLAP); }
+                if (GUI.IsChild(ImageGrid) == 0) { GUI.AddChild(ImageGrid, Gui.ALIGN_EXPAND | Gui.ALIGN_OVERLAP); }
+                if (GUI.IsChild(TextGrid) == 0) { GUI.AddChild(TextGrid, Gui.ALIGN_EXPAND | Gui.ALIGN_OVERLAP); }
         }
-        public void ShutDown() { DeleteGrid(); BackGround.DeleteLater(); }
 
+        public void ShutDown() { Hide(); BackGround.DeleteLater(); }
         private void DeleteGrid()
         {
 
@@ -98,7 +101,7 @@ namespace UnigineApp.data.Scripts.Database_Inventory
                 Image.Height = 64;
 
                 if (_ID != 0) { CreateCallbacks(Image); } // Only on actual Items
-                Image.AddCallback(Gui.CALLBACK_INDEX.DRAG_DROP, () => OnDrops(Image));
+                Image.AddCallback(Gui.CALLBACK_INDEX.DRAG_DROP,OnDrops);
 
                 Map[Image] = i;
                 ImageList.Add(Image);
@@ -144,17 +147,15 @@ namespace UnigineApp.data.Scripts.Database_Inventory
             string Name = Database.GetName(ID);
             Log.Message($" Name: {Name}   ID: {ID}  Amount: {Amount}  Value: {Value} \n");
         }
-        void OnDrops(WidgetSprite Image1, WidgetSprite Image2 = null) { 
-        
+        void OnDrops(Widget Image1, Widget Image2) {
+
+            WidgetSprite _0 = Image1 as WidgetSprite, _1 = Image2 as WidgetSprite; 
             int Pos1 = 0, Pos2 = 0;
-            if (Map.ContainsKey(Image1)) { Pos1 = Map[Image1]; }
-            //if (Map.ContainsKey(Image2)) { Pos2 = Map[Image2]; }
+            if (Map.ContainsKey(_0)) { Pos1 = Map[_0]; }
+            if (Map.ContainsKey(_1)) { Pos2 = Map[_1]; }
 
-            int ID = Inventory.GetItem(Pos1).x;
-            Log.Message($"{Database.GetName(ID)} \n");
-
-            //Inventory.Swap(Pos2, Pos1);
-            //Hide(); Show();
+            Inventory.Swap(Pos2, Pos1);
+            Hide(); Show();
         }
     }
 }

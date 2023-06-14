@@ -54,6 +54,6 @@ namespace UnigineApp.data.Scripts.Database_Inventory
         }
 
         public ivec2 GetItem(int Pos) { return _propertyParameter.GetChild(Pos).ValueIVec2; }
-        private bool SetItem(int Pos, ivec2 Value) { _propertyParameter.ValueIVec2.Set(Value); return true; }
+        private bool SetItem(int Pos, ivec2 Value) { _propertyParameter.GetChild(Pos).ValueIVec2 = Value; return true; }
     }
 }
