@@ -6,7 +6,8 @@ using Unigine;
 [Component(PropertyGuid = "eead75effc922a82737ce7f98584f104859ac893")]
 public class AnimationController : Component
 {
-    public Property AnimationScripts;
+    [ShowInEditor]
+    private Property AnimationScripts;
 
     float Weight;
     ObjectMeshSkinned MainCharacter;

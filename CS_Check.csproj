@@ -45,29 +45,30 @@
 		</Reference>
 	</ItemGroup>
 	<ItemGroup>
-		<Compile Include="data/Scripts/Bullet_Health/HealthBar.cs" />
-		<Compile Include="data/Scripts/Controllers/InputController.cs" />
-		<Compile Include="data/Scripts/GunHandler/GunHandler.cs" />
-		<Compile Include="data/Scripts/AI/NavigationMaker.cs" />
-		<Compile Include="data/Scripts/AI/ShooterAI.cs" />
 		<Compile Include="data/StarMove.cs" />
-		<Compile Include="data/Scripts/GUI/HUDMaker.cs" />
-		<Compile Include="data/Scripts/Bullet_Health/Bullet.cs" />
-		<Compile Include="data/Scripts/AI/PathMaker.cs" />
-		<Compile Include="data/Scripts/AI/AIDetector.cs" />
-		<Compile Include="data/Scripts/Animation/AnimationController.cs" />
-		<Compile Include="data/Scripts/Controllers/ThirdPersonCamera.cs" />
-		<Compile Include="data/Scripts/GunHandler/Interactor.cs" />
-		<Compile Include="data/Scripts/Controllers/CameraController.cs" />
-		<Compile Include="data/Scripts/Controllers/PhysicsController.cs" />
-		<Compile Include="data/Scripts/AI/AIShootingLogic.cs" />
-		<Compile Include="data/Scripts/AI/AIManager.cs" />
 		<Compile Include="data\CompCheck.cs" />
-		<Compile Include="data\Scripts\Database_Inventory\InventoryGUI.cs" />
-		<Compile Include="data\Scripts\Database_Inventory\InventoryInteractor.cs" />
-		<Compile Include="data\Scripts\Database_Inventory\InventoryMaker.cs" />
-		<Compile Include="data\Scripts\Database_Inventory\DatabaseController.cs" />
-		<Compile Include="data\Scripts\Database_Inventory\InventoryController.cs" />
+		<Compile Include="data\Scripts\AI\AIDetector.cs" />
+		<Compile Include="data\Scripts\AI\AIManager.cs" />
+		<Compile Include="data\Scripts\AI\AIShootingLogic.cs" />
+		<Compile Include="data\Scripts\AI\NavigationMaker.cs" />
+		<Compile Include="data\Scripts\AI\PathMaker.cs" />
+		<Compile Include="data\Scripts\AI\ShooterAI.cs" />
+		<Compile Include="data\Scripts\Bullet_Health\Bullet.cs" />
+		<Compile Include="data\Scripts\Bullet_Health\HealthBar.cs" />
+		<Compile Include="data\Scripts\Camera\CameraController.cs" />
+		<Compile Include="data\Scripts\Camera\InputController.cs" />
+		<Compile Include="data\Scripts\Camera\ThirdPersonCamera.cs" />
+		<Compile Include="data\Scripts\Character\Animation\AnimationController.cs" />
+		<Compile Include="data\Scripts\Character\CharacterController.cs" />
+		<Compile Include="data\Scripts\Character\GunHandler\GunHandler.cs" />
+		<Compile Include="data\Scripts\Character\GunHandler\Interactor.cs" />
+		<Compile Include="data\Scripts\Character\Inventory\InventoryController.cs" />
+		<Compile Include="data\Scripts\Character\Inventory\InventoryGUI.cs" />
+		<Compile Include="data\Scripts\Character\Inventory\InventoryInteractor.cs" />
+		<Compile Include="data\Scripts\Character\Inventory\InventoryMaker.cs" />
+		<Compile Include="data\Scripts\Character\Physics\PhysicsController.cs" />
+		<Compile Include="data\Scripts\Database\DatabaseController.cs" />
+		<Compile Include="data\Scripts\GUI\HUDMaker.cs" />
 		<Compile Include="data\Scripts\Menu\Menu.cs" />
 		<Compile Include="data\Scripts\Sound\SoundManager.cs" />
 		<Compile Include="data\ViewportClip.cs" />
@@ -79,10 +80,44 @@
 		<Compile Include="source\main.cs" />
 	</ItemGroup>
 	<ItemGroup>
-	  <None Include="data\Scripts\Database_Inventory\DatabaseProperty.prop" />
-	  <None Include="data\Scripts\Database_Inventory\DatabaseProperty.prop.meta" />
-	  <None Include="data\Scripts\Database_Inventory\InventoryProperty.prop" />
-	  <None Include="data\Scripts\Database_Inventory\ItemProperty.prop" />
+	  <None Include="data\Scripts\AI\AIDetector.cs.meta" />
+	  <None Include="data\Scripts\AI\AIManager.cs.meta" />
+	  <None Include="data\Scripts\AI\AIShootingLogic.cs.meta" />
+	  <None Include="data\Scripts\AI\NavigationMaker.cs.meta" />
+	  <None Include="data\Scripts\AI\PathMaker.cs.meta" />
+	  <None Include="data\Scripts\AI\ShooterAI.cs.meta" />
+	  <None Include="data\Scripts\Bullet_Health\Bullet.cs.meta" />
+	  <None Include="data\Scripts\Bullet_Health\HealthBar.cs.meta" />
+	  <None Include="data\Scripts\Camera\box.mesh" />
+	  <None Include="data\Scripts\Camera\box.mesh.meta" />
+	  <None Include="data\Scripts\Camera\CameraController.cs.meta" />
+	  <None Include="data\Scripts\Camera\InputController.cs.meta" />
+	  <None Include="data\Scripts\Camera\ThirdPersonCamera.cs.meta" />
+	  <None Include="data\Scripts\Camera\ThirdPersonCameraProperty.prop" />
+	  <None Include="data\Scripts\Camera\ThirdPersonCameraProperty.prop.meta" />
+	  <None Include="data\Scripts\Character\Animation\AnimationController.cs.meta" />
+	  <None Include="data\Scripts\Character\Animation\AnimationProperty.prop" />
+	  <None Include="data\Scripts\Character\Animation\AnimationProperty.prop.meta" />
+	  <None Include="data\Scripts\Character\CharacterController.cs.meta" />
+	  <None Include="data\Scripts\Character\GunHandler\GunHandler.cs.meta" />
+	  <None Include="data\Scripts\Character\GunHandler\GunProperty.prop" />
+	  <None Include="data\Scripts\Character\GunHandler\GunProperty.prop.meta" />
+	  <None Include="data\Scripts\Character\GunHandler\Interactor.cs.meta" />
+	  <None Include="data\Scripts\Character\Inventory\InventoryController.cs.meta" />
+	  <None Include="data\Scripts\Character\Inventory\InventoryGUI.cs.meta" />
+	  <None Include="data\Scripts\Character\Inventory\InventoryInteractor.cs.meta" />
+	  <None Include="data\Scripts\Character\Inventory\InventoryMaker.cs.meta" />
+	  <None Include="data\Scripts\Character\Physics\PhysicsController.cs.meta" />
+	  <None Include="data\Scripts\Database\DatabaseController.cs.meta" />
+	  <None Include="data\Scripts\Database\DatabaseProperty.prop" />
+	  <None Include="data\Scripts\Database\DatabaseProperty.prop.meta" />
+	  <None Include="data\Scripts\Database\InventoryProperty.prop" />
+	  <None Include="data\Scripts\Database\InventoryProperty.prop.meta" />
+	  <None Include="data\Scripts\Database\ItemProperty.prop" />
+	  <None Include="data\Scripts\Database\ItemProperty.prop.meta" />
+	  <None Include="data\Scripts\GUI\HUDMaker.cs.meta" />
+	  <None Include="data\Scripts\Menu\Menu.cs.meta" />
+	  <None Include="data\Scripts\Sound\SoundManager.cs.meta" />
 	</ItemGroup>
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
 		<Exec Command="&quot;$(DOTNET_HOST_PATH)&quot; &quot;$(OutputPath)cspropgen_double_x64d.dll&quot; -p &quot;$(OutputPath)$(AssemblyName).dll&quot; -data_path ../data/" Condition="'$(Configuration)'=='Debug' And $(SkipPostBuild)=='false'" />

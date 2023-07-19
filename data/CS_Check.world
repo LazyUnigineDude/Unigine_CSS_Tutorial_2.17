@@ -772,30 +772,6 @@
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
 			</node>
 		</node>
-		<node type="NodeDummy" id="1784968527" name="Inventory">
-			<properties>
-				<property parent="185a98fa82665411d6c8fe3c0dcbc46b4e7d8ece" guid="5306000ed9208815835b3a70f6498b0fa009fd22">
-					<parameter name="Property">516436288</parameter>
-				</property>
-			</properties>
-			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
-			<node type="NodeDummy" id="516436288" name="Property">
-				<properties>
-					<property parent="36a8670a2c042ae151b3c6cc6db153bba30fb5de" guid="5d66efa965a774f48a5d1bc312440e46ac6990ed">
-						<parameter name="List">
-							<value index="0">1 10</value>
-							<value index="2">2 20</value>
-							<value index="5">3 12</value>
-							<value index="8">1 12</value>
-							<value index="10">1 18</value>
-							<value index="12">2 15</value>
-							<value index="22">0 0</value>
-						</parameter>
-					</property>
-				</properties>
-				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
-			</node>
-		</node>
 		<node type="PlayerSpectator" id="1266584972" name="PlayerSpectator">
 			<collision>1</collision>
 			<collision_mask>0x1</collision_mask>
@@ -821,7 +797,7 @@
 					<parameter name="Camera">1266584972</parameter>
 				</property>
 			</properties>
-			<transform>0.80705344677 -0.590478420258 2.58982181549e-05 0.0 0.275401622057 0.376451969147 0.884555160999 0.0 -0.522320508957 -0.713876187801 0.466435551643 0.0 -2.11975005093 -0.423741527698 2.56576292296 1.0</transform>
+			<transform>0.694785058498 -0.71921736002 5.0663948058e-07 0.0 0.310813844204 0.300255954266 0.901798725128 0.0 -0.648589491844 -0.626556158066 0.43215611577 0.0 -2.02338406393 -1.18557514294 2.5954549301 1.0</transform>
 		</node>
 		<node type="ObjectMeshStatic" id="1517726069" name="Apple_1">
 			<streaming_mode_vram>0</streaming_mode_vram>
@@ -871,14 +847,79 @@
 			<loop>1</loop>
 			<speed>30</speed>
 			<surface name="Ch36_Body" material="b6e061a2758c74998df6d5249b681e338fbbcdf6"/>
+			<body type="BodyRigid" id="1211838755" frozen="0">
+				<angular_scale>0 0 1</angular_scale>
+				<shape type="ShapeCapsule" id="824641417" transform="1 2.0594661e-35 1.78282565e-28 0 4.45747458e-35 1 -5.98217019e-21 0 -3.56565129e-28 5.98217019e-21 1 0 3.56137753e-05 0.0213649273 0.878232241 1">
+					<radius>0.200000003</radius>
+					<height>1.40239096</height>
+				</shape>
+			</body>
 			<properties>
 				<property parent="ef5f1d8ee1c70fe29751ee4c684438c6d56cffb7" guid="8f7587c6bfb30d1288da99c46f5d06947d78964f"/>
 			</properties>
 			<transform>0.999999880791 3.29999525046e-22 5.37117059678e-15 0.0 3.29999726995e-22 0.999999880791 -1.22878091702e-07 0.0 -5.37117102029e-15 1.22878091702e-07 0.999999940395 0.0 0 0 0 1.0</transform>
+			<node type="NodeDummy" id="1490111157" name="Animation">
+				<properties>
+					<property parent="eead75effc922a82737ce7f98584f104859ac893" guid="ccd712e35ecb6bd57eda543dd42ddc68a679ad02">
+						<parameter name="AnimationScripts">84053991a4cba5bcee2b45eb6670224e7769c555</parameter>
+					</property>
+				</properties>
+				<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+			</node>
+			<node type="NodeDummy" id="1853938832" name="Physics">
+				<properties>
+					<property parent="dbcc504aa5068321043bc20c35f495fb131f931e" guid="f4dfad3521e6cc9885bb965f2579b6106fa01a4c"/>
+				</properties>
+				<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+			</node>
+			<node type="NodeDummy" id="1784968527" name="Inventory">
+				<properties>
+					<property parent="185a98fa82665411d6c8fe3c0dcbc46b4e7d8ece" guid="5306000ed9208815835b3a70f6498b0fa009fd22">
+						<parameter name="Property">516436288</parameter>
+					</property>
+				</properties>
+				<transform>1.0000000596 3.2999976644e-22 -5.37117123707e-15 0.0 3.29999616531e-22 1.0000000596 1.2287810635e-07 0.0 5.37117166058e-15 -1.2287810635e-07 1 0.0 0 0 0 1.0</transform>
+				<node type="NodeDummy" id="516436288" name="Property">
+					<properties>
+						<property parent="36a8670a2c042ae151b3c6cc6db153bba30fb5de" guid="5d66efa965a774f48a5d1bc312440e46ac6990ed">
+							<parameter name="List">
+								<value index="0">1 10</value>
+								<value index="2">2 20</value>
+								<value index="5">3 12</value>
+								<value index="8">1 12</value>
+								<value index="10">1 18</value>
+								<value index="12">2 15</value>
+								<value index="22">0 0</value>
+							</parameter>
+						</property>
+					</properties>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+			<node type="NodeDummy" id="988513967" name="Interactor">
+				<properties>
+					<property parent="f4adf9bc5e2189ebd909964ec16ca955e3b86ab0" guid="521b1e3ef77467d76307377ced2ca72d091b8627">
+						<parameter name="Camera">1266584972</parameter>
+					</property>
+				</properties>
+				<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+			</node>
+			<node type="NodeDummy" id="958760002" name="Gun">
+				<properties>
+					<property parent="ac40d1b1498f1f5c0f2e330b6630ecee0e8fcf75" guid="fd9ed2a661482135ef2919a489e1bcfc4144aaaf"/>
+				</properties>
+				<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+			</node>
 		</node>
 		<node type="NodeReference" id="1612536083" name="Shotgun">
 			<reference>guid://70be240b3d8629eee931e875aa035f508564aa6f</reference>
 			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 2 1 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="8058553" name="HUD">
+			<properties>
+				<property enabled="0" parent="84a5f9797713d484f00156135ca6e456bc48cfbd" guid="db3f74a419a4e20067971672c9d98d5965030445"/>
+			</properties>
+			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 -2.11974900629 -0.423740099945 2.56576199009 1.0</transform>
 		</node>
 	</editor>
 	<console>
