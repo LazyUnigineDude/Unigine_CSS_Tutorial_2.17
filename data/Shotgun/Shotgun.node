@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<nodes version="2.16.0.2">
-	<node type="ObjectMeshStatic" id="58502356" name="Shotgun">
+<nodes version="2.17.0.1">
+	<node type="ObjectMeshStatic" id="318248345" name="Shotgun">
+		<streaming_mode_vram>0</streaming_mode_vram>
+		<streaming_mode_ram>0</streaming_mode_ram>
 		<mesh_name>guid://14cfffcf26226ae252d66cd981e1f06454740073</mesh_name>
 		<surface name="Shotgun_Texture" collision="1" intersection_mask="0x2" physics_friction="1" physics_restitution="1" material="be4d7bb9dabaf1c4706552535a7c33965af155fd"/>
 		<properties>
-			<property parent="5eede1fae7f7091154402f3cb35f416bafc8e7ce" guid="064639df2fd5bdb25a40816928865bb4c85f5383">
+			<property parent="5eede1fae7f7091154402f3cb35f416bafc8e7ce" guid="5dcc2d4d7f723a68f8fafe3785b7021062269e04">
 				<parameter name="BulletPrefab">guid://9148c77a1785b091f0bbb0bc80bdd4eb33db654e</parameter>
 				<parameter name="BulletDamage">1</parameter>
 				<parameter name="RateofFire">2</parameter>
@@ -12,8 +14,8 @@
 				<parameter name="Amount_per_shell">15</parameter>
 			</property>
 		</properties>
-		<transform>0.0490518510342 0.00915977824479 -0.00316429953091 0.0 -0.00220689363778 -0.00533891096711 -0.0496651567519 0.0 -0.00943631399423 0.0488630235195 -0.00483337650076 0.0 0 -8.67361737988e-18 -8.74300631892e-16 1.0</transform>
-		<node type="NodeDummy" id="2000514456" name="Muzzle">
+		<transform>0.0490518510342 0.00915977824479 -0.00316429953091 0.0 -0.00220689363778 -0.00533891096711 -0.0496651567519 0.0 -0.00943631399423 0.0488630235195 -0.00483337650076 0.0 0 0 -8.881784197e-16 1.0</transform>
+		<node type="NodeDummy" id="664011300" name="Muzzle">
 			<transform>-9.62395086263e-07 1.24249930138e-05 19.9999893434 0.0 19.9999668795 3.13352996884e-07 -1.45478407541e-06 0.0 -8.41239471416e-08 19.9999577206 -1.24943243214e-05 0.0 9.32000412311 0.0400013888041 3.03999702891 1.0</transform>
 		</node>
 	</node>

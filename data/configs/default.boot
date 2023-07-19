@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<boot version="2.16.1.0" autosave="1">
+<boot version="2.17.0.1" autosave="1">
 	<gui_path>core/gui/</gui_path>
 	<engine_log>log.txt</engine_log>
 	<system_script>core/unigine.usc</system_script>
@@ -18,6 +18,7 @@
 	<console>
 		<async_log_mode>0</async_log_mode>
 		<async_log_priority>0</async_log_priority>
+		<auto_dpi_scaling>1</auto_dpi_scaling>
 		<auto_quit>1</auto_quit>
 		<background_update>0</background_update>
 		<config>configs/default.config</config>
@@ -25,7 +26,7 @@
 		<console_limit>16384</console_limit>
 		<console_size>16</console_size>
 		<controls_config>configs/default.controls</controls_config>
-		<d3d12_pso_log>0</d3d12_pso_log>
+		<dpi_awareness>2</dpi_awareness>
 		<filesystem_mmap>1</filesystem_mmap>
 		<gl_async_buffer>128</gl_async_buffer>
 		<gl_async_buffer_indices>16</gl_async_buffer_indices>
@@ -53,7 +54,6 @@
 		<video_debug>0</video_debug>
 		<video_debug_shader>0</video_debug_shader>
 		<video_offscreen>0</video_offscreen>
-		<vk_pso_log>0</vk_pso_log>
 		<world_manager_images_memory>128</world_manager_images_memory>
 		<world_manager_meshes_memory>128</world_manager_meshes_memory>
 	</console>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<material version="2.16.1.0" guid="07cbdb29421c6a744f9e9343d7b41fc60f93746d" base_material="4dfec30f491f753f6e89094db6d3d695e89f9d6f">
+<material version="2.17.0.1" guid="07cbdb29421c6a744f9e9343d7b41fc60f93746d" base_material="4dfec30f491f753f6e89094db6d3d695e89f9d6f">
 	<texture name="albedo">guid://bd86ed6fceba3c02cbfecb79fc427e84e51bf813</texture>
 	<texture name="shading">guid://bf4f8a5927496fe46b0279f390e0f6b651edfe9d</texture>
 	<texture name="normal">guid://25a5f33204a438e97633ad34be257703710c3086</texture>

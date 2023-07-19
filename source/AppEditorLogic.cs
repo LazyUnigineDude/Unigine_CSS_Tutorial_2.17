@@ -32,7 +32,7 @@ namespace UnigineApp
 			return true;
 		}
 
-		public override bool Render(EngineWindow window)
+		public override bool Render(EngineWindowViewport window)
 		{
 			// Write here code to be called before rendering each render frame when editor is loaded.
 

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<property version="2.16.1.0" name="ItemProperty" guid="eb7f0c3401d34a03bdf1e786e00d192d4a8628a8" parent="d99ebc8ef5769d70b1e46992309cc3e7d1aa2faa">
-	<parameter name="ID">0</parameter>
-	<parameter name="Amount">0</parameter>
-</property>
