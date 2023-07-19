@@ -2,7 +2,7 @@
 <bit_mask_names>
 	<intersection>
 		<name index="2">Enemy</name>
-		<name index="1">Weapon</name>
+		<name index="1">Weapon/Item</name>
 	</intersection>
 	<collision>
 		<name index="1">Collision Mask 1</name>

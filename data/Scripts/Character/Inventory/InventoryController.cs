@@ -1,3 +1,4 @@
+using System.Reflection.Metadata.Ecma335;
 using Unigine;
 using UnigineApp.data.Scripts.Database_Inventory;
 
@@ -5,31 +6,20 @@ using UnigineApp.data.Scripts.Database_Inventory;
 public class InventoryController : Component
 {
 	[ShowInEditor]
-    private Node Property;
+	private Node Property;
 	private InventoryMaker Inventory;
 	private InventoryGUI GUI;
-	private InventoryInteractor Interactor;
 
-    private void Init()
+	public void Initialize()
 	{
 		Inventory = new InventoryMaker(Property.GetProperty(0).ParameterPtr);
 		DatabaseController _Data = GetComponent<DatabaseController>(World.GetNodeByID(DatabaseController.NODE_ID));
 		GUI = new InventoryGUI(Inventory, _Data);
-		Interactor = new InventoryInteractor(Game.Player, 1, _Data);
 	}
-	
-	private void Update()
-	{
-		// write here code to be called before updating each render frame
-		if(Input.IsKeyDown(Input.KEY.Y)) { GUI.Show(); }
-		if(Input.IsKeyDown(Input.KEY.U)) { GUI.Hide(); }
-        if(Input.IsKeyDown(Input.KEY.R)) { Inventory.Add(Interactor.GetItem()); }
-		Interactor.DetectItem();
-    }
 
-	private void Shutdown()
-	{
-		GUI.ShutDown();
-		Interactor.ShutDown();
-	}
+	public bool Show() { GUI.Show(); return true; }
+	public bool Hide() { GUI.Hide(); return false; }
+	public void AddIntoInventory(ivec2 Item) => Inventory.Add(Item);
+
+	public void ShutDown() => GUI.ShutDown(); 
 }

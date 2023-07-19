@@ -10,6 +10,5 @@ public class HealthBar : Component
     private int Health;
 
     public int ShowHealth() { return Health; }
-    public void DropHealth(int amount) { Health -= amount; Check(); }
-    private void Check() { if (Health <= 0) node.DeleteLater(); }
+    public void HealthChange(int amount) { Health += amount; }
 }

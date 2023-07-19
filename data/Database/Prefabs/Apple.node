@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<nodes version="2.16.1.0">
-	<node type="ObjectMeshStatic" id="400989557" name="Apple">
+<nodes version="2.17.0.1">
+	<node type="ObjectMeshStatic" id="893621168" name="Apple">
+		<streaming_mode_vram>0</streaming_mode_vram>
+		<streaming_mode_ram>0</streaming_mode_ram>
 		<mesh_name>guid://5b2e4f6612619f8da5bb3b8810f12947370f55fa</mesh_name>
 		<surface name="Apple" material="07cbdb29421c6a744f9e9343d7b41fc60f93746d"/>
 		<properties>
-			<property parent="eb7f0c3401d34a03bdf1e786e00d192d4a8628a8" guid="3a70ee807db20fdf1d939bb2c158c769e6a5e9b4">
+			<property parent="eb7f0c3401d34a03bdf1e786e00d192d4a8628a8" guid="9809e2a0ac1d6ab7acd12a0e5e9701d07fcc89f1">
 				<parameter name="ID">1</parameter>
 				<parameter name="Amount">0</parameter>
 			</property>

@@ -1,10 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<property version="2.16.1.0" name="DatabaseProperty" guid="a194c6bd20a158f8de4b47f78c0d04ea03e76f41" parent="d99ebc8ef5769d70b1e46992309cc3e7d1aa2faa">
+<property version="2.17.0.1" name="DatabaseProperty" guid="a194c6bd20a158f8de4b47f78c0d04ea03e76f41" parent="d99ebc8ef5769d70b1e46992309cc3e7d1aa2faa">
+	<struct name="GunStruct">
+		<parameter name="BulletPrefab" type="file"/>
+		<parameter name="Damage">0</parameter>
+		<parameter name="RoF">0</parameter>
+		<parameter name="Reload">0</parameter>
+	</struct>
 	<struct name="Database">
 		<parameter name="Name" type="string"/>
 		<parameter name="Value">0</parameter>
-    <parameter name="Image" type="file"/>
-    <parameter name="Prefab" type="file"/>
+		<parameter name="Image" type="file"/>
+		<parameter name="Prefab" type="file"/>
+		<parameter name="ItemType" type="switch" items="DEFAULT, GUN">0</parameter>
+		<parameter name="GunMods" type="GunStruct" ItemType="1">
+			<parameter name="BulletPrefab" type="file">0</parameter>
+			<parameter name="Damage">0</parameter>
+			<parameter name="RoF">0</parameter>
+			<parameter name="Reload">0</parameter>
+		</parameter>
 	</struct>
-	<parameter name="List" type="array" array_type="Database"/>
+	<parameter name="List" type="array" array_type="Database">
+		<value index="0">
+			<parameter name="Name">DEFAULT</parameter>
+			<parameter name="Image">guid://962da391051507bca0f13febc619d44e51f3cf55</parameter>
+			<parameter name="GunMods" type="GunStruct" ItemType="1"/>
+		</value>
+		<value index="1">
+			<parameter name="Name">Apple</parameter>
+			<parameter name="Value">1</parameter>
+			<parameter name="Image">guid://a7f068dacab522711063b91ce0fc81cbf1cb6cae</parameter>
+			<parameter name="Prefab">guid://4ec12d51a135867ce1d82fab7f1a810eda911515</parameter>
+			<parameter name="GunMods" type="GunStruct" ItemType="1"/>
+		</value>
+		<value index="2">
+			<parameter name="Name">Bucket</parameter>
+			<parameter name="Value">2</parameter>
+			<parameter name="Image">guid://e6d66ca0003a377fdce75ed2e6787009de1139d4</parameter>
+			<parameter name="Prefab">guid://701414aef2af5435a4105810ade9cc2f29400bc2</parameter>
+			<parameter name="GunMods" type="GunStruct" ItemType="1"/>
+		</value>
+		<value index="3">
+			<parameter name="Name">Hammer</parameter>
+			<parameter name="Value">5</parameter>
+			<parameter name="Image">guid://8735084109c344ac3d81f81b5f864ebe4a2ea705</parameter>
+			<parameter name="Prefab">guid://e60a084fb9f7d962a9340959797de2e4b87e50f3</parameter>
+			<parameter name="GunMods" type="GunStruct" ItemType="1"/>
+		</value>
+		<value index="4">
+			<parameter name="Name">Gun</parameter>
+			<parameter name="Value">10</parameter>
+			<parameter name="Image">guid://367f5cd0d028fa5a1b2f10bedb5244e646f79be1</parameter>
+			<parameter name="Prefab">guid://70be240b3d8629eee931e875aa035f508564aa6f</parameter>
+			<parameter name="ItemType">1</parameter>
+			<parameter name="GunMods" type="GunStruct" ItemType="1">
+				<parameter name="BulletPrefab">guid://9148c77a1785b091f0bbb0bc80bdd4eb33db654e</parameter>
+				<parameter name="Damage">1</parameter>
+				<parameter name="RoF">2</parameter>
+				<parameter name="Reload">15</parameter>
+			</parameter>
+		</value>
+	</parameter>
 </property>

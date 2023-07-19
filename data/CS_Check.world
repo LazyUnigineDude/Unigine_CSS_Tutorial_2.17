@@ -180,7 +180,7 @@
 		<render_animation_wind>0 0 0</render_animation_wind>
 		<render_auxiliary>1</render_auxiliary>
 		<render_background_color>0 0 0 0</render_background_color>
-		<render_bent_normal>0</render_bent_normal>
+		<render_bent_normal>1</render_bent_normal>
 		<render_bent_normal_fix_overlit_areas>0</render_bent_normal_fix_overlit_areas>
 		<render_bent_normal_threshold>1</render_bent_normal_threshold>
 		<render_bloom>1</render_bloom>
@@ -228,7 +228,7 @@
 		<render_clouds_samples_count>2</render_clouds_samples_count>
 		<render_clouds_sampling_quality>1</render_clouds_sampling_quality>
 		<render_clouds_soft_intersection>100</render_clouds_soft_intersection>
-		<render_clouds_step_accuracy>0.5</render_clouds_step_accuracy>
+		<render_clouds_step_accuracy>0.75</render_clouds_step_accuracy>
 		<render_clouds_transparent_order>0</render_clouds_transparent_order>
 		<render_cross>0</render_cross>
 		<render_cross_angle>45</render_cross_angle>
@@ -241,9 +241,9 @@
 		<render_decal_distance>1e+09</render_decal_distance>
 		<render_decals>1</render_decals>
 		<render_denoise_denoise_by_velocity_threshold>1</render_denoise_denoise_by_velocity_threshold>
-		<render_denoise_num_blur_iterations>5</render_denoise_num_blur_iterations>
-		<render_denoise_preset>disabled</render_denoise_preset>
-		<render_denoise_radius>1</render_denoise_radius>
+		<render_denoise_num_blur_iterations>3</render_denoise_num_blur_iterations>
+		<render_denoise_preset>sharpest_low</render_denoise_preset>
+		<render_denoise_radius>3</render_denoise_radius>
 		<render_depth_pre_pass>0</render_depth_pre_pass>
 		<render_dirt_scale>0.5</render_dirt_scale>
 		<render_distance_offset>0</render_distance_offset>
@@ -255,16 +255,16 @@
 		<render_dof_far_distance>10</render_dof_far_distance>
 		<render_dof_far_focal_offset>9.99999997e-07</render_dof_far_focal_offset>
 		<render_dof_focal_distance>1</render_dof_focal_distance>
-		<render_dof_focus_improvement>0</render_dof_focus_improvement>
-		<render_dof_increased_accuracy>0</render_dof_increased_accuracy>
+		<render_dof_focus_improvement>1</render_dof_focus_improvement>
+		<render_dof_increased_accuracy>1</render_dof_increased_accuracy>
 		<render_dof_near_distance>10</render_dof_near_distance>
 		<render_dof_near_focal_offset>9.99999997e-07</render_dof_near_focal_offset>
 		<render_dof_preset>low</render_dof_preset>
-		<render_dof_quality>1</render_dof_quality>
-		<render_dof_resolution>2</render_dof_resolution>
+		<render_dof_quality>0</render_dof_quality>
+		<render_dof_resolution>1</render_dof_resolution>
 		<render_environment>1</render_environment>
 		<render_environment_cubemap_blend>0</render_environment_cubemap_blend>
-		<render_environment_ggx_mipmaps_quality>0</render_environment_ggx_mipmaps_quality>
+		<render_environment_ggx_mipmaps_quality>1</render_environment_ggx_mipmaps_quality>
 		<render_environment_haze>2</render_environment_haze>
 		<render_environment_haze_colorization_intensity>0.949999988</render_environment_haze_colorization_intensity>
 		<render_environment_haze_colorization_threshold>0.5</render_environment_haze_colorization_threshold>
@@ -299,14 +299,14 @@
 		<render_indirect_diffuse_temporal_filtering_color_clamping_intensity>1</render_indirect_diffuse_temporal_filtering_color_clamping_intensity>
 		<render_indirect_diffuse_temporal_filtering_color_clamping_velocity_threshold>100</render_indirect_diffuse_temporal_filtering_color_clamping_velocity_threshold>
 		<render_indirect_diffuse_temporal_filtering_enabled>1</render_indirect_diffuse_temporal_filtering_enabled>
-		<render_indirect_diffuse_temporal_filtering_frame_count>50</render_indirect_diffuse_temporal_filtering_frame_count>
+		<render_indirect_diffuse_temporal_filtering_frame_count>16</render_indirect_diffuse_temporal_filtering_frame_count>
 		<render_indirect_specular_denoise_enabled>1</render_indirect_specular_denoise_enabled>
 		<render_indirect_specular_denoise_mask_enabled>1</render_indirect_specular_denoise_mask_enabled>
 		<render_indirect_specular_denoise_threshold>1</render_indirect_specular_denoise_threshold>
 		<render_indirect_specular_temporal_filtering_color_clamping_intensity>1</render_indirect_specular_temporal_filtering_color_clamping_intensity>
 		<render_indirect_specular_temporal_filtering_color_clamping_velocity_threshold>100</render_indirect_specular_temporal_filtering_color_clamping_velocity_threshold>
 		<render_indirect_specular_temporal_filtering_enabled>1</render_indirect_specular_temporal_filtering_enabled>
-		<render_indirect_specular_temporal_filtering_frame_count>50</render_indirect_specular_temporal_filtering_frame_count>
+		<render_indirect_specular_temporal_filtering_frame_count>16</render_indirect_specular_temporal_filtering_frame_count>
 		<render_iso>100</render_iso>
 		<render_landscape_cache_cpu_prefetch_radius>0</render_landscape_cache_cpu_prefetch_radius>
 		<render_landscape_cache_cpu_size>10</render_landscape_cache_cpu_size>
@@ -479,28 +479,28 @@
 		<render_ssr_increased_accuracy>0</render_ssr_increased_accuracy>
 		<render_ssr_non_linear_step_size>1</render_ssr_non_linear_step_size>
 		<render_ssr_normal_bias>1</render_ssr_normal_bias>
-		<render_ssr_num_rays>4</render_ssr_num_rays>
+		<render_ssr_num_rays>1</render_ssr_num_rays>
 		<render_ssr_num_steps>8</render_ssr_num_steps>
 		<render_ssr_perspective_compensation>1</render_ssr_perspective_compensation>
 		<render_ssr_preset>medium</render_ssr_preset>
-		<render_ssr_resolution>1</render_ssr_resolution>
+		<render_ssr_resolution>2</render_ssr_resolution>
 		<render_ssr_resolution_color>0</render_ssr_resolution_color>
 		<render_ssr_resolution_depth>0</render_ssr_resolution_depth>
 		<render_ssr_roughness_mip_offset>4</render_ssr_roughness_mip_offset>
 		<render_ssr_step_size>0.300000012</render_ssr_step_size>
 		<render_ssr_threshold>1.5</render_ssr_threshold>
 		<render_ssr_threshold_occlusion>1.5</render_ssr_threshold_occlusion>
-		<render_ssr_tonemapping_gamma>2</render_ssr_tonemapping_gamma>
+		<render_ssr_tonemapping_gamma>1</render_ssr_tonemapping_gamma>
 		<render_ssr_view_bias>1</render_ssr_view_bias>
 		<render_ssr_visibility_roughness_max>0.449999988</render_ssr_visibility_roughness_max>
 		<render_ssr_visibility_roughness_min>0.349999994</render_ssr_visibility_roughness_min>
 		<render_ssrtgi_fast_tracing>1</render_ssrtgi_fast_tracing>
 		<render_ssrtgi_increased_accuracy>1</render_ssrtgi_increased_accuracy>
-		<render_ssrtgi_noise_step>0.300000012</render_ssrtgi_noise_step>
-		<render_ssrtgi_num_rays>12</render_ssrtgi_num_rays>
+		<render_ssrtgi_noise_step>1</render_ssrtgi_noise_step>
+		<render_ssrtgi_num_rays>2</render_ssrtgi_num_rays>
 		<render_ssrtgi_num_steps>3</render_ssrtgi_num_steps>
-		<render_ssrtgi_preset>low</render_ssrtgi_preset>
-		<render_ssrtgi_resolution>0</render_ssrtgi_resolution>
+		<render_ssrtgi_preset>medium</render_ssrtgi_preset>
+		<render_ssrtgi_resolution>2</render_ssrtgi_resolution>
 		<render_ssrtgi_resolution_depth>0</render_ssrtgi_resolution_depth>
 		<render_ssrtgi_step_size>3</render_ssrtgi_step_size>
 		<render_ssrtgi_upscaling>1</render_ssrtgi_upscaling>
@@ -516,7 +516,7 @@
 		<render_sssss_noise_ray>0.5</render_sssss_noise_ray>
 		<render_sssss_noise_step>0.5</render_sssss_noise_step>
 		<render_sssss_preset>medium</render_sssss_preset>
-		<render_sssss_quality>1</render_sssss_quality>
+		<render_sssss_quality>2</render_sssss_quality>
 		<render_sssss_radius>0.0199999996</render_sssss_radius>
 		<render_sssss_resolution>1</render_sssss_resolution>
 		<render_sssss_taa_antialiasing_in_motion>0</render_sssss_taa_antialiasing_in_motion>
@@ -583,7 +583,7 @@
 		<render_tessellation_shadow_density_multiplier>1</render_tessellation_shadow_density_multiplier>
 		<render_textures_anisotropy>4</render_textures_anisotropy>
 		<render_textures_filter>1</render_textures_filter>
-		<render_textures_max_resolution>6</render_textures_max_resolution>
+		<render_textures_max_resolution>7</render_textures_max_resolution>
 		<render_textures_min_resolution>0</render_textures_min_resolution>
 		<render_textures_quality>2</render_textures_quality>
 		<render_tonemapper>1</render_tonemapper>
@@ -609,10 +609,10 @@
 		<render_water_enabled>1</render_water_enabled>
 		<render_water_environment_probes>1</render_water_environment_probes>
 		<render_water_geometry_fade_lods>0.5</render_water_geometry_fade_lods>
-		<render_water_geometry_polygon_size>0.00999999978</render_water_geometry_polygon_size>
+		<render_water_geometry_polygon_size>0.5</render_water_geometry_polygon_size>
 		<render_water_geometry_preset>low</render_water_geometry_preset>
-		<render_water_geometry_progression>1.5</render_water_geometry_progression>
-		<render_water_geometry_subpixel_reduction>2</render_water_geometry_subpixel_reduction>
+		<render_water_geometry_progression>1</render_water_geometry_progression>
+		<render_water_geometry_subpixel_reduction>6</render_water_geometry_subpixel_reduction>
 		<render_water_lights>1</render_water_lights>
 		<render_water_opacity_depth>1</render_water_opacity_depth>
 		<render_water_planar_probes>1</render_water_planar_probes>
@@ -653,7 +653,7 @@
 			<vertex type="float" num_vertex="121" offset="32" size="4">0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1</vertex>
 			<vertex type="float" num_vertex="121" offset="48" size="4">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</vertex>
 			<indices num_indices="600">107 106 117 118 119 107 107 119 108 118 107 117 18 19 7 7 19 8 19 18 29 30 19 29 9 8 19 30 31 19 20 9 19 19 31 20 43 41 29 29 41 30 31 30 41 110 111 99 99 111 100 99 105 116 110 99 116 112 101 111 101 100 111 104 116 105 115 116 104 112 113 101 101 113 102 115 104 114 3 2 13 14 3 13 24 13 23 24 25 13 13 25 14 24 35 25 23 35 24 23 22 37 34 23 37 34 35 23 35 33 25 45 35 46 45 44 35 35 44 33 35 34 46 0 11 1 6 11 0 11 12 1 11 17 28 17 11 6 22 11 28 22 23 11 11 23 12 12 13 1 1 13 2 6 5 16 17 6 16 13 12 23 77 66 79 79 91 77 79 78 89 90 91 79 90 79 89 79 68 78 91 90 101 102 91 101 81 78 68 81 89 78 101 89 100 89 101 90 89 88 99 100 89 99 88 89 81 4 10 21 15 4 21 16 4 15 4 16 5 9 21 10 21 20 31 32 21 31 20 21 9 26 21 32 21 26 15 16 15 26 54 64 53 64 54 65 75 64 76 64 65 76 76 85 75 87 85 76 85 87 95 96 85 95 96 97 85 85 97 86 107 95 106 95 107 96 97 96 107 108 97 107 108 109 97 97 109 98 98 83 97 83 86 97 82 84 92 93 82 92 83 92 84 92 98 109 103 92 109 103 104 92 92 104 93 98 92 83 120 109 119 114 109 120 109 114 103 109 108 119 104 103 114 45 56 44 56 55 44 46 56 45 67 56 68 67 66 56 56 46 57 56 66 55 56 57 68 46 47 58 57 46 58 66 67 79 68 79 67 42 31 41 42 39 31 31 39 32 39 42 52 41 52 42 41 43 54 53 41 54 52 41 53 51 39 52 51 50 39 39 50 40 63 52 64 63 62 52 52 53 64 52 62 51 69 81 68 70 81 69 81 80 94 88 81 94 80 81 70 70 71 82 80 70 82 82 94 80 94 93 104 105 94 104 105 99 94 94 99 88 93 94 82 16 28 17 27 16 26 27 28 16 28 37 22 28 27 38 36 28 38 37 28 36 26 38 27 40 38 26 26 32 39 40 26 39 37 46 34 37 36 48 47 37 48 47 46 37 38 48 36 38 40 50 49 38 50 49 48 38 61 50 62 50 51 62 62 72 61 62 63 74 73 62 74 72 62 73 84 72 83 82 72 84 72 73 83 72 82 71 64 74 63 74 75 85 86 74 85 74 64 75 86 83 74 74 83 73 48 58 47 59 48 60 59 58 48 48 49 60 69 68 58 58 68 57 58 59 70 69 58 70 60 70 59 60 61 72 71 60 72 61 60 50 70 60 71 50 60 49</indices>
-			<surface name="grid_for_world_creation" collision="1" physics_friction="1" physics_restitution="1" material="001dc611e2ca7385e50593ebc1c181e2e370240c"/>
+			<surface name="grid_for_world_creation" intersection="1" collision="1" physics_friction="1" physics_restitution="1" material="001dc611e2ca7385e50593ebc1c181e2e370240c"/>
 			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
 		</node>
 		<node type="LightWorld" id="824505625" name="sun">
@@ -665,7 +665,6 @@
 			<shadow_cascade_mode>0</shadow_cascade_mode>
 			<num_shadow_cascades>2</num_shadow_cascades>
 			<shadow_cascade_borders>0.0075000003 0.0500000007 0.200000003</shadow_cascade_borders>
-			<viewport_mask>0xffffffff</viewport_mask>
 			<color_mode>1</color_mode>
 			<shadow_resolution>5</shadow_resolution>
 			<shadow_bias>1</shadow_bias>
@@ -733,47 +732,8 @@
 			</lens_flare_billboards>
 			<transform>-0.43301237 0.43559623 -0.78914917 0.0 -0.75000048 -0.6597392 0.047366858 0.0 -0.49999967 0.61237252 0.6123724 0.0 0 0 0 1.0</transform>
 		</node>
-		<node type="NodeDummy" id="842575985" name="Database">
-			<properties>
-				<property parent="081d46c939c0a194b30c1fe345ec03e6346eca0d" guid="dfd06b6d2276d5e8395a40275f62bf5a1c7a86f1">
-					<parameter name="Property">443335321</parameter>
-				</property>
-			</properties>
-			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
-			<node type="NodeDummy" id="443335321" name="Property">
-				<properties>
-					<property parent="a194c6bd20a158f8de4b47f78c0d04ea03e76f41" guid="d2bf834e1117b255f5fddfb0b9a36f4fa6cc1462">
-						<parameter name="List">
-							<value index="0">
-								<parameter name="Name">Empty</parameter>
-								<parameter name="Image">guid://962da391051507bca0f13febc619d44e51f3cf55</parameter>
-							</value>
-							<value index="1">
-								<parameter name="Name">Apple</parameter>
-								<parameter name="Value">8</parameter>
-								<parameter name="Image">guid://a7f068dacab522711063b91ce0fc81cbf1cb6cae</parameter>
-								<parameter name="Prefab">guid://4ec12d51a135867ce1d82fab7f1a810eda911515</parameter>
-							</value>
-							<value index="2">
-								<parameter name="Name">Bucket</parameter>
-								<parameter name="Value">12</parameter>
-								<parameter name="Image">guid://e6d66ca0003a377fdce75ed2e6787009de1139d4</parameter>
-								<parameter name="Prefab">guid://701414aef2af5435a4105810ade9cc2f29400bc2</parameter>
-							</value>
-							<value index="3">
-								<parameter name="Name">Hammer</parameter>
-								<parameter name="Value">20</parameter>
-								<parameter name="Image">guid://8735084109c344ac3d81f81b5f864ebe4a2ea705</parameter>
-								<parameter name="Prefab">guid://e60a084fb9f7d962a9340959797de2e4b87e50f3</parameter>
-							</value>
-						</parameter>
-					</property>
-				</properties>
-				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
-			</node>
-		</node>
-		<node type="PlayerSpectator" id="1266584972" name="PlayerSpectator">
-			<collision>1</collision>
+		<node type="PlayerSpectator" id="620479819" name="main_player">
+			<collision>0</collision>
 			<collision_mask>0x1</collision_mask>
 			<collision_radius>0.5</collision_radius>
 			<min_velocity>2</min_velocity>
@@ -783,143 +743,20 @@
 			<acceleration>4</acceleration>
 			<damping>8</damping>
 			<turning>90</turning>
-			<znear>0.300000012</znear>
 			<zfar>100000</zfar>
 			<oblique_frustum_plane>0 0 -1 0</oblique_frustum_plane>
 			<is_oblique_frustum>0</is_oblique_frustum>
 			<is_main>1</is_main>
 			<is_listener>1</is_listener>
-			<controlled>1</controlled>
+			<controlled>0</controlled>
 			<properties>
-				<property parent="fd977b057ba130a07c9e2b7fd532c2d250248409" guid="d651082f3ee8b7fd47dbef6977db0c55a2f9f71e">
-					<parameter name="ThirdPersonCameraProperty">03847628bb24e367a4f8899a13eb4c31708657dc</parameter>
-					<parameter name="Following">1745732311</parameter>
-					<parameter name="Camera">1266584972</parameter>
+				<property parent="364df5f913b6a70452a50693d3c9dad6c9c6543d" guid="03b9c2112c383abaeac2179b96232789ade44eb8">
+					<parameter name="isMainMenu">1</parameter>
+					<parameter name="WorldName">PLAY</parameter>
+					<parameter name="WorldAsset">guid://9df34d7ec3f816c5425799607c5dfd3fbb42e992</parameter>
 				</property>
 			</properties>
-			<transform>0.694785058498 -0.71921736002 5.0663948058e-07 0.0 0.310813844204 0.300255954266 0.901798725128 0.0 -0.648589491844 -0.626556158066 0.43215611577 0.0 -2.02338406393 -1.18557514294 2.5954549301 1.0</transform>
-		</node>
-		<node type="ObjectMeshStatic" id="1517726069" name="Apple_1">
-			<streaming_mode_vram>0</streaming_mode_vram>
-			<streaming_mode_ram>0</streaming_mode_ram>
-			<mesh_name>guid://5b2e4f6612619f8da5bb3b8810f12947370f55fa</mesh_name>
-			<surface name="Apple" material="07cbdb29421c6a744f9e9343d7b41fc60f93746d"/>
-			<properties>
-				<property parent="eb7f0c3401d34a03bdf1e786e00d192d4a8628a8" guid="8d31086fc41f9b02ecfe9e7932523584c5d24313">
-					<parameter name="ID">1</parameter>
-					<parameter name="Amount">25</parameter>
-				</property>
-			</properties>
-			<transform>0.999999880791 1.35475096978e-22 1.04216045448e-14 0.0 6.51334353371e-22 1 -7.54979154749e-08 0.0 -1.04216053918e-14 7.54979154749e-08 1 0.0 0 5 1 1.0</transform>
-		</node>
-		<node type="ObjectMeshStatic" id="673402005" name="bucket_1">
-			<streaming_mode_vram>0</streaming_mode_vram>
-			<streaming_mode_ram>0</streaming_mode_ram>
-			<mesh_name>guid://4bf30fb3788311764891da5d5bed1818b96abc97</mesh_name>
-			<surface name="Bucket" material="9b90ff82dc4bb8f9a84b8e04c13ec193f51a59d6"/>
-			<properties>
-				<property parent="eb7f0c3401d34a03bdf1e786e00d192d4a8628a8" guid="9bb0ed56d06144bd4937bef8d09275f7b3fe5aea">
-					<parameter name="ID">2</parameter>
-					<parameter name="Amount">10</parameter>
-				</property>
-			</properties>
-			<transform>150 0 0 0.0 0 149.999954224 0 0.0 0 0 150 0.0 -2 5 1 1.0</transform>
-		</node>
-		<node type="ObjectMeshStatic" id="1360052805" name="Sledge hammer_1">
-			<streaming_mode_vram>0</streaming_mode_vram>
-			<streaming_mode_ram>0</streaming_mode_ram>
-			<mesh_name>guid://770583a254fb2e992eb247249658e833f8720ff6</mesh_name>
-			<surface name="hammer" material="3a6de884b38c5a13124e1856a87e73bd7a6d21f8"/>
-			<properties>
-				<property parent="eb7f0c3401d34a03bdf1e786e00d192d4a8628a8" guid="996ccd416c1645ac671f051b54adf7be0b883c05">
-					<parameter name="ID">3</parameter>
-					<parameter name="Amount">5</parameter>
-				</property>
-			</properties>
-			<transform>150 -2.24721443374e-05 -6.69395238624e-19 0.0 2.24721370614e-05 149.999954224 4.46816411995e-12 0.0 1.81753552563e-25 -4.46816542099e-12 150 0.0 2 5 1 1.0</transform>
-		</node>
-		<node type="ObjectMeshSkinned" id="1745732311" name="Character">
-			<mesh_name>guid://97f47f90d3bccdaf4d101f42a026d5b9b6a083c4</mesh_name>
-			<fps_visible_camera>-1</fps_visible_camera>
-			<fps_visible_shadow>30</fps_visible_shadow>
-			<fps_invisible>0</fps_invisible>
-			<anim_name>guid://a13f672ac2dbec81da6e5bec46b5a65b72d3a7fe</anim_name>
-			<loop>1</loop>
-			<speed>30</speed>
-			<surface name="Ch36_Body" material="b6e061a2758c74998df6d5249b681e338fbbcdf6"/>
-			<body type="BodyRigid" id="1211838755" frozen="0">
-				<angular_scale>0 0 1</angular_scale>
-				<shape type="ShapeCapsule" id="824641417" transform="1 2.0594661e-35 1.78282565e-28 0 4.45747458e-35 1 -5.98217019e-21 0 -3.56565129e-28 5.98217019e-21 1 0 3.56137753e-05 0.0213649273 0.878232241 1">
-					<radius>0.200000003</radius>
-					<height>1.40239096</height>
-				</shape>
-			</body>
-			<properties>
-				<property parent="ef5f1d8ee1c70fe29751ee4c684438c6d56cffb7" guid="8f7587c6bfb30d1288da99c46f5d06947d78964f"/>
-			</properties>
-			<transform>0.999999880791 3.29999525046e-22 5.37117059678e-15 0.0 3.29999726995e-22 0.999999880791 -1.22878091702e-07 0.0 -5.37117102029e-15 1.22878091702e-07 0.999999940395 0.0 0 0 0 1.0</transform>
-			<node type="NodeDummy" id="1490111157" name="Animation">
-				<properties>
-					<property parent="eead75effc922a82737ce7f98584f104859ac893" guid="ccd712e35ecb6bd57eda543dd42ddc68a679ad02">
-						<parameter name="AnimationScripts">84053991a4cba5bcee2b45eb6670224e7769c555</parameter>
-					</property>
-				</properties>
-				<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
-			</node>
-			<node type="NodeDummy" id="1853938832" name="Physics">
-				<properties>
-					<property parent="dbcc504aa5068321043bc20c35f495fb131f931e" guid="f4dfad3521e6cc9885bb965f2579b6106fa01a4c"/>
-				</properties>
-				<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
-			</node>
-			<node type="NodeDummy" id="1784968527" name="Inventory">
-				<properties>
-					<property parent="185a98fa82665411d6c8fe3c0dcbc46b4e7d8ece" guid="5306000ed9208815835b3a70f6498b0fa009fd22">
-						<parameter name="Property">516436288</parameter>
-					</property>
-				</properties>
-				<transform>1.0000000596 3.2999976644e-22 -5.37117123707e-15 0.0 3.29999616531e-22 1.0000000596 1.2287810635e-07 0.0 5.37117166058e-15 -1.2287810635e-07 1 0.0 0 0 0 1.0</transform>
-				<node type="NodeDummy" id="516436288" name="Property">
-					<properties>
-						<property parent="36a8670a2c042ae151b3c6cc6db153bba30fb5de" guid="5d66efa965a774f48a5d1bc312440e46ac6990ed">
-							<parameter name="List">
-								<value index="0">1 10</value>
-								<value index="2">2 20</value>
-								<value index="5">3 12</value>
-								<value index="8">1 12</value>
-								<value index="10">1 18</value>
-								<value index="12">2 15</value>
-								<value index="22">0 0</value>
-							</parameter>
-						</property>
-					</properties>
-					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
-				</node>
-			</node>
-			<node type="NodeDummy" id="988513967" name="Interactor">
-				<properties>
-					<property parent="f4adf9bc5e2189ebd909964ec16ca955e3b86ab0" guid="521b1e3ef77467d76307377ced2ca72d091b8627">
-						<parameter name="Camera">1266584972</parameter>
-					</property>
-				</properties>
-				<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
-			</node>
-			<node type="NodeDummy" id="958760002" name="Gun">
-				<properties>
-					<property parent="ac40d1b1498f1f5c0f2e330b6630ecee0e8fcf75" guid="fd9ed2a661482135ef2919a489e1bcfc4144aaaf"/>
-				</properties>
-				<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
-			</node>
-		</node>
-		<node type="NodeReference" id="1612536083" name="Shotgun">
-			<reference>guid://70be240b3d8629eee931e875aa035f508564aa6f</reference>
-			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 2 1 1.0</transform>
-		</node>
-		<node type="NodeDummy" id="8058553" name="HUD">
-			<properties>
-				<property enabled="0" parent="84a5f9797713d484f00156135ca6e456bc48cfbd" guid="db3f74a419a4e20067971672c9d98d5965030445"/>
-			</properties>
-			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 -2.11974900629 -0.423740099945 2.56576199009 1.0</transform>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 2.06174000725 1.0</transform>
 		</node>
 	</editor>
 	<console>

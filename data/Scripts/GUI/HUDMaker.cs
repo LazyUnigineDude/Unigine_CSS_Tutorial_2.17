@@ -6,22 +6,25 @@ using Unigine;
 [Component(PropertyGuid = "84a5f9797713d484f00156135ca6e456bc48cfbd")]
 public class HUDMaker : Component
 {
-    public Node MainChar;
+    [ShowInEditor]
+    private Node HealthbarNode;
+
     public AssetLink _image, HealthImage;
     Gui GUI;
     WidgetCanvas Canvas;
     WidgetSprite Sprite;
-    WidgetLabel CurrentAmount, MaxAmount;
+    WidgetLabel CurAmount, MaxAmount;
     WidgetGridBox HealthGrid;
     int Width, Height, CurrentHealth;
     HealthBar MainCharHealth;
+    public const int NODE_ID = 8058553;
 
     private void Init()
     {
         // write here code to be called on component initialization
         GUI = Gui.GetCurrent();
 
-        MainCharHealth = GetComponent<HealthBar>(MainChar);
+        MainCharHealth = GetComponent<HealthBar>(HealthbarNode);
         CurrentHealth = MainCharHealth.ShowHealth();
         Width = GUI.Width;
         Height = GUI.Height;
@@ -56,12 +59,12 @@ public class HUDMaker : Component
         GainHealth(CurrentHealth);
         HealthGrid.SetPosition(0, 700);
 
-        CurrentAmount = new(); MaxAmount = new();
+        CurAmount = new(); MaxAmount = new();
 
         GUI.AddChild(Canvas, Gui.ALIGN_EXPAND);
         GUI.AddChild(Sprite, Gui.ALIGN_EXPAND | Gui.ALIGN_OVERLAP);
 
-        GUI.AddChild(CurrentAmount, Gui.ALIGN_EXPAND | Gui.ALIGN_OVERLAP);
+        GUI.AddChild(CurAmount, Gui.ALIGN_EXPAND | Gui.ALIGN_OVERLAP);
         GUI.AddChild(MaxAmount, Gui.ALIGN_EXPAND | Gui.ALIGN_OVERLAP);
         GUI.AddChild(HealthGrid, Gui.ALIGN_EXPAND | Gui.ALIGN_OVERLAP);
     }
@@ -79,17 +82,23 @@ public class HUDMaker : Component
         }
     }
 
-    public void UpdateGun(int CAmount, int MAmount)
+    public void UpdateGun(ivec2 GunVal)
     {
 
-        CurrentAmount.Text = CAmount.ToString();
-        CurrentAmount.FontSize = 48;
-        CurrentAmount.SetPosition(Width - 160, 20);
+        CurAmount.Text = GunVal.x.ToString();
+        CurAmount.FontSize = 48;
+        CurAmount.SetPosition(Width - 160, 20);
 
 
-        MaxAmount.Text = MAmount.ToString();
+        MaxAmount.Text = GunVal.y.ToString();
         MaxAmount.FontSize = 36;
         MaxAmount.SetPosition(Width - 80, 20);
+    }
+
+    public void HideGun()
+    {
+        CurAmount.Text = " ";
+        MaxAmount.Text = " ";
     }
 
     void LoseHealth(int Amount)
@@ -113,5 +122,13 @@ public class HUDMaker : Component
             _image.Height = 20;
             HealthGrid.AddChild(_image);
         }
+    }
+
+    void Shutdown()
+    {
+        if (GUI.IsChild(Canvas) == 1) { GUI.RemoveChild(Canvas); Canvas.DeleteLater(); }
+        if (GUI.IsChild(CurAmount) == 1) { GUI.RemoveChild(CurAmount); CurAmount.DeleteLater(); }
+        if (GUI.IsChild(MaxAmount) == 1) { GUI.RemoveChild(MaxAmount); MaxAmount.DeleteLater(); }
+        if (GUI.IsChild(HealthGrid) == 1) { GUI.RemoveChild(HealthGrid); HealthGrid.DeleteLater(); }
     }
 }

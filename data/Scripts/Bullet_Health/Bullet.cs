@@ -28,7 +28,7 @@ public class Bullet : Component
             // WE hit a body
            // Log.Message($"{CapturedBody.Object.Name} {num}\n");
             HealthBar Health = GetComponent<HealthBar>(CapturedBody.Object);
-            if (Health) { Health.DropHealth(DamageAmount); Log.Message($"{Health.ShowHealth()}\n"); }
+            if (Health) { Health.HealthChange(-DamageAmount); Log.Message($"{Health.ShowHealth()}\n"); }
            // Rigid.RemoveContactEnterCallback(OnEnter);
         }
 
@@ -37,7 +37,7 @@ public class Bullet : Component
            // Log.Message($"{Body.GetContactObject(num).Name} {num}\n");
             // We hit a collision
             HealthBar Health = GetComponent<HealthBar>(Body.GetContactObject(num));
-            if (Health) { Health.DropHealth(DamageAmount); Log.Message($"{Health.ShowHealth()}\n"); }
+            if (Health) { Health.HealthChange(-DamageAmount); Log.Message($"{Health.ShowHealth()}\n"); }
         }
     }
 

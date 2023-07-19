@@ -6,43 +6,44 @@ using Unigine;
 [Component(PropertyGuid = "dbcc504aa5068321043bc20c35f495fb131f931e")]
 public class PhysicsController : Component
 {
-	public float Speed, MaxSpeed, SideSpeed;
-	private float RunAddition;
-
+	[ShowInEditor]
+	private float Speed, MaxSpeed, SideSpeed;
+	
+	public enum DIRECTIONS { FORWARD, BACKWARD, LEFT, RIGHT };
+	float RunAddition;
 	BodyRigid MainCharacter;
+	Node RigidNode;
 
-	private void Init()
+	public void Initialize(Node _RigidNode)
 	{
-		MainCharacter = node.ObjectBodyRigid;
+		RigidNode = _RigidNode;
+		MainCharacter = RigidNode.ObjectBodyRigid;
 		MainCharacter.MaxLinearVelocity = MaxSpeed;
-		RunAddition = 1f;
+		RunAddition = 2f;
 	}
 
-	private void UpdatePhysics()
+	public void Move(DIRECTIONS Direction) 
 	{
-		if (Input.IsKeyPressed(Input.KEY.LEFT_SHIFT))
-		{ RunAddition = Math.Clamp(RunAddition += Game.IFps * 5, 1, 3f); }
-		else RunAddition = Math.Clamp(RunAddition -= 2 * Game.IFps * 5, 1, 3f);
-
-		if (Input.IsKeyPressed(Input.KEY.W))
-		{ MainCharacter.AddLinearImpulse(node.GetWorldDirection(MathLib.AXIS.Y) * Speed * RunAddition); }
-
-		if (Input.IsKeyPressed(Input.KEY.S))
-		{ MainCharacter.AddLinearImpulse(node.GetWorldDirection(MathLib.AXIS.NY) * Speed); }
-
-		if (Input.IsKeyPressed(Input.KEY.D))
-		{ MainCharacter.AddLinearImpulse(node.GetWorldDirection(MathLib.AXIS.X) * SideSpeed * RunAddition); }
-
-		if (Input.IsKeyPressed(Input.KEY.A))
-		{ MainCharacter.AddLinearImpulse(node.GetWorldDirection(MathLib.AXIS.NX) * SideSpeed * RunAddition); }
-		AutoRotate();
+		switch (Direction)
+		{
+			case DIRECTIONS.FORWARD:  MainCharacter.AddLinearImpulse(RigidNode.GetWorldDirection(MathLib.AXIS.Y)  * Speed     * RunAddition);break;
+			case DIRECTIONS.BACKWARD: MainCharacter.AddLinearImpulse(RigidNode.GetWorldDirection(MathLib.AXIS.NY) * Speed);					 break;
+			case DIRECTIONS.LEFT:     MainCharacter.AddLinearImpulse(RigidNode.GetWorldDirection(MathLib.AXIS.NX) * SideSpeed * RunAddition);break;
+			case DIRECTIONS.RIGHT:	  MainCharacter.AddLinearImpulse(RigidNode.GetWorldDirection(MathLib.AXIS.X)  * SideSpeed * RunAddition);break;
+			default: break;
+		}
 	}
 
-	void AutoRotate()
+	public void Run(bool isRunning, float LerpSpeed) => MainCharacter.MaxLinearVelocity =
+		(isRunning) ?
+		MathLib.Clamp(MainCharacter.MaxLinearVelocity + LerpSpeed, MaxSpeed * 0.5f, MaxSpeed * 2) :
+        MathLib.Clamp(MainCharacter.MaxLinearVelocity - LerpSpeed, MaxSpeed * 0.5f, MaxSpeed * 2);
+
+	public void AutoRotate(Player Camera)
 	{
 		vec3 CameraView, PlayerView;
 
-		CameraView = Game.Player.GetWorldDirection();
+		CameraView = Camera.GetWorldDirection();
 		PlayerView = node.GetWorldDirection(MathLib.AXIS.Y);
 
 		float Angle = MathLib.Angle(CameraView, PlayerView, node.GetWorldDirection(MathLib.AXIS.Z));

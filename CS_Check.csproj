@@ -46,7 +46,6 @@
 	</ItemGroup>
 	<ItemGroup>
 		<Compile Include="data/StarMove.cs" />
-		<Compile Include="data\CompCheck.cs" />
 		<Compile Include="data\Scripts\AI\AIDetector.cs" />
 		<Compile Include="data\Scripts\AI\AIManager.cs" />
 		<Compile Include="data\Scripts\AI\AIShootingLogic.cs" />
@@ -64,7 +63,6 @@
 		<Compile Include="data\Scripts\Character\GunHandler\Interactor.cs" />
 		<Compile Include="data\Scripts\Character\Inventory\InventoryController.cs" />
 		<Compile Include="data\Scripts\Character\Inventory\InventoryGUI.cs" />
-		<Compile Include="data\Scripts\Character\Inventory\InventoryInteractor.cs" />
 		<Compile Include="data\Scripts\Character\Inventory\InventoryMaker.cs" />
 		<Compile Include="data\Scripts\Character\Physics\PhysicsController.cs" />
 		<Compile Include="data\Scripts\Database\DatabaseController.cs" />
@@ -105,7 +103,6 @@
 	  <None Include="data\Scripts\Character\GunHandler\Interactor.cs.meta" />
 	  <None Include="data\Scripts\Character\Inventory\InventoryController.cs.meta" />
 	  <None Include="data\Scripts\Character\Inventory\InventoryGUI.cs.meta" />
-	  <None Include="data\Scripts\Character\Inventory\InventoryInteractor.cs.meta" />
 	  <None Include="data\Scripts\Character\Inventory\InventoryMaker.cs.meta" />
 	  <None Include="data\Scripts\Character\Physics\PhysicsController.cs.meta" />
 	  <None Include="data\Scripts\Database\DatabaseController.cs.meta" />

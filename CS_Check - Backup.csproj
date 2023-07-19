@@ -62,7 +62,6 @@
 		<Compile Include="data/Scripts/Camera/ThirdPersonCamera.cs"/>
 		<Compile Include="data/Scripts/Camera/InputController.cs"/>
 		<Compile Include="data/Scripts/Camera/CameraController.cs"/>
-		<Compile Include="data/Scripts/Character/Inventory/InventoryInteractor.cs"/>
 		<Compile Include="data/Scripts/Character/Inventory/InventoryGUI.cs"/>
 		<Compile Include="data/Scripts/Character/Inventory/InventoryMaker.cs"/>
 		<Compile Include="data/Scripts/Character/Inventory/InventoryController.cs"/>
