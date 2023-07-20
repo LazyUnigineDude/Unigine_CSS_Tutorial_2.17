@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <nodes version="2.17.0.1">
-	<node type="ObjectMeshStatic" id="932918869" name="bucket">
+	<node type="ObjectMeshStatic" id="1891063051" name="bucket">
 		<streaming_mode_vram>0</streaming_mode_vram>
 		<streaming_mode_ram>0</streaming_mode_ram>
 		<mesh_name>guid://4bf30fb3788311764891da5d5bed1818b96abc97</mesh_name>
-		<surface name="Bucket" material="9b90ff82dc4bb8f9a84b8e04c13ec193f51a59d6"/>
+		<surface name="Bucket" intersection="1" intersection_mask="0x2" material="9b90ff82dc4bb8f9a84b8e04c13ec193f51a59d6"/>
 		<properties>
-			<property parent="eb7f0c3401d34a03bdf1e786e00d192d4a8628a8" guid="fd638001f933849c81e9eb0bc446fe42d5530ce8">
+			<property parent="eb7f0c3401d34a03bdf1e786e00d192d4a8628a8" guid="84d52b1bd2a143c0d463d22175b4fa96625a6b92">
 				<parameter name="ID">2</parameter>
 				<parameter name="Amount">0</parameter>
 			</property>

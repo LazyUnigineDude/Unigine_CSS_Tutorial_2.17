@@ -1,4 +1,3 @@
-using System;
 using Unigine;
 
 [Component(PropertyGuid = "ef5f1d8ee1c70fe29751ee4c684438c6d56cffb7")]

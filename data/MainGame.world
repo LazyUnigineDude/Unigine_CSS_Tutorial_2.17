@@ -806,6 +806,7 @@
 				<property parent="ef5f1d8ee1c70fe29751ee4c684438c6d56cffb7" guid="8f7587c6bfb30d1288da99c46f5d06947d78964f">
 					<parameter name="AnimationNode">1490111157</parameter>
 					<parameter name="PhysicsNode">1853938832</parameter>
+					<parameter name="HealthBarNode">1098388195</parameter>
 					<parameter name="InventoryNode">1784968527</parameter>
 					<parameter name="InteractorNode">988513967</parameter>
 					<parameter name="GunNode">958760002</parameter>

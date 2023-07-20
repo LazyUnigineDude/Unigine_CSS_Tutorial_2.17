@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <nodes version="2.17.0.1">
-	<node type="ObjectMeshStatic" id="1239782223" name="Sledge hammer">
+	<node type="ObjectMeshStatic" id="1235741856" name="Sledge hammer">
 		<streaming_mode_vram>0</streaming_mode_vram>
 		<streaming_mode_ram>0</streaming_mode_ram>
 		<mesh_name>guid://770583a254fb2e992eb247249658e833f8720ff6</mesh_name>
 		<surface name="hammer" intersection="1" intersection_mask="0x2" material="3a6de884b38c5a13124e1856a87e73bd7a6d21f8"/>
 		<properties>
-			<property parent="eb7f0c3401d34a03bdf1e786e00d192d4a8628a8" guid="9137f07ff52ba44865da1c39fdb8289245f5aa2e">
+			<property parent="eb7f0c3401d34a03bdf1e786e00d192d4a8628a8" guid="aefb09e07492cf1a90be2772b1c0b135acd2b49d">
 				<parameter name="ID">3</parameter>
 				<parameter name="Amount">0</parameter>
 			</property>
