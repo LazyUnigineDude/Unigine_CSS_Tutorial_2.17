@@ -7,7 +7,7 @@ public class DatabaseController : Component
     private Node Property;
     PropertyParameter Parameter;
     public const int NODE_ID = 842575985;
-    public enum ITEM_TYPE { DEFAULT, GUN }
+    public enum ITEM_TYPE { DEFAULT, GUN, TRIGGER }
 
     public class GUNPROP { public string BulletPath; public int Damage, RoF, Reload; }
     private void Init() => Parameter = Property.GetProperty(0).ParameterPtr.GetChild(0);

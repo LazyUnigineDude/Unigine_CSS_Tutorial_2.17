@@ -27,7 +27,7 @@ public class PhysicsController : Component
 		switch (Direction)
 		{
 			case DIRECTIONS.FORWARD:  MainCharacter.AddLinearImpulse(RigidNode.GetWorldDirection(MathLib.AXIS.Y)  * Speed     * RunAddition);break;
-			case DIRECTIONS.BACKWARD: MainCharacter.AddLinearImpulse(RigidNode.GetWorldDirection(MathLib.AXIS.NY) * Speed);					 break;
+			case DIRECTIONS.BACKWARD: MainCharacter.AddLinearImpulse(RigidNode.GetWorldDirection(MathLib.AXIS.NY) * Speed	  * RunAddition);break;
 			case DIRECTIONS.LEFT:     MainCharacter.AddLinearImpulse(RigidNode.GetWorldDirection(MathLib.AXIS.NX) * SideSpeed * RunAddition);break;
 			case DIRECTIONS.RIGHT:	  MainCharacter.AddLinearImpulse(RigidNode.GetWorldDirection(MathLib.AXIS.X)  * SideSpeed * RunAddition);break;
 			default: break;

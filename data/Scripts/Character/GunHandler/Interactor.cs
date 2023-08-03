@@ -36,7 +36,7 @@ public class Interactor : Component
     {
         Unigine.Object Obj = World.GetIntersection(
             Camera.WorldPosition,
-            Camera.WorldPosition + Camera.GetWorldDirection() * 100, 
+            Camera.WorldPosition + Camera.GetWorldDirection() * 5, 
             Mask,
             Ray
             );
@@ -49,8 +49,26 @@ public class Interactor : Component
                        Obj.GetProperty(0).ParameterPtr.GetChild(0).ValueInt,
                        Obj.GetProperty(0).ParameterPtr.GetChild(1).ValueInt);
                 CaughtItem = Obj;
-                Label.Text = "Name: " + Database.GetName(Item.x) +
+                DatabaseController.ITEM_TYPE Type = Database.GetType(Item.x);
+                string Text = " ";
+                switch (Type)
+                {
+                    case DatabaseController.ITEM_TYPE.DEFAULT:
+                        Text += "Name: " + Database.GetName(Item.x) +
                              "\nAmount: " + Item.y;
+                        break;
+                    case DatabaseController.ITEM_TYPE.GUN:
+                        Text += "Name: " + Database.GetName(Item.x) +
+                             "\nAmmo: " + Item.y;
+                        break;
+                    case DatabaseController.ITEM_TYPE.TRIGGER:
+                        Text += "Interact";
+                        break;
+                    default:
+                        break;
+                }
+
+                Label.Text = Text;
             }
             return true; 
         }
@@ -64,7 +82,12 @@ public class Interactor : Component
         CaughtItem = null;
         if (DetectItem())
         {
-            CaughtItem.DeleteLater();
+            if(Database.GetType(Item.x) != DatabaseController.ITEM_TYPE.TRIGGER) { CaughtItem.DeleteLater(); }
+            else
+            {
+                DoorOpener Door = GetComponent<DoorOpener>(CaughtItem.GetChild(0));
+                if(Door != null) { Door.OpenDoor(); }
+            }
             return Item;
         }
         return ivec2.ZERO;

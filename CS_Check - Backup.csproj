@@ -70,6 +70,8 @@
 		<Compile Include="data/Scripts/Character/GunHandler/GunHandler.cs"/>
 		<Compile Include="data/Scripts/Character/Physics/PhysicsController.cs"/>
 		<Compile Include="data/Scripts/Character/CharacterController.cs"/>
+		<Compile Include="data/Scripts/Door/DoorOpener.cs"/>
+		<Compile Include="data/Scripts/Door/DoorTrigger.cs"/>
 	</ItemGroup>
 	<ItemGroup>
 		<Compile Include="source\AppEditorLogic.cs"/>

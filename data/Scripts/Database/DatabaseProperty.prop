@@ -11,7 +11,7 @@
 		<parameter name="Value">0</parameter>
 		<parameter name="Image" type="file"/>
 		<parameter name="Prefab" type="file"/>
-		<parameter name="ItemType" type="switch" items="DEFAULT, GUN">0</parameter>
+		<parameter name="ItemType" type="switch" items="DEFAULT,GUN,TRIGGER">0</parameter>
 		<parameter name="GunMods" type="GunStruct" ItemType="1">
 			<parameter name="BulletPrefab" type="file">0</parameter>
 			<parameter name="Damage">0</parameter>

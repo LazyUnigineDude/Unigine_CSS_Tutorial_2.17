@@ -242,7 +242,7 @@
 		<render_decals>1</render_decals>
 		<render_denoise_denoise_by_velocity_threshold>1</render_denoise_denoise_by_velocity_threshold>
 		<render_denoise_num_blur_iterations>5</render_denoise_num_blur_iterations>
-		<render_denoise_preset>disabled</render_denoise_preset>
+		<render_denoise_preset>sharpest_low</render_denoise_preset>
 		<render_denoise_radius>1</render_denoise_radius>
 		<render_depth_pre_pass>0</render_depth_pre_pass>
 		<render_dirt_scale>0.5</render_dirt_scale>
@@ -759,7 +759,7 @@
 					<parameter name="Camera">1266584972</parameter>
 				</property>
 			</properties>
-			<transform>0.995208263397 0.0977777987719 3.54275107384e-06 0.0 -0.0615494661033 0.626438498497 0.777036964893 0.0 0.0759747475386 -0.773313820362 0.62945497036 0.0 0.248684118278 -1.32619129548 2.97545026927 1.0</transform>
+			<transform>0.999503791332 0.0314991474152 -1.03563070297e-05 0.0 -0.020248349756 0.642754971981 0.765804171562 0.0 0.0241288337857 -0.765423893929 0.643073797226 0.0 -1.11433438073 16.6003935426 2.02186548942 1.0</transform>
 		</node>
 		<node type="NodeDummy" id="1828687599" name="Menu">
 			<properties>
@@ -779,7 +779,14 @@
 			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
 			<node type="NodeDummy" id="443335321" name="Property">
 				<properties>
-					<property parent="a194c6bd20a158f8de4b47f78c0d04ea03e76f41" guid="d2bf834e1117b255f5fddfb0b9a36f4fa6cc1462"/>
+					<property parent="a194c6bd20a158f8de4b47f78c0d04ea03e76f41" guid="d2bf834e1117b255f5fddfb0b9a36f4fa6cc1462">
+						<parameter name="List">
+							<value index="5">
+								<parameter name="Name">Button</parameter>
+								<parameter name="ItemType">2</parameter>
+							</value>
+						</parameter>
+					</property>
 				</properties>
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
 			</node>
@@ -812,7 +819,7 @@
 					<parameter name="GunNode">958760002</parameter>
 				</property>
 			</properties>
-			<transform>0.999999880791 3.29999525046e-22 5.37117059678e-15 0.0 3.29999726995e-22 0.999999880791 -1.22878091702e-07 0.0 -5.37117102029e-15 1.22878091702e-07 0.999999940395 0.0 0 0 0 1.0</transform>
+			<transform>0.999999880791 3.29999449316e-22 5.37116974975e-15 0.0 3.29999701751e-22 0.999999880791 -1.22878091702e-07 0.0 -5.37117017326e-15 1.22878091702e-07 0.999999940395 0.0 0 -6.68610786253 2.23059846704e-16 1.0</transform>
 			<node type="NodeDummy" id="1490111157" name="Animation">
 				<properties>
 					<property parent="eead75effc922a82737ce7f98584f104859ac893" guid="c7a2bca1095a7b5b809290ab6822e19429bc0708">
@@ -826,7 +833,7 @@
 					<property parent="dbcc504aa5068321043bc20c35f495fb131f931e" guid="f4dfad3521e6cc9885bb965f2579b6106fa01a4c">
 						<parameter name="Speed">5</parameter>
 						<parameter name="MaxSpeed">10</parameter>
-						<parameter name="SideSpeed">2</parameter>
+						<parameter name="SideSpeed">4</parameter>
 					</property>
 				</properties>
 				<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
@@ -908,7 +915,7 @@
 					<parameter name="Amount">25</parameter>
 				</property>
 			</properties>
-			<transform>0.999999880791 1.35475096978e-22 1.04216045448e-14 0.0 6.51334353371e-22 1 -7.54979154749e-08 0.0 -1.04216053918e-14 7.54979154749e-08 1 0.0 0 5 1 1.0</transform>
+			<transform>0.999999880791 1.61944813471e-22 1.04216045448e-14 0.0 6.24864624256e-22 1 -7.54979154749e-08 0.0 -1.04216053918e-14 7.54979154749e-08 1 0.0 -1.32350109699e-22 15.4999990761 0.999999940395 1.0</transform>
 		</node>
 		<node type="ObjectMeshStatic" id="673402005" name="bucket_1">
 			<streaming_mode_vram>0</streaming_mode_vram>
@@ -921,7 +928,7 @@
 					<parameter name="Amount">10</parameter>
 				</property>
 			</properties>
-			<transform>150 0 0 0.0 0 149.999954224 0 0.0 0 0 150 0.0 -2 5 1 1.0</transform>
+			<transform>150 3.97046653636e-21 1.02880000268e-34 0.0 -3.97046532467e-21 149.999954224 0 0.0 -1.02880000268e-34 0 150.000015259 0.0 -2 15.4999990761 0.999999940395 1.0</transform>
 		</node>
 		<node type="ObjectMeshStatic" id="1360052805" name="Sledge hammer_1">
 			<streaming_mode_vram>0</streaming_mode_vram>
@@ -934,7 +941,7 @@
 					<parameter name="Amount">5</parameter>
 				</property>
 			</properties>
-			<transform>150 -2.24721443374e-05 -6.69395238624e-19 0.0 2.24721370614e-05 149.999954224 4.46816411995e-12 0.0 1.81753552563e-25 -4.46816542099e-12 150 0.0 2 5 1 1.0</transform>
+			<transform>150 -2.24721406994e-05 -6.69395135227e-19 0.0 2.24721334234e-05 149.999954224 4.46816411995e-12 0.0 1.81753577215e-25 -4.46816585467e-12 150.000015259 0.0 2 15.4999990761 0.999999940395 1.0</transform>
 		</node>
 		<node type="ObjectMeshStatic" id="1007192747" name="Shotgun_1">
 			<streaming_mode_vram>0</streaming_mode_vram>
@@ -947,9 +954,161 @@
 					<parameter name="Amount">999</parameter>
 				</property>
 			</properties>
-			<transform>0.0499999749777 1.16534217866e-09 -3.86453952173e-10 0.0 9.23698370743e-09 2.99465986037e-09 -0.0500000272235 0.0 -1.20475505266e-08 0.0500000192092 2.41056224981e-09 0.0 0 3 1 1.0</transform>
+			<transform>0.0499999709427 1.16534204508e-09 -3.86454063195e-10 0.0 -3.86454507284e-10 2.98023383749e-09 -0.0500000230968 0.0 -1.16534315531e-09 0.0500000156462 2.9802333934e-09 0.0 -0.00654338075897 11.4113735871 1.00018254947 1.0</transform>
 			<node type="NodeDummy" id="986783758" name="Muzzle">
 				<transform>-9.62395086263e-07 1.24249930138e-05 19.9999893434 0.0 19.9999668795 3.13352996884e-07 -1.45478407541e-06 0.0 -8.41239471416e-08 19.9999577206 -1.24943243214e-05 0.0 9.32000412311 0.0400013888041 3.03999702891 1.0</transform>
+			</node>
+		</node>
+		<node type="NodeDummy" id="1361287756" name="Room">
+			<transform>0.999999701976 0 0 0.0 0 1.00000005961 0 0.0 0 0 0.999999701976 0.0 0 0 0 1.0</transform>
+			<node type="NodeDummy" id="1514818624" name="Walls">
+				<transform>1.00000023842 0 0 0.0 0 0.99999988079 0 0.0 0 0 1.00000023842 0.0 0 0 0 1.0</transform>
+				<node type="ObjectMeshStatic" id="1591104159" immovable="1" name="Wall_3">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://3776ca2194dd6b2eba9ddec6dc66a58cabe246d4</mesh_name>
+					<surface name="Material.001" collision="1" material="6ec22ab59aa4cc4ea33c9c5484a583e33217befb"/>
+					<transform>5.9604371927e-06 -99.9995346069 0 0.0 39.9999732971 2.38418442677e-06 0 0.0 0 0 99.9998550415 0.0 2.5 21.1249997616 2.00000011921 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="63143794" immovable="1" name="Wall_4">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://3776ca2194dd6b2eba9ddec6dc66a58cabe246d4</mesh_name>
+					<surface name="Material.001" collision="1" material="6ec22ab59aa4cc4ea33c9c5484a583e33217befb"/>
+					<transform>5.96043673795e-06 -99.9995269775 0 0.0 39.9999694824 2.3841841994e-06 0 0.0 0 0 99.9998245239 0.0 -2.5 21.1249997616 2.00000011921 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1145428009" immovable="1" name="Wall">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://3776ca2194dd6b2eba9ddec6dc66a58cabe246d4</mesh_name>
+					<surface name="Material.001" collision="1" material="6ec22ab59aa4cc4ea33c9c5484a583e33217befb"/>
+					<transform>99.999923706 3.38813098122e-21 0 0.0 -3.38813502019e-21 100.000045776 0 0.0 0 0 99.9999389648 0.0 -3.99999999999 9.24999952316 2 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="605832052" immovable="1" name="Wall">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://3776ca2194dd6b2eba9ddec6dc66a58cabe246d4</mesh_name>
+					<surface name="Material.001" collision="1" material="6ec22ab59aa4cc4ea33c9c5484a583e33217befb"/>
+					<transform>99.9998931885 3.38812976953e-21 0 0.0 -3.38813461629e-21 100.000038147 0 0.0 0 0 99.9999389648 0.0 3.99999999999 9.24999952316 2 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1796380739" immovable="1" name="Wall_5">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://3776ca2194dd6b2eba9ddec6dc66a58cabe246d4</mesh_name>
+					<surface name="Material.001" collision="1" material="6ec22ab59aa4cc4ea33c9c5484a583e33217befb"/>
+					<transform>99.9999084472 3.38813057733e-21 0 0.0 -3.38813502019e-21 100.000038147 0 0.0 0 0 99.9999389648 0.0 -3.99999999999 17.2499995232 2 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1939235014" immovable="1" name="Wall_6">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://3776ca2194dd6b2eba9ddec6dc66a58cabe246d4</mesh_name>
+					<surface name="Material.001" collision="1" material="6ec22ab59aa4cc4ea33c9c5484a583e33217befb"/>
+					<transform>99.9998855591 3.38812976953e-21 0 0.0 -3.38813542408e-21 100.000053406 0 0.0 0 0 99.9999313354 0.0 3.99999999999 17.2499995232 2 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="2029437293" immovable="1" name="Wall">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://3776ca2194dd6b2eba9ddec6dc66a58cabe246d4</mesh_name>
+					<surface name="Material.001" collision="1" material="6ec22ab59aa4cc4ea33c9c5484a583e33217befb"/>
+					<transform>99.9999084472 3.38813057733e-21 0 0.0 -3.38813502019e-21 100.000038147 0 0.0 0 0 99.9999389648 0.0 -3.99999999999 1.25 2 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="363672552" immovable="1" name="Wall">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://3776ca2194dd6b2eba9ddec6dc66a58cabe246d4</mesh_name>
+					<surface name="Material.001" collision="1" material="6ec22ab59aa4cc4ea33c9c5484a583e33217befb"/>
+					<transform>99.9998855591 3.38812976953e-21 0 0.0 -3.38813542408e-21 100.000053406 0 0.0 0 0 99.9999313354 0.0 3.99999999999 1.25 2 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1787889191" immovable="1" name="Wall">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://3776ca2194dd6b2eba9ddec6dc66a58cabe246d4</mesh_name>
+					<surface name="Material.001" collision="1" material="6ec22ab59aa4cc4ea33c9c5484a583e33217befb"/>
+					<transform>-1.19209043987e-05 99.999786377 0 0.0 -100.000022888 -1.19209325931e-05 0 0.0 0 0 99.9999084472 0.0 -2.64697795893e-23 -10 2 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="135187802" immovable="1" name="Wall_1">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://3776ca2194dd6b2eba9ddec6dc66a58cabe246d4</mesh_name>
+					<surface name="Material.001" collision="1" material="6ec22ab59aa4cc4ea33c9c5484a583e33217befb"/>
+					<transform>5.96043810219e-06 -99.9995498657 0 0.0 39.9999809265 2.38418488152e-06 0 0.0 0 0 99.9998245239 0.0 -2.5 5.25 2 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="415972593" immovable="1" name="Wall_2">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://3776ca2194dd6b2eba9ddec6dc66a58cabe246d4</mesh_name>
+					<surface name="Material.001" collision="1" material="6ec22ab59aa4cc4ea33c9c5484a583e33217befb"/>
+					<transform>5.96043946644e-06 -99.9995727539 0 0.0 39.9999809265 2.38418488152e-06 0 0.0 0 0 99.9998397827 0.0 2.5 5.25 2 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1821512092" immovable="1" name="Wall_7">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://3776ca2194dd6b2eba9ddec6dc66a58cabe246d4</mesh_name>
+					<surface name="Material.001" collision="1" material="6ec22ab59aa4cc4ea33c9c5484a583e33217befb"/>
+					<transform>99.9999084472 3.38813057733e-21 0 0.0 -3.38813502019e-21 100.000038147 0 0.0 0 0 99.9999389648 0.0 -3.99999999999 -6 2 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="723124299" immovable="1" name="Wall_8">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://3776ca2194dd6b2eba9ddec6dc66a58cabe246d4</mesh_name>
+					<surface name="Material.001" collision="1" material="6ec22ab59aa4cc4ea33c9c5484a583e33217befb"/>
+					<transform>99.9998855591 3.38812976953e-21 0 0.0 -3.38813542408e-21 100.000053406 0 0.0 0 0 99.9999313354 0.0 3.99999999999 -6 2 1.0</transform>
+				</node>
+			</node>
+			<node type="ObjectMeshStatic" id="937710942" name="ButtonDoor">
+				<streaming_mode_vram>0</streaming_mode_vram>
+				<streaming_mode_ram>0</streaming_mode_ram>
+				<mesh_name>guid://3776ca2194dd6b2eba9ddec6dc66a58cabe246d4</mesh_name>
+				<surface name="Material.001" collision="1" material="c6640cef185ec61cb37579a6aaf30630358770e5"/>
+				<transform>3.57626520042e-05 99.9995896816 0 0.0 -24.9999979138 8.94069254542e-06 0 0.0 0 0 65.999989152 0.0 -8.70194256053e-22 20.7499987632 1.50000035763 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1664662821" name="TriggerDoor">
+				<streaming_mode_vram>0</streaming_mode_vram>
+				<streaming_mode_ram>0</streaming_mode_ram>
+				<mesh_name>guid://3776ca2194dd6b2eba9ddec6dc66a58cabe246d4</mesh_name>
+				<surface name="Material.001" collision="1" material="c6640cef185ec61cb37579a6aaf30630358770e5"/>
+				<transform>3.57626520042e-05 99.9995896816 0 0.0 -24.9999979138 8.94069254542e-06 0 0.0 0 0 65.999989152 0.0 -9.26442885596e-23 4.74999943375 1.50000035763 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="472125755" name="Button">
+				<streaming_mode_vram>0</streaming_mode_vram>
+				<streaming_mode_ram>0</streaming_mode_ram>
+				<mesh_name>guid://3776ca2194dd6b2eba9ddec6dc66a58cabe246d4</mesh_name>
+				<surface name="Material.001" intersection="1" intersection_mask="0x2" material="c6640cef185ec61cb37579a6aaf30630358770e5"/>
+				<properties>
+					<property parent="eb7f0c3401d34a03bdf1e786e00d192d4a8628a8" guid="21fcee0a7dc5309fbff961f189c787ee0403ed14">
+						<parameter name="ID">5</parameter>
+					</property>
+				</properties>
+				<transform>0.000178813934326 250 0 0.0 -9.99999237061 7.15255191608e-06 0 0.0 0 0 9.99999141693 0.0 -1.50000035763 21.1499985695 1.00000011921 1.0</transform>
+				<node type="PhysicalTrigger" id="1699184969" name="ButtonTrigger">
+					<type>3</type>
+					<size>1 0.800000012 0.5</size>
+					<exclusion_mask>0x0</exclusion_mask>
+					<properties>
+						<property parent="7a71d838d1846c7883c6db07e1877f0cda0ad232" guid="205aae9c3dd4eb03e98617c120d6aca424471b93">
+							<parameter name="DoorNode">937710942</parameter>
+							<parameter name="ClosePos">0 20.875 1.5</parameter>
+							<parameter name="OpenPos">2 20.875 1.5</parameter>
+							<parameter name="PhysicalTriggerNode">1699184969</parameter>
+							<parameter name="ButtonNode">472125755</parameter>
+						</property>
+					</properties>
+					<transform>2.86102346081e-09 -0.100000094175 0 0.0 0.00399999928474 7.15256155102e-08 0 0.0 0 0 0.100000109673 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+			<node type="PhysicalTrigger" id="942515474" name="DoorTrigger">
+				<type>3</type>
+				<size>2.5 4 4</size>
+				<exclusion_mask>0x0</exclusion_mask>
+				<properties>
+					<property parent="2d075594c853254ad9c70233972d4bb6b5e6cfee" guid="4dedf796efb14626b2df29e3d028afc26f16b885">
+						<parameter name="DoorNode">1664662821</parameter>
+						<parameter name="ClosePos">0 4.75 1.5</parameter>
+						<parameter name="OpenPos">2 4.75 1.5</parameter>
+						<parameter name="PhysicalTriggerNode">942515474</parameter>
+					</property>
+				</properties>
+				<transform>1.00000017881 -5.29395560479e-23 0 0.0 5.29395749806e-23 0.999999821185 0 0.0 0 0 1.00000023842 0.0 2.91167645038e-22 4.74999943376 1.50000035763 1.0</transform>
 			</node>
 		</node>
 	</editor>
