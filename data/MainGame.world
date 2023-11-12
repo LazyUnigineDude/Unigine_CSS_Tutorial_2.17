@@ -759,7 +759,32 @@
 					<parameter name="Camera">1266584972</parameter>
 				</property>
 			</properties>
-			<transform>0.999503791332 0.0314991474152 -1.03563070297e-05 0.0 -0.020248349756 0.642754971981 0.765804171562 0.0 0.0241288337857 -0.765423893929 0.643073797226 0.0 -1.11433438073 16.6003935426 2.02186548942 1.0</transform>
+			<transform>0.994136095047 0.108135782182 7.22706317904e-07 0.0 -0.0173329338431 0.159342080355 0.987071275711 0.0 0.106737606227 -0.981283187866 0.160282030702 0.0 1.22633380413 -10.1686875017 1.59325145441 1.0</transform>
+			<node type="SoundSource" id="1023719549" trigger_interaction_enabled="1" name="Background Music">
+				<sample_name/>
+				<sample_stream>0</sample_stream>
+				<source_mask>0x1</source_mask>
+				<reverb_mask>0x1</reverb_mask>
+				<loop>1</loop>
+				<play_on_enable>0</play_on_enable>
+				<restart_on_enable>1</restart_on_enable>
+				<occlusion>1</occlusion>
+				<occlusion_mask>-1</occlusion_mask>
+				<adaptation>0.25</adaptation>
+				<time>0</time>
+				<pitch>1</pitch>
+				<gain>1</gain>
+				<room_rolloff>0</room_rolloff>
+				<air_absorption>0</air_absorption>
+				<min_distance>0</min_distance>
+				<max_distance>10</max_distance>
+				<cone_inner_angle>180</cone_inner_angle>
+				<cone_outer_angle>180</cone_outer_angle>
+				<cone_outer_gain>0</cone_outer_gain>
+				<cone_outer_gain_hf>1</cone_outer_gain_hf>
+				<playing>0</playing>
+				<transform>0.999999880791 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999880791 0.0 0 0 0 1.0</transform>
+			</node>
 		</node>
 		<node type="NodeDummy" id="1828687599" name="Menu">
 			<properties>
@@ -817,6 +842,7 @@
 					<parameter name="InventoryNode">1784968527</parameter>
 					<parameter name="InteractorNode">988513967</parameter>
 					<parameter name="GunNode">958760002</parameter>
+					<parameter name="SoundNode">1326030025</parameter>
 				</property>
 			</properties>
 			<transform>0.999999880791 3.29999449316e-22 5.37116974975e-15 0.0 3.29999701751e-22 0.999999880791 -1.22878091702e-07 0.0 -5.37117017326e-15 1.22878091702e-07 0.999999940395 0.0 0 -6.68610786253 2.23059846704e-16 1.0</transform>
@@ -893,6 +919,36 @@
 					<transform>-0.0149232688037 -0.175527964056 0.984361048287 0.0 -0.0316771308355 0.984060419589 0.174994140642 0.0 -0.999387417008 -0.0285701871919 -0.020245779826 0.0 0.0701594710464 -0.0134866203185 0.285268978821 1.0</transform>
 				</node>
 			</node>
+			<node type="SoundSource" id="1326030025" name="Footsteps">
+				<sample_name>guid://2416c6d39c8aa993708f4072ce4bb6a3336eaa48</sample_name>
+				<sample_stream>0</sample_stream>
+				<source_mask>0x1</source_mask>
+				<reverb_mask>0x1</reverb_mask>
+				<loop>1</loop>
+				<play_on_enable>0</play_on_enable>
+				<restart_on_enable>1</restart_on_enable>
+				<occlusion>1</occlusion>
+				<occlusion_mask>-1</occlusion_mask>
+				<adaptation>0.25</adaptation>
+				<time>0</time>
+				<pitch>1</pitch>
+				<gain>1</gain>
+				<room_rolloff>0</room_rolloff>
+				<air_absorption>0</air_absorption>
+				<min_distance>0</min_distance>
+				<max_distance>10</max_distance>
+				<cone_inner_angle>180</cone_inner_angle>
+				<cone_outer_angle>180</cone_outer_angle>
+				<cone_outer_gain>0</cone_outer_gain>
+				<cone_outer_gain_hf>1</cone_outer_gain_hf>
+				<playing>0</playing>
+				<properties>
+					<property parent="6152fc53abde8cfe33e0eda8c42d2f389f5b9ff1" guid="06ee2339ab46cde2da220ac658a3391310bef1e7">
+						<parameter name="SoundFile">guid://2416c6d39c8aa993708f4072ce4bb6a3336eaa48</parameter>
+					</property>
+				</properties>
+				<transform>0.999999940395 0 0 0.0 0 1 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+			</node>
 		</node>
 		<node type="NodeDummy" id="8058553" name="HUD">
 			<properties>
@@ -903,19 +959,6 @@
 				</property>
 			</properties>
 			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 -2.11974900629 -0.423740099945 2.56576199009 1.0</transform>
-		</node>
-		<node type="ObjectMeshStatic" id="1517726069" name="Apple_1">
-			<streaming_mode_vram>0</streaming_mode_vram>
-			<streaming_mode_ram>0</streaming_mode_ram>
-			<mesh_name>guid://5b2e4f6612619f8da5bb3b8810f12947370f55fa</mesh_name>
-			<surface name="Apple" intersection="1" intersection_mask="0x2" material="07cbdb29421c6a744f9e9343d7b41fc60f93746d"/>
-			<properties>
-				<property parent="eb7f0c3401d34a03bdf1e786e00d192d4a8628a8" guid="8d31086fc41f9b02ecfe9e7932523584c5d24313">
-					<parameter name="ID">1</parameter>
-					<parameter name="Amount">25</parameter>
-				</property>
-			</properties>
-			<transform>0.999999880791 1.61944813471e-22 1.04216045448e-14 0.0 6.24864624256e-22 1 -7.54979154749e-08 0.0 -1.04216053918e-14 7.54979154749e-08 1 0.0 -1.32350109699e-22 15.4999990761 0.999999940395 1.0</transform>
 		</node>
 		<node type="ObjectMeshStatic" id="673402005" name="bucket_1">
 			<streaming_mode_vram>0</streaming_mode_vram>
@@ -929,19 +972,6 @@
 				</property>
 			</properties>
 			<transform>150 3.97046653636e-21 1.02880000268e-34 0.0 -3.97046532467e-21 149.999954224 0 0.0 -1.02880000268e-34 0 150.000015259 0.0 -2 15.4999990761 0.999999940395 1.0</transform>
-		</node>
-		<node type="ObjectMeshStatic" id="1360052805" name="Sledge hammer_1">
-			<streaming_mode_vram>0</streaming_mode_vram>
-			<streaming_mode_ram>0</streaming_mode_ram>
-			<mesh_name>guid://770583a254fb2e992eb247249658e833f8720ff6</mesh_name>
-			<surface name="hammer" intersection="1" intersection_mask="0x2" material="3a6de884b38c5a13124e1856a87e73bd7a6d21f8"/>
-			<properties>
-				<property parent="eb7f0c3401d34a03bdf1e786e00d192d4a8628a8" guid="996ccd416c1645ac671f051b54adf7be0b883c05">
-					<parameter name="ID">3</parameter>
-					<parameter name="Amount">5</parameter>
-				</property>
-			</properties>
-			<transform>150 -2.24721406994e-05 -6.69395135227e-19 0.0 2.24721334234e-05 149.999954224 4.46816411995e-12 0.0 1.81753577215e-25 -4.46816585467e-12 150.000015259 0.0 2 15.4999990761 0.999999940395 1.0</transform>
 		</node>
 		<node type="ObjectMeshStatic" id="1007192747" name="Shotgun_1">
 			<streaming_mode_vram>0</streaming_mode_vram>
@@ -959,7 +989,7 @@
 				<transform>-9.62395086263e-07 1.24249930138e-05 19.9999893434 0.0 19.9999668795 3.13352996884e-07 -1.45478407541e-06 0.0 -8.41239471416e-08 19.9999577206 -1.24943243214e-05 0.0 9.32000412311 0.0400013888041 3.03999702891 1.0</transform>
 			</node>
 		</node>
-		<node type="NodeDummy" id="1361287756" name="Room">
+		<node type="NodeDummy" id="1361287756" enabled="0" name="Room">
 			<transform>0.999999701976 0 0 0.0 0 1.00000005961 0 0.0 0 0 0.999999701976 0.0 0 0 0 1.0</transform>
 			<node type="NodeDummy" id="1514818624" name="Walls">
 				<transform>1.00000023842 0 0 0.0 0 0.99999988079 0 0.0 0 0 1.00000023842 0.0 0 0 0 1.0</transform>
@@ -1109,6 +1139,54 @@
 					</property>
 				</properties>
 				<transform>1.00000017881 -5.29395560479e-23 0 0.0 5.29395749806e-23 0.999999821185 0 0.0 0 0 1.00000023842 0.0 2.91167645038e-22 4.74999943376 1.50000035763 1.0</transform>
+			</node>
+		</node>
+		<node type="WorldTrigger" id="1678049172" name="WorldTrigger">
+			<touch>1</touch>
+			<size>10 10 8</size>
+			<properties>
+				<property parent="92ed92a951c124a06dd9cc30b9056eaba4bfdd96" guid="8a15e3bb1163b4cd8a4e5830ef10004e78bb4a19">
+					<parameter name="SoundFile">guid://28d0818f34c5cecddf4c6e1461678e583387d94d</parameter>
+					<parameter name="ObjectDetect">1023719549</parameter>
+				</property>
+			</properties>
+			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 -6 0 2 1.0</transform>
+			<node type="ObjectMeshStatic" id="1517726069" name="Apple_1">
+				<streaming_mode_vram>0</streaming_mode_vram>
+				<streaming_mode_ram>0</streaming_mode_ram>
+				<mesh_name>guid://5b2e4f6612619f8da5bb3b8810f12947370f55fa</mesh_name>
+				<surface name="Apple" intersection="1" intersection_mask="0x2" material="07cbdb29421c6a744f9e9343d7b41fc60f93746d"/>
+				<properties>
+					<property parent="eb7f0c3401d34a03bdf1e786e00d192d4a8628a8" guid="8d31086fc41f9b02ecfe9e7932523584c5d24313">
+						<parameter name="ID">1</parameter>
+						<parameter name="Amount">25</parameter>
+					</property>
+				</properties>
+				<transform>1 1.61944832776e-22 1.0421605166e-14 0.0 6.24864698746e-22 1.00000011921 -7.54979199749e-08 0.0 -1.04216066342e-14 7.5497924475e-08 1.0000000596 0.0 0 0 0 1.0</transform>
+			</node>
+		</node>
+		<node type="WorldTrigger" id="1140385251" name="WorldTrigger_1">
+			<touch>1</touch>
+			<size>10 10 8</size>
+			<properties>
+				<property parent="92ed92a951c124a06dd9cc30b9056eaba4bfdd96" guid="f2061f4d0f64086f45876dc4a9cd8a9edc2fb10a">
+					<parameter name="SoundFile">guid://2be86b599e28117df8da216642251ca291ee4907</parameter>
+					<parameter name="ObjectDetect">1023719549</parameter>
+				</property>
+			</properties>
+			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 6 0 2 1.0</transform>
+			<node type="ObjectMeshStatic" id="1360052805" name="Sledge hammer_1">
+				<streaming_mode_vram>0</streaming_mode_vram>
+				<streaming_mode_ram>0</streaming_mode_ram>
+				<mesh_name>guid://770583a254fb2e992eb247249658e833f8720ff6</mesh_name>
+				<surface name="hammer" intersection="1" intersection_mask="0x2" material="3a6de884b38c5a13124e1856a87e73bd7a6d21f8"/>
+				<properties>
+					<property parent="eb7f0c3401d34a03bdf1e786e00d192d4a8628a8" guid="996ccd416c1645ac671f051b54adf7be0b883c05">
+						<parameter name="ID">3</parameter>
+						<parameter name="Amount">5</parameter>
+					</property>
+				</properties>
+				<transform>150.000017881 -2.24721433783e-05 -6.69395175126e-19 0.0 2.24721361023e-05 149.999972105 4.46816438627e-12 0.0 1.81753598882e-25 -4.46816638732e-12 150.0000242 0.0 0 0 0 1.0</transform>
 			</node>
 		</node>
 	</editor>

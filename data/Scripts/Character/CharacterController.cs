@@ -10,7 +10,8 @@ public class CharacterController : Component {
 		HealthBarNode,
 		InventoryNode,
 		InteractorNode,
-		GunNode;
+		GunNode,
+		SoundNode;
 
 	AnimationController Animation;
 	PhysicsController Physics;
@@ -18,6 +19,7 @@ public class CharacterController : Component {
 	InventoryController Inventory;
 	Interactor Interact;
 	GunHandler Gun;
+	SoundController Sound;
 
 	HUDMaker HUD;
 	bool isUIOpen;
@@ -32,12 +34,14 @@ public class CharacterController : Component {
         Inventory = GetComponent<InventoryController>(InventoryNode);
 		Interact  = GetComponent<Interactor>(InteractorNode);
 		Gun		  = GetComponent<GunHandler>(GunNode);
+		Sound	  = GetComponent<SoundController>(SoundNode);
 
 		Animation.Initialize(node);
 		Physics.Initialize(node);
 		Inventory.Initialize();
 		Interact.Initialize(Game.Player);
 		Gun.Initialize(Game.Player);
+		Sound.Initialize();
 
 		HUD = GetComponent<HUDMaker>(World.GetNodeByID(HUDMaker.NODE_ID));
 	}
@@ -45,6 +49,9 @@ public class CharacterController : Component {
 	private void Update()
 	{
 		// write here code to be called before updating each render frame
+
+		if (Animation.isIdle()) Sound.StopSound();
+		else Sound.PlaySound();
 
 		if(!isUIOpen) { 
 			if (Input.IsKeyPressed(Input.KEY.W) && Input.IsKeyPressed(Input.KEY.LEFT_SHIFT)) { Animation.ChangeAnim(AnimationController.ANIM_STATE.RUN); }

@@ -47,7 +47,6 @@
 	<ItemGroup>
 		<Compile Include="data/Scripts/Bullet_Health/HealthBar.cs"/>
 		<Compile Include="data/Scripts/AI/NavigationMaker.cs"/>
-		<Compile Include="data/Scripts/Sound/SoundManager.cs"/>
 		<Compile Include="data/Scripts/AI/ShooterAI.cs"/>
 		<Compile Include="data/StarMove.cs"/>
 		<Compile Include="data/Scripts/GUI/HUDMaker.cs"/>
@@ -72,6 +71,8 @@
 		<Compile Include="data/Scripts/Character/CharacterController.cs"/>
 		<Compile Include="data/Scripts/Door/DoorOpener.cs"/>
 		<Compile Include="data/Scripts/Door/DoorTrigger.cs"/>
+		<Compile Include="data/Scripts/Sound/SoundController.cs"/>
+		<Compile Include="data/Scripts/Sound/WorldSoundChanger.cs"/>
 	</ItemGroup>
 	<ItemGroup>
 		<Compile Include="source\AppEditorLogic.cs"/>

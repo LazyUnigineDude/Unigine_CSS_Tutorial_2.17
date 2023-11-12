@@ -22,6 +22,7 @@ public class AnimationController : Component
         UpdateAnims();
     }
 
+    public bool isIdle() => A_STATE == ANIM_STATE.IDLE;
     public void UpdateAnimations(float iFPS, float Time)
     {
         for (int i = 0; i < 2; i++) { MainCharacter.SetFrame(i, Time * 30); }
