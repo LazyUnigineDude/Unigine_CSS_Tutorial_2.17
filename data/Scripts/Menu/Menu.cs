@@ -9,9 +9,9 @@ public class Menu : Component
 {
 	public bool isMainMenu;
 	public string WorldName;
-	public AssetLink WorldAsset;
+	public AssetLink WorldAsset,WaterAsset;
 
-	WidgetButton Button, Quit;
+	WidgetButton Button, Quit, Water;
 	Gui GUI = Gui.GetCurrent();
 	bool isPaused = false;
 
@@ -25,7 +25,14 @@ public class Menu : Component
 		Button.AddCallback(Gui.CALLBACK_INDEX.CLICKED, OnClicked);
 		Button.SetPosition(200, 100);
 
-		Quit = new();
+        Water = new();
+        Water.Text = "Water";
+        Water.FontSize = 75;
+        Water.ButtonColor = vec4.WHITE;
+        Water.AddCallback(Gui.CALLBACK_INDEX.CLICKED, OnClickedW);
+        Water.SetPosition(200, 600);
+
+        Quit = new();
 		Quit.Text = "Quit";
 		Quit.FontSize = 75;
 		Quit.ButtonColor = vec4.WHITE;
@@ -55,14 +62,17 @@ public class Menu : Component
 		{
 			if (GUI.IsChild(Button) == 0) GUI.AddChild(Button);
 			if (GUI.IsChild(Quit) == 0) GUI.AddChild(Quit);
+			if (GUI.IsChild(Water) == 0) GUI.AddChild(Water);
 		}
 		else
 		{
 			if (GUI.IsChild(Button) == 1) GUI.RemoveChild(Button);
 			if (GUI.IsChild(Quit) == 1) GUI.RemoveChild(Quit);
+			if (GUI.IsChild(Water) == 1) GUI.RemoveChild(Water);
 		}
 	}
 
-	private void OnClicked() { MenuOpened(false); Button.DeleteLater(); Quit.DeleteLater(); World.LoadWorld(WorldAsset.Path); }
+	private void OnClickedW() { MenuOpened(false); Water.DeleteLater(); Button.DeleteLater(); Quit.DeleteLater(); World.LoadWorld(WaterAsset.Path); }
+	private void OnClicked() { MenuOpened(false);  Water.DeleteLater(); Button.DeleteLater(); Quit.DeleteLater(); World.LoadWorld(WorldAsset.Path); }
 	private void OnQuit() => Engine.Quit();
 }

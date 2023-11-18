@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.17.0.1" guid="e2203c896f6b6b7ace1828d06925aaffeda3c8f3" parent="ab09090a0dd9d626bbdee372c4ffc5e72bc0ce44" base_material="4dfec30f491f753f6e89094db6d3d695e89f9d6f">
+	<state name="ao_map">1</state>
+	<state name="emission">0</state>
+	<texture name="albedo">guid://317017714e4a730ce9ac4447da34199cb7283c30</texture>
+	<texture name="shading">guid://d74c1aace55505ddd0c90e27828d4379e80621a8</texture>
+	<texture name="normal">guid://dcf01c08bb552cb5dd406ee79ae78db5a9d9a09a</texture>
+	<texture name="ambient_occlusion">guid://c16e33387791bbf4bec913686b1678fa0d45d3d9</texture>
+	<texture name="emission">guid://361ca8af0df9392be48f2770bcff6ba573249c46</texture>
+	<parameter name="metalness" expression="0">1</parameter>
+	<parameter name="roughness" expression="0">0.5</parameter>
+	<parameter name="emission_scale" expression="0">0.839999974</parameter>
+</material>

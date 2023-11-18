@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.17.0.1">
+	<node type="NodeDummy" id="1965775072" name="zodiac_boat_2">
+		<transform>1 -2.08166817117e-017 1.94289029309e-016 0.0 -5.55111512313e-017 1 2.77555756156e-017 0.0 -2.77555756156e-017 2.77555756156e-017 1 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="402392749" name="zodiac_boat">
+			<mesh_name>guid://b7a4b50b1d5cef896979b10e44e6546a5cdf109b</mesh_name>
+			<surface name="zodiac_boat_lod_0_zodiac_boat_body" max_visible_distance="5" max_fade_distance="10" physics_friction="1" physics_restitution="1" material="e2203c896f6b6b7ace1828d06925aaffeda3c8f3" lighting_mode="0" intersection="1"/>
+			<surface name="zodiac_boat_glass_zodiac_boat_glass" max_visible_distance="5" max_fade_distance="10" physics_friction="1" physics_restitution="1" material="edae4edd4937fa2c57b1e83224902c83e121e32e" lighting_mode="0" intersection="1"/>
+			<surface name="zodiac_boat_lod_1_zodiac_boat_body" min_visible_distance="5" max_visible_distance="15" min_fade_distance="10" max_fade_distance="10" physics_friction="1" physics_restitution="1" material="e2203c896f6b6b7ace1828d06925aaffeda3c8f3" lighting_mode="0" intersection="1"/>
+			<surface name="zodiac_boat_lod_2_zodiac_boat_body" min_visible_distance="15" max_visible_distance="1000" min_fade_distance="10" max_fade_distance="100" physics_friction="1" physics_restitution="1" material="e2203c896f6b6b7ace1828d06925aaffeda3c8f3" lighting_mode="0" intersection="1"/>
+			<body type="BodyRigid" id="375219934" frozen="0">
+				<max_linear_velocity>30</max_linear_velocity>
+				<max_angular_velocity>5</max_angular_velocity>
+				<shape type="ShapeBox" id="1258898087" transform="1 0 0 0 0 1 0 0 0 0 1 0 0 1.51400006 0.127000004 1">
+					<size>2.81500006 8.43000031 1</size>
+					<physics_intersection_mask>0x0</physics_intersection_mask>
+					<collision_mask>0x0</collision_mask>
+					<mass>500</mass>
+				</shape>
+				<shape type="ShapeBox" id="1960825488" transform="1 2.52515993e-024 -3.30872008e-024 0 -3.75514012e-025 1 -4.1359001e-025 0 -3.30872008e-024 0 1 0 -0.000242053997 1.51397002 0.180838004 1">
+					<size>2.81500006 8.43000031 1.5</size>
+				</shape>
+			</body>
+			<transform>0.615559910865 0.7570320127 0.23452328052 0.0 -0.782523628016 0.622648691754 0.0686224619449 0.0 -0.0934988661999 -0.227155513964 0.969685021918 0.0 0 0 0 1.0</transform>
+			<node type="FieldSpacer" id="645398956" name="FieldSpacer_0">
+				<ellipse>1</ellipse>
+				<size>2.29999995 7.5 2</size>
+				<attenuation>10</attenuation>
+				<transform>0.99982405 -0.0011826754 -0.018709123 0.0 -0.036442656 1.0037487 0.06863264 0.0 0.021282762 -0.069682062 0.99734819 0.0 3.0517578e-005 1.4060211 0 1.0</transform>
+			</node>
+		</node>
+	</node>
+</nodes>

@@ -73,6 +73,8 @@
 		<Compile Include="data/Scripts/Door/DoorTrigger.cs"/>
 		<Compile Include="data/Scripts/Sound/SoundController.cs"/>
 		<Compile Include="data/Scripts/Sound/WorldSoundChanger.cs"/>
+		<Compile Include="data/WaterTest/Buoyancy.cs"/>
+		<Compile Include="data/WaterTest/BoatMovement.cs"/>
 	</ItemGroup>
 	<ItemGroup>
 		<Compile Include="source\AppEditorLogic.cs"/>

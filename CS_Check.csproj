@@ -73,12 +73,22 @@
 		<Compile Include="data\Scripts\Sound\SoundController.cs" />
 		<Compile Include="data\Scripts\Sound\WorldSoundChanger.cs" />
 		<Compile Include="data\ViewportClip.cs" />
+		<Compile Include="data\WaterTest\BoatMovement.cs" />
+		<Compile Include="data\WaterTest\Buoyancy.cs" />
 	</ItemGroup>
 	<ItemGroup>
 		<Compile Include="source\AppEditorLogic.cs" />
 		<Compile Include="source\AppSystemLogic.cs" />
 		<Compile Include="source\AppWorldLogic.cs" />
 		<Compile Include="source\main.cs" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Content Include="data\WaterTest\zodiac_boat\textures\zodiac_boat_a.png" />
+	  <Content Include="data\WaterTest\zodiac_boat\textures\zodiac_boat_alb.png" />
+	  <Content Include="data\WaterTest\zodiac_boat\textures\zodiac_boat_e.png" />
+	  <Content Include="data\WaterTest\zodiac_boat\textures\zodiac_boat_l.png" />
+	  <Content Include="data\WaterTest\zodiac_boat\textures\zodiac_boat_n.png" />
+	  <Content Include="data\WaterTest\zodiac_boat\textures\zodiac_boat_sh.png" />
 	</ItemGroup>
 	<ItemGroup>
 	  <None Include="data\Scripts\AI\AIDetector.cs.meta" />
@@ -119,6 +129,28 @@
 	  <None Include="data\Scripts\Door\DoorTrigger.cs.meta" />
 	  <None Include="data\Scripts\GUI\HUDMaker.cs.meta" />
 	  <None Include="data\Scripts\Menu\Menu.cs.meta" />
+	  <None Include="data\WaterTest\BoatMovement.cs.meta" />
+	  <None Include="data\WaterTest\Buoyancy.cs.meta" />
+	  <None Include="data\WaterTest\zodiac_boat\fbx\zodiac_boat.FBX" />
+	  <None Include="data\WaterTest\zodiac_boat\fbx\zodiac_boat.FBX.meta" />
+	  <None Include="data\WaterTest\zodiac_boat\materials\zodiac_boat_base.mat" />
+	  <None Include="data\WaterTest\zodiac_boat\materials\zodiac_boat_base.mat.meta" />
+	  <None Include="data\WaterTest\zodiac_boat\materials\zodiac_boat_body.mat" />
+	  <None Include="data\WaterTest\zodiac_boat\materials\zodiac_boat_body.mat.meta" />
+	  <None Include="data\WaterTest\zodiac_boat\materials\zodiac_boat_body_for_supply_ship.mat" />
+	  <None Include="data\WaterTest\zodiac_boat\materials\zodiac_boat_body_for_supply_ship.mat.meta" />
+	  <None Include="data\WaterTest\zodiac_boat\materials\zodiac_boat_glass.mat" />
+	  <None Include="data\WaterTest\zodiac_boat\materials\zodiac_boat_glass.mat.meta" />
+	  <None Include="data\WaterTest\zodiac_boat\textures\zodiac_boat_a.png.meta" />
+	  <None Include="data\WaterTest\zodiac_boat\textures\zodiac_boat_alb.png.meta" />
+	  <None Include="data\WaterTest\zodiac_boat\textures\zodiac_boat_e.png.meta" />
+	  <None Include="data\WaterTest\zodiac_boat\textures\zodiac_boat_l.png.meta" />
+	  <None Include="data\WaterTest\zodiac_boat\textures\zodiac_boat_n.png.meta" />
+	  <None Include="data\WaterTest\zodiac_boat\textures\zodiac_boat_sh.png.meta" />
+	  <None Include="data\WaterTest\zodiac_boat\zodiac_boat.node" />
+	  <None Include="data\WaterTest\zodiac_boat\zodiac_boat.node.meta" />
+	  <None Include="data\WaterTest\_TestWater.world" />
+	  <None Include="data\WaterTest\_TestWater.world.meta" />
 	</ItemGroup>
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
 		<Exec Command="&quot;$(DOTNET_HOST_PATH)&quot; &quot;$(OutputPath)cspropgen_double_x64d.dll&quot; -p &quot;$(OutputPath)$(AssemblyName).dll&quot; -data_path ../data/" Condition="'$(Configuration)'=='Debug' And $(SkipPostBuild)=='false'" />

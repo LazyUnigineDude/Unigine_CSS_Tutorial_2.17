@@ -791,6 +791,7 @@
 				<property parent="364df5f913b6a70452a50693d3c9dad6c9c6543d" guid="ee17adb7c38a1608ac3afe3195322fc6402fa886">
 					<parameter name="WorldName">MainMenu</parameter>
 					<parameter name="WorldAsset">guid://0a7e899f2d86da579e3f5259016a8205c2e3b6ce</parameter>
+					<parameter name="WaterAsset">guid://033742af85b0f7d78145a3be942512621b93f302</parameter>
 				</property>
 			</properties>
 			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0.874794311613 -2.46107790743 2.34528211453 1.0</transform>

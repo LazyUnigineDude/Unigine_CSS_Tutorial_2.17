@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.17.0.1" guid="edae4edd4937fa2c57b1e83224902c83e121e32e" parent="ab09090a0dd9d626bbdee372c4ffc5e72bc0ce44" base_material="4dfec30f491f753f6e89094db6d3d695e89f9d6f">
+	<options transparent="2" blend_src="5" blend_dest="6"/>
+	<parameter name="albedo_color" expression="0">0.329412013 0.329412013 0.329412013 0.333332986</parameter>
+	<parameter name="metalness" expression="0">1</parameter>
+	<parameter name="roughness" expression="0">0</parameter>
+	<parameter name="emission_color" expression="0">0 0 0 1</parameter>
+	<parameter name="emission_scale" expression="0">0</parameter>
+</material>
