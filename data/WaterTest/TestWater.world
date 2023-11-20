@@ -746,9 +746,9 @@
 			<surface name="water_surface" intersection="1" material="721ee321d145af016697ccf60d913ae884451bcd"/>
 			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
 			<node type="PhysicalWater" id="682965835" name="PhysicalWater">
-				<size>10000 10000 4</size>
+				<size>5000 5000 30</size>
 				<density>2</density>
-				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 -2.10479366963 1.0</transform>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 -14.5271866606 1.0</transform>
 			</node>
 		</node>
 		<node type="ObjectMeshStatic" id="1861361547" enabled="0" name="zodiac_boat_lod_1">
@@ -827,7 +827,7 @@
 				<transform>0.999999923706 -1.74845531546e-07 -1.52410701747e-22 0.0 1.74845474323e-07 0.999999718666 5.29395574363e-23 0.0 3.78486625336e-22 -6.6176700239e-29 1.00000020504 0.0 2.21081205702e-07 1.26443732307 0 1.0</transform>
 			</node>
 		</node>
-		<node type="ObjectMeshStatic" id="302889384" name="zodiac_boat_lod_2">
+		<node type="ObjectMeshStatic" id="302889384" enabled="0" name="zodiac_boat_lod_2">
 			<streaming_mode_vram>0</streaming_mode_vram>
 			<streaming_mode_ram>0</streaming_mode_ram>
 			<mesh_name>guid://348d8e89ee52d29ae17269f029dbf05b82c45754</mesh_name>
@@ -854,14 +854,14 @@
 		<node type="NodeDummy" id="1624029993" name="Menu">
 			<properties>
 				<property parent="364df5f913b6a70452a50693d3c9dad6c9c6543d" guid="727b3963270daa898d431c98e9a54642afed9fc7">
-					<parameter name="WorldName">MainGame</parameter>
+					<parameter name="WorldName">Main Menu</parameter>
 					<parameter name="WorldAsset">guid://0a7e899f2d86da579e3f5259016a8205c2e3b6ce</parameter>
 					<parameter name="WaterAsset">guid://033742af85b0f7d78145a3be942512621b93f302</parameter>
 				</property>
 			</properties>
 			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
 		</node>
-		<node type="PlayerPersecutor" id="1093566449" name="PlayerPersecutor">
+		<node type="PlayerPersecutor" id="1093566449" enabled="0" name="PlayerPersecutor">
 			<fixed>1</fixed>
 			<collision>0</collision>
 			<collision_mask>0x1</collision_mask>
@@ -881,6 +881,1604 @@
 			<is_listener>1</is_listener>
 			<controlled>1</controlled>
 			<transform>0 -1 0 0.0 0 0 1 0.0 -1 0 0 0.0 -10 0 0 1.0</transform>
+		</node>
+		<node type="ObjectDummy" id="1547639635" name="BoxPhysics">
+			<body type="BodyRigid" id="1126745210" frozen="0">
+				<shape type="ShapeBox" id="129417025" transform="1 0 0 0 0 1 0 0 0 0 1 0 0 -22.05373 -2.10166097 1">
+					<size>50 271.397461 18.3759327</size>
+					<mass>199487.266</mass>
+				</shape>
+			</body>
+			<properties>
+				<property parent="8ed0c2ec80f4ee73f586b5277147848d7825f448" guid="09c5eceac8d95144c4505c6dc983471df32b8966">
+					<parameter name="Pod1">1269492266</parameter>
+					<parameter name="Pod2">425430802</parameter>
+				</property>
+			</properties>
+			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+			<node type="NodeDummy" id="1204742003" name="OceanOne">
+				<transform>-0.00999999977648 -1.75635275212e-08 -1.44871602507e-15 0.0 1.75635239685e-08 -0.00999999791384 -8.74227523706e-10 0.0 8.67361737988e-17 -8.7422769024e-10 0.00999999977648 0.0 0 0 0 1.0</transform>
+				<node type="ObjectMeshStatic" id="1818461750" name="Würfel">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://37367fcc4880b16cc1cbb28717a4d2474a35f728</mesh_name>
+					<surface name="_darkglass" material="0fad09f0ea9e40812a924549e8979e3e3ae7f8e5"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 -833.407905305 -614.018251933 1611.41909422 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="3950621" name="Zylinder.001">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://1259e40acb4abd6aa71e2c2b44f8926da48e7067</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>1.60727369785 5.43179368151e-08 -1.40512312896e-07 0.0 1.40512227631e-07 2.87402770027e-07 1.60727274418 0.0 5.43179616841e-08 -1.60727369785 2.87402940558e-07 0.0 -5.41784118797 -17544.1092777 2237.049595 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1326394072" name="Würfel.002">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://c8a599de2fcc97e87b2795111ca0c1e55282b29a</mesh_name>
+					<surface name="_metallic" material="fac99e98d8e499ec236cba11b4875c19c04d752d"/>
+					<transform>2083.61083984 7.04157719156e-05 -0.000182155024959 0.0 0.000182155068615 0.000372578739189 2083.61108398 0.0 7.04158519511e-05 -2083.61206055 0.000372578913812 0.0 -0.00406241531189 -302.705080954 6916.89014995 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="2052993111" name="Zylinder">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://0f352c4c38039f16da0eaf559b68410af1456131</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>112.809158325 3.81239351555e-06 -9.86208942777e-06 0.0 9.86208124232e-06 2.01718339667e-05 112.809066772 0.0 3.81239419767e-06 -112.809135437 2.01718466997e-05 0.0 -1273.61530186 21716.7869288 -1584.45297564 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="855183818" name="Würfel.003">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://dd707e403741691e5cf606ab598ca0409f7768dc</mesh_name>
+					<surface name="Kiel" material="a13a4df4f0f950c3300e151de1c85d7446954279"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 -0.00477480382219 7846.06930334 -745.671546576 1.0</transform>
+				</node>
+				<node type="NodeDummy" id="1290098337" name="Würfel.009">
+					<transform>114.464553833 3.86833789889e-06 -1.00068064057e-05 0.0 1.00068009488e-05 2.04678472073e-05 114.464485168 0.0 3.86833880839e-06 -114.464538574 2.04678563023e-05 0.0 -0.00282144443042 -14497.7567759 1373.2334218 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="2052161420" name="Würfel.065">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://017c8a5eae0242092e0f728fadbabefb26c2ee8b</mesh_name>
+					<surface name="_blueglass" material="b4ad8a90db481d3abdd21e69f2a0584749b3a005"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 -0.00549185554492 16048.1846181 1094.03176921 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1611675003" name="Würfel.286">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://db2e9572359c7da273a67dd5f160afc72af3726e</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>6.09748601913 2.06064910913e-07 -5.33059107966e-07 0.0 5.33058994279e-07 1.09031532247e-06 6.09748458862 0.0 2.06065095654e-07 -6.09748697281 1.09031566353e-06 0.0 2094.98316831 -8538.27516388 997.464179372 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1267969182" name="Würfel.070">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://5d1152c0093c93816e1554590269af60972196f5</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 1611.81433807 -15439.7944786 6916.89081161 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1159965541" name="Würfel.011">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://69cc7bf498b635281540550f0e6fd1ae09363bd0</mesh_name>
+					<surface name="_darkglass" material="0fad09f0ea9e40812a924549e8979e3e3ae7f8e5"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 -0.00544468916379 15508.6641279 1495.49468342 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="845538688" name="Würfel.089">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://93a3edf2ec74cad896db5733d7a482ca2754dcef</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 -0.00544468916379 15508.6641279 1495.49468342 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1317837535" name="Würfel.094">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://30e722469053d576941d6ad99b3f09469f1c6582</mesh_name>
+					<surface name="_darkglass" material="0fad09f0ea9e40812a924549e8979e3e3ae7f8e5"/>
+					<transform>111.884094238 3.78113145416e-06 -9.78121624939e-06 0.0 9.78120897344e-06 2.00064187084e-05 111.883995056 0.0 3.78113327315e-06 -111.884094238 2.00064368983e-05 0.0 2408.35397734 14267.1448066 1483.24290664 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1594796722" name="Würfel.117">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://34e1f874756d0d3ef4c7419d2b6876898b03e6f9</mesh_name>
+					<surface name="Boden" material="07205338aa7546d07684573134d6cd0058ae004d"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 -0.00407063905694 -208.636406372 1561.08814389 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="328370793" name="Würfel.256">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://a45bece827648e3a68e5c1b325e6253667f9e404</mesh_name>
+					<surface name="_darkglass" material="0fad09f0ea9e40812a924549e8979e3e3ae7f8e5"/>
+					<transform>2.32830810547 7.86838612044e-08 -8.74226316228e-06 0.0 0.000375476491172 1.78810187208e-05 99.9998397827 0.0 3.37950996254e-06 -99.9999389648 1.78810241778e-05 0.0 2089.7771538 -6205.19557425 1002.77224389 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="575066292" name="Würfel.262">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://441162c6f6644fab391f3e174b8c4bf5595d1f93</mesh_name>
+					<surface name="_metallic" material="fac99e98d8e499ec236cba11b4875c19c04d752d"/>
+					<transform>2083.61083984 7.04157719156e-05 -0.000182155024959 0.0 0.000182155068615 0.000372578739189 2083.61108398 0.0 7.04158519511e-05 -2083.61206055 0.000372578913812 0.0 -0.00406241531189 -302.705080954 6916.89014995 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="314786947" name="Würfel.264">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://7915d45a56ffd899d3b4201d35eaaf7df6191fd6</mesh_name>
+					<surface name="_metallic" material="fac99e98d8e499ec236cba11b4875c19c04d752d"/>
+					<transform>2083.61083984 7.04157719156e-05 -0.000182155024959 0.0 0.000182155068615 0.000372578739189 2083.61108398 0.0 7.04158519511e-05 -2083.61206055 0.000372578913812 0.0 -0.00406241531189 -302.705080954 6916.89014995 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="779132934" name="Würfel.267">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://d6e091687ede1afb64f87b21246ec21cda4ad53d</mesh_name>
+					<surface name="_metallic" material="fac99e98d8e499ec236cba11b4875c19c04d752d"/>
+					<transform>2083.61083984 7.04157719156e-05 -0.000182155024959 0.0 0.000182155068615 0.000372578739189 2083.61108398 0.0 7.04158519511e-05 -2083.61206055 0.000372578913812 0.0 -0.00406241531189 -302.705080954 6916.89014995 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="411006893" name="Würfel.268">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://725f851cb8c4528ea68bb09798caf464f6271578</mesh_name>
+					<surface name="_metallic" material="fac99e98d8e499ec236cba11b4875c19c04d752d"/>
+					<transform>2083.61083984 7.04157719156e-05 -0.000182155024959 0.0 0.000182155068615 0.000372578739189 2083.61108398 0.0 7.04158519511e-05 -2083.61206055 0.000372578913812 0.0 -0.00406241531189 -302.705080954 6916.89014995 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1954280744" name="Würfel.261">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://26737cdaef9c1df53e86cb3b2ddeac4f67b0da77</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 -0.176879060726 18349.3613806 1201.43108269 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="2068862567" name="passangerRamp">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://a1427fae7965739a6786a1a120b422244d14756a</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>114.071983337 3.85507064493e-06 -9.97248571366e-06 0.0 9.9724784377e-06 2.03976487683e-05 114.071907043 0.0 3.85507246392e-06 -114.071983337 2.03976615012e-05 0.0 -0.00282150854605 -14497.0233787 1344.89479872 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1912561818" name="Würfel.273">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://d2f5d19cdd3501c545b544e5e08466dfc49b25c1</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>44.3601722717 1.49915445036e-06 -8.74227134773e-06 0.0 1.9707447791e-05 1.78813679668e-05 99.9998474121 0.0 3.37950746143e-06 -99.9999465942 1.78813843377e-05 0.0 1807.89102272 -7342.04759472 2259.99836781 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="904804145" name="Würfel.274">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://3abb3890edf617894f65c5bb56579a86b933c42c</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>100.000076294 3.37950973517e-06 -8.74226680025e-06 0.0 8.74225497682e-06 1.78813861567e-05 99.9999465942 0.0 3.37950632456e-06 -99.9999389648 1.78813843377e-05 0.0 -1052.51074095 -16769.9726281 2747.8911139 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1196312284" name="Würfel.275">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://033a102e5258112dd72fe29f98a5a7d36c85719b</mesh_name>
+					<surface name="Boden" material="07205338aa7546d07684573134d6cd0058ae004d"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 0.00114414515372 -13311.1756151 3801.69784747 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1998599307" name="Würfel.074">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://a6ca38427d4deb95696933656f5d0291029c7a3e</mesh_name>
+					<surface name="Boden" material="07205338aa7546d07684573134d6cd0058ae004d"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 0.00114414515372 -13311.1756151 3801.69784747 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1066664046" name="Würfel.038">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://952dad103b025477f14622e9da420a8ba723dc85</mesh_name>
+					<surface name="_metallic" material="fac99e98d8e499ec236cba11b4875c19c04d752d"/>
+					<transform>89.1498565674 3.01282557302e-06 -7.79372658144e-06 0.0 7.79372476245e-06 1.59412338689e-05 89.1498336792 0.0 3.01282761939e-06 -89.1498641968 1.59412393259e-05 0.0 2222.97079684 -9449.86204516 1491.34062303 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="2044513525" name="Würfel.047">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://a9aa3b444a4439ee5399e51f4744162c8c1b2420</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>23.8075733185 8.04578633051e-07 -2.08132360058e-06 0.0 2.08132269108e-06 4.25712414653e-06 23.8075618744 0.0 8.04578860425e-07 -23.8075695038 4.25712551078e-06 0.0 2222.97080387 -9530.33373072 1356.99309237 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1782315472" name="Würfel.050">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://912a30c2f7d9e9adec4ea843c0f5953eb15488ff</mesh_name>
+					<surface name="Rettungsboot" material="426f0094ae8eeb8156bdc83dfe018f8046239399"/>
+					<transform>23.8075733185 8.04578633051e-07 -2.08132360058e-06 0.0 2.08132269108e-06 4.25712414653e-06 23.8075618744 0.0 8.04578860425e-07 -23.8075695038 4.25712551078e-06 0.0 2222.97065684 -7848.45579023 1604.15610479 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1817412335" name="Würfel.054">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://59b352162768424c62ec59691fa488074d368252</mesh_name>
+					<surface name="Rettungsboot" material="426f0094ae8eeb8156bdc83dfe018f8046239399"/>
+					<transform>6.08161067963 2.05528451147e-07 -5.31671275894e-07 0.0 5.3167104852e-07 1.08747633476e-06 6.0816078186 0.0 2.05528479569e-07 -6.08160877228 1.08747644845e-06 0.0 2777.910841 -7832.64128961 1580.81235409 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1278137218" name="Zylinder.009">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://d16b57c4aa14f84e0073d92d3306db069a223d89</mesh_name>
+					<surface name="Rettungsboot" material="426f0094ae8eeb8156bdc83dfe018f8046239399"/>
+					<transform>3.65397524834 6.38934295694e-07 -2.42600783906e-09 0.0 6.38857443391e-07 -3.65370440483 -0.0444317832589 0.0 -1.01951753706e-08 0.0444318056107 -3.65370607376 0.0 2222.97067113 -8011.9846003 1570.46165393 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1791458553" name="Würfel.055">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://47b30138641bae964ce432c38f799a1ab711a954</mesh_name>
+					<surface name="Rettungsboot" material="426f0094ae8eeb8156bdc83dfe018f8046239399"/>
+					<transform>86.2345962524 2.91430455945e-06 -7.53886433813e-06 0.0 7.53885478844e-06 1.54199315148e-05 86.2344970703 0.0 2.9143059237e-06 -86.234588623 1.54199478857e-05 0.0 -0.174383687622 -10194.3786354 6195.95357061 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1487700484" name="Würfel.057">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://203232963a2d464eb51180277d992fdf1b0004a3</mesh_name>
+					<surface name="_blueglass" material="b4ad8a90db481d3abdd21e69f2a0584749b3a005"/>
+					<transform>27.8545951843 9.41348162087e-07 -2.43512477027e-06 0.0 2.4351236334e-06 4.98078725286e-06 27.8545799255 0.0 9.41348673678e-07 -27.8545970917 4.98079043609e-06 0.0 -0.174380203432 -10234.2331263 6226.78120907 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="727917971" name="Würfel.058">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://a4c1612ae43828bb80a0d7adf16379ad113321a6</mesh_name>
+					<surface name="_darkglass" material="0fad09f0ea9e40812a924549e8979e3e3ae7f8e5"/>
+					<transform>27.8545951843 9.41348162087e-07 -2.43512477027e-06 0.0 2.4351236334e-06 4.98078725286e-06 27.8545799255 0.0 9.41348673678e-07 -27.8545970917 4.98079043609e-06 0.0 -0.174380203432 -10234.2331263 6226.78120907 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="483093974" name="Würfel.062">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://425d45b8cd9ebcbce20b6bb1ed1e24fec4a5cccd</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>25.6830329895 8.67959840889e-07 -2.24528184845e-06 0.0 2.2452804842e-06 4.59248167317e-06 25.6830158234 0.0 8.67960068263e-07 -25.6830272675 4.59248349216e-06 0.0 2454.1189082 -14097.2387837 5937.24670996 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="2053950269" name="Würfel.035">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://97db3e6c73c9052b1b7b12a793e55fb7487907c8</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>24.5097694397 8.2830933934e-07 -2.1427106276e-06 0.0 2.14270812648e-06 4.38268307335e-06 24.5097389221 0.0 8.28309680401e-07 -24.5097675323 4.38268853031e-06 0.0 -0.176671036344 15969.8399181 1700.81253436 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="635736952" name="Würfel.005">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://497da9aa5ecf80b7d1c50e4ba495669de6360887</mesh_name>
+					<surface name="_darkglass" material="0fad09f0ea9e40812a924549e8979e3e3ae7f8e5"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2107.80886014 -17010.3121653 3440.36475722 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="579092599" name="Würfel.041">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://2ec9397eb350676c719bb231d170587049c22c3a</mesh_name>
+					<surface name="_darkglass" material="0fad09f0ea9e40812a924549e8979e3e3ae7f8e5"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2107.80886014 -17010.3121653 3440.36475722 1.0</transform>
+				</node>
+				<node type="NodeDummy" id="2054464362" name="Würfel.063">
+					<transform>2445.09619141 0.000100622753962 -4.26798343658 0.0 4.26798295975 0.000760926865041 2445.09619141 0.0 0.000102045960375 -2445.09936523 0.000760749622714 0.0 0.000750729816995 -9414.88466866 2218.3854213 1.0</transform>
+				</node>
+				<node type="NodeDummy" id="1657895873" name="Würfel.044">
+					<transform>10.3120594025 3.48496740799e-07 -9.01508713014e-07 0.0 9.0150814458e-07 1.84393888958e-06 10.3120527267 0.0 3.48496854485e-07 -10.3120565414 1.8439395717e-06 0.0 1978.7196328 -10098.0290156 2477.50581249 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1312432684" name="Würfel.006">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://6fb12aec11878ea1e2a21e75515a800eaa944e51</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 0.000160509560642 -2663.55216324 1895.53942307 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="894187419" name="Würfel.008">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://b11be6e070f34882893328cb8b741a80a314337c</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 0.000160509560861 -2663.55216574 1838.20434006 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1033406526" name="Würfel.013">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://78c969fe5539fa99d13836af673c837c9814f8ab</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 0.000160509560642 -2663.55216324 1895.53942307 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1904513669" name="Würfel.014">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://6944ef12a50562f1373a2cf54983dd9d9946b60e</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 0.000160509560642 -2663.55216324 1895.53942307 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="562586144" name="Würfel.033">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://6f87fb60aba3a3ad289975790d7d8d6af8edc615</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 0.000160509560642 -2663.55216324 1895.53942307 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1553247999" name="Würfel.043">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://87152e94b9502bc2d6e3592fece9a3d5f57b6070</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 0.000160509560642 -2663.55216324 1895.53942307 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1151103058" name="Würfel.010">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://62f787924d76c7a044601d533117d6e0470f790f</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 -0.00276386099531 -15156.4344697 2302.53020352 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="86201225" name="Würfel.080">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://6027d5e69dbf1b136925cbf9d29696a4d4eb1322</mesh_name>
+					<surface name="ZaunMetall" material="4f45db30306839fed6bc07892f417a3786bdd725"/>
+					<transform>8.44347763062 2.85347852014e-07 -7.38152209578e-07 0.0 7.38151641144e-07 1.50981043134e-06 8.4434709549 0.0 2.85347994122e-07 -8.44347572327 1.50981122715e-06 0.0 -0.17634843459 12279.7061297 1715.37226597 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="988006228" name="Würfel.271">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://d729eb14ebf980c1686334bdbc8476b894507819</mesh_name>
+					<surface name="ZaunMetall" material="4f45db30306839fed6bc07892f417a3786bdd725"/>
+					<transform>8.44347763062 2.85347852014e-07 -7.38152209578e-07 0.0 7.38151641144e-07 1.50981043134e-06 8.4434709549 0.0 2.85347994122e-07 -8.44347572327 1.50981122715e-06 0.0 -0.17634843459 12279.7061297 1715.37226597 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1923058339" name="Würfel.059">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://56028988560774515808c7d3d835b6e38ed002a4</mesh_name>
+					<surface name="Holzboden" material="d2599f0c344ade76303f0115dd1dc38280dc36f1"/>
+					<transform>2445.09912109 2.40562239924e-05 -0.000213757521124 0.0 0.000213757521124 -0.000291478529107 2445.09887695 0.0 2.40561967075e-05 -2445.09960938 -0.000291478616418 0.0 0.000750729731621 -9414.88369209 2218.3854213 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="699461542" name="Würfel.007">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://bde356664369de87c43c26378c78e4aca0106db3</mesh_name>
+					<surface name="Holzboden" material="d2599f0c344ade76303f0115dd1dc38280dc36f1"/>
+					<transform>2484.08959961 8.39499625727e-05 -0.000217165987124 0.0 0.000217165841605 0.000444189587142 2484.08789063 0.0 8.39499771246e-05 -2484.08837891 0.00044418964535 0.0 0.000662068189402 -7796.85813056 6128.37534081 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1092436685" name="Würfel.073">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://def281faf3ed993cb198533db7fdbb549f74d776</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 0.000160509560642 -2663.55216324 1895.53942307 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="965608904" name="Würfel.102">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://4efa6e082bfd2974550560417b09807aedbce85d</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 0.000160509560642 -2663.55216324 1895.53942307 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1333456519" name="Würfel.015">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://e5eeabbc621fb54e80aad8b730a81fd344b0ce18</mesh_name>
+					<surface name="_blueglass" material="b4ad8a90db481d3abdd21e69f2a0584749b3a005"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2107.80886014 -17010.3121653 3440.36475722 1.0</transform>
+				</node>
+				<node type="NodeDummy" id="199612986" name="Würfel.027">
+					<transform>20.705324173 6.99737711329e-07 -1.81011682798e-06 0.0 1.8101158048e-06 3.70239877157e-06 20.7053127289 0.0 6.99737995546e-07 -20.7053184509 3.70239968106e-06 0.0 1822.12821866 -10287.1042904 971.118796832 1.0</transform>
+				</node>
+				<node type="NodeDummy" id="1001923665" name="Würfel.039">
+					<transform>20.705324173 6.99737711329e-07 -1.81011682798e-06 0.0 1.8101158048e-06 3.70239877157e-06 20.7053127289 0.0 6.99737995546e-07 -20.7053184509 3.70239968106e-06 0.0 1822.12821866 -10287.1042904 971.118796832 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="791286140" name="Würfel.032">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://cd756a7a462780528df9f55bded88d604bdefa97</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>20.705324173 6.99737711329e-07 -1.81011682798e-06 0.0 1.8101158048e-06 3.70239877157e-06 20.7053127289 0.0 6.99737995546e-07 -20.7053184509 3.70239968106e-06 0.0 1822.12821866 -10287.1042775 1267.10054732 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="430259883" name="Würfel.018">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://bf06c74ebe27f03885dfc6c1ec8aee3f6758d70a</mesh_name>
+					<surface name="_darkglass" material="0fad09f0ea9e40812a924549e8979e3e3ae7f8e5"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2107.80886014 -17010.3121653 3440.36475722 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="2138981390" name="Würfel.037">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://7dac383c26317e2010de3c05e4c96f10e199dae1</mesh_name>
+					<surface name="_darkglass" material="0fad09f0ea9e40812a924549e8979e3e3ae7f8e5"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2107.80886014 -17010.3121653 3440.36475722 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="710147093" name="Würfel.108">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://9927893020bd15bb097f2fdb0c5e7de85e6db6cc</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>20.705324173 6.99737711329e-07 -1.81011682798e-06 0.0 1.8101158048e-06 3.70239877157e-06 20.7053127289 0.0 6.99737995546e-07 -20.7053184509 3.70239968106e-06 0.0 1822.12821866 -10287.1042775 1267.10054732 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1999642224" name="Würfel.112">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://99f797ce9b3a889999596ebf7d971ca098c283bb</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>20.705324173 6.99737711329e-07 -1.81011682798e-06 0.0 1.8101158048e-06 3.70239877157e-06 20.7053127289 0.0 6.99737995546e-07 -20.7053184509 3.70239968106e-06 0.0 1822.12821866 -10287.1042775 1267.10054732 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1861295887" name="Würfel.113">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://733bb9e25a7e814e5f226a85659437235c0f25de</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>20.705324173 6.99737711329e-07 -1.81011682798e-06 0.0 1.8101158048e-06 3.70239877157e-06 20.7053127289 0.0 6.99737995546e-07 -20.7053184509 3.70239968106e-06 0.0 1822.12821866 -10287.1042775 1267.10054732 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="2038726946" name="Würfel.109">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://3eb53db0feeb2cd122a84c09fa740320a4f853a5</mesh_name>
+					<surface name="Boden" material="07205338aa7546d07684573134d6cd0058ae004d"/>
+					<transform>20.705324173 6.99737711329e-07 -1.81011682798e-06 0.0 1.8101158048e-06 3.70239877157e-06 20.7053127289 0.0 6.99737995546e-07 -20.7053184509 3.70239968106e-06 0.0 1822.12821866 -10287.1042775 1267.10054732 1.0</transform>
+				</node>
+				<node type="NodeDummy" id="1341066777" name="Würfel.115">
+					<transform>20.705324173 6.99737711329e-07 -1.81011682798e-06 0.0 1.8101158048e-06 3.70239877157e-06 20.7053127289 0.0 6.99737995546e-07 -20.7053184509 3.70239968106e-06 0.0 1822.12821866 -10287.1042904 971.118796832 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1805754532" name="Würfel.024">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://79f255e4aadc0d720e4db13f8a577000b97bf0c0</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 -0.00276386099531 -15156.4344697 2302.53020352 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1235841971" name="Würfel.001">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://e3a8f26245c32a634d50b6630dcef7bd8c66ad1f</mesh_name>
+					<surface name="_darkglass" material="0fad09f0ea9e40812a924549e8979e3e3ae7f8e5"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2107.80886014 -17010.3121653 3440.36475722 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1251878262" name="Würfel.012">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://24b1adb6d4c952a7f762c289e7cf89622ea717f2</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>20.705324173 6.99737711329e-07 -1.81011682798e-06 0.0 1.8101158048e-06 3.70239877157e-06 20.7053127289 0.0 6.99737995546e-07 -20.7053184509 3.70239968106e-06 0.0 1822.12821866 -10287.1042775 1267.10054732 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="837410397" name="Würfel.110">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://5802b26461d42ecfb2be544d68fa0a0e851796a9</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>20.705324173 6.99737711329e-07 -1.81011682798e-06 0.0 1.8101158048e-06 3.70239877157e-06 20.7053127289 0.0 6.99737995546e-07 -20.7053184509 3.70239968106e-06 0.0 1822.12821866 -10287.1042775 1267.10054732 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="721243160" name="Würfel.114">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://bb7f85d8c2c04a174a9480e3307ea4961b29eff4</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>20.705324173 6.99737711329e-07 -1.81011682798e-06 0.0 1.8101158048e-06 3.70239877157e-06 20.7053127289 0.0 6.99737995546e-07 -20.7053184509 3.70239968106e-06 0.0 1822.12821866 -10287.1042775 1267.10054732 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1173708951" name="Würfel.116">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://2791ce364c52db6336f03047fa62ab9cc1ff5ac3</mesh_name>
+					<surface name="Boden" material="07205338aa7546d07684573134d6cd0058ae004d"/>
+					<transform>20.705324173 6.99737711329e-07 -1.81011682798e-06 0.0 1.8101158048e-06 3.70239877157e-06 20.7053127289 0.0 6.99737995546e-07 -20.7053184509 3.70239968106e-06 0.0 1822.12821866 -10287.1042775 1267.10054732 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="2099250442" name="Würfel.260">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://f4e636ca916e95d14ec392cd7424a501b19b4146</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 -0.00276386099531 -15156.4344697 2302.53020352 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1460351201" name="Würfel.016">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://22ed0a5842a09c1f149f58d1474b05a97d2927ed</mesh_name>
+					<surface name="_darkglass" material="0fad09f0ea9e40812a924549e8979e3e3ae7f8e5"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2107.80886014 -17010.3121653 3440.36475722 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1668486348" name="Würfel.021">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://621ecd0cc4577b4cd86c02c7299123ace3936868</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>20.705324173 6.99737711329e-07 -1.81011682798e-06 0.0 1.8101158048e-06 3.70239877157e-06 20.7053127289 0.0 6.99737995546e-07 -20.7053184509 3.70239968106e-06 0.0 1822.12821866 -10287.1042775 1267.10054732 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="729565627" name="Würfel.022">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://4997bf4abbaf10ca6686806b09ccc882b8acb0a7</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>20.705324173 6.99737711329e-07 -1.81011682798e-06 0.0 1.8101158048e-06 3.70239877157e-06 20.7053127289 0.0 6.99737995546e-07 -20.7053184509 3.70239968106e-06 0.0 1822.12821866 -10287.1042775 1267.10054732 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="711078878" name="Würfel.023">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://3908291e70b8947f7d0bdf51451f338eabe575da</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>20.705324173 6.99737711329e-07 -1.81011682798e-06 0.0 1.8101158048e-06 3.70239877157e-06 20.7053127289 0.0 6.99737995546e-07 -20.7053184509 3.70239968106e-06 0.0 1822.12821866 -10287.1042775 1267.10054732 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="348391845" name="Würfel.118">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://dc6bf98cceb45ee5e0b29d95c93b2361e654cb71</mesh_name>
+					<surface name="Boden" material="07205338aa7546d07684573134d6cd0058ae004d"/>
+					<transform>20.705324173 6.99737711329e-07 -1.81011682798e-06 0.0 1.8101158048e-06 3.70239877157e-06 20.7053127289 0.0 6.99737995546e-07 -20.7053184509 3.70239968106e-06 0.0 1822.12821866 -10287.1042775 1267.10054732 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1465396928" name="Würfel.049">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://06b31f804261c81b15aadaeb1a2838aa95d54e1c</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 -0.00276386099531 -15156.4344697 2302.53020352 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1598673695" name="Würfel.026">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://b7d1999eccacfec257048acf9e35adad761f12cb</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>20.705324173 6.99737711329e-07 -1.81011682798e-06 0.0 1.8101158048e-06 3.70239877157e-06 20.7053127289 0.0 6.99737995546e-07 -20.7053184509 3.70239968106e-06 0.0 1822.12821866 -10287.1042775 1267.10054732 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="458491378" name="Würfel.029">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://c28b98b2c3efb25f936aec15f5f90c297352c9ae</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>20.705324173 6.99737711329e-07 -1.81011682798e-06 0.0 1.8101158048e-06 3.70239877157e-06 20.7053127289 0.0 6.99737995546e-07 -20.7053184509 3.70239968106e-06 0.0 1822.12821866 -10287.1042775 1267.10054732 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="783527081" name="Würfel.036">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://908a74000540add2224ba6996e8883b6c5fc8535</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>20.705324173 6.99737711329e-07 -1.81011682798e-06 0.0 1.8101158048e-06 3.70239877157e-06 20.7053127289 0.0 6.99737995546e-07 -20.7053184509 3.70239968106e-06 0.0 1822.12821866 -10287.1042775 1267.10054732 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="249236980" name="Würfel.034">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://e966b134670b85e89349ed4fd5fd7e1ce981d510</mesh_name>
+					<surface name="_darkglass" material="0fad09f0ea9e40812a924549e8979e3e3ae7f8e5"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2107.80886014 -17010.3121653 3440.36475722 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="569499843" name="Würfel.119">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://1b1b7132ebade2d483a17373d7bb9cbea17b252f</mesh_name>
+					<surface name="Boden" material="07205338aa7546d07684573134d6cd0058ae004d"/>
+					<transform>20.705324173 6.99737711329e-07 -1.81011682798e-06 0.0 1.8101158048e-06 3.70239877157e-06 20.7053127289 0.0 6.99737995546e-07 -20.7053184509 3.70239968106e-06 0.0 1822.12821866 -10287.1042775 1267.10054732 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1213206342" name="Würfel.263">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://88fdd986f186febe127c3d19ad266e78221790c2</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 -0.00276386099531 -15156.4344697 2302.53020352 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1282121197" name="Würfel.052">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://d51aadb41af00d7d5dee37dd420ad5d47e409939</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>20.705324173 6.99737711329e-07 -1.81011682798e-06 0.0 1.8101158048e-06 3.70239877157e-06 20.7053127289 0.0 6.99737995546e-07 -20.7053184509 3.70239968106e-06 0.0 1822.12821866 -10287.1042775 1267.10054732 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1794598504" name="Würfel.053">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://c79ef628c58a468133085df3d39eb3f259547144</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>20.705324173 6.99737711329e-07 -1.81011682798e-06 0.0 1.8101158048e-06 3.70239877157e-06 20.7053127289 0.0 6.99737995546e-07 -20.7053184509 3.70239968106e-06 0.0 1822.12821866 -10287.1042775 1267.10054732 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1039439527" name="Würfel.056">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://e8ea9a06d735f3bc0fbe9e57335207f87a7dcbd3</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>20.705324173 6.99737711329e-07 -1.81011682798e-06 0.0 1.8101158048e-06 3.70239877157e-06 20.7053127289 0.0 6.99737995546e-07 -20.7053184509 3.70239968106e-06 0.0 1822.12821866 -10287.1042775 1267.10054732 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="204481498" name="Würfel.017">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://49197f9a88667428b88b965df4766c737ba35f16</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>293.114990234 9.90583885141e-06 -2.5624914997e-05 0.0 2.56248895312e-05 5.24129936821e-05 293.114685059 0.0 9.9058397609e-06 -293.114807129 5.241301551e-05 0.0 -0.00131570002486 14222.3165478 3238.80089199 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="158572913" name="Würfel.019">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://c7aa1aa84c0f407e73d25561e9a236a2e4c38b7d</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>229.174667358 7.74497311795e-06 -2.00350841624e-05 0.0 2.00350714294e-05 4.09795975429e-05 229.174499512 0.0 7.74497857492e-06 -229.174713135 4.09796339227e-05 0.0 -0.00172556670342 18910.6446764 3319.78139995 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="229256220" name="Würfel.060">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://2930a25cd69dfe54d74f90d7983a9c286325d6b8</mesh_name>
+					<surface name="_darkglass" material="0fad09f0ea9e40812a924549e8979e3e3ae7f8e5"/>
+					<transform>196.268310547 6.63290165903e-06 -1.09203519969e-05 0.0 6.950221632e-06 2.2336422262e-05 124.914321899 0.0 6.79564848838e-08 -2.01083898544 3.59566058705e-07 0.0 -0.00133800896811 14477.5011033 2898.471291 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="174217419" name="Würfel.061">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://6a61a81a568ce377250baf7bc995946750e02ab7</mesh_name>
+					<surface name="_darkglass" material="0fad09f0ea9e40812a924549e8979e3e3ae7f8e5"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2107.80886014 -17010.3121653 3440.36475722 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="513890222" name="Würfel.120">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://ed1a5eee2b31d985ac18fbe1ed555273d4b508aa</mesh_name>
+					<surface name="Boden" material="07205338aa7546d07684573134d6cd0058ae004d"/>
+					<transform>20.705324173 6.99737711329e-07 -1.81011682798e-06 0.0 1.8101158048e-06 3.70239877157e-06 20.7053127289 0.0 6.99737995546e-07 -20.7053184509 3.70239968106e-06 0.0 1822.12821866 -10287.1042775 1267.10054732 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="596491061" name="Würfel.265">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://02b56edc8cff0bf3a2a843256d74850703ae2001</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 -0.00276386099531 -15156.4344697 2302.53020352 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1264947984" name="Würfel.046">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://18d3a9d0bf8358e7495729fb9631209ded1ff96c</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>20.705324173 6.99737711329e-07 -1.81011682798e-06 0.0 1.8101158048e-06 3.70239877157e-06 20.7053127289 0.0 6.99737995546e-07 -20.7053184509 3.70239968106e-06 0.0 1822.12821866 -10287.1042775 1267.10054732 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1707068207" name="Würfel.048">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://0ca46f6e0de8cbb8ebea8adf96f6249a5ffba5db</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>20.705324173 6.99737711329e-07 -1.81011682798e-06 0.0 1.8101158048e-06 3.70239877157e-06 20.7053127289 0.0 6.99737995546e-07 -20.7053184509 3.70239968106e-06 0.0 1822.12821866 -10287.1042775 1267.10054732 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="699924162" name="Würfel.051">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://d2518b82a2cdabb3469cb1a53bcc941e92aea17e</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>20.705324173 6.99737711329e-07 -1.81011682798e-06 0.0 1.8101158048e-06 3.70239877157e-06 20.7053127289 0.0 6.99737995546e-07 -20.7053184509 3.70239968106e-06 0.0 1822.12821866 -10287.1042775 1267.10054732 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="188362553" name="Würfel.020">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://7e1c9e50f51e05aa2e9c852991e3ec2c08f35ac5</mesh_name>
+					<surface name="_darkglass" material="0fad09f0ea9e40812a924549e8979e3e3ae7f8e5"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2107.80886014 -17010.3121653 3440.36475722 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="432344900" name="Würfel.121">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://7bd74084f934ff3939890d5f0004689f84320d60</mesh_name>
+					<surface name="Boden" material="07205338aa7546d07684573134d6cd0058ae004d"/>
+					<transform>20.705324173 6.99737711329e-07 -1.81011682798e-06 0.0 1.8101158048e-06 3.70239877157e-06 20.7053127289 0.0 6.99737995546e-07 -20.7053184509 3.70239968106e-06 0.0 1822.12821866 -10287.1042775 1267.10054732 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="220844499" name="Würfel.266">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://0e6c04020d594f57421354838244ffad32ade13f</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 -0.00276386099531 -15156.4344697 2302.53020352 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="247704854" name="Würfel.040">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://3ff9595643d84a19038b3ba93079103d16297d92</mesh_name>
+					<surface name="_darkglass" material="0fad09f0ea9e40812a924549e8979e3e3ae7f8e5"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 0.00134356331602 -16196.1091847 4353.18918452 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1518043517" name="Würfel.025">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://8ed6dd0483bbf14f709bdf6da9adf77027d47fc9</mesh_name>
+					<surface name="_darkglass" material="0fad09f0ea9e40812a924549e8979e3e3ae7f8e5"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2107.80886014 -17010.3121653 3440.36475722 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="797004984" name="Würfel.030">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://7d15da782111bd567e255f03bd2c549767c48694</mesh_name>
+					<surface name="_darkglass" material="0fad09f0ea9e40812a924549e8979e3e3ae7f8e5"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 -833.407905305 -614.018265694 1296.59927 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1941541047" name="Würfel.042">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://dedab9d6697af51093787067c294bd6cf37cc0e3</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 0.00118496917481 -14382.0037398 3807.50575561 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="778253994" name="Würfel.064">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://a3495c6a3e02295057995ded437994fc24ca30e6</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 -0.00124301643763 13390.9132543 3851.24672912 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1977251329" name="Würfel.103">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://79e69ef8a3a725fe51d755f156d2d77170a5130d</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>14.667514801 7.16355089025e-07 -1.2822752069e-06 0.0 1.2822744111e-06 1.04910222944e-05 14.6675109863 0.0 7.16355941677e-07 -14.6675128937 1.04910232039e-05 0.0 -0.00339722773164 -7911.56378149 4194.63462317 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1235507052" name="Würfel.104">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://bf292baca33bf139f42682e73514839796ad1908</mesh_name>
+					<surface name="_blueglass" material="b4ad8a90db481d3abdd21e69f2a0584749b3a005"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 1025.32523474 13512.1771595 7137.93300311 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="2116578267" name="Würfel.196">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://c19024eaba761715796a828bd6dfa1a44cfa68c7</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>20.705324173 6.99737711329e-07 -1.81011682798e-06 0.0 1.8101158048e-06 3.70239877157e-06 20.7053127289 0.0 6.99737995546e-07 -20.7053184509 3.70239968106e-06 0.0 1822.12821866 -10287.1042775 1267.10054732 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1205383038" name="Würfel.251">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://64ca68bea56c35d274401c71daebae3526548f7a</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>20.705324173 6.99737711329e-07 -1.81011682798e-06 0.0 1.8101158048e-06 3.70239877157e-06 20.7053127289 0.0 6.99737995546e-07 -20.7053184509 3.70239968106e-06 0.0 1822.12821866 -10287.1042775 1267.10054732 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1537872069" name="Würfel.257">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://4e8d982c1ea1650f77882cb5b7a693c8e2ced891</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>20.705324173 6.99737711329e-07 -1.81011682798e-06 0.0 1.8101158048e-06 3.70239877157e-06 20.7053127289 0.0 6.99737995546e-07 -20.7053184509 3.70239968106e-06 0.0 1822.12821866 -10287.1042775 1267.10054732 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1241336672" name="Würfel.045">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://49de2820b1994861a6651d0bec9ba85a5162b8bc</mesh_name>
+					<surface name="Boden" material="07205338aa7546d07684573134d6cd0058ae004d"/>
+					<transform>20.705324173 6.99737711329e-07 -1.81011682798e-06 0.0 1.8101158048e-06 3.70239877157e-06 20.7053127289 0.0 6.99737995546e-07 -20.7053184509 3.70239968106e-06 0.0 1822.12821866 -10287.1042775 1267.10054732 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1186203455" name="Zylinder.014">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://8bfd193e5fffe04203fc6eefc5d8f815be693ceb</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>6.55650655972e-05 8.94069089554e-05 99.9999389648 0.0 -99.9999389648 1.78813825187e-05 6.8545297836e-05 0.0 -2.08616183954e-05 -99.999961853 8.34464735817e-05 0.0 -0.00240527384712 -19258.1931666 4411.04136915 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1134390162" name="Zylinder.002">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://6aea9252ae6013093b80bb354eb67038c8ffad4e</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>6.55650655972e-05 8.94069089554e-05 99.9999389648 0.0 -99.9999389648 1.78813825187e-05 6.8545297836e-05 0.0 -2.08616183954e-05 -99.999961853 8.34464735817e-05 0.0 -0.00240527384712 -19258.1931666 4411.04136915 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1703646665" name="Zylinder.012">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://fbc0bca007fcc097a2f3e7b91f373e923d15d455</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>6.55650655972e-05 8.94069089554e-05 99.9999389648 0.0 -99.9999389648 1.78813825187e-05 6.8545297836e-05 0.0 -2.08616183954e-05 -99.999961853 8.34464735817e-05 0.0 -0.00240527384712 -19258.1931666 4411.04136915 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="584361108" name="Zylinder.013">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://66e903d4f3c48a621efc116fb77b8348c57199b0</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>6.55650655972e-05 8.94069089554e-05 99.9999389648 0.0 -99.9999389648 1.78813825187e-05 6.8545297836e-05 0.0 -2.08616183954e-05 -99.999961853 8.34464735817e-05 0.0 -0.00240527384712 -19258.1931666 4411.04136915 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1296189155" name="Zylinder.015">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://8ff7aad2ca1570d1d1a7599374bb6ede889fe14f</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>6.55650655972e-05 8.94069089554e-05 99.9999389648 0.0 -99.9999389648 1.78813825187e-05 6.8545297836e-05 0.0 -2.08616183954e-05 -99.999961853 8.34464735817e-05 0.0 -0.00240527384712 -19258.1931666 4411.04136915 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="2100690662" name="Zylinder.016">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://9dd12d267e341281e7e8be39b5442767e109de62</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>6.55650655972e-05 8.94069089554e-05 99.9999389648 0.0 -99.9999389648 1.78813825187e-05 6.8545297836e-05 0.0 -2.08616183954e-05 -99.999961853 8.34464735817e-05 0.0 -0.00240527384712 -19258.1931666 4411.04136915 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="3311885" name="Zylinder.017">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://d4dc4054e8212ba309b04afdce792567501c4a59</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>6.55650655972e-05 8.94069089554e-05 99.9999389648 0.0 -99.9999389648 1.78813825187e-05 6.8545297836e-05 0.0 -2.08616183954e-05 -99.999961853 8.34464735817e-05 0.0 -0.00240527384712 -19258.1931666 4411.04136915 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1138759432" name="Zylinder.018">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://e1d932c8423b78c106ec8413f0a873d3d62f2fe4</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>6.55650655972e-05 8.94069089554e-05 99.9999389648 0.0 -99.9999389648 1.78813825187e-05 6.8545297836e-05 0.0 -2.08616183954e-05 -99.999961853 8.34464735817e-05 0.0 -0.00240527384712 -19258.1931666 4411.04136915 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="935677639" name="Zylinder.019">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://078f2da6f8717a1c592ea6779a236044972d39f3</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>6.55650655972e-05 8.94069089554e-05 99.9999389648 0.0 -99.9999389648 1.78813825187e-05 6.8545297836e-05 0.0 -2.08616183954e-05 -99.999961853 8.34464735817e-05 0.0 -0.00240527384712 -19258.1931666 4411.04136915 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1615215994" name="Zylinder.020">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://0072cd3ac2c4c03e2cd5e97dbb4e601d978cb6b6</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>6.55650655972e-05 8.94069089554e-05 99.9999389648 0.0 -99.9999389648 1.78813825187e-05 6.8545297836e-05 0.0 -2.08616183954e-05 -99.999961853 8.34464735817e-05 0.0 -0.00240527384712 -19258.1931666 4411.04136915 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="493399697" name="Zylinder.003">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://f997974817780288aa275a819755bb8ed726be9d</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>6.55650655972e-05 8.94069089554e-05 99.9999389648 0.0 -99.9999389648 1.78813825187e-05 6.8545297836e-05 0.0 -2.08616183954e-05 -99.999961853 8.34464735817e-05 0.0 -0.00240527384712 -19258.1931666 4411.04136915 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="2088146620" name="Zylinder.004">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://5f4d68fc20aece6f7801d8f7d8d0bf1136ae2f58</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>6.55650655972e-05 8.94069089554e-05 99.9999389648 0.0 -99.9999389648 1.78813825187e-05 6.8545297836e-05 0.0 -2.08616183954e-05 -99.999961853 8.34464735817e-05 0.0 -0.00240527384712 -19258.1931666 4411.04136915 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="115311339" name="Würfel.028">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://962035ba8b9210e109c3f99b22ae1cdf09bc6ad7</mesh_name>
+					<surface name="_darkglass" material="0fad09f0ea9e40812a924549e8979e3e3ae7f8e5"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2107.80886014 -17010.3121653 3440.36475722 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1826962254" name="Würfel.067">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://32e5468e550fadf5d2fa4101e3a966e43c910a4a</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>1433.98034668 4.84614647576e-05 -0.000125362523249 0.0 0.000125362494146 0.000256415631156 1433.97998047 0.0 4.84614865854e-05 -1433.98010254 0.000256415631156 0.0 4884.34722376 10532.3755409 2606.59548688 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1683098197" name="Würfel.068">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://5539757c77ecee63e05b5a45766123321b1ff521</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>1436.72937012 4.85543678224e-05 -0.000125602848129 0.0 0.000125602717162 0.000256906991126 1436.72790527 0.0 4.85543750983e-05 -1436.72875977 0.000256907136645 0.0 148.900918198 12117.449588 8149.41792736 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="117725104" name="Würfel.069">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://bf679a7074b43ed6a4f5b41b795c8a3a48f28c0c</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 2.68936986458e-07 -7.95787286758 1.42297858474e-06 0.0 1347.98197384 9313.86943563 4053.03987608 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1657243471" name="Würfel.066">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://b2a8970ea05d98bc256b36ff188a1f0941b8d7fb</mesh_name>
+					<surface name="_darkglass" material="0fad09f0ea9e40812a924549e8979e3e3ae7f8e5"/>
+					<transform>1436.72937012 4.85543678224e-05 -0.000125602848129 0.0 0.000125602717162 0.000256906991126 1436.72790527 0.0 4.85543750983e-05 -1436.72875977 0.000256907136645 0.0 -0.00113168669813 12117.4495243 6990.88716564 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1999719522" name="Würfel.071">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://71f3ad228413cc38152008c54f273f9a5062ed1e</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 -0.000881054711633 9250.55388819 4054.95638275 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1676730457" name="Würfel.077">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://290bcef0f4bf96d0beeace497d1ae326e3dcf1e5</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 -0.000881054711633 9250.55388819 4054.95638275 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="834588132" name="Würfel.075">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://bf80fb24d7a74cc1bbd3f97f291c27d176657a00</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 -0.000881054711633 9250.55388819 4054.95638275 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1684815859" name="Würfel.078">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://0f5b65a25bce0f30799e82a39c8f4d839832255f</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 99.0834542633 9467.30489909 4642.48982055 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="908330166" name="Würfel.252">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://67f254f6a93e7fa2412dc4c93280b6489825b332</mesh_name>
+					<surface name="Boden" material="07205338aa7546d07684573134d6cd0058ae004d"/>
+					<transform>1973.39099121 6.66908817948e-05 -0.000172519226908 0.0 0.000172519081389 0.000352869566996 1973.38952637 0.0 6.66909036227e-05 -1973.39074707 0.000352869799826 0.0 -0.00315774503208 -10650.9264458 7137.93405932 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1273607325" name="Kegel">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://560fd7a4c8af6fccf0547a8d061f551e7ba0f8e9</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>320.73135376 1.56643764058e-05 -2.80392305285e-05 0.0 2.80392159766e-05 0.000229404889978 320.731262207 0.0 1.56643982336e-05 -320.731414795 0.000229405006394 0.0 1500.37601631 -454.672005981 4475.16212925 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1486400856" name="Würfel.076">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://4f1dff186f61af7f269ecd23f202e40df5896d34</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 -0.000881054626259 9250.55291162 4054.95638275 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="2128138455" name="Würfel.255">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://5274f576c44b82525a32408784d8288820003703</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1973827658" name="Würfel.259">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://62d2d20a4f50ae58616a390d8630ef6f51a7f086</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>124.733016968 5.67368169868e-06 -5.53543202386e-07 0.0 2.80989542745e-08 -3.0191758924e-06 6.33167076111 0.0 5.67368169868e-06 -124.733009338 -5.9477333707e-05 0.0 3406.27561002 283.043197025 6089.55125716 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1871137569" name="Würfel.269">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://d9f203983f50da52247b6311f6e488e0c8e18e2d</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 0.000265321843424 -3258.60910712 6128.37514244 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="611707404" name="Würfel.270">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://4c225a4c43e038358e32930758878ab330ee19a8</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>3.25366783142 1.09956609151e-07 -8.74227043823e-06 0.0 0.000268689444056 1.78811988008e-05 99.9998931885 0.0 3.37951064466e-06 -99.999961853 1.78812024387e-05 0.0 -2019.1305918 -3060.74316427 4033.57069043 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1826135547" name="Zylinder.006">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://b44eda8a089e9bca827914ab9a179fcb182730e7</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>214.011764526 7.23254379409e-06 -1.87094992725e-05 0.0 1.87094919966e-05 3.82682701456e-05 214.011657715 0.0 7.23254652257e-06 -214.011764526 3.82682883355e-05 0.0 1514.22001105 -461.560173245 4122.90285221 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="2145647390" name="Zylinder.007">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://c377f85ef7b808a9f20069918f851a7bda77791a</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>1704.47583008 5.76028651267e-05 -0.00022120201902 0.0 0.000328369351337 0.000452444946859 2530.25537109 0.0 7.62836571084e-05 -2257.2409668 0.000403626181651 0.0 13.7973147596 -1114.01801365 6764.54301745 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="385787877" name="Zylinder.021">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://333e06ccb81cbc484e6acbd5f70fdc64c24a75b1</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>1676.27514648 5.66498310945e-05 -0.000146544611198 0.0 0.000146544611198 0.000299741339404 1676.27490234 0.0 7.41997209843e-05 -2195.57714844 0.000392599846236 0.0 12.6514871978 -1110.94723384 6287.24077122 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1134540800" name="Zylinder.022">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://9a4500c0b7402d244369ef2b1ca4a4764364735c</mesh_name>
+					<surface name="_darkglass" material="0fad09f0ea9e40812a924549e8979e3e3ae7f8e5"/>
+					<transform>1676.27514648 5.66498310945e-05 -0.000146544611198 0.0 0.000146544611198 0.000299741339404 1676.27490234 0.0 7.41997209843e-05 -2195.57714844 0.000392599846236 0.0 12.6514871978 -1110.94723384 6287.24077122 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1188776799" name="Würfel.123">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://56b3e8dee39525d2c0a7e30f6464fb98f27b770b</mesh_name>
+					<surface name="ZaunMetall" material="4f45db30306839fed6bc07892f417a3786bdd725"/>
+					<transform>8.44347763062 2.85347852014e-07 -7.38152209578e-07 0.0 7.38151641144e-07 1.50981043134e-06 8.4434709549 0.0 2.85347994122e-07 -8.44347572327 1.50981122715e-06 0.0 -0.17634843459 12279.7061297 1715.37226597 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="299934002" name="Würfel.082">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://ba49dbf27d5cabaee6c39a553bfc41395e3560ee</mesh_name>
+					<surface name="Grün" material="09ce482826dd53c741fee0e1d778567433045efd"/>
+					<transform>1973.39099121 6.66908817948e-05 -0.000172519226908 0.0 0.000172519081389 0.000352869566996 1973.38952637 0.0 6.66909036227e-05 -1973.39074707 0.000352869799826 0.0 -0.00315774503208 -10650.9264458 7137.93405932 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1660096233" name="Würfel.004">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://a0d2d540f54e92a2365a38d9ceac0373c101b375</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="259558196" name="Würfel.101">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://c9c4267414dd7c3ef281c58f7d8afe023d72ae50</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="622378243" name="Würfel.122">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://69743472ca88aa838f79cfb30ade75991285ad6f</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1867169414" name="Würfel.124">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://a509d0c6f4731fb085334f59cde9c6076029fc02</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1178207277" name="Würfel.125">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://7096a2f4c015eed623f16e1d882612eb752b8b79</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1399855016" name="Würfel.126">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://c1593f68f5320cf7c4bd3a333098addc28083e84</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1911887591" name="Würfel.127">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://70391146f9e2772802143e97f8e1f904a8a6b813</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1771054874" name="Würfel.128">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://a1e66ada6d386323d6bf4c9d5970e0cc3418de56</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1507806129" name="Würfel.130">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://d16ae3e8bbafe198a4cc6fa15a3dc93a80ae81bd</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="691491164" name="Würfel.131">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://1f6cff9c9c0aa1fd5449b1178a6421c7f871d7f8</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1352973579" name="Würfel.132">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://3d99135ae670aabba62ad3bb200dcc534d7bbaf7</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1848766190" name="Würfel.133">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://2bcf7e2e9e54c74ab74b9621379f3c80ba54dbea</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="258533749" name="Würfel.134">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://dc604c1c612e504ab33f81652f426e94fc375a41</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="506752080" name="Würfel.138">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://468b5b108bc4e1b01662ce3b5052076ce98d6eac</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1007702895" name="Würfel.139">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://776c0eaeef47a1944063731f8b7c4a6f41821a1b</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1884842498" name="Würfel.140">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://d40a1ec2cbad8a80c3f46fe53aadec8cf31408be</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="89858425" name="Würfel.141">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://c92acf90af1fd311c15b27692ba578746a7d1905</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="372694148" name="Würfel.142">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://491785c40b082f271fb6759f1c525025ee3e36a0</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1106820627" name="Würfel.143">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://b85f1742e7c335b186fa40c327101c8474fb797f</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1101474902" name="Würfel.144">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://6d04a096a69f56e9ae125de9c0e9feed3d03b8d2</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="33322941" name="Würfel.145">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://81d5a244ea18ef086c3025ad3eb49558ddc50209</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="527128056" name="Würfel.146">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://283ff3b8288c60546708cb4366366bbe3120a3d4</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="2119901431" name="Würfel.147">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://a2c881161bed6c313ea5a0a74a2bcb2dbc11bd23</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="777062890" name="Würfel.148">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://3a6a97aaa485affab67e242d98e36dbd531c8026</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1482272833" name="Würfel.149">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://09b738382fee2d52db53803151e2e36853a6994d</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="730844332" name="Würfel.151">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://1a3258ec103a2801ea183327c383d3c8d57e6a48</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="991223835" name="Würfel.152">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://78bbe02a8e0b5af25dba36cb3ec8d2dfd33b0907</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1886131902" name="Würfel.153">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://fa78d7feddf44f965514c6b13f139d2b5db632ba</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="998887173" name="Würfel.154">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://6ba5456cb2f44c6310a27af54d2917668b0fa2d1</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1650947232" name="Würfel.155">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://cb8fa960db7846d358c1514b3c1377096d827dfc</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1472700287" name="Würfel.156">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://0d5e087eb47b3de1198ee72fba11677c17ddc12b</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1317381842" name="Würfel.157">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://dc9175927e92f90e507b8975bcd4a9f6aadbe48e</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1144133641" name="Würfel.159">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://2368bde06aba1fdfac4699f9695e04c2d8882295</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="24035796" name="Würfel.160">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://d0201914b14f84c02a6309af1832bcded9ad12f0</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1576878883" name="Würfel.161">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://23790e127189d7bb0220d5d330bd9b481934898f</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="2037796390" name="Würfel.162">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://b90fc46652432ee3ca23f079c91cd4a9e1dfe9a2</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="743051085" name="Würfel.163">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://3671d594603a6413e8f9a13d86cfd4bebcb65c99</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="2093967432" name="Würfel.167">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://b6c71c083f3cc783418280536caf116f85879d24</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1703669511" name="Würfel.168">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://8d5044e63c28a7118ff766b718daf0f065724633</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="2104877242" name="Würfel.169">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://1e5c587a3b14e4dc028fbfbd78c5572ac62fd5f6</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="85948625" name="Würfel.170">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://6fcc00887ffc07d6d48994c1aa85d4b54122d4dd</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1435786236" name="Würfel.171">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://74b7663c2207ba0f81af1937d49bf7533598d098</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="758777643" name="Würfel.172">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://a1b440fa21741373c8483ddb10fe64c137261b17</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1517253262" name="Würfel.173">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://074105ce5aeaf3d3d9d4fb41e919f910dd687d8a</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1805277333" name="Würfel.174">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://7351f2bc071b2160089cb8851466ebf85f3c4f61</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1495126256" name="Würfel.175">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://1be6ebb0b098bfbefba6785ba4f7e056da98a14c</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="195178383" name="Würfel.176">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://da56d64eb2fe391edb5b3f3f02d87910e6df6c3b</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 2166.04757607 -2433.97850254 7137.93370014 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="395663266" name="Würfel.031">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://4e7ce062a2520d3d5061e705d30713fc8ca9f45e</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>20.705324173 6.99737711329e-07 -1.81011682798e-06 0.0 1.8101158048e-06 3.70239877157e-06 20.7053127289 0.0 6.99737995546e-07 -20.7053184509 3.70239968106e-06 0.0 1822.12821866 -10287.1042775 1267.10054732 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="2126574233" name="Würfel.072">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://9c21a03078e1c40b67b59089b9d1d3bbf59bd025</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 -0.000881054711633 9250.55388819 4054.95638275 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1037384484" name="Würfel.081">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://10c2e064d0d4eb8e93b881bf8cd9d76e1de44340</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 99.0841683234 1299.40925323 4276.92084164 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="475483187" name="Würfel.083">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://af5f18e2a5ef3092e12e8ee3c0bcbb664511dd9f</mesh_name>
+					<surface name="ZaunMetall" material="4f45db30306839fed6bc07892f417a3786bdd725"/>
+					<transform>8.44347763062 2.85347852014e-07 -7.38152209578e-07 0.0 7.38151641144e-07 1.50981043134e-06 8.4434709549 0.0 2.85347994122e-07 -8.44347572327 1.50981122715e-06 0.0 -0.17634843459 12279.7061297 1715.37226597 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1714758646" name="Würfel.079">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://33983c366717d2b68c010709be8b3f9e812b8e72</mesh_name>
+					<surface name="ZaunMetall" material="4f45db30306839fed6bc07892f417a3786bdd725"/>
+					<transform>8.44347763062 2.85347852014e-07 -7.38152209578e-07 0.0 7.38151641144e-07 1.50981043134e-06 8.4434709549 0.0 2.85347994122e-07 -8.44347572327 1.50981122715e-06 0.0 -0.17634843459 12279.7061297 1715.37226597 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="477874909" name="Würfel.084">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://da503ce4a6a34cf6a276e0cd885730170f889b29</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>807.534301758 2.72906763712e-05 -7.05968850525e-05 0.0 7.05968705006e-05 0.000144398349221 807.534057617 0.0 2.72906854661e-05 -807.534179688 0.000144398378325 0.0 -0.00299083103234 -12560.1999754 5030.74029512 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1361137304" name="Würfel.095">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://3323b858c4376b36466b5963f2adbfec9b322a74</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>1052.59521484 3.55725278496e-05 -9.20207894524e-05 0.0 9.20207385207e-05 0.000188218575204 1052.59448242 0.0 3.55725533154e-05 -1052.59545898 0.000188218749827 0.0 -0.00336979829073 -8225.32000049 7137.93395329 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1296597271" name="Würfel.099">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://043d5cb6c897bc42185a90c72a80dd6140395343</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>540.495727539 1.82660915016e-05 -4.72516185255e-05 0.0 4.72515494039e-05 9.66480365605e-05 540.494934082 0.0 1.82660896826e-05 -540.495422363 9.6648123872e-05 0.0 -0.00355383967709 -6120.13201221 7137.93386127 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="667659146" name="Würfel.093">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://84f8ad4af81dbf51251d1f4de782264f780fdfc6</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>14.667514801 7.16355089025e-07 -1.2822752069e-06 0.0 1.2822744111e-06 1.04910222944e-05 14.6675109863 0.0 7.16355941677e-07 -14.6675128937 1.04910232039e-05 0.0 -0.00339722773164 -7911.56378149 4194.63462317 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="681157985" name="Würfel.105">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://03de3cd8c74dfe798927ad51aa60c3fb82bc346d</mesh_name>
+					<surface name="Holzboden" material="d2599f0c344ade76303f0115dd1dc38280dc36f1"/>
+					<transform>20.705324173 6.99737711329e-07 -1.81011682798e-06 0.0 1.8101158048e-06 3.70239877157e-06 20.7053127289 0.0 6.99737995546e-07 -20.7053184509 3.70239968106e-06 0.0 1822.12821866 -10287.1042775 1267.10054732 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="714735436" name="Würfel.106">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://ae81278c622bfe896f5f6347d5f56bf1fb860ae8</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 -0.00376838571324 -3666.01151711 4613.10367587 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="811938363" name="Würfel.111">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://b9bf35ca3f27de884b35e8eb98a9d3ca7b3df127</mesh_name>
+					<surface name="Schornstein" material="18531284d33ef7bb797812ed34a087f9fa6e3b49"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 -0.00376838571324 -3666.01151711 4613.10367587 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1800995422" name="Würfel.253">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://4335079e91d7c633c04533d16af1aa51b978bc5a</mesh_name>
+					<surface name="Grün" material="09ce482826dd53c741fee0e1d778567433045efd"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 -0.000881054711633 9250.55388819 4054.95638275 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1645446693" name="Würfel.258">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://4ceb540c27571d866d773a156aa38bbf27665ff1</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>8.44347763062 2.85347852014e-07 -7.38152209578e-07 0.0 7.38151641144e-07 1.50981043134e-06 8.4434709549 0.0 2.85347994122e-07 -8.44347572327 1.50981122715e-06 0.0 -0.17634843459 12279.7061297 1715.37226597 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="410812736" name="Würfel.092">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://6566220099f958c7b673436bcb41842a6564d89c</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>807.534301758 2.72906763712e-05 -7.05968850525e-05 0.0 7.05968705006e-05 0.000144398349221 807.534057617 0.0 2.72906854661e-05 -807.534179688 0.000144398378325 0.0 -0.00299083103234 -12560.1999754 5030.74029512 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="897647519" name="Würfel.091">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://3963781ef381864d3f397b4fa3695263b8181b4b</mesh_name>
+					<surface name="ZaunMetall" material="4f45db30306839fed6bc07892f417a3786bdd725"/>
+					<transform>8.44347763062 2.85347852014e-07 -7.38152209578e-07 0.0 7.38151641144e-07 1.50981043134e-06 8.4434709549 0.0 2.85347994122e-07 -8.44347572327 1.50981122715e-06 0.0 -0.17634843459 12279.7061297 1715.37226597 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="905215090" name="Würfel.085">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://d1a95f328a92094137f088956fdd6a3edadb382e</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 -0.00294025106421 -13138.767348 5265.63094541 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="177254697" name="Würfel.086">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://db2a7680691363cb18810b19682976b52e7121b5</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 -0.00299725865459 -12486.6765499 4755.56988175 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="962545780" name="Würfel.087">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://2c24dbb4380c8a488727ddcf41908753f648c790</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>40.0428085327 1.35324933126e-06 -3.50064942722e-06 0.0 3.50064624399e-06 7.16020531399e-06 40.042766571 0.0 1.35324933126e-06 -40.0427932739 7.16020986147e-06 0.0 -0.00299279300797 -12537.757591 5067.49420039 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="813160771" name="Würfel.088">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://0dee37b2f337de8b52a46bf357c669663ab475af</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>99.999961853 3.37950586982e-06 -8.74227225722e-06 0.0 8.74226770975e-06 1.78813788807e-05 99.9999160767 0.0 3.37950700668e-06 -99.9999542236 1.78813861567e-05 0.0 -0.00300690239647 -12376.3650055 5235.71001364 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="715173318" name="Zylinder.011">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://084b080696f444f1da82a199a8983c329c93a742</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>8.42901420593 2.84859112298e-07 -7.36887784569e-07 0.0 7.36887102448e-07 1.50722382841e-06 8.42900562286 0.0 2.84859055455e-07 -8.42900848389 1.50722439685e-06 0.0 -0.00297303409349 -12763.7732185 5009.14264777 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1680517741" name="Würfel.090">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://a895d8340182dc9c1910e45d0ca568165a04bdb9</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>6.28666591644 6.24423789978 -8.97839890968e-06 0.0 3.96105770051e-06 9.37450295169e-06 8.86073589325 0.0 70.1791305542 -70.6559829712 4.45184305136e-05 0.0 -0.00297305321728 -12763.5544679 5024.76325323 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1998981352" name="Würfel.097">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://46cac8a83b1720ca36445673e78f871539554bc4</mesh_name>
+					<surface name="ZaunMetall" material="4f45db30306839fed6bc07892f417a3786bdd725"/>
+					<transform>8.44347763062 2.85347852014e-07 -7.38152209578e-07 0.0 7.38151641144e-07 1.50981043134e-06 8.4434709549 0.0 2.85347994122e-07 -8.44347572327 1.50981122715e-06 0.0 -0.17634843459 12279.7061297 1715.37226597 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1334957863" name="Würfel.098">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://dd3cc8867484cdacac601ed70927654c8817e453</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>1052.59521484 3.55725278496e-05 -9.20207894524e-05 0.0 9.20207385207e-05 0.000188218575204 1052.59448242 0.0 3.55725533154e-05 -1052.59545898 0.000188218749827 0.0 -0.00336979829073 -8225.32000049 7137.93395329 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1700751962" name="Würfel.096">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://babc961a88518861808f42ddcbe68bf9f6b99d96</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>194.600769043 6.57654618408e-06 -1.70125367731e-05 0.0 1.70125313161e-05 3.47973218595e-05 194.600708008 0.0 6.57654982206e-06 -194.600753784 3.47973291355e-05 0.0 -0.00334325718657 -8528.91483197 4737.75818531 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1232156145" name="Zylinder.010">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://2962ed281835fd166e26c9e1e1c5c7351c4bb7fd</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>88.2687530518 2.98304917123e-06 -7.71669783717e-06 0.0 7.71669328969e-06 1.57836730068e-05 88.2686843872 0.0 2.98305008073e-06 -88.268737793 1.57836821018e-05 0.0 -4.63837828307 2706.97163126 4486.61267464 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1463137948" name="Würfel.100">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://de549cdc3dd6929739ba115758569bd0cf4b1938</mesh_name>
+					<surface name="Blau" material="d17e7a20efc9165aeef743391abac39d85cff7d5"/>
+					<transform>1052.59521484 3.55725278496e-05 -9.20207894524e-05 0.0 9.20207385207e-05 0.000188218575204 1052.59448242 0.0 3.55725533154e-05 -1052.59545898 0.000188218749827 0.0 -0.00336979829073 -8225.32000049 7137.93395329 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1713856843" name="Würfel.107">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://5759be9af4a35a59a22437fbc9d95ff925c38b37</mesh_name>
+					<surface name="Blau" material="d17e7a20efc9165aeef743391abac39d85cff7d5"/>
+					<transform>807.534301758 2.72906763712e-05 -7.05968850525e-05 0.0 7.05968705006e-05 0.000144398349221 807.534057617 0.0 2.72906854661e-05 -807.534179688 0.000144398378325 0.0 -0.00299083103234 -12560.1999754 5030.74029512 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="495306286" name="Zylinder.024">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://88a1dd6e626a64a27f5e70615ba8d44ca933ef2a</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>0.119084581733 4.02447231096e-09 -1.04107034105e-08 0.0 1.04106998577e-08 2.12939781363e-08 0.11908455193 0.0 4.02447364323e-09 -0.11908455193 2.12939781363e-08 0.0 19.0918411694 14220.160324 3800.4151499 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1672370101" name="Icokugel">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://6936695c83c28062d1baffa5271e2621e076d481</mesh_name>
+					<surface name="Stichflamme" material="836a3afccc0c6b465fe55dc55efb586ca06a00a1"/>
+					<transform>0.222564041615 7.52155937533e-09 -9.83668400067e-08 0.0 4.97299254221e-07 2.01198773198e-07 1.12518525124 0.0 8.24801915655e-09 -0.244059681892 4.36412612714e-08 0.0 19.0918411288 14220.6241913 3803.05772801 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1407747472" name="Zylinder.030">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://61224c50d9ecc03916c8b27bfa82d7fcbbbc23ec</mesh_name>
+					<surface name="surface_0" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+					<transform>0.119084581733 4.02447231096e-09 -1.04107034105e-08 0.0 1.04106998577e-08 2.12939781363e-08 0.11908455193 0.0 4.02447364323e-09 -0.11908455193 2.12939781363e-08 0.0 -446.183346639 14278.3184865 3800.41514736 1.0</transform>
+				</node>
+			</node>
+			<node type="NodeDummy" id="1269492266" name="Azipods">
+				<transform>-0.00999999944121 -1.75635267918e-08 -1.47040005029e-15 0.0 1.75635232391e-08 -0.00999999664724 -8.74227409281e-10 0.0 6.50521342266e-17 -8.74227742348e-10 0.0100000003725 0.0 -10 -164.736629028 -1.44017308598e-05 1.0</transform>
+				<node type="ObjectMeshStatic" id="193172353" name="Würfel.001">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://87fd76606fda493c77e22c79d619b24194340d15</mesh_name>
+					<surface name="AzipodsSchwarz" material="184b901c11110803689aaf979d691c179c309078"/>
+					<transform>100 8.74227942467e-06 -8.74227800037e-06 0.0 8.74227942467e-06 -1.6292067191e-05 100 0.0 8.74227800037e-06 -100 -1.62920679553e-05 0.0 -40.2134796482 -25.7925430233 1005.63794058 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="645650156" name="Zylinder.001">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://0ca65994f5185c97028ef82f8f157704c756fb70</mesh_name>
+					<surface name="AzipodsSchwarz" material="184b901c11110803689aaf979d691c179c309078"/>
+					<surface name="Azipods" material="e2203c896f6b6b7ace1828d06925aaffeda3c8f3"/>
+					<transform>258.548248291 1.79373244147e-20 9.88008799282e-13 0.0 1.92342349303e-20 258.548248291 -1.13015028719e-05 0.0 -9.88008799282e-13 1.13015028719e-05 258.548248291 0.0 -40.2135053918 268.679359467 953.830798803 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="90629467" name="ship_propeller_6_wing">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://bf037a92bb7c1f7fca39ac53f95b3fc091f8580f</mesh_name>
+					<surface name="surface_0" material="a1219d89c08095ae1d485cd57738eef3600371f3"/>
+					<transform>-2.77873212969e-07 2.23658921745e-07 1.70557332039 0.0 4.81193323892e-07 -1.70557332039 2.23659000141e-07 0.0 1.70557332039 4.81193360331e-07 2.77873149869e-07 0.0 -41.5659828186 -3.63381377159e-06 -1.26217744835e-28 1.0</transform>
+				</node>
+			</node>
+			<node type="NodeDummy" id="425430802" name="Azipods_1">
+				<transform>-0.00999999944121 -1.75635267918e-08 -1.47039973265e-15 0.0 1.75635232391e-08 -0.00999999664724 -8.74227409281e-10 0.0 6.50524717163e-17 -8.74227742348e-10 0.0100000003725 0.0 10 -164.736629028 -1.44017308598e-05 1.0</transform>
+				<node type="ObjectMeshStatic" id="2044224329" name="Würfel.001">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://87fd76606fda493c77e22c79d619b24194340d15</mesh_name>
+					<surface name="AzipodsSchwarz" material="184b901c11110803689aaf979d691c179c309078"/>
+					<transform>100 8.74227942467e-06 -8.74227800037e-06 0.0 8.74227942467e-06 -1.6292067191e-05 100 0.0 8.74227800037e-06 -100 -1.62920679553e-05 0.0 -40.2134796482 -25.7925430233 1005.63794058 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1444680724" name="Zylinder.001">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://0ca65994f5185c97028ef82f8f157704c756fb70</mesh_name>
+					<surface name="AzipodsSchwarz" material="184b901c11110803689aaf979d691c179c309078"/>
+					<surface name="Azipods" material="e2203c896f6b6b7ace1828d06925aaffeda3c8f3"/>
+					<transform>258.548248291 1.79373244147e-20 9.88008799282e-13 0.0 1.92342349303e-20 258.548248291 -1.13015028719e-05 0.0 -9.88008799282e-13 1.13015028719e-05 258.548248291 0.0 -40.2135053918 268.679359467 953.830798803 1.0</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1104146531" name="ship_propeller_6_wing">
+					<streaming_mode_vram>0</streaming_mode_vram>
+					<streaming_mode_ram>0</streaming_mode_ram>
+					<mesh_name>guid://bf037a92bb7c1f7fca39ac53f95b3fc091f8580f</mesh_name>
+					<surface name="surface_0" material="a1219d89c08095ae1d485cd57738eef3600371f3"/>
+					<transform>-2.77873212969e-07 2.23658921745e-07 1.70557332039 0.0 4.81193323892e-07 -1.70557332039 2.23659000141e-07 0.0 1.70557332039 4.81193360331e-07 2.77873149869e-07 0.0 -41.5659828186 -3.63381377159e-06 -1.26217744835e-28 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="PlayerPersecutor" id="2068517974" name="PlayerPersecutor_1">
+			<fixed>0</fixed>
+			<collision>0</collision>
+			<collision_mask>0x1</collision_mask>
+			<collision_radius>0.5</collision_radius>
+			<target>1547639635</target>
+			<anchor>0 0 0</anchor>
+			<min_distance>200</min_distance>
+			<max_distance>200</max_distance>
+			<min_theta_angle>-89.9000015</min_theta_angle>
+			<max_theta_angle>89.9000015</max_theta_angle>
+			<turning>90</turning>
+			<znear>0.300000012</znear>
+			<zfar>100000</zfar>
+			<oblique_frustum_plane>0 0 -1 0</oblique_frustum_plane>
+			<is_oblique_frustum>0</is_oblique_frustum>
+			<is_main>1</is_main>
+			<is_listener>1</is_listener>
+			<controlled>1</controlled>
+			<transform>-0.000726229860447 -0.999999761581 0 0.0 0.239182963967 -0.000173701861058 0.970974564552 0.0 -0.970974266529 0.000705150654539 0.239183023572 0.0 -194.194854736 0.141030132771 47.836605072 1.0</transform>
 		</node>
 	</editor>
 	<console>
