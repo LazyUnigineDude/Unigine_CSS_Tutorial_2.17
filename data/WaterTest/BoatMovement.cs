@@ -14,16 +14,21 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Reflection.Metadata;
 using Unigine;
 
 [Component(PropertyGuid = "1703e40127f4add2944d16888103c920cbe1926c")]
 public class BoatMovement : Component
 {
 
+    [ShowInEditor]
+    Node Pod1, Pod2;
+
 	Gui GUI;
     WidgetSlider BoatFBSlider;
     WidgetSlider BoatLRSlider;
-
+    
+    float Angle = 180;
     BodyRigid Body;
 
     private void Init()
@@ -42,20 +47,22 @@ public class BoatMovement : Component
         BoatLRSlider.SetPosition(50, 30);
         GUI.AddChild(BoatLRSlider, Gui.ALIGN_EXPAND | Gui.ALIGN_OVERLAP);
 
+        Body = node.ObjectBodyRigid;
     }
 	
 	private void UpdatePhysics()
 	{
-        Body = node.ObjectBodyRigid;
 
-        vec3 NewL = vec3.ZERO, NewA = vec3.ZERO;
-        NewL.y += BoatFBSlider.Value - 10;
-        NewA.z += BoatLRSlider.Value - 5;
+        vec3 NewL = vec3.ZERO;
+        NewL.xyz += BoatFBSlider.Value - 10;
 
-        Body.AddLinearImpulse(node.GetWorldDirection(MathLib.AXIS.Y) * NewL * 0.5f);
-        Body.AddAngularImpulse(NewA * -0.1f);
+        Body.AddWorldImpulse(Body.WorldCenterOfMass,node.GetWorldDirection(MathLib.AXIS.Y) * Body.IMass * NewL * Physics.IFps);
+        Body.AddWorldForce(Body.CenterOfMass - Pod1.WorldPosition, Pod1.GetWorldDirection(MathLib.AXIS.NY) * Body.IMass * NewL * Physics.IFps);
+        Body.AddWorldForce(Body.CenterOfMass - Pod2.WorldPosition, Pod2.GetWorldDirection(MathLib.AXIS.NY) * Body.IMass * NewL * Physics.IFps);
+        Pod1.SetWorldRotation(new quat(0, 0, Angle - ((BoatLRSlider.Value - 5) * 15)));
+        Pod2.SetWorldRotation(new quat(0, 0, Angle - ((BoatLRSlider.Value - 5) * 15)));
 
-	}
+    }
 
     private void Shutdown()
     {
