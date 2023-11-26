@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.17.0.1">
+	<node type="ObjectMeshStatic" id="1526237603" name="ShipEngine">
+		<streaming_mode_vram>0</streaming_mode_vram>
+		<streaming_mode_ram>0</streaming_mode_ram>
+		<mesh_name>guid://01b1c9d73874300d9ef466d8d0735dafb034fd91</mesh_name>
+		<surface name="box" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+		<body type="BodyRigid" id="1438447872" frozen="0">
+			<shape type="ShapeBox" id="461628393" transform="1 0 0 0 0 1 0 0 0 0 1 0 0 -3 0 1">
+				<size>2 2 2</size>
+				<mass>8</mass>
+			</shape>
+		</body>
+		<properties>
+			<property parent="3bb94f0f5b0598b7a5b03df046f6c8d3df354b89" guid="33026ce2edd8cc81e8dcb840534e35e0e6ef6923">
+				<parameter name="Left">1736546765</parameter>
+				<parameter name="Right">642805960</parameter>
+			</property>
+		</properties>
+		<transform>0.999999821186 0 0 0.0 0 0.999999821186 0 0.0 0 0 0.99999988079 0.0 0 0 0 1.0</transform>
+		<node type="ObjectDummy" id="1389355686" name="ShipHull">
+			<body type="BodyRigid" id="562741425" frozen="0">
+				<shape type="ShapeBox" id="2124803408" transform="0.999999762 2.34113146e-10 0 0 -2.34113146e-10 0.999999762 0 0 0 0 1.00000012 0 0 1 0 1">
+					<size>2 6 2</size>
+				</shape>
+				<joint type="JointFixed" id="480607703">
+					<body>1</body>
+					<body_0>1438447872</body_0>
+					<rotation_0>0.99999994 0 0 0 0 0.99999994 0 0 0 0 1 0</rotation_0>
+					<rotation_1>0.99999994 0 0 0 0 0.99999994 0 0 0 0 1 0</rotation_1>
+					<anchor_0>0 0 0</anchor_0>
+					<anchor_1>0 0 0</anchor_1>
+				</joint>
+			</body>
+			<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="1736546765" name="Left">
+			<transform>-0.999999940395 -8.7422769468e-08 0 0.0 8.7422769468e-08 -0.999999880791 0 0.0 0 0 0.999999821186 0.0 -0.5 -4 0 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="642805960" name="Right">
+			<transform>-0.999999940395 -8.7422769468e-08 0 0.0 8.7422769468e-08 -0.999999880791 0 0.0 0 0 0.999999821186 0.0 0.5 -4 0 1.0</transform>
+		</node>
+	</node>
+</nodes>

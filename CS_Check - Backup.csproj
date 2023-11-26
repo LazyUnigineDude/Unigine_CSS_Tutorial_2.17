@@ -75,6 +75,13 @@
 		<Compile Include="data/Scripts/Sound/WorldSoundChanger.cs"/>
 		<Compile Include="data/WaterTest/Buoyancy.cs"/>
 		<Compile Include="data/WaterTest/BoatMovement.cs"/>
+		<Compile Include="data/Scripts/Menu/MainMenu.cs"/>
+		<Compile Include="data/Scripts/Menu/GameMenu.cs"/>
+		<Compile Include="data/Scripts/Menu/SaveManger.cs"/>
+		<Compile Include="data/WaterTest/ShipMovement.cs"/>
+		<Compile Include="data/IMGui/ImGuiImpl.cs"/>
+		<Compile Include="data/IMGui/Test.cs"/>
+		<Compile Include="data/WaterTest/PhysicsCheck.cs"/>
 	</ItemGroup>
 	<ItemGroup>
 		<Compile Include="source\AppEditorLogic.cs"/>
